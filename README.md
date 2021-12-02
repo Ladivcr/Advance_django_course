@@ -39,18 +39,18 @@ Nuestro trabajo más importante es el diseño del sistema y las decisiones tomad
 - Fácil de escalar
 > Cuando la app se ve en la necesidad de servir a más usuarios
 
-- 1. Codebase: Sólo una fuente que almacene el código
-- 2. Dependencias: Declara explicitamente que dependencias usará el proyecto y ninguna dependencia se debe filtrar
-- 3. Configuración: Almacena la configuración en el entorno 
-- 4. Backing services: Trata los "backing services" como recursos conectables
-> Backing services: Es cualquier servicio que puede consumir mediante la red. O sea que cuando haces deploy de una app, debe ser sencillo cambiar de la base de development a una en aws por ejemplo (recursos conectables)
-- 5. Build, release run: Separa ESTRICTAMENTE las etapas de construcción y las de ejecución 
-- 6. Procesos: Ejecuta la app como una o más procesos sin estado 
-- 7. Port Binding: La Twelve-Factor app es completamente autónoma, cuando el usuario se conecta a la app via hostname, una capa de enroutamiento se encarga de conectar al puerto conveniente para mirar el contenido de la app, lo que un developer ve como `http://localhost:5000/`, el usuario lo ve como `web-app.com`
+- 1. **Codebase:** Sólo una fuente que almacene el código
+- 2. **Dependencias:** Declara explicitamente que dependencias usará el proyecto y ninguna dependencia se debe filtrar
+- 3. **Configuración:** Almacena la configuración en el entorno 
+- 4. **Backing services:** Trata los "backing services" como recursos conectables
+> Backing services:** Es cualquier servicio que puede consumir mediante la red. O sea que cuando haces deploy de una app, debe ser sencillo cambiar de la base de development a una en aws por ejemplo (recursos conectables)
+- 5. **Build, release run:** Separa ESTRICTAMENTE las etapas de construcción y las de ejecución 
+- 6. **Procesos:** Ejecuta la app como una o más procesos sin estado 
+- 7. **Port Binding:** La Twelve-Factor app es completamente autónoma, cuando el usuario se conecta a la app via hostname, una capa de enroutamiento se encarga de conectar al puerto conveniente para mirar el contenido de la app, lo que un developer ve como `http://localhost:5000/`, el usuario lo ve como `web-app.com`
 > Aporte de Manuel Alejandro Aguilar Téllez Girón - Student platzi 
-- 8. Concurrency: El developer debe de ser capaz de arquitectar la app de tal forma que se maneje cada proceso como un trabajo por separado. Esto permitirá a la app la escalabilidad horizontal
-- 9. Disposability: Los procesos son desechables, es decir, se debe de parar en cuanto se ordene. Esto facilita el escalamiento.
-- 10. Dev/prod parity: Reducir la diferencia entre entornos. Para reducir tiempo entre deploys. 
-- 11. Logs: Una twelve-factor app no se debe de preocupar por dónde manda estos logs o dónde los va a guardar, simplemente los refleja en la `stdout` del 
+- 8. **Concurrency:** El developer debe de ser capaz de arquitectar la app de tal forma que se maneje cada proceso como un trabajo por separado. Esto permitirá a la app la escalabilidad horizontal
+- 9. **Disposability:** Los procesos son desechables, es decir, se debe de parar en cuanto se ordene. Esto facilita el escalamiento.
+- 10. **Dev/prod parity:** Reducir la diferencia entre entornos. Para reducir tiempo entre deploys. 
+- 11. **Logs:** Una twelve-factor app no se debe de preocupar por dónde manda estos logs o dónde los va a guardar, simplemente los refleja en la `stdout` del 
 dispositivo del developer para que este lo analice cuando sea conveniente
-- 12. Admin processes: Tratar los procesos administrativos como cosas completamente diferentes, no deben y no tienen que estar con la app. (back ups, limpiar datos, etc).
+- 12. **Admin processes:** Tratar los procesos administrativos como cosas completamente diferentes, no deben y no tienen que estar con la app. (back ups, limpiar datos, etc).
