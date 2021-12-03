@@ -54,3 +54,32 @@ Nuestro trabajo más importante es el diseño del sistema y las decisiones tomad
 - 11. **Logs:** Una twelve-factor app no se debe de preocupar por dónde manda estos logs o dónde los va a guardar, simplemente los refleja en la `stdout` del 
 dispositivo del developer para que este lo analice cuando sea conveniente
 - 12. **Admin processes:** Tratar los procesos administrativos como cosas completamente diferentes, no deben y no tienen que estar con la app. (back ups, limpiar datos, etc).
+
+# Algunos comandos para el curso 
+
+- docker-compose -f local.yml build
+> Toma nuestro archivo local.yml y construye las imagenes que necesitaremos para el desarrollo.
+- docker-compose -f local.yml up 
+> Para correr el stack de desarrollo: Va a crear la red, los volumenes y va a levantar nuestros servicios.  
+- docker-compose -f local.yml ps
+> Para ver que imagenes estan corriendo 
+- docker-compose -f local.yml down 
+> Mata los servicios, los detiene
+
+**Para evitar escribir todo el tiempo: docker-compose -f local |algo|**
+podemos hacer: **export COMPOSE_FILE=local.yml**
+esto lo que hace es crear la variable de entorno _COMPOSE_FILE_
+y docker-compose la detectará automáticamente.
+
+# Comando administrativos 
+
+- docker-compose run --rm django _COMMAND_
+- docker-compose run --rm django \ python manage.py createsuperuser
+> La flag --rm lo que hace es que cuando se termine de ejecutar nuestro comando lo que va a hacer es matar nuestro contenedor. 
+
+# Habilitar debugger
+
+- 1. docker-compose up: levantamos todos los servicios
+- 2. docker-compose ps: vemos cual corresponde a django
+- 3. docker rm -f <ID>: matamos a django
+- 4. docker-compose run --rm --service-ports django: lo corremos a parte de tal manera que nos permita interactuar con ellos
