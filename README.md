@@ -83,3 +83,10 @@ y docker-compose la detectará automáticamente.
 - 2. docker-compose ps: vemos cual corresponde a django
 - 3. docker rm -f <ID>: matamos a django
 - 4. docker-compose run --rm --service-ports django: lo corremos a parte de tal manera que nos permita interactuar con ellos
+  
+ # Proxi models
+  Nos permiten extender la funcionalidad de un modelo sin crear una nueva tabla en la base de datos
+  
+[Tipos de herencia en django](https://coffeebytes.dev/herencia-en-modelos-de-django/)
+ 
+  
