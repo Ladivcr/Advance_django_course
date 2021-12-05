@@ -88,5 +88,15 @@ y docker-compose la detectará automáticamente.
   Nos permiten extender la funcionalidad de un modelo sin crear una nueva tabla en la base de datos
   
 [Tipos de herencia en django](https://coffeebytes.dev/herencia-en-modelos-de-django/)
+  
+# Vistas en DRF
+  
+- **ViewSet:** Cuando usamos la mayoria de operaciones CRUD en un modelo
+  > Create, Read, Update and Delete
+
+- **Generics:** Cuando solo desee permitir algunas operaciones en un modelo
+
+- **ApiView:** Cuando desee personalizar completamente las operaciones de un modelo.
+
  
   
