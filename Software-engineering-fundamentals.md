@@ -31,4 +31,11 @@ es decir va a la bandeja del receptor.
 - La bandeja envía una notificación a un servidor de notificaciones, el servidor de notificación avisa a nuestro celular que se ha recibido un mail.
 - El mail fue envía y el receptor fue notificado a su celular.
 
+> **EXTRA**
+> La composición de una url grosso modo es la siguiente
+> - https://gmail.com/envias_mail
+> - protocolo/dominio/instrucción
+
+> Los DNS son una base ed datos que relaciona el dominio con una IP única en Internet
+
 > El proceso anterior fue descrito por _Carlos Adolfo Amarante_ - Platzi Student
