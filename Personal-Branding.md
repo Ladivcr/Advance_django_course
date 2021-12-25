@@ -12,6 +12,12 @@ Puntos a tener en cuenta:
 - El último parrafo debe generar sobre el lector un _Call To Action_ (CTA). Ya sea generar un interrogativo, invitar a realizar una 
 acción, etc
 
+> Otros tips a tomar en cuenta: Busca las palabras clave en google trends, citua fuentes con links externos para dar validez, utiliza links
+> internos a otrso contenidos que puedan interesarle al usuario 
+> Evita frases como "haz clikc aquí"
+> Dale estructura, no le temas al punto y seguido
+
+
 ## Cómo comprar un dominio
 
 > Un dominio es el www…com.
