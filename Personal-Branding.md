@@ -85,3 +85,8 @@ acción, etc
 
 - Hay cosas más avanzadas de dominios que se encontrarán en: Advanced DNS. Por ejemplo: configurar sus dominios, conectar hosting. Pero para eso, sin duda: necesitas tomar el Curso de Fundamentos de Ingeniería de Software de Platzi: https://platzi.com/clases/ingenieria/ y algunos de los cursos basados en desarrollo Web, como el Curso de Desarrollo Web Online: https://platzi.com/clases/html5-css3/ o el curso de Wordpress. Toma estos cursos y vas a tener una perspectiva completa de qué es qué es CNAME, qué es URL, etcétera.
 
+# Mail corporativo
+
+Google nos ofrece este servició atra vez de google suite (Antes llamado Google ads)
+> También tenemos servicios por parte de Microsoft y por parte de Yahoo
+
