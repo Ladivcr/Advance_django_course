@@ -35,3 +35,5 @@ y la solución con la orientación a objetos.
 
 **IMPORTANTE:** Un buen desarrollador debe manejar y dominar con fluidez, conceptos de UML ya que es lo que nos van a entregar cuando empecemos a trabajar
 en un proyecto que se haya construido bajo la arquitectura POO.
+
+> Adaptación del comentario de Manuel Mosquera Student Platzi
