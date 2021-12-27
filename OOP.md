@@ -37,3 +37,64 @@ y la solución con la orientación a objetos.
 en un proyecto que se haya construido bajo la arquitectura POO.
 
 > Adaptación del comentario de Manuel Mosquera Student Platzi
+
+# ¿Cómo representar los objetos en UML? 
+
+- Las **clases** se representan así: 
+<img src="img_courses/uml_clases.jpg">
+
+> En la parte superior se colocan los atributos o propiedades, y debajo las operaciones de la clase.
+> **Notaras que el primer caracter con el que empiezan es un símbolo.** ESTE DENOTARA LA VISIBILIDAD DEL ATRIBUTO O MÉTODO. _Esto es un término que tiene que ver con ENCAPSULAMIENTO_.
+> Estos son los niveles de **visibilidad** que puedes tener: 
+
+>> **-** = Private
+
+>> **+** = Public
+
+>> **#** = Protected
+
+>> **~** = default
+
+- Una forma de representar las **relaciones** que tendrá un elemento con otro es a través de las flechas en UML, 
+- hay varios tipos peor estos son los más comunes: 
+
+## **Asociación**
+
+<img src="img_courses/uml_asociacion_row.jpg">
+
+> Como su nombre lo dice, notarás que cada vez que esté referenciada este tipo de flecha significará que **ese elemento 
+> contiene al otro en su definición**. _La flecha apuntará hacía la dependencia._ 
+
+<img src="img_courses/example_asosiacion.jpg">
+
+## **Herencia**
+
+<img src="img_courses/uml_herencia_row.jpg">
+
+> Siempre que veamos este tipo de flecha se estará expresando la herencia.
+> **La dirección de la flecha irá desde el hijo hasta el padre**
+
+<img src="img_courses/example_herencia.jpg">
+
+> Con esto vemos que la ClaseB hereda de la ClaseA
+
+## **Agregación**
+
+<img src="img_courses/uml_agregation.jpg">
+
+> _Este se parece a la asociación en que un elemento dependerá del otro_, pero en este caso 
+> será: **Un elemento dependerá de muchos otros**. Aquí tomamos como referencia la multiplicidad del elemento. Lo que comúnmente
+> conocerías en Bases de Datos como **_Relaciones uno a muchos_**
+
+<img src="img_courses/example_agregation.jpg">
+
+> Con esto decimos que la ClaseA contiene varios elementos de la ClaseB. Estos últimos son comúnmente representados con listas o colecciones de datos
+
+## **Composición**
+
+<img src="img_courses/uml_composition.jpg">
+
+> _Este es similar al anterior_ solo que su relación es totalmente compenetrada de tal modo 
+> que conceptualmente una de estas clases no podría vivir si no existiara la otra
+
+<img src="img_courses/example_composition.jpg">
