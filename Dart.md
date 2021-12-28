@@ -161,3 +161,37 @@ void main(){
 >> y vivo en México
 ```
 también podemos decirle a .replaceAll() que cambie espacios por algún signo. 
+
+# Conversión de tipos
+
+- **String to number**: Cuando tenemos un número como texto y necesitamos aplicar operaciones sobre él
+
+Se utiliza el método: **int.parse()** y/o **double.parse()**
+
+- **number to String**: Cuando un número debe ser convertido a un String
+
+Casi todas las variables tienen un método **toString()** que convierte en texto el valor
+
+- **Casos especiales**: Cuando las conversiones no son posibles se determina un error en tiempo de ejecución 
+
+La aplicación puede terminar abruptamente con un _Script error_ 
+
+
+```Dart
+void main(){
+  String texto = "12"; 
+  int numero = int.parse(texto);
+  print(numero); 
+}
+>> 12
+> Lo mismo con double: double.parse(texto)
+```
+
+```Dart
+void main(){
+  int numero = 12; 
+  String texto = numero.toString(); 
+  print(texto); 
+}
+>> 12
+```
