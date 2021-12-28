@@ -195,3 +195,44 @@ void main(){
 }
 >> 12
 ```
+
+# Operaciones 
+
+- **+**: Suma
+- **-**: Resta
+- **-expr**
+- __*__
+- **/**: División
+- **~/**: **Resultado** entero de una división 
+- **%**: **Residuo** entero de una división 
+
+# Asignación 
+
+- **Qué son:** Son operaciones aritméticas abreviadas
+- Ejemplo: +=, -=, *=, /=, ~/= y %=
+
+```Dart
+void main(){
+  int valor1 = 8; 
+  int valor2 = 2; 
+  // si hacemos 
+  valor1 = valor1+valor2;
+  >> valor1 = 10
+  // lo podemos reescribir con asignación de la siguiente forma
+  valor1 += valor2;
+  >> valor1 = 10
+}
+
+```
+
+# Relacionales 
+
+- **Qué son:** Son expresiones de comparación que requieren 2 números que retorna un resultado booleano 
+- Ejemplo: ==, =!, =>, >, < y <= 
+
+Funcionan exactamente iguales que en otros lenguajes como Python 
+
+# Lógicas
+
+- **Qué son:** Son expresiones lógicas que requieren 1 o 2 booleanos y retornan un resultado booleano 
+- Ejemplo: || (or), && (and), ! (not) y ?:
