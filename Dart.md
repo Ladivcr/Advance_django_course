@@ -236,3 +236,78 @@ Funcionan exactamente iguales que en otros lenguajes como Python
 
 - **Qué son:** Son expresiones lógicas que requieren 1 o 2 booleanos y retornan un resultado booleano 
 - Ejemplo: || (or), && (and), ! (not) y ?:
+> Este último se conoce como operador ternario y su estructura es algo como: _condicional_ ? _verdadero_ : _falso_
+
+# Condicionales 
+
+```Dart
+int tieneMascota = 1;
+  
+if (tieneMascota == 0) {
+    print("No tiene mascota");
+} else if (tieneMascota == 1) {
+    print("tiene una mascota");
+} else {
+    print("Tiene muchas mascotas");
+  }
+```
+
+```Dart
+switch (variable) {
+case 0: 
+  logic; break; 
+case 1: 
+  logic; break; 
+  .
+  .
+  .
+ default:
+  logic; 
+}
+```
+
+# Ciclos
+
+- **while**
+
+```Dart
+while(expr) {
+  // código while
+}
+
+```
+
+```Dart
+void main(){
+  int tazasDeCafe = 0; 
+  int maximo = 3; 
+  while(tazasDeCafe < maximo) {
+  // código while
+  tazasDeCafe++;
+  print("Cantidad de tazas: $tazasDeCafe");
+  }
+}
+>> Cantidad de tazas: 1
+>> Cantidad de tazas: 2
+>> Cantidad de tazas: 3
+```
+
+- **Do While**
+> Es similar a while, sin embargo la expresión es evaluada en la segunda iteración
+
+```Dart
+do{
+// Código do while
+}while(expr);
+```
+
+- **For**
+> Permite crear un ciclo de repetición en base a un índice que puede ser incremental o decremental 
+
+```Dart
+for (int i = 0; i < x; i++){
+  // Código for
+}
+```
+
+# Enumeraciones
