@@ -516,3 +516,168 @@ void main() {
 ## Valores nulos
 - **Cuándo aparecen**: Cuando el conjunto no tiene una llave asociada, retorna _null_ 
 - **Cómo lidiar con ellos**: _null_ es un tipo de valor que representa nada, por lo que puede ser comparado mediante un _if_
+
+# Colección de colecciones
+
+## Colecciones anidadas
+
+- Cuando sucede: Es cuando una colección contiene una colección dentro de sus valores, _común en Maps_
+- Ejemplo: 
+
+```Dart
+Map restaurantes = {
+  "nombre": "Pollos del monte", 
+  "estrellas": [5, 4, 3, 4]
+}
+```
+
+```Dart
+void main() {
+  Map restaurante = {
+   "nombre": "Pollos del monte",
+   "estrellas": [5, 4, 3, 4, 2]
+  };
+  
+  print(restaurante);
+  
+  if(restaurante['estrellas'] == null) {
+    print("El restaurante no tiene estrellas");
+  } else {
+    List<int> estrellas = restaurante["estrellas"];
+    int suma = 0;
+    for(int i = 0; i < estrellas.length; i++) {
+      suma += estrellas[i];
+    }
+    double promedio = suma / estrellas.length;
+    restaurante.addAll({"promedio": promedio});
+  }
+  print(restaurante);
+}
+```
+
+## Unión de colecciones
+
+- Caso: Cuando se requiere unir el contenido de 2 o más colecciones
+- Soluciones: Usando la función **.addAll()**; Durante el constructor con **...**; Hacer una nueva colección 
+
+**Usando .addAll()**
+```Dart
+void main() {
+  List<String> coloresPrimarios = [
+    "rojo",
+    "amarillo",
+    "azul",
+  ];
+  
+  List<String> coloresSecundarios = [
+    "morado",
+    "verde",
+    "naranja",
+  ];
+  
+  // Añadir elementos a un diccionario
+  coloresSecundarios.addAll(coloresPrimarios);
+  
+  print(coloresSecundarios);
+  print(coloresPrimarios);
+}
+```
+
+Podemos hacer lo anterior pero ahora usando tres puntos (...) de la siguiente manera.
+
+**Usando ...**
+```Dart
+void main() {
+  List<String> coloresPrimarios = [
+    "rojo",
+    "amarillo",
+    "azul",
+  ];
+  
+  List<String> coloresSecundarios = [
+    "morado",
+    "verde",
+    "naranja",
+    ...coloresPrimarios
+  ];
+   
+  print(coloresSecundarios);
+  print(coloresPrimarios);
+}
+```
+
+Y podemos hacer lo mismo pero ahora construyendo una nueva lista.
+
+**Creando una nueva lista**
+```Dart
+void main() {
+  List<String> coloresPrimarios = [
+    "rojo",
+    "amarillo",
+    "azul",
+  ];
+  
+  List<String> coloresSecundarios = [
+    "morado",
+    "verde",
+    "naranja",
+  ];
+
+  List<String> colores = [
+    ...coloresPrimarios,
+    ...coloresSecundarios
+  ];
+  
+  print(coloresSecundarios);
+  print(coloresPrimarios);
+  print(colores);
+}
+```
+
+
+# **if** entre colecciones
+
+Dentor de la declaración de colecciones se puede tener un condicionador de tipo _if_
+
+```Dart
+
+// lo que encuentre a la derecha de la expresión (amarillo en este caso)
+// se va ha agregar a la lista sí agregarAmarillo es true
+// *agregarAmarillo debe de ser del tipo bool
+var colores = [
+  "verde",
+  if (agregarAmarillo) "amarillo", 
+  "azul"
+ ]
+```
+
+# **for** entre colecciones
+
+Dentro de la declaración de colecciones se puede tener un condicionador de tipo _for_
+
+```Dart
+var colores1 = [
+  "verde", 
+  for(var color in colores2) color, 
+  "azul"
+  ]; 
+```
+
+```Dart
+void main() {
+  List<String> coloresPrimarios = [
+    "rojo",
+    "amarillo",
+    "azul",
+  ];
+  
+  List<String> colores = [
+    "morado",
+    "verde",
+    for (int i = 0; i < coloresPrimarios.length; i++) coloresPrimarios[i]
+  ];
+  
+  print(coloresPrimarios);
+  print(colores);
+}
+```
