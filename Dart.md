@@ -311,3 +311,37 @@ for (int i = 0; i < x; i++){
 ```
 
 # Enumeraciones
+
+Son un tipo de dato más complejo, definido por el programador que permite dar contexto al código 
+
+```Dart
+enum Nombre {
+  valor1, valor2, valor3
+  }
+```
+
+> Cuando trabajamos con enumeraciones, debemos de crearlas fuera de la clase main ya que
+> se trata de un tipo de dato nuevo para Dart
+> **Es importante usar mayúscula para saber que se trata de una enumeración**
+
+```Dat
+void main(){
+  Tiempo tiempo = Tiempo.Soleado;
+  // Las enumeraciones suelen usarse con switch 
+  switch(tiempo) {
+    case Tiempo.Soleado:
+      print("El tiempo está soleado"); 
+      break; 
+    case Tiempo.Lluvioso: 
+      print("El tiempo está lluvioso"); 
+      break; 
+    case Tiempo.Despejado: 
+      print("El cielo está despejado"); 
+      break 
+    }
+}
+
+enum Tiempo { Soleado, Lluvioso, Despejado }
+```
+
+
