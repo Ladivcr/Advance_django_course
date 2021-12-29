@@ -681,3 +681,64 @@ void main() {
   print(colores);
 }
 ```
+
+# Primer acercamiento a cómo hacer funciones en Dart
+
+```Dart
+int suma(List numbers) {
+  dynamic tmp = 0;
+  for (int i = 0; i<numbers.length; i++){
+    tmp += numbers[i];
+  }
+  return tmp;
+}
+
+void main() {
+  Set restaurantes = {
+    {
+      "name": "El novillo",
+      "type": "Argentina",
+      "reviews": [4, 5, 2, 1, 1]
+    },
+    {
+      "name": "Baires Grill",
+      "type": "Argentina",
+      "reviews": [3, 1, 3, 5, 5, 2, 3]
+    },
+    {
+      "name": "M. Brothers",
+      "type": "Italiana",
+      "reviews": [4, 3, 2, 1, 1]
+    },
+    {
+      "name": "M. bene",
+      "type": "Italiana",
+      "reviews": [4, 3, 1, 1, 5]
+    }
+  };
+
+  
+  Map ratings = {"Italiana": 0, "Argentina": 0, "Todos": 0};
+  dynamic len_arg = 0; dynamic len_ital = 0; //Auxiliar para obtener el promedio
+  dynamic total = 0;
+  for(int i = 0; i < restaurantes.length; i++) {
+    //print(restaurantes.elementAt(i)["type"]);
+    if (restaurantes.elementAt(i)["type"] == "Argentina"){
+      ratings["Argentina"] += suma(restaurantes.elementAt(i)["reviews"]);
+      len_arg += restaurantes.elementAt(i)["reviews"].length;
+      total += suma(restaurantes.elementAt(i)["reviews"]);
+    }
+    else if (restaurantes.elementAt(i)["type"] == "Italiana"){
+      ratings["Italiana"] += suma(restaurantes.elementAt(i)["reviews"]);
+      len_ital += restaurantes.elementAt(i)["reviews"].length;
+      total += suma(restaurantes.elementAt(i)["reviews"]);
+    }
+  }
+  ratings["Argentina"] = ratings["Argentina"]/len_arg;
+  ratings["Italiana"] = ratings["Italiana"]/len_ital;
+  ratings["Todos"] = total/(len_arg+len_ital);
+  
+  print(ratings);
+
+}
+```
