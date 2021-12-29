@@ -344,4 +344,175 @@ void main(){
 enum Tiempo { Soleado, Lluvioso, Despejado }
 ```
 
+# Introducción a colecciones
 
+Es una estrcutura, que **representa un grupo de valores mediante una única variable**. 
+Por lo general solo contiene un único tipo de dato y cada valor puede ser localizado por un índice. 
+
+
+## Beneficions de usar una colección
+
+- Esfuerzo: Reduce los esfuerzos de programación 
+- Manipulación: Permite manipular las estructuras
+- Reutilización: Fomenta la reutilización de software 
+- Tipos de colecciónes: List, Set, Map
+
+# Colección de tipo Lista
+
+Es un tipo de dato que consiste en una secuencia ordenada de valores de un tipo en específico y de tamaño variable
+- Creación 
+```Dart
+List <int> = [1, 2, 3]; 
+List <String> = [];
+```
+
+## Propiedades de List
+
+- **first**: Devuelve el primer elemento de la lista
+- **isEmpty**: Devuelve _true_ si la colección no tiene elementos
+- **isNotEmpty**: Devuelve _true_ si la colección tiene al menos un elemento 
+- **length**: Devuelve el tamaño de la lista
+- **last**: Devuelve el último elemento de la lista
+- **reversed**: Devuelve un objeto iterable que contiene los valores de la lista en orden inverso
+
+## Funciones de List
+
+- **add**: Agrega un nuevo elemento a la lista
+- **insert**: Agrega un elemento en una posición específica
+- **removeAt**: Elimina un elemento de una posición específica
+- **clear**: Limpia la lista
+
+> En la lista se puede repetir elementos sin ningun problema
+
+```Dart
+void main() {
+  // Lista de amigos
+  List<String> amigos = [];
+  
+  print(amigos.isEmpty);
+  
+  amigos = ["Amanda", "Beto", "Carmen"];
+  
+  print(amigos.isEmpty);
+  
+  print(amigos.length);
+  
+  amigos.add("Amanda");
+  
+  amigos.remove("Beto");
+  
+  amigos.insert(1, "Damián");
+  
+  print(amigos);
+  
+  amigos.clear();
+  
+  for (int i = 0; i < amigos.length; i++) {
+    print("amigos[$i]: ${amigos[i]}");
+  }
+  
+  if (amigos.isEmpty) {
+    print("No hay amigos en la lista");
+  }
+}
+
+```
+
+# Colección de tipo Sets
+
+Es parecido a una lista, con la diferencia de que **NO** puede tener valores duplicados
+
+- Creación: 
+```Dart
+  List <int> = {1, 2, 3};
+  List <String> = {};
+```
+## Propiedades de Set
+
+- **first**: Devuelve el primer elemento de la lista
+- **isEmpty**: Devuelve _true_ si la colección no tiene elementos
+- **isNotEmpty**: Devuelve _true_ si la colección tiene al menos un elemento 
+- **length**: Devuelve el tamaño de la lista
+- **last**: Devuelve el último elemento de la lista
+- **reversed**: Devuelve un objeto iterable que contiene los valores de la lista en orden inverso
+
+## Funciones de Set
+
+- **.add**: Agrega un nuevo elemento al conjunto, al final
+- **.remove**: Elimina un elemento del conjunto
+- **.clear**: Limpia el conjunto 
+
+```Dart
+void main() {
+  // Set de paises
+  Set<String> paises = {};
+  
+  paises = {"Argentina", "Brasil", "Colombia"};
+  
+  print(paises);
+  
+  paises.add("Argentina");
+  
+  print(paises);
+  
+  for(int i = 0; i < paises.length; i++) {
+    print(paises.elementAt(i)); // Es el equivalente a hacer en una lista MyList[i]
+  } 
+}
+```
+
+# Colección de tipo Map 
+
+Es una colección de pares de llave - valor, también se les conoce como diccionarios, donde
+la llave no se puede repetir
+
+- Inicialización
+```Dart
+var persona = {
+  nombre: "Ana",
+  edad: 12,
+  }
+```
+## Propiedades de Map 
+
+- **keys**: Devuelve una lusta con las llaves
+- **values**: Devuelve una lista con los valores
+- **isEmpty**: Devuelve _true_ si la colección no tiene elementos
+- **isNotEmpty**: Devuelve _true_ si la colección tiene al menos un elemento 
+- **length**: Devuelve el tamaño de la lista
+
+## Funciones de Map 
+
+- **addAll**: Agrega elementos a la colección
+- **remove**: Elimina un elemento del conjunto 
+- **clear**: Limpia el conjunto 
+
+**POR DEFECTO LOS MAPS TIENEN LLAVES Y VALORES _DINAMICOS_** pero podemos reasignarlas
+
+```Dart
+void main() {
+  //Map<TipoDeDatoParaLlaves, TipoDeDatoParaValores>
+  Map<String, dynamic> persona = {
+    "nombre": "Ana",
+    "edad": 12,
+    "pais": "Colombia",
+    "altura": 1.54
+  };
+  
+  print(persona.keys);
+  print(persona.values);
+  
+  print(persona["nombre"]);
+  
+  if(persona["pais"] == null) {
+    print("La persona no tiene pais");
+  }
+  else {
+    print(persona["pais"]);
+  }
+}
+```
+
+## Valores nulos
+- **Cuándo aparecen**: Cuando el conjunto no tiene una llave asociada, retorna _null_ 
+- **Cómo lidiar con ellos**: _null_ es un tipo de valor que representa nada, por lo que puede ser comparado mediante un _if_
