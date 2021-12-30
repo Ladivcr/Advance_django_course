@@ -97,5 +97,22 @@ y docker-compose la detectará automáticamente.
 - **Generics:** Cuando solo desee permitir algunas operaciones en un modelo
 
 - **ApiView:** Cuando desee personalizar completamente las operaciones de un modelo.
+  
+
+## Posible conexión entre componentes
+  
+  > Hace unos días me puse a pensar como se conectaban las cosas en Django y parece que me quedo más claro sobre dependiendo del 
+  problema a resolver, que debo de buscar en la documentación. Tenemos las vistas, las urls, los modelos y los serializers. 
+  
+  Un **modelo** tiene asociado un **serializer** esto como una capa de validación antes de que los datos lleguen al modelo y se guarden
+  pero también comom apoyo a la hora de servir los datos ya que puedes convertirlos a tipos de datos de python. Esto a su vez hace uso 
+  de una **vista** para servirlos y en estas vistas tienes las acciones para determinar que operación HTTP se va a realizar y para 
+  acceder a estas vistas tenemos a su vez lo que son las **urls** para servir los datos al usuario y acomodar los enlaces acorded a nuestra
+  necesidad. En el caso de que lo que quieres es obtener datos del usuario, tenemos los **formularios** que son similares a los serializers. 
+  
+  Y todo, exceptuando las urls, se trata de programación orientada a objetos. Por lo tanto tenemos la clase de nuestros modelos, de nuestros
+  serializers, de nuestras vistas y de nuestros formularios. 
+  
+  
 
  
