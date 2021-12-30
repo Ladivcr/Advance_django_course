@@ -98,3 +98,31 @@ en un proyecto que se haya construido bajo la arquitectura POO.
 > que conceptualmente una de estas clases no podría vivir si no existiara la otra
 
 <img src="img_courses/example_composition.jpg">
+
+# Objetos
+
+**¿Cómo identificar los objetos en el problema?**
+
+- Objetos son aquellos que tienen propiedades y comportamiento 
+- Pueden ser **Físicos** o **Conceptuales**
+- Son sustantivos
+- Propiedades también pueden llamarse atributos, serán sustantivos 
+- Comportamientos, serán todas las operaciones del objeto, suelen ser verbos o sustantivos y verbos
+
+# Abstracción y clases
+
+- Clase: Es el modelo sobre el cual se construirá nuestro objeto -> Y las clases me permitirán generar más objetos
+> El paso intermedio, estudiar el objeto para modelarlo se conoce como **abstracción**
+
+# Modularidad 
+
+> Modular: Dividir un sistema y así crear módulos independientes.
+
+Ventajas: 
+- Reutilizar
+- Evitar colapsos
+- Mantenible
+- Legibilidad
+- Resolución rápida de problemas
+
+Y las _Clases_ justamente nos permiten: Modularidad, Dividen el programa en diferentes aprtes o módulos/clases, Separar las clases en archivos
