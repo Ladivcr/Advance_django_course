@@ -139,6 +139,8 @@ y docker-compose la detectará automáticamente.
   - Resistencia a fallos
   - Aguantar picos de mensajes
   
+  **Flower** Es un admin en entorno gráfico para administrar las tareas de celery 
+  
   
 
 
