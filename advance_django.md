@@ -155,3 +155,13 @@ y docker-compose la detectará automáticamente.
  
 # Admin actions: Modificar datos de un query 
   Son funcionalidades que nos permiten agregar cambios a un queryset de un conjunto de datos desde el admin de Django 
+
+  > Por ejemplo si quisieramos hacer una acción que no es más que un update, vamos al archivo _admin.py_ y hacemos: 
+  ```Python
+  actions = ["my_action"]
+  
+  def my_action(self, request, queryset): 
+    queryset.update(verified=Trye)
+  my_action.short_description == "It's a test"
+  ```
+  Y con esto, en el admin ya nos aparecería nuestra acción 
