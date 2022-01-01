@@ -126,3 +126,16 @@ Ventajas:
 - Resolución rápida de problemas
 
 Y las _Clases_ justamente nos permiten: Modularidad, Dividen el programa en diferentes aprtes o módulos/clases, Separar las clases en archivos
+
+## Proceso para hacer orientación a objetos
+Supongamos que tenemos un problema, el de adoptar un perrito, siguiendo nuestro proceso, serái de la siguiente manera: 
+
+- **Identificar el problema:** Adoptar una masctoa, un perro en este caso
+- **Identificar los objetos:** Fundación, Persona, Mascota(en este caso solo perros), Adopción, Donación, Voluntariado y historia “clinica” de la mascota
+- **Definir las clases:** Las clases en este caso corresponden a los objetos identificados pero algo a tener siempre en cuenta es que, **cuando 
+estás definiendo los atributos de cada objeto y te encuentras con redundancía, lo más probable es que tengas que hacer una abstracción**
+> **DRY:** Don't repeat yourself
+> > Promueve la reducción de duplicación en programación 
+> > Toda pieza de información **nunca debería ser duplicada** debido a que la duplicación **incrementa la dificultad** en los cambios y evolución 
+- **Plasmarlas en UML**
+- **Codear**
