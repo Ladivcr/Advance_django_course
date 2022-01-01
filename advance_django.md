@@ -141,9 +141,15 @@ y docker-compose la detectará automáticamente.
   
   **Flower** Es un admin en entorno gráfico para administrar las tareas de celery 
   
+  # Pruebas unitarias
   
-
-
+  **Tipos de pruebas que hay**
+  - **Pruebas unitarias** (pruebas de integración): Pruebas que prueba módulos particulares, módulos qu epor si solos no reflejan una funcionalidad compleja 
+  - **Pruebas de integración**: Módulos que se componen de múltiples partes, múltiples unidades
+  
+  > En desarrollo de software hay una técnica muy popular: **_TestDrivenDevelopment_** 
+  > Es decir, el desarrollo va guíado por las pruebas. Creamos las pruebas primero y a partir de ahí desarrollamos lo demás.
+  > Corremos las pruebas y vamos arreglando los fallos que vayan surgiendo 
   
   
  
