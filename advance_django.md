@@ -115,4 +115,33 @@ y docker-compose la detectará automáticamente.
   
   
 
+  # ¿Qué es celery? 
+  
+  **Celery** es una biblioteca en Python para gestionar **colas de tareas distribuidas**, se enfoca en operaciones en **tiempo real**, también 
+  soporta la calendarización de tareas.
+
+  Es software libre y está liberado con una licencia BSD. Cuenta con con más de diez mil commits en este momento en Github.
+  
+  ## ¿Por qué es útil? 
+  
+  Piensa en todas las veces que has querido acceder a una API cada cierta hora o tal vez necesitas mandar una cierta cantidad
+  de correos a una fecha especifica, esas largas o pequeñas tareas periódicas que tienes que realizar en la semana. Celery 
+  te ayuda a hacerlo más fácil.
+  
+  También puede ser usada en esos largos tiempos que suelen tomar diferentes tareas y no quieres que el usuario espere ese periodo de tiempo.
+  Si hay una tarea similar en tu aplicación, Celery puede ayudarte a acelerar ese tipo de procesos en segundo plano
+
+  ## Ventajas
+  
+  - Escabilidad
+  - Eficiencia
+  - Orden de transacciones garantizado
+  - Resistencia a fallos
+  - Aguantar picos de mensajes
+  
+  
+
+
+  
+  
  
