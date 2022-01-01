@@ -151,5 +151,5 @@ y docker-compose la detectará automáticamente.
   > Es decir, el desarrollo va guíado por las pruebas. Creamos las pruebas primero y a partir de ahí desarrollamos lo demás.
   > Corremos las pruebas y vamos arreglando los fallos que vayan surgiendo 
   
-  
+  **Factory Boy**: Es una librería para _"feikear"_ datos y que se integra muy bien con Django 
  
