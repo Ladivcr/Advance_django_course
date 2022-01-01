@@ -153,3 +153,5 @@ y docker-compose la detectará automáticamente.
   
   **Factory Boy**: Es una librería para _"feikear"_ datos y que se integra muy bien con Django 
  
+# Admin actions: Modificar datos de un query 
+  Son funcionalidades que nos permiten agregar cambios a un queryset de un conjunto de datos desde el admin de Django 
