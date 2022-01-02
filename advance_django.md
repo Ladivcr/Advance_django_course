@@ -169,16 +169,88 @@ y docker-compose la detectará automáticamente.
   
   ## Extra para mi 
   
-  - ¿Cuál es la diferencia entre Request y HttpRequest?
-  > Request por default, extiende de la clase HttpRequest
+  - **¿Cuál es la diferencia entre Request y HttpRequest?**
+  > Request es la clase que se encarga del parsing de las peticiones HTTP, es proveída por Django REST Framework y hereda de HttpRequest proveída por Django.
+  Request por default, extiende de la clase HttpRequest
   
-  - La frase “Una twelve-factor app no hace distinciones entre local y producción cuando se trata acerca de ellos, una twelve-factor app realiza la conexión y desconexión de manera indiferente” ¿A qué principio se refiere?
-  > Generar un pipeline de continues delivery. Principio 10 Dev/Prod parity 
+  - **¿Cuál es la diferencia entre request.data y request.query_params?**
+  > request.data regresa el contenido “parseado” de la peticiones POST, PUT y PATCH. request.query_params es equivalente al anterior pero sólo de peticiones GET
   
-  - Este principio habla acerca de como una app puede convertirse en el “backing service” de cualquier otra app.
-  > Principio 4, backing service. Servicios que se pueden conectar y desconectar 
+  - **¿Cuándo es útil usar request.user y cuándo es útil usar request.auth?**
+  > request.user regresa una instancia del modelo de usuario correspondiente al usuario que está haciendo la petición y request.auth contiene
+  información adicional sobre el contexto de la autenticación
   
-  - Completa la oración: “A través del archivo local.yml podemos…”
+  - **La frase “Una twelve-factor app no hace distinciones entre local y producción cuando se trata acerca de ellos, una twelve-factor app
+  realiza la conexión y desconexión de manera indiferente” ¿A qué principio se refiere?**
+  > 4. Backing services
+  
+  - **Este principio habla acerca de como una app puede convertirse en el “backing service” de cualquier otra app.**
+  > 7. Port binding 
+  
+  - **¿Cuál es la función de django-environ?**
+  > Permite utilizar variables de entorno (inspiradas en 12factor) para configurar una aplicación de Django 
+  
+  - **Completa la oración: “A través del archivo local.yml podemos…”**
+  > Definir el conjunto de servicios que conforman la aplicación de Django, así como la dependencia entre ellos y las formas en que se deben configurar
+  
+  - **Docker es utilizado durante el curso porque…** 
+  > Nos permite apegarnos a los principios de una twelve-factor app al mismo tiempo que facilita el control y distribución de nuestro proyecto
+  
+  - **¿“Todas las aplicaciones de Django deberían usar la misma configuración que este proyecto” es una declaración falsa o verdadera? Justifica**
+  > Falsa, la configuración actual es útil para nuestro caso particular y puede ser para la mayoría pero eventualmente cada proyecto tendrá
+  necesidades diferentes
+  
+  - **Estás realizando la migración de datos de una plataforma como Firebase a una base de datos real usando Django. Has diseñado ya un esquema
+  que puede representar los datos de manera correcta y te das cuenta que existen múltiples datos que te gustaría guardar por cada registro,
+  datos como ID en Firebase, fecha de creación en Firebase y clase del Documento del que proviene. Usando herencia de clases,
+  ¿de qué manera implementarías una solución para almacenar esos datos? Justifica**
+  > Usaría herencia de modelos abstractos porque evitará que tenga que escribir esos datos en cada modelo de la aplicación.
+  
+  - **Tu aplicación realiza múltiples tareas de manera constante dependiendo el recurso que se esté accediendo, por ejemplo tareas como Administrador,
+  tareas como Profesor, tareas como Político. Realmente los datos de cada uno de estos usuarios son exactamente los mismos y no existe diferencie
+  dentro de la base de datos, todos viven bajo el esquema de “Humano”. Si quieres agrupar este comportamiento por “tipos de usuario”,
+  ¿qué tipo de herencia de usuarios deberías ocupar? Justifica.**
+  > Herencia con modelos proxy ya que únicamente estamos añadiendo funcionalidad a los mismos datos
+  
+  - **¿Qué tenemos que hacer para poder dividir nuestro modelo en múltiples archivos?**
+  > Al igual que un módulo de Python, crear un folder models con un __init__.py que exponga los modelos de los archivos individuales.
+  
+  - **“Permite convertir tipos de datos complejos como querysets e instancias de clases a datos nativos de Python” describe mejor a:**
+  > Serializers
+  
+  - **required, allow_null, source, initial y validators son atributos de la clase:**
+  > Field
+  
+  - **Si queremos definir el comportamiento de una clase que herede de Serializer cuando se mande a llamar el método save() debemos:**
+  > Sobreescribir el método create y/o update para controlar lo que sucede con los datos ya validados y los datos de retorno
+  
+  - **Un campo de un Serializer puede ser…**
+  > Otro serializer
+  
+  - **Es el mecanismo por el cual se asocia una petición entrante a un conjunto de credenciales**
+  > Autenticación 
+  
+  - **Quieres que los datos de tu aplicación puedan ser accesados por otras aplicaciones siempre y cuando el dueño de los datos haya autorizado su uso.
+  ¿Qué tipo de autenticación será la más adecuada para este caso? Justifica**
+  > OAuth porque permite delegar permisos a terceros sin tener que compartir las credenciales del usuario
+  
+  - **¿Qué desventajas tiene JWT?**
+  > Una vez emitidos los tokens, se pierde control sobre su uso ya que no existe ningún registro local de ellos. Se pueden implementar estrategias de
+  blacklisting pero pueden llegar a ser ineficientes o terminar persistiendo información sensible
+  
+  - **¿Por qué no se debe usar autenticación por medio de sesiones cuando se está creando un REST API?**
+  > Sí se puede usar mientras que las sesiones no sean utilizadas como una fuente de almacenamiento de estados. 
+  El objetivo de un REST API es permanecer stateless
+  
+  - **¿Qué ventaja tiene usar APIView sobre View cuando estamos construyendo las vistas basadas en clases de un API?**
+  > APIView nos permite tratar las peticiones como instancias del la clase Request, aplicar las reglas de autenticación y permisos
+  correspondientes, y puede transformar excepciones del tipo APIException en respuestas HTTP
+  
+  - **Este tipo de autenticación es el más apropiado para configuraciones del tipo cliente-servidor, tal como aplicaciones nativas
+  de escritorio o aplicaciones móviles.**
+  > Token Authentication 
+  
+  - **Compose y sus archivos .yml son...**
   > Es una declaración de todos los servicios que componen nuestro proyecto y declara que variables tiene que cargar, de que otros 
   servicios dependen, que volumenes debe de tener, etc. 
   
