@@ -139,3 +139,11 @@ estás definiendo los atributos de cada objeto y te encuentras con redundancía,
 > > Toda pieza de información **nunca debería ser duplicada** debido a que la duplicación **incrementa la dificultad** en los cambios y evolución 
 - **Plasmarlas en UML**
 - **Codear**
+
+# Método constructor 
+
+- Dar un estado inicial al objeto 
+- Tiene el mismo nombre de la clase
+- Son los parámetros mínimos que necesita el objeto para que pueda vivir 
+
+
