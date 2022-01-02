@@ -215,6 +215,9 @@ y docker-compose la detectará automáticamente.
   - **¿Qué tenemos que hacer para poder dividir nuestro modelo en múltiples archivos?**
   > Al igual que un módulo de Python, crear un folder models con un __init__.py que exponga los modelos de los archivos individuales.
   
+  - **¿Qué función tiene el decorador @api_view sobre una vista basada en una función?**
+  > Se asegura que la función reciba un request de tipo Request y permite que la vista regrese un response de tipo Response
+  
   - **“Permite convertir tipos de datos complejos como querysets e instancias de clases a datos nativos de Python” describe mejor a:**
   > Serializers
   
@@ -223,6 +226,9 @@ y docker-compose la detectará automáticamente.
   
   - **Si queremos definir el comportamiento de una clase que herede de Serializer cuando se mande a llamar el método save() debemos:**
   > Sobreescribir el método create y/o update para controlar lo que sucede con los datos ya validados y los datos de retorno
+  
+  - **Cuando se está deserializando información siempre…**
+  > Se tiene que llamar a is_valid() primero
   
   - **Un campo de un Serializer puede ser…**
   > Otro serializer
@@ -249,6 +255,9 @@ y docker-compose la detectará automáticamente.
   - **Este tipo de autenticación es el más apropiado para configuraciones del tipo cliente-servidor, tal como aplicaciones nativas
   de escritorio o aplicaciones móviles.**
   > Token Authentication 
+  
+  - **Facilita el envío de emails a través de múltiples proveedores del servicio como Sendgrid, Mailgun, etc. Permite utilizar la misma interfaz entre los múltiples proveedores**
+  > Django Anymail
   
   - **Compose y sus archivos .yml son...**
   > Es una declaración de todos los servicios que componen nuestro proyecto y declara que variables tiene que cargar, de que otros 
