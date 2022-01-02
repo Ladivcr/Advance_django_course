@@ -165,3 +165,20 @@ y docker-compose la detectará automáticamente.
   my_action.short_description == "It's a test"
   ```
   Y con esto, en el admin ya nos aparecería nuestra acción 
+
+  
+  ## Extra para mi 
+  
+  - ¿Cuál es la diferencia entre Request y HttpRequest?
+  > Request por default, extiende de la clase HttpRequest
+  
+  - La frase “Una twelve-factor app no hace distinciones entre local y producción cuando se trata acerca de ellos, una twelve-factor app realiza la conexión y desconexión de manera indiferente” ¿A qué principio se refiere?
+  > Generar un pipeline de continues delivery. Principio 10 Dev/Prod parity 
+  
+  - Este principio habla acerca de como una app puede convertirse en el “backing service” de cualquier otra app.
+  > Principio 4, backing service. Servicios que se pueden conectar y desconectar 
+  
+  - Completa la oración: “A través del archivo local.yml podemos…”
+  > Es una declaración de todos los servicios que componen nuestro proyecto y declara que variables tiene que cargar, de que otros 
+  servicios dependen, que volumenes debe de tener, etc. 
+  
