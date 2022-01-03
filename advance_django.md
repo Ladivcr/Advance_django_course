@@ -200,6 +200,9 @@ y docker-compose la detectará automáticamente.
   > Falsa, la configuración actual es útil para nuestro caso particular y puede ser para la mayoría pero eventualmente cada proyecto tendrá
   necesidades diferentes
   
+  - **Estás trabajando en un proyecto que registra lugares y por cada lugar registras datos como nombre y dirección. Eventualmente deciden que quieren registrar restaurantes y que estos restaurantes almacenarán los mismos datos de un lugar, más datos como horario y menú. En la plataforma pueden existir lugares que no sean restaurantes, restaurantes que pertenezcan a un lugar y restaurantes que tengan nombre y dirección pero no estén registrados como lugar. Usando herencia de modelos ¿Qué técnica de herencia creerías que es la más apropiada? Justifica.**
+  > Usaría herencia multi tabla ya que genera una relación OneToOne a la clase hija de manera automática y esta relación no necesariamente tiene que contener datos.
+  
   - **Estás realizando la migración de datos de una plataforma como Firebase a una base de datos real usando Django. Has diseñado ya un esquema
   que puede representar los datos de manera correcta y te das cuenta que existen múltiples datos que te gustaría guardar por cada registro,
   datos como ID en Firebase, fecha de creación en Firebase y clase del Documento del que proviene. Usando herencia de clases,
@@ -211,6 +214,9 @@ y docker-compose la detectará automáticamente.
   dentro de la base de datos, todos viven bajo el esquema de “Humano”. Si quieres agrupar este comportamiento por “tipos de usuario”,
   ¿qué tipo de herencia de usuarios deberías ocupar? Justifica.**
   > Herencia con modelos proxy ya que únicamente estamos añadiendo funcionalidad a los mismos datos
+
+  - **¿Por qué heredamos de AbstractUser cuando queremos extender datos del usuario?**
+  > Porque además de cambiar datos queremos editar el comportamiento de algunos datos fundamentales como el username. Además, es altamente recomendado para proyectos que van iniciando.
   
   - **¿Qué tenemos que hacer para poder dividir nuestro modelo en múltiples archivos?**
   > Al igual que un módulo de Python, crear un folder models con un __init__.py que exponga los modelos de los archivos individuales.
@@ -233,6 +239,12 @@ y docker-compose la detectará automáticamente.
   - **Un campo de un Serializer puede ser…**
   > Otro serializer
   
+  - **“Resources over actions” se refiere a:**
+  > Que las URLs de un API deben estar en función de sus esquemas de datos y no en función de las acciones que puedes realizar en ellos
+
+  - **“Estos son una serie de clases que permiten aceptar múltiples tipos de contenido mientras que el opuesto te permite responder a peticiones con diferentes formatos” se refiere a**
+  > Parsers y renderers respectivamente
+
   - **Es el mecanismo por el cual se asocia una petición entrante a un conjunto de credenciales**
   > Autenticación 
   
@@ -258,6 +270,9 @@ y docker-compose la detectará automáticamente.
   
   - **Facilita el envío de emails a través de múltiples proveedores del servicio como Sendgrid, Mailgun, etc. Permite utilizar la misma interfaz entre los múltiples proveedores**
   > Django Anymail
+
+  - **Incluir la propiedad exp en el payload del token nos permite**
+  > Realizar una validación automática de la fecha de expiración de un token generado por PyJWT
   
   - **Compose y sus archivos .yml son...**
   > Es una declaración de todos los servicios que componen nuestro proyecto y declara que variables tiene que cargar, de que otros 
