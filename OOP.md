@@ -245,3 +245,106 @@ Ervic - Platzi Student
 - **protected**: Tiene como nivel de alcance -> En la misma Clase, Paquetes y Subclases
 - **default**: Tiene como nivel de alcance -> En la misma Clases y Paquetes internos
 - **private**: Tiene como nivel de alcane -> Solo en la misma Clases 
+
+# Getters y Setters en Python 
+Permiten conjugar validaciones para restringir o dar accesos a datos de elementos encapsulados
+
+En python no existen como tal las variables privadas, pero se pueden “esconder” o volver privadas
+con solo **colocarle doble guion bajo al nombre de la variable**.
+
+# Polimorfismo
+> Poli: Muchas; Morfismo: Formas
+> - Construir métodos con el mismo nombre pero con comportamiento diferente
+
+> Lo siguiente es un comentario de vmgabriel - Platzi Student
+
+1. **Sobrecarga** -> Principalmente con los métodos
+2. **Sobre-escritura** -> Debe haber herencia, Cuando le cambias el comportamiento a un método que definió la super-clase
+3. **Polimorfismo de Subtipado** -> Centrado en usar el mimos nombre de método en diferentes clases, cuando se llamen se ejecutara
+Daré unos ejemplos de cada uno con python:
+
+- **Sobrecarga**
+Según algunos autores se le llamaría polimorfismo de sobrecarga, algunos ni si quiera lo llaman polimorfismo así que lo dejare:
+```python
+class punto:
+    # Nótese que no ninguna clase de herencia
+    def __init__(self, x):
+        # Creo cualquier método, en este caso el constructor
+        self.x = x
+
+    def __init__(self, x, y):
+        # Mi primer caso de sobrecarga
+        self.x = x
+        self.y = y
+
+    def __init__(self, x, y, z):
+        # Mi segundo caso de sobrecarga
+        self.x = x
+        self.y = y
+        self.z = z
+```
+Como pueden ver puede ser productivo en algunos casos, pero empieza a ser contraproducente cuando se usa demasiado(en el segundo caso por ejemplo).
+
+- **Sobre-escritura**
+Un caso puro de polimorfismo, busca alterar el método de la súper-clase, ya que el comportamiento es diferente
+
+```python
+class Ave:
+    # Nuestra Super-Clase
+    def __init__(self, altura_vuelo):
+        self.altura_vuelo = altura_vuelo
+
+    def accion_animal(self):
+        # Nuestro metodo a sobre-escribir
+        # Obvia que todos volaran
+        print("El ave volara a una altura {}".format(self.altura_vuelo))
+
+class Pingüino(Ave):
+    # Clase Hija o Sub-Clase
+    def __init__(self, altura_vuelo, velocidad_nado):
+        # Puse otro parametro para diferenciar un poco el metodo
+        super.__init__(self, altura_vuelo) # pongo los metodos de la super-clase
+        self.velocidad_nado = velocidad_nado
+
+    def accion_animal(self):
+        super.accion_animal()
+        # Hagamos que tambien muestre eso
+        print("El Ave nadará con una velocidad {}".format(self.velocidad_nado))
+        # Tiene Su comportamiento diferente
+```
+
+Realmente muy útil, es l a mejor practica ya que la herencia podrá extender el proceso y si se quiere generar una particularidad se hace una clase
+
+- **Polimorfismo de sobrecarga**
+Yo lo llamaría una “mala practica de uso para la sobrecarga”, prefiero usar la herencia y lo sobre-escribo, sin embargo la opción esta ahí
+
+```python 
+class Pingüino:
+    # No hay ningun clase de herencia
+    def __init__(self, velocidad_nado, velocidad_correr):
+        self.velocidad_nado = velocidad_nado
+        self.velocidad_correr = velocidad_correr
+
+    def accion_animal(self):
+        # Tengo que definir el mismo nombre
+        print("El Ave nadará con una velocidad {} y corre a una velocidad {}".format(self.velocidad_nado, self.velocidad_correr))
+
+class Aguila:
+    # No hay ninguna clase de herencia
+    def __init__(self, fuerza_garras, velocidad_vuelo):
+        self.velocidad_vuelo = velocidad_vuelo
+        self.fuerza_garras = fuerza_garras
+
+    def accion_animal(self):
+        # Tengo que definir el mismo nombre
+        print("El Ave atacara a su victica con una velocidad de {} y una fuerza de {}".format(self.velocidad_vuelo, self.fuerza_garras))
+
+# Cuando se llame se deberia ejecutar el metodo
+aves = [Pingüino("100","120"), Aguila("120","300")] # Numeros hipoteticos
+for ave in aves:
+    ave.accion_animal()
+```
+Este ultimo me parece algo innecesario pero que también se puede hacer sin necesidad de heredar.
+
+Otra cosa que de pronto se me escapo pero es porque python al ser débilmente tipado puede hacer de forma natural y es el termino llamado **Cohersion**,
+algo que en Java puede complicarse un poco mas.
