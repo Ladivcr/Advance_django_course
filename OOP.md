@@ -146,4 +146,51 @@ estás definiendo los atributos de cada objeto y te encuentras con redundancía,
 - Tiene el mismo nombre de la clase
 - Son los parámetros mínimos que necesita el objeto para que pueda vivir 
 
+# Declarando un método constructor en Python 
+
+En Python encontrarás un concepto denominado **Métodos Mágicos**, estos métodos son llamados automática y estrictamente bajo ciertas reglas.
+El método constructor en Python forma parte de esta familia de métodos y como aprendimos en la clase anterior lo declaramos usando __init__,
+aunque si nos ponemos estrictos este método no construye el objeto en sí. El encargado de hacer esto es __new__ y el método __init__ 
+se encargará de personalizar la instanciación de la clase, esto significa que lo que esté dentro de __init__ será lo primero que se ejecute
+cuando se cree un objeto de esta clase.
+- Ejemplo 
+
+```python 
+class Account: 
+  id = int
+  name = str
+  document = str
+  email = str
+  password = str
+  
+  def __init__(self, name, document): 
+    self.name = name 
+    self.document = document 
+    
+# Aquí es otro archivo 
+from account import Account
+
+class Car: 
+  id = int
+  license = str
+  driver = Account("","")
+  passenger = int
+  
+  def __init__(self, license, driver): 
+    self.license = license
+    self.driver = drive 
+    
+    
+# Main.py
+from car import Car
+from account import Account
+
+if __name__="__main__":
+  car = Car("AMS234", Account("Andres H", "ANDA876"))
+  print(vars(car))
+  print(vars(car.driver))
+  
+  >> {'driver': <account.Account instance at 0x104iudsa>, 'license': 'AMS234'}
+  >> {'document': 'ANDA876', 'name': 'Andres H'}
+```
 
