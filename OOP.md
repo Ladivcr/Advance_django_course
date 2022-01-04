@@ -219,3 +219,29 @@ def __init__(self, license, driver, brand, model):
 ```
 Pero se recomienda hacer uso de **super.__init__** ya que de esta forma, si bien es casi el mismo código, no necesitamos especificar la clase padre,
 por lo que podremos cambiarle el nombre en cualquier momento y nuestro código seguirá funcional. 
+
+# Encapsulamiento 
+
+El Encapsulamiento es hacer que un dato sea inviolable, inalterable cuando se le asigne un **modificador de acceso**
+(no se trata solo de ocultar el dato sino también de protegerlo). **Un modificador de acceso define el alcance y visibilidad de un miembro de clase**.
+
+> La encapsulacion es también llamada ocultamiento de información.
+
+- Algunos beneficios de encapsulación son:
+- - Controlar la manera en que los datos son accedidos o modificados
+- - El código es mas flexible y fácil de cambiar a partir de nuevos requerimientos
+- - Poder modificar una parte del código sin afectar otras partes del mismo
+- - Ayuda a mantener la integridad de los datos
+
+Nota: esta información la obtuve de la app SoloLearn (en donde puedes aprender diferentes lenguajes de programación) y yo la copie del comentario de
+Ervic - Platzi Student 
+
+> Por ejemplo, si tenemos un UberX y revisamos las restricciones de Uber. Un UberX tiene al menos asiento para 4. Por lo tanto ese valor es 
+> inalterable, debemos esconderlo o bien **encapsularlo**
+
+## Modificadores de acceso 
+
+- **public**: Tiene como nivel de alcance -> Todas las clases
+- **protected**: Tiene como nivel de alcance -> En la misma Clase, Paquetes y Subclases
+- **default**: Tiene como nivel de alcance -> En la misma Clases y Paquetes internos
+- **private**: Tiene como nivel de alcane -> Solo en la misma Clases 
