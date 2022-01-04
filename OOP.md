@@ -194,3 +194,28 @@ if __name__="__main__":
   >> {'document': 'ANDA876', 'name': 'Andres H'}
 ```
 
+# Aplicando herencia en Python 
+- Ejemplo
+```python
+from car import Car
+
+class UberX(Car): 
+  brand = str
+  model = str
+  
+  def __init__(self, license, driver, brand, model): 
+    super.__init__(license, driver) 
+    self.brand = brand
+    self.model = model 
+```
+
+Notemos que estamos usando **super.__init__(license, driver)**
+pero también podriamos hacer: 
+```python 
+def __init__(self, license, driver, brand, model): 
+    Car.__init__(license, driver) 
+    self.brand = brand
+    self.model = model
+```
+Pero se recomienda hacer uso de **super.__init__** ya que de esta forma, si bien es casi el mismo código, no necesitamos especificar la clase padre,
+por lo que podremos cambiarle el nombre en cualquier momento y nuestro código seguirá funcional. 
