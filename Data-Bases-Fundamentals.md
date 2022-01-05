@@ -75,3 +75,8 @@ hecho de que los sistemas de gestión de bases de datos (SGBD) que se supone era
 **Regla 12:** La regla de la no subversión.
 > a) La base de datos no permitirá que exista un lenguaje o forma de acceso, que permita saltarse las reglas anteriores
 
+# Entidades y atributos
+
+Una de las nomenclaturas utilizadas en las bases de datos para representar entidades se llama **notación chen**
+
+<img src="img_courses/notacionchen.png">
