@@ -80,3 +80,33 @@ hecho de que los sistemas de gestión de bases de datos (SGBD) que se supone era
 Una de las nomenclaturas utilizadas en las bases de datos para representar entidades se llama **notación chen**
 
 <img src="img_courses/notacionchen.png">
+
+- Un **objeto o entidad** es algo que representa una objeto de el mundo real. 
+> **Es representado por un rectangulo** y por convención va en **plural**
+
+- Los atributos son caracteristicas que componen el objeto
+> **Es representado por un ovalo**
+
+- Por ejemplo, si tenemos el objeto automóvil
+- - Sus atributos serían: 
+- - - volante (un ovalo)
+- - - llantas (en doble ovalo)
+- - - motor (un ovalo, atributo compuesto)
+- - - modelo (ovalo punteado)
+- - - num. serie (ovalo,  palabra subrayada)
+
+> El doble ovalo representa que es un atributo multivaluado, es decir tiene varios de ellos. En este caso un auto tiene cuatro llantas
+> El atributo compuesto representa un atributo que a su vez tiene más atributos 
+> El ovalo punteado representa un atributo calculado 
+> La palabra subrayada nos representa el **atributo llave** de nuestra entidad 
+
+- Los **atributos llave** pueden ser de dos tipos: 
+- - Naturales [inherente al objeto]: El número de serie, el ISB de un libro. Son atributos que no puedes separarlos del objeto 
+- - Artificiales [No inherente al objeto]: Lo asignas tú de manera arbitraría para poder identificar al objeto 
+
+- Hay dos **tipos de entidades**: 
+- - **Entidades débiles**: No puede existir sin ninguna entidad fuerte (se representan por **rectangulo doble**)
+- - - **Entidades débiles por identidad**: No se diferencian entre sí más que por la clave de su entidad fuerte (tienen el id de la entidad fuerte)
+- - - **Entidades débiles por existencia**: Asignamos su propio id, su propia identidad, pero la tabla sigue dependiendo de la entidad fuerte 
+- - **Entidades fuertes**: No dependen de ninguna otra entidad para existir 
+
