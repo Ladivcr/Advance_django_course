@@ -110,3 +110,15 @@ Una de las nomenclaturas utilizadas en las bases de datos para representar entid
 - - - **Entidades débiles por existencia**: Asignamos su propio id, su propia identidad, pero la tabla sigue dependiendo de la entidad fuerte 
 - - **Entidades fuertes**: No dependen de ninguna otra entidad para existir 
 
+# Relaciones 
+
+Las relaciones, **representadas por un rombo**, sirven para crear relaciones entre entidades.
+Por convención las relaciones **son verbos que conectan entidades**.
+> Existen entidades multivaluadas o compuestas que tienen vida propia y se relacionan con otras entidades, por lo que se pueden normalizar
+>  (concepto que se explicará luego)
+
+# Cardinalidad
+
+_Es una propiedad de las relaciones_ que **indica la cantidad y correspondencia con la que puede estar relacionada una entidad** y puede ser **uno a uno**, **uno a varios**, **varios a uno** y **varios a varios**.
+
+
