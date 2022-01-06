@@ -122,3 +122,4 @@ Por convención las relaciones **son verbos que conectan entidades**.
 _Es una propiedad de las relaciones_ que **indica la cantidad y correspondencia con la que puede estar relacionada una entidad** y puede ser **uno a uno**, **uno a varios**, **varios a uno** y **varios a varios**.
 
 
+<img src="img_courses/relaciones.png">
