@@ -1,6 +1,7 @@
 # Flutter
 
 design files: https://www.uplabs.com/
+Documentación: https://docs.flutter.dev/
 
 # ¿Qué es flutter?
 
@@ -98,3 +99,24 @@ return Scaffold(
 )
 ...
 ```
+
+# Widgets Básicos
+
+- Texto 
+- Row
+- Columna
+- Stack
+- Container 
+
+# Widgets con estado y sin estado 
+
+- **widgets con estado o StatefulWidgets**: Son todos los widgets con los que el ususario de la aplicación puede tener una interacción directa. 
+> Por ejemplo: Checkbox, Radio, Slider, Form. Este tipo de **widgets** por lo general disparan algún evento, acción o comportamiento determinado 
+> como respuesta a la interacción con el usuario. 
+
+- **Widgets sin estado o StatelessWidgets**: Los widgets de este tipo no reaccionan ante el intento de interacción con el ususario. No tienen 
+associado una acción o comportamiento particular. Son estáticos en la interfaz. 
+> Por ejemplo: Icono, Texto, Contenedor con color, etc. 
+
+
+Ambos tipos de widgets heredan sus características y comportamientos de una clase principal: `widget`
