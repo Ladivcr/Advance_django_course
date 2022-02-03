@@ -120,3 +120,16 @@ associado una acción o comportamiento particular. Son estáticos en la interfaz
 
 
 Ambos tipos de widgets heredan sus características y comportamientos de una clase principal: `widget`
+
+# statefulWidget
+
+Flutter maneja fundamentalmente dos clases de Widgets, los que heredan (o extienden) sus propiedades y comportamientos a partir de la clase StatelessWidget y
+los que heredan (o extienden) de la clase StatefulWidget. 
+
+> Comprender la diferencia entre estos dos tipos de Widgets será especialmente importante cuando vayamos a programar la lógica de nuestra aplicación.
+- Stateless: sin estado. (Que es inmutable. Que no cambia)
+- Stateful: que posee estado. (Que puede cambiar)
+
+El estado es un concepto propio de la programación funcional, y en términos muy generales se refiere al valor o situación de todo el conjunto de variables,
+métodos y funciones contenidas en una clase en un momento dado.
+
