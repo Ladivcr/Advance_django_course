@@ -41,3 +41,12 @@ Ayuda en la gestión del estado y en el acceso a los datos desde un lugar centra
 
 En este momento las carpetas dentro de **lib/src** debería ser: **blocs**, **models**, **resources**, **ui** 
 
+
+# BLoC + Clean Architecture 
+
+Como se puede observar la arquitectura BLoC no es muy descriptiva con las carpetas sin embargo, si aplicamos 
+la arquitectura **Clean Architecture** lo que obtendríamos sería algo como: **Place**, **User**, **Widgets**
+Que ya es más descriptiva a primera vista. Ahora dentro de estas carpetas aplicamos la arquitectura BLoC. Obtenemos una estructura de carpetas
+altamente descriptiva para ususarios nuevos y muy organizada por dentro. 
+
+
