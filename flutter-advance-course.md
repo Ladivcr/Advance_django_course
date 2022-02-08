@@ -27,7 +27,17 @@ Conectado en cualquier parte de tu aplicación, recuperará y renderizará datos
 - Es una librería de terceros. Aquí, cuando un Widget cambia de estado se reconstruye el widget englobado 
 dentro de ScopedModelDescendant. 
 
-## ¿Qué es el patrón BLOC? 
+# ¿Qué es el patrón BLOC? 
 > BLoC = Business Logic Component
+- Es un patrón de diseño que separa la lógica de negocio de la interfaz gráfica
 - Es un sistema de gestión de estado para Flutter recomendado por los desarrolladores de Google. 
 Ayuda en la gestión del estado y en el acceso a los datos desde un lugar central del proyecto. 
+
+**BLoC Pattern**
+- **View (UI Screen)**: Contendrá toda la interacción con las vistas & Podemos organizarla en screens y widgets
+- **BLoC**: La capa de negocio estará contenida aquí. **Casos de uso: Login, Logout** & Toda vista que tenga una lógica de negocio deberá tener un componente BLoC  
+- **Repository**: Se concentran las clases que se conectan con una fuente de datos -> API, Endpoints, DataBase, etc
+- **Data / Model**: Son nuestros modelos que nos ayudan a manejar los datos & **PODO** Plain Old Dart Object
+
+En este momento las carpetas dentro de **lib/src** debería ser: **blocs**, **models**, **resources**, **ui** 
+
