@@ -12,7 +12,7 @@ a tener el código organizado para que todo el equipo pueda verlo.
 - Limpio, transformo y preparo los datos
 - Inserto y obtengo datos de una base de datos
 
-**Ejemplos de arquitecturas en Flutter: **
+**Ejemplos de arquitecturas en Flutter:**
 - Vanilla
 - Scoped Model
 - BLoC (probablemente el más famoso)
@@ -49,4 +49,18 @@ la arquitectura **Clean Architecture** lo que obtendríamos sería algo como: **
 Que ya es más descriptiva a primera vista. Ahora dentro de estas carpetas aplicamos la arquitectura BLoC. Obtenemos una estructura de carpetas
 altamente descriptiva para ususarios nuevos y muy organizada por dentro. 
 
+
+# BLoC Singleton 
+
+Un archivo de vista debe tener su archivo de lógica de negocio, se podrán comunicar, llamarse, sí una vista necesita hacer login, entre otros. 
+Podemos tener varias vistas comunicándose con una sola lógica de negocio.
+
+Algo como: 
+
+- register_scree.dart \
+- logind_scree.dart - -> bloc_authentication.dart
+- logout_scree.dart   /
+
+Pero **ojo** aquí, cuando muchas **views** están accediento a un mismo archivo, se necesita poner a un nivel más 
+global para que sea más accesible por otros archivos. 
 
