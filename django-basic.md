@@ -1,2 +1,0 @@
-# Curso básico de Django 
-
