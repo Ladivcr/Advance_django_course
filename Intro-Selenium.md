@@ -17,7 +17,7 @@
 ### Contras
 - Disponible solo para Firefox y Chrome
 - No Soporta DDT (Data Driven Testing)
-- > No podemos colocar datos para que realice multiples pruebas
+> Es decir, no podemos colocar datos para que realice multiples pruebas
 
 ## Selenium RC
 
