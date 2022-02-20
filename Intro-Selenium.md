@@ -85,3 +85,20 @@
 - Funciona solo en Chrome y con JavaScript
 - Pruebas en paralelo solo en versión pago
 
+
+# Instalación y configuración del entorno
+- Descarga Python, una versión mayor a 3.6
+> Si tú al igual que yo, no quieres instalar librerias de más, te recomiendo que hagas un entorno virtual con python 
+> para hacerlo, sigue los pasos siguientes.
+
+```python
+# Para crearlo
+python -m venv ENVNombreDeTuEntorno
+# Para activarlo
+ENVNombreDeTuEntorno\Scripts\activate.bat
+# Para desactivarlo 
+Deactivate
+``
+Ahora sí, ya puedes instalar la otra herramienta
+haciendo: 
+- pip3 install pyunitreport
