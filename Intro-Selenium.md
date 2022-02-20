@@ -102,3 +102,11 @@ Deactivate
 Ahora sí, ya puedes instalar la otra herramienta
 haciendo: 
 - pip3 install pyunitreport
+
+# Unittest (PyTest)
+- Test Fixture: Preparaciones para antes y después de la prueba
+- Test Case: Unidad de código a probar
+- Test Suite: Colección de Test Cases
+- Test Runner: Orquestador de la ejecución 
+- Test Report: Resumen de resultados
+
