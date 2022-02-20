@@ -127,12 +127,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 class HelloWorld(unittest.TestCase):
 	# Realiza todo lo necesario antes de empezar la prueba
     @classmethod # Decorador para que las distintas paginas corran en una sola pestaña
-    def setUp(self):
-        #self.driver = webdriver.Chrome(executable_path=r"./chromedriver.exe")
-        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-        driver = self.driver
+    def setUpClass(cls):
+        #cls.driver = webdriver.Chrome(executable_path=r"./chromedriver.exe")
+        cls.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        driver = cls.driver
 		# esperamos 10 seg antes de realizar la siguiente accion
-        driver.implicitly_wait(10)
+        driver.implicitly_wait(5)
 
 	# Caso de prueba donde realizaremos una serie de acciones para que el navegador las automatice
     def test_hello_world(self):
@@ -145,9 +145,12 @@ class HelloWorld(unittest.TestCase):
 		
 	# Cerramos el navegador una vez terminadas las pruebas
     @classmethod
-    def tearDownClass(self):
-        self.driver.quit()
+    def tearDownClass(cls):
+        cls.driver.quit()
 
 if __name__ == "__main__":
 	unittest.main(verbosity = 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'hello-world-report'))
 ```
+
+- Usar **cls** en el setUpClass y en tearDownClass así cómo los decoradores **@classmethod**
+nos ayuda a que todo corra sobre una misma ventana y no se este cerrando.
