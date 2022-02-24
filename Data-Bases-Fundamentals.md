@@ -124,3 +124,133 @@ _Es una propiedad de las relaciones_ que **indica la cantidad y correspondencia 
 
 
 <img src="img_courses/relaciones.png">
+
+# Diagrama Físico: tipos de datos y constraints
+
+## Tipos de datos:
+    - **Texto**: CHAR(n), VARCHAR(n), TEXT
+    - **Números**: INTEGER, BIGINT, SMALLINT, DECIMAL(n,s), NUMERIC(n,s)
+    - **Fecha/hora**: DATE, TIME, DATETIME, TIMESTAMP
+    - **Lógicos**: BOOLEAN
+
+## Constraints (Restricciones):
+    - **NOT NULL**: Se asegura que la columna no tenga valores nulos
+    - **UNIQUE**: Se asegura que cada valor en la columna no se repita
+    - **PRIMARY KEY**: Es una combinación de NOT NULL y UNIQUE
+    - **FOREIGN KEY**: Identifica de manera única una tupla en otra tabla
+    - **CHECK**: Se asegura que el valor en la columna cumpla una condición dada
+    - **DEFAULT**: Coloca un valor por defecto cuando no hay un valor especificado
+    - **INDEX**: Se crea por columna para permitir búsquedas más rápidas
+    > Se recomienda usar index únicamente cuando tienes una tabla a la que consultas mucho
+    > Ya que si es una tabla que añades muchos registros pero casi no consultas. Es necesario hacer un index cada vez que 
+    > introduces nuevos datos. 
+
+
+# Diagrama físico: Normalización 
+
+La normalización como su nombre lo indica nos ayuda a dejar todo de una forma normal. Esto obedece a las 12 reglas de Codd
+y nos permite separar componentes en la base de datos. 
+
+- **Primer forma normal (1FN):** Atributos atómicos (Sin campos repetidos)
+- **Segunda forma normal (2FN):** Cumple 1FN y cada campo de la tabla debe depender de una clave única
+- **Tercera forma normal (3FN):** Cumple 1FN y 2FN y los campos que NO son clave, NO debe tener dependencias
+- **Cuarta forma normal (4FN):** Cumple 1FN, 2FN, 3FN y los campos multivaluados se identifican por una clave única
+
+## Ejemplo
+- Tabla sin normalizar
+
+| alumno | nivel_curso | nombre_curso | materia_1 | materia_2 |
+| --- | --- | --- | --- | --- |
+| Juanito | Maestría | Data engineering | MySQL | Python |
+| Pepito | Licenciatura | Programación | MySQL | Python | 
+
+> Tras aplicar la primer forma normal **1FN** tenemos
+
+- Tabla: alumnos
+
+| alumno_id | alumno | nivel_curso | nombre_curso | materia |
+| --- | --- | --- | --- | --- |
+| 1 | Juanito | Maestría | Data engineering | MySQL |
+| 1 | Juanito | Maestría | Data engineering | Python |
+| 2 | Pepito | Licenciatura | Programación | MySQL |
+| 2 | Pepito | Licenciatura | Programación | Python |
+
+> Una vez que hemos aplicado satisfactoriamente la primer forma normal.
+> Podemos aplicar la segunda forma normal **2FN**
+
+- Tabla: alumnos
+
+| alumno_id | alumno | nivel_curso | nombre_curso |
+| --- | --- | --- | --- | 
+| 1 | Juanito | Maestría | Data engineering |
+| 2 | Pepito | Licenciatura | Programación | 
+
+- Tabla: materias
+
+| maestria_id | alumno_id | materia |
+| --- | --- | --- | 
+| 1 | 1 | MySQL | 
+| 2 | 1 | Python |  
+| 3 | 2 | MySQL | 
+| 4 | 2 | Python | 
+
+> Una vez que hemos aplicado satisfactoriamente la primer y segunda forma normal. 
+> Podemos aplicar la tercer forma normal **3FN**
+
+- Tabla: alumnos
+
+| alumno_id | alumno | curso_id |
+| --- | --- | --- | 
+| 1 | Juanito | 1 |
+| 2 | Pepito | 2 | 
+
+- Tabla: cursos
+
+| curso_id | nivel_curso | nombre_curso |
+| --- | --- | --- | 
+| 1 | Maestría | Data Engineering |
+| 2 | Licenciatura | Programación | 
+
+- Tabla: materias
+
+| materia_id | alumno_id | materia |
+| --- | --- | --- | 
+| 1 | 1 | MySQL | 
+| 2 | 1 | Python |  
+| 3 | 2 | MySQL | 
+| 4 | 2 | Python | 
+
+> Una vez que hemos aplicado la primer, segunda y tercer forma
+> podemos aplicar la cuarta forma normal **4FN**
+
+
+- Tabla: alumnos
+
+| alumno_id | alumno | curso_id |
+| --- | --- | --- | 
+| 1 | Juanito | 1 |
+| 2 | Pepito | 2 | 
+
+- Tabla: cursos
+
+| curso_id | nivel_curso | nombre_curso |
+| --- | --- | --- | 
+| 1 | Maestría | Data Engineering |
+| 2 | Licenciatura | Programación | 
+
+- Tabla: materias
+
+| materia_id | materia |
+| --- | --- | 
+| 1 | MySQL | 
+| 2 | Python |  
+
+- Tabla: materias_por_alumno 
+
+| mpa_id | materia_id | alumno_id |
+| --- | --- | --- | 
+| 1 | 1 | 1 |
+| 2 | 2 | 1 | 
+| 3 | 1 | 2 |
+| 4 | 2 | 2 | 
+
