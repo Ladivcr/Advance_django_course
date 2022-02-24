@@ -154,3 +154,92 @@ if __name__ == "__main__":
 
 - Usar **cls** en el setUpClass y en tearDownClass así cómo los decoradores **@classmethod**
 nos ayuda a que todo corra sobre una misma ventana y no se este cerrando.
+
+# Encontrar elementos con find_element
+
+**Estructura de un sitio**
+- HTML
+- - HEAD
+- - - TITLE
+- - BODY
+- - - FORM 
+- - - - Text
+- - - - Password
+- - - - Submit
+- - - - Checkbox
+- - - - Radio
+- - - - File
+- - - INPUT
+- - - TEXTAREA
+- - - SELECT
+- - - - OPTION
+- - - TABLE
+- - - - HEADER
+- - - - BODY
+- - - - ROWS
+- - - - - COLUMNS
+- - - DIV
+- - - PARAGRAPH
+- - - HEADINGS
+- - - ANCHOR
+
+Para poder identificar elementos de una página, se hace uso de los **selectores** de un atributo html:
+- ID
+- Nombre del atributo
+- Nombre de la clase
+- Nombre de la etiqueta
+- XPath
+- Selector de CSS
+- Texto del link
+- Texto parcial del link
+
+Código de ejemplo para encontrar elementos en una página web
+
+```python 
+# Con unittest nos podemos traer todas nuestras pruebas
+from re import search
+import unittest
+# Ayuda a orquestar cada una de las pruebas que estaremos
+# ejecutando junto con los reportes
+from pyunitreport import HTMLTestRunner
+# Para comunicarnos con el navegador usamos webdriver
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+class HomePageTests(unittest.TestCase):
+	
+    def setUp(self):
+        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        driver = self.driver
+		
+        driver.get("http://demo-store.seleniumacademy.com/")
+        driver.maximize_window()
+        driver.implicitly_wait(10)
+
+    def test_search_text_field(self):
+        search_field = self.driver.find_element_by_id("search")
+
+    def test_search_text_field_by_name(self):
+        search_field = self.driver.find_element_by_name("q")
+
+    def test_search_text_field_class_name(self):
+        search_field = self.driver.find_element_by_class_name("input-text")
+
+    def test_search_button_enabled(self):
+        button = self.driver.find_element_by_class_name("button")
+
+    def test_count_of_promo_banner_images(self):
+        banner_list = self.driver.find_element_by_class_name("promos")
+        banners = banner_list.find_elements_by_tag_name("img")
+        self.assertEqual(3, len(banners))
+
+    def test_shopping_cart(self):
+        shopping_cart_icon = self.driver.find_element_by_css_selector("div.header-minicart span.icon")
+	
+    def tearDown(self):
+        self.driver.quit()
+
+if __name__ == "__main__":
+	unittest.main(verbosity = 2)
+```
