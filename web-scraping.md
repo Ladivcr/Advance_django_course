@@ -21,6 +21,12 @@ buenas prácticas de scrapin con ese sitio web en particular.
 > Podemos encontrar en ello el **crawl-delay** que nos indica la demora en tiempo 
 > entra cada solicitud que le hacemos al sitio
 
+> La clase 3 corresponde a la instalación de anaconda. No relevante en 
+> notas
+
+# Clase 4: Descargando una página web
+
+
 
 
 
