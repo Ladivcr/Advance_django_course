@@ -98,3 +98,26 @@ Para casos simples, **Huey** o **Pika** pueden ser alternativas excelentes.
 - [CKAN](https://ckan.org/), el almacén para datos abiertos, lo usan para ejecutar tareas y procesar webhooks 
 - Airflow es un sistema de flujos de trabajo, que usa Celery para mensajería
 - Uso con Django 
+
+# ¿Cómo funciona un bot? 
+
+Un bot es un programa que actúa como interlocutor en un software de mensajería, es una nueva interfaz de usuario, es una nueva forma de interacción.
+El software debe estar preparado para reaccionar a una orden y dar una respuesta inmediata.
+
+Un Bot siempre está escuchando sin perder ningún mensaje, responde lo que necesitas y realiza tareas.
+
+## **Casos de uso:**
+
+- Atención inmediata al cliente
+- Solicitudes de información de búsquedas
+- Comprobaciones de identidad y de seguridad
+- Información de otro lugar y alertas
+- Juegos
+
+## ¿Cómo lo hacen? 
+
+- A través de una API provista por la aplicación 
+- Usando bibliotecas que abstraen esa API
+- Con un backend que procesa las peticiones y responde a las mismas
+- O interactuan con el usuario
+
