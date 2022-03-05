@@ -92,3 +92,9 @@ Celery es única en su género y su uso es aconsejable casi siempre.
 
 Si tu aplicación no es muy compleja y únicamente quieres el paso de mensajes.
 Para casos simples, **Huey** o **Pika** pueden ser alternativas excelentes. 
+
+# Casos de uso actuales
+
+- [CKAN](https://ckan.org/), el almacén para datos abiertos, lo usan para ejecutar tareas y procesar webhooks 
+- Airflow es un sistema de flujos de trabajo, que usa Celery para mensajería
+- Uso con Django 
