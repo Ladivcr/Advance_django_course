@@ -89,3 +89,6 @@ Arquitecturas basadas en PaaS como Heroku, independientes del servicio cloud o q
 - Más configurable que Huey
 
 Celery es única en su género y su uso es aconsejable casi siempre.
+
+Si tu aplicación no es muy compleja y únicamente quieres el paso de mensajes.
+Para casos simples, **Huey** o **Pika** pueden ser alternativas excelentes. 
