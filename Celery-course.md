@@ -216,3 +216,16 @@ Características comunes:
 
 - Asignar permisos al usuario en el host virtual
 ``sudo rabbitmqctl set_permissions -p <nombre vhost> <nombre de usuario> ".*" ".*" ".*"``
+
+# Comparación de diferentes brokers de mensajería para trabajar con Celery 
+
+-**Redis:** Es una base de datos clave-valor en memoria. También funciona como broker de mensajería y como caché
+- **Amazon SQS:** Cola de mensajes para AWS. Es usado por Amazon y Netflix, tiene un precio 0.40$ por millón de mensajes después del primer millón
+
+**Características principales**
+- Soporte por parte de Celery
+- Posibilidad de monitorizar
+> - celerymon te permite monitorizar las colas de tareas
+> - flower
+- Control remoto
+> - celery inspect y celery control
