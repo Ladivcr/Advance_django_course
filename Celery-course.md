@@ -205,3 +205,14 @@ Características comunes:
 - Licencias libres.
 - API REST, a parte de usarlos con una librería puedes trabajar con ellos con un simple API.
 - Soporte Activo.
+
+# Python con RabbitMQ uso básico de la terminal 
+
+- Crear un host virtual en Rabbit
+``sudo rabbitmqctl add_vhost <nombre_vhost>``
+
+- Crear un usuario en Rabbit para que use el vhost
+``sudo rabbitmqctl add_user <nombre de usuario> <password usuario>``
+
+- Asignar permisos al usuario en el host virtual
+``sudo rabbitmqctl set_permissions -p <nombre vhost> <nombre de usuario> ".*" ".*" ".*"``
