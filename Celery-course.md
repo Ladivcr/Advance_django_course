@@ -229,3 +229,18 @@ Características comunes:
 > - flower
 - Control remoto
 > - celery inspect y celery control
+
+# Encaminado de tareas
+
+
+Celery funciona bien con una sola estafeta(exchange), una sola cola. Las estafetas van a decidir dónde va un mensaje, en nuestro caso decidirá a qué worker o cola irá.
+
+Nosotros utilizaremos el concepto de cola y clave de encaminamiento: **routing key**, estas estarán relacionadas con el nombre de la tarea.
+
+Tipos de estafetas:
+- Directas
+> Necesitan que la clave sea exacta
+- Temáticas
+> Usan claves separadas por puntos y pueden usar comodines.
+
+Celery funciona con cero configuración, puedes empezar a lanzar tareas automáticamente sin preocuparnos por colas y demás. Tiene flexibilidad para establecer las claves de encaminamiento y colas que se deseen. También actúa como fachada de Kombu, la biblioteca de mensajería.
