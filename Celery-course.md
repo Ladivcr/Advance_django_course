@@ -244,3 +244,19 @@ Tipos de estafetas:
 > Usan claves separadas por puntos y pueden usar comodines.
 
 Celery funciona con cero configuración, puedes empezar a lanzar tareas automáticamente sin preocuparnos por colas y demás. Tiene flexibilidad para establecer las claves de encaminamiento y colas que se deseen. También actúa como fachada de Kombu, la biblioteca de mensajería.
+
+# Estructura de mensajes en Celery y resultados de tareas
+
+Celery transporta la respuestas de las tareas.
+
+Formatos de serialización:
+
+- JSON por omisión
+- Puede usar YAML
+- pickle (formato específico de Python)
+- msgpack(formato universal de empaquetado de mensajes)
+- Admite otros tipos de MIME
+
+Se necesita almacenar la respuesta. Por eso hay que realizar algunos cambios para recibir estas respuestas. Tendrás que configurar un backend para almacenar las tareas en tránsito y una vez configurado, el transporte y presentación se hacen automáticamente.
+
+Puedes usar ORM para Django, Memcached, Redis, RabbitMQ/AMQP como Backends para Celery
