@@ -66,3 +66,30 @@ Aquellas personas con fuertes habilidades sociales tienden a alcanzar sus metas,
 Las personas con inteligencia emocional saben cómo manejar su lenguaje no verbal y tono de voz para comunicarse con otras personas.
 - Son personas con una actitud positiva, es decir, tiene la capacidad de generar un buen ambiente donde sea que se encuentren.
 - Saben como gestionar los conflictos tanto en su vida personal como en la vida profesional.
+
+
+
+
+# ¿Cuáles son las habilidades blandas (soft skills)?
+
+Estas habilidades tienen que ver con aspectos más humanos y sociales;
+por ejemplo, habilidades de comunicación, habilidades de liderazgo, trabajo en equipo o la inteligencia emocional.
+
+# ¿Cuáles son las habilidades duras (hard skills)?
+Estas habilidades tienen que ver con aspectos técnicos de una profesión;
+por ejemplo, un ingeniero eléctrico debe saber muy bien sobre circuitos de potencia, o un profesor debe saber muy bien de estrategias pedagógicas,
+porque así sabrá enseñar a niños de diferentes edades.
+
+# ¿Qué habilidad es la inteligencia emocional?
+Como te mencionamos anteriormente, la inteligencia emocional hace parte de las habilidades blandas,
+elemento que las organizaciones valoran porque son un punto de partida para entender cómo será su desempeño laboral.
+
+# Cómo aplicar la inteligencia emocional en el trabajo
+
+Para aplicar la inteligencia emocional en el lugar de trabajo es importante tomar en cuenta aspectos como:
+
+- Autoconciencia de las emociones, para entender las debilidades y fortalezas.
+- Autocontrol de las emociones, para manejar aspectos negativos o adaptarse mejor a las situaciones.
+- Motivación para alcanzar metas y actuar con actitud proactiva.
+- Empatía con los demás para entender sus emociones y fortalecer la comunicación.
+Habilidades sociales para construir mejores relaciones y generar un ambiente positivo de trabajo.
