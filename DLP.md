@@ -94,3 +94,13 @@ Dependiendo si afecta a la disponibilidad, integridad o disponibilidad se califi
 riesgos de perdida de datos
 6. **Gestión y tratamiento del riesgo**
 7. **Seguimiento:** Siempre debemos estar dando seguimiento a las formas de seguridad de los datos
+
+
+# Prevención de pérdida de datos, una visión estratégica y proactiva, no solo técnica y reactiva
+
+La prevención de datos es una estrategia. Debemos intentar anticiparnos a los acontecimientos.
+No nos diferenciaremos si es que no realizamos una gestión adecuada de los datos de nuestros usuarios.
+Debemos mantener una visión estratégica sobre la protección de los datos.
+
+- Diferenciarnos de los demás
+- Brindar a nuestros usuarios la seguridad que los datos están mantenidos de forma segura y ordenada
