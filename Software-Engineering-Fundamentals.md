@@ -39,3 +39,84 @@ es decir va a la bandeja del receptor.
 > Los DNS son una base ed datos que relaciona el dominio con una IP única en Internet
 
 > El proceso anterior fue descrito por _Carlos Adolfo Amarante_ - Platzi Student
+
+# ¿Qué son los bits y bytes?
+
+## Definiciones 
+
+- **Electricidad**
+ Es una forma de energía generada por el movimiento e interacción de los protones y electrones que conforman un átomo
+ 
+ - **Sonido**
+ En fisica es cualquier fenómeno que involucre la propagación de ondas mecánicas (sean oído o no), generalmente a
+ través de un fluido
+ (u otro medio elástico) que este generando por el movimiento vibratorio del cuerpo.
+ 
+ - **Código Morse**
+ Es un sistema de representación de letras y números mediante señas emitifas por tonos de forma intermitente
+ 
+ - **Onda Digital**
+ Es una onda electromagnética que tiene subidas y bajadas. Donde una subida es 1 y una bajada es 0
+ 
+ - **Código Binario**
+ El sistema de codificación usado para la representación de textos, o procesadores de instrucciones
+ de computadora utiliza el sistema binario
+ 
+ - **Sistema Binario**
+ Es el sistema numérico de 2 cifras o **bit:** cero y uno. Se utiliza en computadoras debido a que internamente
+ trabajan con dos niveles de voltaje
+ 
+ - **Binary digit (Bit > b)**
+ Es un digito del sistema numérico binario. Representa uno de estos dos valores: 1 y 0
+ 
+ - **Byte (B)
+Es la unidad de información de base utilizada en computación y telecomunicaciones que resultan 
+equivalentes a un sistema de 8 bits
+
+- **Central Processing Unit (CPU)**
+Es el hardware dentro de dispositivos programables que interpreta y procesa señales
+eléctricas y operaciones matemáticas (instrucciones)
+
+- **Base numérica**
+Es un sistema de númeración posicional, se llama base al número que define el orden de magnitud en que se ve incrementada 
+cada una de las cifras sucesivas que componen un número
+
+- **Sistema Hexadecimal**
+Es un método de numeración posicional que utiliza como base el número 16, es decir, existen 16 símbolos posibles
+
+- **Tabla ASCII (American Standard Code for Information Interchange)**
+Es una tabla de bytes donde cada byte corresponde a un carácter, a una letra
+
+- **Assembler** 
+Son Bytes especiales de instrucciones del procesador
+
+- **IP (Internet Protocol Address)**
+Es una etiqueta numérica asignada a cada dispositivo conectado a la red informática que utiliza el protocolo de Internet
+HTTP para la comunicación 
+
+- **IPv4 (Internet Protocol Address version 4)**
+Es la cuarta versión del IP. Usa direcciones de 32 bits. Limitadas a 2^32 = 3,294,967,296 direcciones únicas, 
+muchas de las cuales están dedicadas a redes locales LAN. Sus direcciones utilizan la notación decimal punteada
+
+- **IPV6 (Internet Protocol Address version 6)** 
+Es la actualización de la cuarta versión dedl IP. Está diseñada para resolver el problema de agotamiento de direcciones. 
+El tamaño de todas sus direcciones es de 128 bits ~ 340,282,366,920,938,463,463,374,607,431,758,211,456. La notación 
+de sus direcciones es la del sistema hexadecimal
+
+- **UTF-8 (8-bit Unicode Transformation Format)**
+Es un formato de codificación de caracteres Unicode e ISO 10646 que utiliza símbolos de longitud variable. Utiliza de 1 a 4 
+bytes por carácter Unicode 
+
+- **Unicode**
+Es la organización internacional de codificación de caracteres diseñado para facilitar el tratamiento informático,
+transmisión y visualización de text de numerosos idiomas y disciplinas técnicas, además de textos clásicos y de lenguas
+muertas. El nombre viene de Universalidad, Uniformidad y Unicidad.
+
+ > La electricidad funciona con ondas
+ 
+ > Si dicha onda se modula más grande o más baja y se conecta a una membrana que vibra al ritmo de 
+ > la onda, se genera sonido
+
+> Si mandas 3 ondas, una para cada color, y las conectas con rayos catódicos, se crea la TV y la transmisión 
+> por vídeo
+
