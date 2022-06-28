@@ -105,3 +105,73 @@ Por último, es crucial que conozcas las cualidades que trae implementar un sist
 
 > Resumen realizado gracias a Jesús Ignacio García Fernández & Ciro Villafraz
 
+# Tipos de cómputo en la nube (IaaS, PaaS, SaaS)
+
+- IaaS: Infraestructura como Servicio
+- PaaS: Plataforma como Servicio 
+- SaaS: Software como Servicio 
+
+Estos modelos varían de acuerdo al tipo de servicio informático que
+pueda ofrecer, como servidores, almacenamiento, software o bases de datos.
+
+#### Infraestrcuture as a Service (IaaS)
+
+La infraestructura como servicio (IaaS) proporciona componentes básicos de IT en la nube, es decir,
+redes, computación, almacenamiento, etc. A su vez, provee el máximo nivel de flexibilidad para
+adaptarlo a tus necesidades.
+
+Ejemplos:
+
+- Azure Virtual Machines
+- Linode
+- Digital ocean
+- S2 AWS
+
+#### Platform as a Service (PaaS)
+
+Los modelos que ofrecen una plataforma como servicio (PaaS) eliminan la necesidad
+de que administremos la infraestructura y proveen una plataforma para gestionar
+aplicaciones.
+
+Ejemplos:
+
+- Heroku
+- Google App Engine
+- AWS Elastic Beanstalk
+
+#### Software as a Service (SaaS)
+
+El Software como servicio (SaaS) brinda un producto de software terminado que es
+ejecutado y administrado por el proveedor del servicio.
+
+Ejemplos:
+
+- Amazon Rekognition
+- Dropbox
+- Zoom
+- Gmail
+
+#### On -premises
+
+On-premises se refiere a una forma tradicional de cómputo en la cual nos encargamos de
+gestionar nuestra propia infraestructura.
+
+#### Responsabilidades según el tipo de cómputo
+
+En la siguiente tabla se muestra qué componentes de IT están administrados según el tipo de
+cómputo en la nube. “Sí” indica que el componente está administrado por el proveedor de nube,
+“No” indica que nosotros somos responsables del componente.
+
+| Componente | On-premises | IaaS | PaaS | SaaS |
+| --- | --- | --- | --- | --- |
+| Aplicaciones	| No | No | No |	Sí |
+| Data | No |	No |	No |	Sí |
+| Runtime |	No |	No |	Sí |	Sí |
+| Middleware |	No |	No |	Sí |	Sí |
+| O/S |	No |	No |	Sí |	Sí |
+| Virtualización |	No |	Sí |	Sí |	Sí |
+| Servidores |	No |	Sí |	Sí |	Sí |
+| Almacenamiento |	No |	Sí |	Sí |	Sí |
+| Redes |	No |	Sí |	Sí |	Sí |
+
+> Resumen realizado gracias a Jesús Ignacio García Fernández & Ciro Villafraz
