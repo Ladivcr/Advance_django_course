@@ -61,6 +61,7 @@ y Netflix (proveedor de video bajo demanda).
 #### Modelos de computación en la nube
 
 **Nube pública**
+
 La nube pública se refiere a los recursos de proveedores que utilizamos a través de
 internet y algunos ejemplos son Google Cloud Platform (GCP), Azure y AWS.
 
