@@ -46,3 +46,61 @@ comprar nuevos equipos, etc etc.
   imprevisto?**
   
   > Resumen realizado gracias a Jesús Ignacio García Fernández & Ciro Villafraz
+
+# ¿Qué es la computación en la nube?
+
+La computación en la nube es la entrega bajo demanda de recursos de IT como computación,
+almacenamiento y otros servicios a través de internet. En pocas palabras, es como si
+alquiláramos la computadora de otra persona.
+
+Esta tecnología permite acceso instantáneo a los recursos que necesites, así como la
+adquisición del tipo y tamaño exacto de estos recursos. Algunos servicios que seguramente
+has usado son Gmail (proveedor de email), Dropbox (proveedor de almacenamiento)
+y Netflix (proveedor de video bajo demanda).
+
+#### Modelos de computación en la nube
+
+**Nube pública**
+La nube pública se refiere a los recursos de proveedores que utilizamos a través de
+internet y algunos ejemplos son Google Cloud Platform (GCP), Azure y AWS.
+
+Además, posee estas ventajas:
+
+- Elimina los gastos de capital comercial (CapEx) y reduce el gasto operativo (OpEx)
+- Reduce los precios en economías de escala
+- Despliega aplicaciones a nivel global en cuestión de minutos
+
+**Nube privada**
+
+La nube privada es un servicio empleado por una organización que no está abierto al público.
+Permite un control total de la infraestructura y es útil para aplicaciones con requerimientos
+específicos de seguridad o comerciales.
+
+**Nube híbrida**
+
+La nube híbrida consiste en mantener nuestra infraestructura y extender sus capacidades mediante
+la nube pública. Posibilita el control sobre activos sensibles en tu infraestructura privada,
+aprovechando la flexibilidad y rentabilidad de la nube pública.
+
+**Características de la computación en la nube**
+
+Ahora que conoces los distintos modelos de tecnología en la nube, es importante hablar
+sobre sus propiedades de computación.
+
+- Este modelo genera un autoservicio en demanda (con registros en la plataforma ya se pueden proveer recursos)
+-Tiene un amplio acceso a la red
+- Proporciona un espacio donde los clientes pueden compartir infraestructura y recursos de manera segura
+
+**Problemas resueltos por la nube**
+
+Por último, es crucial que conozcas las cualidades que trae implementar un sistema de computación en la nube.
+
+- La nube aporta flexibilidad (puedes cambiar los tipos de recursos cuando sea necesario)
+- Brinda rentabilidad y un servicio medido pues pagas solo por lo que usas
+- Trae escalabilidad al agregar capacidad para hardware o equipos que necesitan acomodar cargas grandes
+- Ofrece elasticidad al dar capacidad de escalar automáticamente cuando sea necesario
+- Tiene alta disponibilidad y tolerancia a fallos
+- Proporciona agilidad (puedes desarrollar, probar y ejecutar rápidamente aplicaciones en la nube)
+
+> Resumen realizado gracias a Jesús Ignacio García Fernández & Ciro Villafraz
+
