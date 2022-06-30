@@ -209,6 +209,8 @@ Algunos servicios globales o regionales son:
 - - Lambda
 - - Rekognition
 
+> https://aws.amazon.com/es/about-aws/global-infrastructure/regional-product-services/
+
 Los precios varían de región a región y son transparentes en la página de precios del servicio.
 
 ### Zonas de disponibilidad
