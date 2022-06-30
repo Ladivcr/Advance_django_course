@@ -1,12 +1,12 @@
 # Visión general de las TI tradicionales
 
-#### La web en términos simples
+### La web en términos simples
 
 Tenemos un **cliente** con una dirección IP que se conecta a una **red** 
 para hacer una **petición** a un **servidor** con otra dirección IP. Este servidor
 devuelve una respuesta al cliente. 
 
-#### ¿Cómo está compuesto un servidor?
+### ¿Cómo está compuesto un servidor?
 
 Un servidor posee los siguientes  componentes: 
 
@@ -17,7 +17,7 @@ Un servidor posee los siguientes  componentes:
 - **Bases de datos:** Información almacenada de manera estructurada
 - **Redes**: Cables, routers y servidores conectados unos a otros. Servidores DNS
 
-#### Terminología de IT (redes) 
+### Terminología de IT (redes) 
 
 En terminos generales, un cliente envía un paquete a un **router**, el cual 
 reenvía este paquete al **switch** y este se encarga de distribuirlo. 
@@ -27,13 +27,13 @@ reenvía este paquete al **switch** y este se encarga de distribuirlo.
   en la red
   
  
-#### Diseño tradicional de infraestructura 
+### Diseño tradicional de infraestructura 
 
 Las grandes empresas de IT empezaron comprando servidores y montándoloes en sus garajes. 
 Se encontraron con problemas al tratar de expandir la infraestructura. Costos de movimiento, 
 comprar nuevos equipos, etc etc. 
 
-#### Problemas del enfoque de IT tradcional 
+### Problemas del enfoque de IT tradcional 
 
 - **Renta:** Los costos de rentar espacios para mantener servidores son altos
 - **Mantenimiento:** El funcionamiento de los servidores es dificil de asegurar
@@ -58,7 +58,7 @@ adquisición del tipo y tamaño exacto de estos recursos. Algunos servicios que 
 has usado son Gmail (proveedor de email), Dropbox (proveedor de almacenamiento)
 y Netflix (proveedor de video bajo demanda).
 
-#### Modelos de computación en la nube
+### Modelos de computación en la nube
 
 **Nube pública**
 
@@ -114,7 +114,7 @@ Por último, es crucial que conozcas las cualidades que trae implementar un sist
 Estos modelos varían de acuerdo al tipo de servicio informático que
 pueda ofrecer, como servidores, almacenamiento, software o bases de datos.
 
-#### Infraestrcuture as a Service (IaaS)
+### Infraestrcuture as a Service (IaaS)
 
 La infraestructura como servicio (IaaS) proporciona componentes básicos de IT en la nube, es decir,
 redes, computación, almacenamiento, etc. A su vez, provee el máximo nivel de flexibilidad para
@@ -127,7 +127,7 @@ Ejemplos:
 - Digital ocean
 - S2 AWS
 
-#### Platform as a Service (PaaS)
+### Platform as a Service (PaaS)
 
 Los modelos que ofrecen una plataforma como servicio (PaaS) eliminan la necesidad
 de que administremos la infraestructura y proveen una plataforma para gestionar
@@ -139,7 +139,7 @@ Ejemplos:
 - Google App Engine
 - AWS Elastic Beanstalk
 
-#### Software as a Service (SaaS)
+### Software as a Service (SaaS)
 
 El Software como servicio (SaaS) brinda un producto de software terminado que es
 ejecutado y administrado por el proveedor del servicio.
@@ -151,12 +151,12 @@ Ejemplos:
 - Zoom
 - Gmail
 
-#### On -premises
+### On -premises
 
 On-premises se refiere a una forma tradicional de cómputo en la cual nos encargamos de
 gestionar nuestra propia infraestructura.
 
-#### Responsabilidades según el tipo de cómputo
+### Responsabilidades según el tipo de cómputo
 
 En la siguiente tabla se muestra qué componentes de IT están administrados según el tipo de
 cómputo en la nube. “Sí” indica que el componente está administrado por el proveedor de nube,
@@ -173,5 +173,72 @@ cómputo en la nube. “Sí” indica que el componente está administrado por e
 | Servidores |	No |	Sí |	Sí |	Sí |
 | Almacenamiento |	No |	Sí |	Sí |	Sí |
 | Redes |	No |	Sí |	Sí |	Sí |
+
+> Resumen realizado gracias a Jesús Ignacio García Fernández & Ciro Villafraz
+
+# Una visión global :regiones y zonas de disponibilidad 
+
+La infraestructura de AWS está compuesta por regiones, zonas de disponibilidad, data centers y puntos de presencia.
+Además, se distribuye en diferentes regiones alrededor del mundo. Algunas de ellas son Ohio, Oregon, Norte de California,
+e incluso lugares exclusivos del gobierno de EE. UU. como GovCloud Este.
+
+### ¿Cómo escoger una región de AWS? 
+
+Podemos escoger la región de nuestra aplicación basada en distintos aspectos que mencionaremos a continuación.
+
+Por ejemplo:
+
+- El cumplimiento de los requisitos legales y de gobernanza de datos, pues los datos nunca abandonan una región sin su permiso explícito
+
+- La proximidad con los clientes porque lanzan en una región cercana en donde estén para reducir latencia. 
+> Puedes revisar esta característica desde tu ubicación a cada región en **cloudping.info**
+
+- Los servicios disponibles dentro de una región debido a que muchos no funcionan en todas partes.
+
+Algunos servicios globales o regionales son:
+
+- **Globales**
+- - IAM
+- - Route 53
+- - Cloudfront
+- - WAF
+
+- **Regionales**
+- - EC2
+- - Beanstalk
+- - Lambda
+- - Rekognition
+
+Los precios varían de región a región y son transparentes en la página de precios del servicio.
+
+### Zonas de disponibilidad
+
+Una zona de disponibilidad es un grupo de data centers donde cada uno está lleno de servidores.
+Estos data centers poseen energía, redes y conectividad redundante, están separados entre sí, 
+conectados con un gran ancho de banda y redes de latencia ultra baja.
+
+### Modelo de responsabilidad compartida
+
+Ahora es crucial determinar las responsabilidades de AWS y del cliente dentro del servicio tecnológico que ofrece la compañía.
+
+**AWS se hace responsable de:**
+
+- Hardware y la infraestructura global
+- Regiones
+- Zonas de disponibilidad
+- Ubicaciones de AWS Edge / puntos de presencia
+- Software
+- Cómputo
+- Almacenamiento
+- Bases de datos
+- Redes
+
+**El cliente se responsabiliza de:**
+
+- Actualizaciones de S.O.
+- Protección de los datos que se almacenan
+- Manejo de aplicaciones
+- Accesos
+- Administración de usuarios y grupos
 
 > Resumen realizado gracias a Jesús Ignacio García Fernández & Ciro Villafraz
