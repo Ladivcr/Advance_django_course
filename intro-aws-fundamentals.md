@@ -421,3 +421,39 @@ usuarios allí, pero en este tutorial añadiremos el usuario al equipo después 
 Al final, simplemente escogemos los grupos a los que queremos añadir el usuario y hacemos clic en **"Add to Groups"**
 
 > Resumen realizado gracias a Ciro Villafraz
+
+# Laboratorio: Crea una alerta de facturación 
+
+Para crear una alerta de facturación ve a tu nombre de usuario en la plataforma de AWS.
+Haz clic en la opcion **“Billing Dashboard”** > **“Budgets”** > **“Create a budget”**.
+
+Aquí veremos los Budget Types. Marca la opción por defecto **“Cost budget - Recommended”** y
+haz clic en el botón superior: **“Enable cost Explorer”** para habilitar el seguimiento de gastos.
+<img src="img_courses/billing(1).png">
+
+### Sigue los pasos para crear una alerta de facturación 
+
+1. De nuevo en la página de Budget Types, haz clic en **“Next”**. Verás la página **Set Your Budget**.
+  Aquí oprime la opción **“budget”** y selecciona su frecuencia: **daily, monthly, etc.** 
+  Escoge desde cuando quieres empezar a hacer el monitoreo en **“Start Date”**.
+  
+  En Budgeting method escoge **“Fixed”**. Esta opción implica que se va a monitorear el presupuesto
+  cuando se gasta más de la cantidad indicada. Después completa la casilla **“Enter your budgeted amount”**
+  según el tiempo.
+  
+  <img src="img_courses/billing(2).png">
+
+2. **(OPCIONAL)** Adicionalmente, en la sección **“Budget Scope”** podemos delimitar nuestro presupuesto
+  con algún servicio específico u otras opciones. De momento, seleccionamos **All AWS Services** y hacemos clic
+  en **“Next”**.
+  
+3. Oprimimos el botón **“Add an alert threshold”**. En la sección: Alert #1, 
+  configuramos cómo se debe ejecutar la alerta, si es por el valor absoluto o algún porcentaje,
+  en ese caso seleccionamos valor absoluto o **“Absolute Value”** y colocamos la cifra que queremos 
+  que encienda la alerta.
+  
+  Luego en Email recipients indicamos el correo electrónico al que llegara la alerta.
+  Finalmente, hacemos clic en **“Next”** y en **“Create budget”.**
+  <img src="img_courses/billing(3).png">
+  
+  > Resumen realizado gracias a Ciro Villafraz
