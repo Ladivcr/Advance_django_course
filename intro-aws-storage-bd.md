@@ -222,3 +222,82 @@ se guardan localmente y en caché.
 # Laboratorio: Crea tu primer bucket de S3 para guardar objetos
 
 - Generador de politicas: [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html)
+
+- Inicia sesión en AWS, ve al servicio de S3 y sigue las instrucciones
+
+### Crea un bucket 
+Una vez en la página de S3, haz click en Crear Bucket. Te aparecerá un menú como el siguiente:
+
+ <img src="img_courses/bucket(1).png">
+ 
+Deberás escoger un nombre único para el bucket. Por ejemplo, **test-[tu-numbre]-[números aleatorios]**. Puedes dejar la región por defecto.
+En la parte de propiedad de objetos, deja **ACL deshabilitadas (recomendado)**.
+
+Acto seguido, en la sección **“Configuración de bloqueo de acceso público para este bucket”**, desactiva la casilla de **Bloquear todo el 
+acceso público**, y activa la de reconocimiento de configuración actual.
+
+<img src="img_courses/bucket(2).png">
+
+Habilita el control de versiones de buckets (lo vamos a necesitar para el próximo laboratorio). Finalmente, haz click en Crear Bucket.
+
+### Sube tu primer objeto
+Una vez creado, **haz click en el nombre de tu bucket**, y luego en Cargar. Puedes hacer click en Agregar archivos, o arrastrar el archivo que
+quieres subir. Una vez subido, haz click en Cargar.
+
+<img src="img_courses/bucket(3).png">
+
+Cuando termine de cargar, podrás hacer click en el nombre del objeto, lo cual te mostrará sus propiedades, entre ellas la URL del objeto.
+Si intentas acceder desde tu navegador, es posible que te salga una página de acceso denegado.
+
+Si bien cuando creamos el bucket desploqueamos el acceso público, esto es a nivel de bucket. A nivel de objeto, debemos permitir este acceso.
+
+Tenemos dos alternativas: 
+- **Permitirlo desde los permisos del objeto**
+- **Crear una política a nivel de bucket para permitir el acceso público a los archivos**
+
+### Cambiar los permisos del objeto
+Si nos vamos al apartado de permisos, nos saldrá un recuadro indicando que como dejamos el **ACL (lista de control de acceso)** deshabilitado
+durante la creación del bucket, **debemos cambiar los permisos del objeto** mediante políticas a nivel de bucket. 
+Podemos cambiar esto habilitando el ACL en el apartado de permisos del bucket, en la sección de “Propiedad de objetos”.
+
+Cuando habilitemos el ACL, simplemente volvemos a la página del objeto, al apartado de permisos.
+Hacemos click en Editar, y habilitamos la lectura del objeto a todo el mundo.
+
+<img src="img_courses/bucket(4).png">
+
+### Implementar política de acceso a nivel de bucket
+Para crear una política de acceso, podemos apoyarnos de AWS Policy Generator, una herramienta que nos permite generar políticas de acceso de AWS.
+
+Estando en la herramienta, en Select Policy Type, seleccionamos **S3 Bucket Policy**. **En Principal, escribimos un asterisco (*)**.
+En Actions, ubicamos la acción **getObject**. En **Amazon Resource Name (ARN)**, colocamos el ARN de nuestro bucket seguido de slash y asterisco (/*).
+**El ARN lo podemos obtener en bucket -> propiedades -> Información general sobre el bucket -> Nombre de recurso de Amazon (ARN).**
+
+<img src="img_courses/bucket(5).png">
+
+Entonces hacemos click en Add Statement, y luego en Generate policy. Copiamos el JSON que nos aparece en pantalla. Debería ser similar a esto.
+```JSON
+{
+  "Id": "Policy1649360676835",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1649360674639",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::ciro-platzi-123/*",
+      "Principal": "*"
+    }
+  ]
+}
+```
+
+Nos dirigimos a la parte de **Permisos del bucket -> Política del bucket**. Hacemos click en editar, pegamos el código JSON generado por la herramienta,
+y guardamos cambios.
+
+Si hiciste todo bien, te debería salir “Accesible públicamente” justo debajo del nombre de tu bucket.
+
+<img src="img_courses/bucket(6).png">
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
