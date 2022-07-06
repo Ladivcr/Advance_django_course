@@ -163,3 +163,22 @@ Si necesitamos un almacenamiento altamente disponible y duradero, S3 Standard es
 si necesitamos un almacenamiento a largo plazo y de acceso infrecuente, podemos usar S3 Glacier.
 
 > Resumen realizado gracias a los aportes de Jesús Ignacio García Fernández y Ciro Villafraz.
+
+# Explicando el Amazon Elastic File System (EFS)
+Amazon Elastic File System (EFS) brinda un sistema de archivos elástico, sencillo, sin servidor y práctico basado
+en NFS para las máquinas virtuales de EC2.
+
+**NFS es un protocolo de archivos en red que permite acceder a archivos y directorios que no están en tu sistema.**
+Esto permite que miles de máquinas puedan conectarse a EFS y procesar los datos que allí se encuentran.
+
+### Características de EFS
+EFS es altamente disponible y duradero. Provee protección contra una interrupción de la zona de disponibilidad,
+replicando los archivos en múltiples zonas dentro de una región.
+
+Adicionalmente:
+
+- EFS brinda dos clases de almacenamiento: Standar y Standar IA (para acceso poco frecuente). Puedes implementar 
+políticas para que tus archivos se muevan de Standar a Standar IA después de cierto tiempo.
+- Los datos están encriptados de manera automática.
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
