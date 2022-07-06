@@ -84,3 +84,17 @@ Cuando corras tus contenedores en AWS, no notarás diferencia entre tu máquina 
 
 
 > Resumen realizado gracias a los aportes de Ciro Villafraz.
+
+# AWS Lambda
+AWS Lambda es un servicio **serverless** que nos permite **ejecutar código en respuesta a eventos, sin preocuparnos 
+por servidores o infraestructura.** Estos eventos pueden ser temporizadores, visitas a alguna sección de nuestra aplicación, solicitudes HTTP, entre [otros](https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-services.html#intro-core-components-event-sources).
+
+Entre sus casos de uso encontramos el (pre)procesamiento de datos a escala, y la ejecución de backends web,
+móviles y de IoT interactivos. Lambda se puede combinar con otros servicios de AWS para crear experiencias
+en línea seguras, estables y escalables.
+
+### ¿Cómo se factura Lambda?
+Lambda se factura por milisegundos, y el precio depende del uso de RAM. Por ejemplo, 128MB RAM x 30 millones de
+eventos por mes resultan en un costo de $11.63 al mes.
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
