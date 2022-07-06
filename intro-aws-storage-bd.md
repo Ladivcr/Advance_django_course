@@ -182,3 +182,39 @@ políticas para que tus archivos se muevan de Standar a Standar IA después de c
 - Los datos están encriptados de manera automática.
 
 > Resumen realizado gracias a los aportes de Ciro Villafraz.
+
+# AWS Storage Gateway
+
+AWS Storage Gateway nos brinda acceso a almacenamiento en la nube prácticamente ilimitado 
+desde nuestra propia infraestructura.
+
+Storage Gateway se compone de tres puertas de acceso diferentes:
+
+### File Gateway
+**File Gateway** provee interfaces SMB y NFS para amazon S3, tanto en Windows como en Linux.
+Gracias a File Gateway, en ambos sistemas operativos veremos un sistema de archivos tal cual
+como si fuera un disco montado en nuestros computadores, los cuales escriben archivos al sistema,
+y File Gateway se encarga de guardarlos en S3.
+
+Gracias a esto podemos guardar archivos a S3 como si se tratara de guardar archivos locales.
+Los archivos S3 luego pueden ser usados por cualquier servicio de AWS.
+
+### Tape Gateway
+Supón que tienes copias de seguridad en cintas físicas. Tape Gateway te permite migrar copias de seguridad
+a una bibliteca de cintas virtuales en AWS. Tape Gateway es compatible con los principales software
+de respaldo.
+
+Los contenidos de tus cintas se guardan en S3, lo que te permite implementar S3 Glacier y S3 Glacier
+Deep Archive para guardar tus copias de seguridad a largo plazo. Una vez que implementas Tape Gateway,
+puedes olvidarte de los costos relacionados a mantener las cintas físicas.
+
+### Volume Gateway
+Volume Gateway otorga almacenamiento en bloque con protocolo iSCSI, respaldado en la nube.
+Almacena datos en S3 de acuerdo a dos modos:
+
+- **Modo caché:** almacena los datos principales en S3, mientras que los datos de acceso frecuente 
+se guardan localmente y en caché.
+- **Modo almacenado:** todos los datos se guardan localmente, mientras que se hace una copia de
+ seguridad de manera asíncrona en S3.
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
