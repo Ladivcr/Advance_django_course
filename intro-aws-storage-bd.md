@@ -42,3 +42,28 @@ una ubicación cercana a la necesaria para el negocio.** Los servicios de borde 
 
 
 > Resumen realziado con los aportes de: Jesús Ignacio García Fernández, Eduardo Zamarron Muñoz y Ciro Villafraz.
+
+# Amazon EC2
+**EC2 permite alquilar máquinas virtuales, llamadas instancias EC2.** Puedes elegir diferentes tipos de EC2
+con diferente CPU, RAM y almacenamiento. Hay instancias optimizadas para cómputo, memoria y almacenamiento, entre otras.
+
+En EC2, el sistema de pago más común es por hora o por segundo, dependiendo el tipo de instancia.
+Por ejemplo, para una instancia que cueste $0.1 la hora, puedes pagar, ya sea una instancia por 24 horas
+o 24 instancias por una hora. En ambos casos pagas lo mismo (24 * 0.10 = $2.4).
+
+### Opciones y precios bajo demanda
+Las instancias pueden redimiensionarse. Puedes empezar por una instancia de bajo costo, y si necesitas aumenta su 
+capacidad, apagas la instancia y seleccionas un nuevo tipo de instancia. Cuando enciendas de nuevo la
+instancia, verás su capacidad aumentada.
+
+La siguiente tabla muestra algunos tipos de instancias.
+
+
+| Nombre	| Especificaciones |	Precio |
+| --- | --- | --- |
+| t3.nano |	2 vCPU’s, 0.5 GiB RAM |	$0,0052/hora |
+| t3.xlarge |	4 vCPU’s, 16 GiB RAM |	$0,1664/hora |
+| c6g.8xlarge	 | 32 vCPU’s, 64 GiB RAM |	$1,088/hora |
+| X1e.xlarge	 | 128 vCPU’s, 3904 GiB RAM, 2x 1920 GB SSD |	$26,688/hora |
+
+> Resumen realizado gracias a Ciro Villafraz.
