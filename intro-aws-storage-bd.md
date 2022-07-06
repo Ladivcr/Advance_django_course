@@ -218,3 +218,7 @@ se guardan localmente y en caché.
  seguridad de manera asíncrona en S3.
 
 > Resumen realizado gracias a los aportes de Ciro Villafraz.
+
+# Laboratorio: Crea tu primer bucket de S3 para guardar objetos
+
+- Generador de politicas: [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html)
