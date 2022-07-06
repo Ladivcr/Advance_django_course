@@ -135,3 +135,31 @@ AWS ofrece distintos servicios para la transferencia de datos.
  
  > Resumen realizado gracias a los aportes de Jesús Ignacio García Fernández y Ciro Villafraz.
  
+# S3 y S3 Glacier
+Amazon S3 es un servicio de almacenamiento de objetos, líder en la industria.
+Otorga una garantía de no pérdida de datos del 99.999999999% (11 9’s).
+
+### Clases de almacenamiento en S3
+Amazon nos ofrece distintas clase de almacenamiento S3 en función de nuestras necesidades de acceso y
+disponibilidad de los datos.
+
+- **S3 Standard:** almacenamiento de objetos de alta durabilidad, disponibilidad y rendimiento para datos a los que
+ se obtiene acceso con frecuencia.
+- **S3 Standard-IA:** se utiliza con datos a los que se accede con menos frecuencia, pero que requieren un
+  acceso rápido cuando es necesario.
+- **S3 Zone-IA:** similar a Standard-IA, pero con un menor costo de almacenamiento ya que solo usa
+ una zona de disponibilidad. Distinto de las demás clases de almacenamiento de S3, que almacenan datos
+ en un mínimo de tres zonas de disponibilidad (AZ).
+- **S3 Glacier:** ofrece el almacenamiento de menor costo para los datos de larga duración y acceso poco frecuente.
+ Tiene un costo de $1 por TB al mes. Tiene tres opciones para la recuperación de datos (estándar, masiva y acelerada).
+- **S3 Glacier Deep Archive:** la clase de almacenamiento más económica de Amazon S3. Admite la retención a 
+largo plazo y la conservación digital de datos a los que se accede una o dos veces al año.
+- **S3 Intelligent-Tiering:** un tipo de almacenamiento que intenta ahorrar costos moviendo archivos entre los
+ distintos tipos de almacenamiento S3, basado en los patrones de uso de los archivos.
+ 
+### Conclusión
+Tenemos variedad de opciones para escoger la clase de almacenamiento S3 en función de nuestras necesidades.
+Si necesitamos un almacenamiento altamente disponible y duradero, S3 Standard es la mejor opción, mientras que
+si necesitamos un almacenamiento a largo plazo y de acceso infrecuente, podemos usar S3 Glacier.
+
+> Resumen realizado gracias a los aportes de Jesús Ignacio García Fernández y Ciro Villafraz.
