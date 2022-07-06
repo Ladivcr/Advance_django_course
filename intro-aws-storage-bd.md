@@ -98,3 +98,40 @@ Lambda se factura por milisegundos, y el precio depende del uso de RAM. Por ejem
 eventos por mes resultan en un costo de $11.63 al mes.
 
 > Resumen realizado gracias a los aportes de Ciro Villafraz.
+
+# Almacenamiento de datos en AWS
+
+El almacenamiento de datos en la nube consiste en subir tus datos a dicha red de servidores,
+donde se te proporcionan herramientas para que puedas acceder a ellos de diferentes maneras.
+
+### Tipos de almacenamiento y sus servicios 
+Podemos utilizar distintos tipos almacenamiento datos, y para estos hay servicios de AWS.
+Los tipos de almacenamiento son:
+
+- **Basado en archivos:** el más conocido por todos. Archivos organizados por carpetas y subcarpetas 
+(sistema de ficheros). En esta categoría encontramos a **Amazon Elastic File System (EFS)** y
+**Amazon FSx for Windows File Server**.
+
+- **Bloque:** los archivos se almacenan en volúmenes por fragmentos de datos de igual tamaño, sin procesar.
+ Este tipo de almacenamiento es utilizado como disco duro de nuestros servidores o máquinas virtuales.
+ En esta categoría está **Amazon Elastic Block Store (EBS).**
+
+- **Objetos:** la información almacenada se almacena como objetos, de manera que cada objeto recibe
+ un identificador único y se almacena en un modelo de memoria plana.
+ Un ejemplo de esto es **Amazon Simple Storage Service (S3)**.
+ 
+### Respaldo de datos
+**Amazon Backup administra y automatiza de forma centralizada** las copias de seguridad en los servicios de AWS.
+
+### Servicios de transferencia de datos
+¿Qué pasa si necesitamos transferir datos de nuestros servidores hacia AWS (o viceversa)?
+AWS ofrece distintos servicios para la transferencia de datos.
+
+- **AWS Storage Gateway:** un conjunto de servicios de almacenamiento en la nube híbrida que brinda
+ acceso en las instalaciones al almacenamiento en la nube.
+- **AWS DataSync:** acelera el traslado de datos desde y hacia AWS hasta diez veces más rápido de lo normal. 
+- **AWS Transfer Family:** escala de forma segura tus transferencias recurrentes de archivos de Amazon S3
+ y Amazon EFS con los protocolos FTP, SFTP y FTPS.
+ 
+ > Resumen realizado gracias a los aportes de Jesús Ignacio García Fernández y Ciro Villafraz.
+ 
