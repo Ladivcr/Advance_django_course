@@ -41,7 +41,7 @@ una ubicación cercana a la necesaria para el negocio.** Los servicios de borde 
  a una menor latencia.
 
 
-> Resumen realziado con los aportes de: Jesús Ignacio García Fernández, Eduardo Zamarron Muñoz y Ciro Villafraz.
+> Resumen realizado con los aportes de: Jesús Ignacio García Fernández, Eduardo Zamarron Muñoz y Ciro Villafraz.
 
 # Amazon EC2
 **EC2 permite alquilar máquinas virtuales, llamadas instancias EC2.** Puedes elegir diferentes tipos de EC2
@@ -66,4 +66,21 @@ La siguiente tabla muestra algunos tipos de instancias.
 | c6g.8xlarge	 | 32 vCPU’s, 64 GiB RAM |	$1,088/hora |
 | X1e.xlarge	 | 128 vCPU’s, 3904 GiB RAM, 2x 1920 GB SSD |	$26,688/hora |
 
-> Resumen realizado gracias a Ciro Villafraz.
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
+
+# Contenedores de Software
+
+El propósito de un contenedor es **crear un paquete de tu programa y todas sus librerías y dependencias con 
+las versiones específicas con las que has trabajado**, para producir una imagen que pueda ser
+**ejecutada en cualquier máquina**.
+
+Un problema común del desarrollo de software es utilizar distintas versiones de diferentes
+librerías/lenguajes de programación/programas.
+Docker nos permite crear contenedores para resolver este problema.
+
+### Amazon ECS
+Amazon ECS es un servicio de contenedores, donde puedes implementar tus imágenes en contenedores en AWS.
+Cuando corras tus contenedores en AWS, no notarás diferencia entre tu máquina local y el entorno de AWS.
+
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
