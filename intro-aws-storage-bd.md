@@ -373,3 +373,18 @@ Una de las ventajas de Amazon RDS es que facilita la configuración, siendo un s
 - En RDS solo **pagas por lo que usas.**
 
 > Resumen realizado gracias a los aportes de Ciro Villafraz.
+
+# La base de datos DynamoDB
+**DynamoDB es una base de datos NOSQL de documentos clave-valor**, que ofrece un rendimiento en milisegundos de
+un solo dígito. Entre sus casos de uso tenemos manejo de datos actualizados en tiempo real.
+
+Una **base de datos clave-valor** almacena datos en forma de claves y valores/atributos. En un documento de
+Dynamo DB podemos tener claves y una cantidad de atributos distinta para cada clave. Estos atributos también
+pueden ser de distintos tipos.
+
+### Características de DynamoDB
+DynamoDB es completamente administrado (PAAS). Funciona en múltiples regiones y puede manejar hasta 20 millones
+de solicitudes por segundo. Además, cuenta con seguridad, respaldo y restauración integrados.
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
+
