@@ -313,3 +313,41 @@ Cada vez que subimos un archivo con el mismo nombre a un bucket con versionamien
 y se le asigna un ID único de objeto. **Las versiones anteriores de los archivos también se almacenan, lo que puede suponer un mayor costo.**
 
 > Resumen realizado gracias a los aportes de Ciro Villafraz y Gilberto Pérez Garrido.
+
+# Bases de datos en AWS
+
+Las bases de datos son colecciones estructuradas de datos. Almacenan datos eletrónicamente, y se acceden a ellos
+desde un sistema informático. AWS cuenta con más de quince motores de bases de datos diferentes, seguros y 
+altamente disponibles.
+
+### Bases de datos relacionales
+Los servicios de bases de datos relacionales en AWS son:
+
+- **Amazon Aurora:** base de datos relacional compatible con MySQL y PostgreSQL creada para la nube.
+
+- **Amazon Relational Database Service (Amazon RDS):** servicio de bases de datos relacionales administrado para MySQL,
+ PostgreSQL, MariaDB, Oracle BYOL o SQL Server. Facilita la configuración, el uso y el escalado de varios motores
+ de bases de datos.
+
+- **Amazon Redshift:** Ideal para analítica. Usa SQL para analizar datos estructurados y semiestructurados en 
+ almacenamientos de datos, bases de datos operativas y lagos de datos, con hardware y machine learning diseñados
+ por AWS para ofrecer rendimiento al mejor precio a cualquier escala. 
+ 
+### Bases de datos clave-valor
+- **Amazon DynamoDB** es una base de datos de documentos y valores clave que ofrece un rendimiento de milisegundos
+de un solo dígito a cualquier escala. Está dirigida a aplicaciones de web de alto tráfico, sistemas de comercio
+electrónico y aplicaciones de juego.
+
+### Bases de datos en memoria
+- **Amazon ElastiCache** es un servicio de almacenamiento de caché en memoria completamente administrado que admite
+ casos de uso flexibles y en tiempo real. Se usa para almacenar en caché administración de sesiones, tablas de
+ clasificación de juegos y aplicaciones Geo-Espaciales. 
+ En ElastiCache encontramos ElastiCache para Memcached y ElastiCache para Redis.
+
+### Bases de datos basadas en documentos
+- **Amazon DocumentDB** es un servicio de base de datos de larga duración, de alta disponibilidad, rápida, escalable
+ y completamente administrado para operar cargas de trabajo de MongoDB esenciales. Entre sus casos de uso
+ se encuentra la gestión de contenidos, catálogos y perfiles de usuario.
+ 
+ 
+ > Resumen realizado gracias a los aportes de Ciro Villafraz y Gilberto Pérez Garrido
