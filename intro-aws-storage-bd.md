@@ -351,3 +351,25 @@ electrónico y aplicaciones de juego.
  
  
  > Resumen realizado gracias a los aportes de Ciro Villafraz y Gilberto Pérez Garrido
+
+# Ventajas de Amazon RDS
+
+> RDS: Relational Database Service
+
+Amazon RDS permite crear, ejercutar y ejecutar bases de datos relacionales en la nube. Las bases de datos relacionales
+son aquellas en las que los datos almacenados poseen una relación entre sí. Los datos se pueden consultar con
+un lenguaje de consulta llamado SQL.
+
+En Amazon RDS puedes escoger entre 6 motores de bases de datos relacionales diferentes: MYSQL, MariaDB, PostgreSQL,
+Oracle, SQL Server y Amazon Aurora.
+
+### Ventajas de Amazon RDS
+Una de las ventajas de Amazon RDS es que facilita la configuración, siendo un servicio completamente administrando
+(PAAS). Además:
+
+- RDS es **altamente escalable**, y puede ser usado en múltiple zonas de disponibilidad.
+- Permite crear réplicas de bases de datos de solo lectura.
+- RDS realiza copias de seguridad automática, y es tolerante a fallos.
+- En RDS solo **pagas por lo que usas.**
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
