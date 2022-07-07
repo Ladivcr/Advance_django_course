@@ -301,3 +301,15 @@ Si hiciste todo bien, te debería salir “Accesible públicamente” justo deba
 <img src="img_courses/bucket(6).png">
 
 > Resumen realizado gracias a los aportes de Ciro Villafraz.
+
+# Laboratorio: Versionamiento 
+Si nos dirigimos a la página de nuestro bucket, en el apartado de objetos, veremos un botón de **“Mostrar versiones”**,
+que nos permite ver los archivos junto con sus distintas versiones.
+
+### ¿Qué pasa si subo un archivo que ya existe?
+> Un nuevo archivo puede ser un nuevo costo aunque fuese versionado
+
+Cada vez que subimos un archivo con el mismo nombre a un bucket con versionamiento habilitado, se crea una nueva versión del mismo,
+y se le asigna un ID único de objeto. **Las versiones anteriores de los archivos también se almacenan, lo que puede suponer un mayor costo.**
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz y Gilberto Pérez Garrido.
