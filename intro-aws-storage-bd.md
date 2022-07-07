@@ -388,3 +388,19 @@ de solicitudes por segundo. Además, cuenta con seguridad, respaldo y restauraci
 
 > Resumen realizado gracias a los aportes de Ciro Villafraz.
 
+# ¿Qué es ElastiCache? 
+
+Amazon ElastiCache es un servicio de almacenamiento en memoria 100% administrado que admite casos de uso
+flexibles y en tiempo real.
+
+Es una base de datos en memoria que almacena datos a los que se ha accedido previamente en memoria caché,
+para mejorar la rapidez de acceso a estos datos. Consultar datos en caché siempre es más rápido que 
+consultar directamente la base de datos.
+
+Un ejemplo de uso es el de un sitio de noticias, al cual se accede miles de veces al día.
+Si los artículos se mantienen en una base de datos en memoria, se podrá acceder a estos mucho más rápido.
+
+ElastiCache posee dos motores, Redis y Memcached. Ambos se monitorean a sí mismos continuamente,
+y pueden ser escalados hacia arriba o abajo en función de la demanda de la aplicación.
+
+> Resumen realizado gracias a los aportes de Ciro Villafraz.
