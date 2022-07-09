@@ -34,3 +34,6 @@ Ejemplos:
 
 DNS se encargará de traducir la dirección IP a el nombre.
 
+<img src="img_courses/dns-aws.png">
+> Imagen obtenida de la clase número 3 del curso práctico de Networking y
+> Content Delivery en AWS de Platzi, para fines no lucrativos. 
