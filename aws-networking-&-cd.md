@@ -67,3 +67,21 @@ enviar a distintas versiones de tu servicio.
 
 # Arquitectura Web en AWS
 
+A grandes rasgos tenemos estos tres grupos de componentes 
+<img src="img_courses/arqui-aws.png">
+
+1. **Los usuarios o los clientes:** Pueden ser mediante dispositivos móviles, sitios web, servicios web, apis o
+ microservicios. En este nivel se hacen peticiones al servidor para tener imágenes o vídeos, textos, páginas, etc.
+ Esta información viaja através de internet y se hace todo el proceso de DNS y el resultado de esta consulta 
+ se va a los endpoints. Que es el segundo grupo en la imagen. 
+2. **Un endpoint:** en Amazon puede ser una API Gateway, que es un lugar público a lque te puedes conectar 
+desde puertos HTTP o HTTPS y pedir contenido. Internamente esta información se va a un dispositivo de cómputo o 
+servidor dentro de Amazon como instancias EC2, funciones Lambda, etc. Que son el tercer grupo de la imagen. 
+> Puedes tener varios endpoints dependiendo de los servicos que requieras. 
+
+
+En Amazon puedes monitorear tus datos o servidores usando el servicio de **CloudWatch** que anota todos los
+movimientos de archivos, reportando si algo falla o sale bien. 
+CloudWatch también tiene mecanismos de caché, ahorrando llamadas al servidor.
+
+
