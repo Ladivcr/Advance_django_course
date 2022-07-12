@@ -84,4 +84,27 @@ En Amazon puedes monitorear tus datos o servidores usando el servicio de **Cloud
 movimientos de archivos, reportando si algo falla o sale bien. 
 CloudWatch también tiene mecanismos de caché, ahorrando llamadas al servidor.
 
+# ¿Qué es VPC? (Teoría)
+
+- **VPC Virtual Private Cloud:** Es una nube privada dentro de la gran nube de Amazon y ahí puedes hacer lo que
+ quieras, como poner servidores, bases de datos y otros. Puedes hacer interactuar tus servidores dentro de la
+ misma VPC o exponerlos hacia internet.
+
+**El contenido en tu VPC tendrá dos IPs**. _Una privada interna_ y la otra es _una pública_ que es la IP por la
+cual alguien externo puede visualizar el contenido. También puedes configurar protocolos de seguridad para hacer
+tus IP públicas sólo en ciertos puertos, usando Amazon para configurarlo.
+
+### Un VPC funciona así:
+Tienes por un lado cualquier dispositivo conectado a internet, el cual se conecta a la red de AWS y a su vez
+dentro de esta red, viven diferentes VPC (Puedes tener varias VPC en tu cuenta)
+
+**Importancia de un VPC:**
+- Se pueden asignar IPs estáticas “internas” de manera gratuita.
+- Se puede asignar una dirección IPv6 tanto al VPC como a instancias, aunque la más usada es la versión IPv4.
+- Se puede asignar múltiples IPs a una instancia, con la posibilidad de comprar por un bajo precio una IP
+ elástica (siempre será la misma)
+- Cambiar los grupos de seguridad en vivo.
+- Control fino sobre el tráfico saliente
+- Controles de seguridad extras a nivel de red (ACLs)
+
 
