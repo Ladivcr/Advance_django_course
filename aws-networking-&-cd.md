@@ -69,6 +69,7 @@ enviar a distintas versiones de tu servicio.
 
 A grandes rasgos tenemos estos tres grupos de componentes 
 <img src="img_courses/arqui-aws.png">
+
 > Imagen que muestra grosso modo tres grupos de una arquitectura en aws, créditos para Platzi
 
 1. **Los usuarios o los clientes:** Pueden ser mediante dispositivos móviles, sitios web, servicios web, apis o
@@ -109,4 +110,5 @@ dentro de esta red, viven diferentes VPC (Puedes tener varias VPC en tu cuenta)
 - Controles de seguridad extras a nivel de red (ACLs)
 
 <img src="img_courses/vpc-aws.png">
+
 > Imagen que muestra grosso modo una vpc en Amazon, créditos para Platzi
