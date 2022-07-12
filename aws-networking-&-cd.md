@@ -38,3 +38,32 @@ DNS se encargará de traducir la dirección IP a el nombre.
 
 > Imagen obtenida de la clase número 3 del curso práctico de Networking y
 > Content Delivery en AWS de Platzi, para fines no lucrativos. 
+
+# ¿Qué es un CDN? (O red de distribución de contenido)
+
+- **CDN:** Es una red de servidores en el mundo con copias de tu sitio favorito, para que cargue más rápido en
+ tu dispositivo de cómputo. **Es una red superpuesta de computadoras que contienen copias de archivos**, colocados en
+ varios puntos de una red con el fin de maximizar el ancho de banda para el acceso a los datos de clientes por
+ la red.
+- **Tipos de archivos:** HTML, CSS, JS, Imágenes, entro otros (prácticamente cualquier cosa que se pueda servir en un
+servidor web)
+- **CloudFront:** Es un CDN, es decir, CloudFront pone tus archivos en varios servidores en el mundo.
+  Es un servicio rápido de red de entrega de contenido (CDN) que distribuye a clientes globalmente datos, vídeos,
+  aplicaciones y API de forma segura, con baja latencia, altas velocidades de transferencia y dentro de un entorno
+  fácil para desarrolladores.
+  
+  
+# ¿Qué es un endpoint? 
+Es un punto de contacto entre tu servicio web y el internet. Podemos pensarlo como una 
+dirección pública de Internet donde puede llegar una app móvil, un sitio web o un sistema de APIS para
+preguntar algo al servidor.
+
+### ¿Por qué un concepto nuevo? 
+Piensa un endpoint como una dirección genérica que puedes resolver con distintos criterios, como por ejemplo: 
+enviar a distintas versiones de tu servicio. 
+
+> Puedes administrar diferentes versiones de tu API, sitio web, etc especificando argumentos en tu llamada a la
+> dirección de tu sitio web. 
+
+# Arquitectura Web en AWS
+
