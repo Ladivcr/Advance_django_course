@@ -157,3 +157,17 @@ irá a algún proyecto específico como EC2 o un contenido HTTP.
 - También puedes decidir a qué servidor dirigir a un usuario dependiendo de su localización.
 
 <img src="img_courses/aws-route53.png">
+
+> Imagen que muestra como funcionaria normalmente un redireccionamiento en route 53, créditos para Platzi
+
+
+**Alta disponibilidad en dominios**
+Se puede configurar un failover o una alternativa en caso de que el servidor principal no esté funcionando.
+
+- **Prioridad:** Funciona a través de tener records con pesos. Es decir, se puede decidir en el DNS cuál es el servidor principal
+(peso o prioridad mayor) y cuáles son los servidores alternativos. Esto con el fin de que el navegador del usuario, a través de la
+configuración del DNS, decida a qué servidor ir tomando como variable la disponibilidad de los mismos.
+
+- **Latencia:** Dependiendo de la ubicación de los distintos servidores que se tengan alrededor del mundo, y de la ubicación del
+ usuario que esté solicitando servicio de los servidores, se le redireccionará al servidor con menor latencia.
+ 
