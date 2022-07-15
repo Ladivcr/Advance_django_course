@@ -141,3 +141,19 @@ adecuada para que el streaming nunca se entrecorte.
 - Es muy seguro ya que el contenido va sobre HTTPS.
 - Podrías enviar código lambda para que puedas tener cierto código dinámico en cualquier parte del mundo.
 
+# Route 53
+
+Route 53 es el servicio de Amazon de nombres de dominios donde puedes no solo configurar los dominios que ya tengas, sino comprar, 
+crear subdominios, cambiar un dominio a diferentes implementaciones, entre otras opciones disponibles.
+
+Funciona así: Cuando tienes un nombre de dominio o subdominio, éste apunta a algún endpoint de Amazon como un balanceador de carga y de ahí
+irá a algún proyecto específico como EC2 o un contenido HTTP.
+
+**Usos de Route 53**
+
+- Servidor de nombres.
+- Registro de dominios con precios competitivos para el mercado.
+- Alta disponibilidad en dominios, teniendo servidores con pesos, definiendo cuál es tu servidor principal y dándole prioridad a éste.
+- También puedes decidir a qué servidor dirigir a un usuario dependiendo de su localización.
+
+<img src="img_courses/aws-route53.png">
