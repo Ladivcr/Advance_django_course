@@ -171,3 +171,11 @@ configuración del DNS, decida a qué servidor ir tomando como variable la dispo
 - **Latencia:** Dependiendo de la ubicación de los distintos servidores que se tengan alrededor del mundo, y de la ubicación del
  usuario que esté solicitando servicio de los servidores, se le redireccionará al servidor con menor latencia.
  
+### Cosas que debes tener en cuenta al momento de configurar un dominio 
+- La primera vez que registres un dominio en Amazon, va a tardar bastante, así que planea con anticipación.
+- La primera entrada en nuestro dominio NS es la que necesita Amazon para decirle a internet que él es el servidor de dominio 
+para ese dominio en particular.
+- La entrada SOA es un registro de revisión de servicio.
+- La entrada A son nuestros subdominios o dominios que creamos.
+- Cuando creamos un subdominio tenemos varias opciones en Type; las más usadas son IPv4 que significa que pondremos la dirección IP del dominio
+ y CNAME es el alias de Amazon de nuestro recurso.
