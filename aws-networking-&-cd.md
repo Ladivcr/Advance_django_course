@@ -112,3 +112,32 @@ dentro de esta red, viven diferentes VPC (Puedes tener varias VPC en tu cuenta)
 <img src="img_courses/vpc-aws.png">
 
 > Imagen que muestra grosso modo una vpc en Amazon, créditos para Platzi
+
+### - Implementar VPC tutorial
+
+# ¿Qué es CloudFront?
+
+**CloudFront es la implementación de CDN de AWS.**
+
+Una CDN es una red de distribución de contenido que crea réplicas del archivo en diferentes partes del mundo, dependiendo de tus necesidades
+y las áreas geográficas que debes cubrir. CloudFront tiene diferentes centros de replicación intentando cubrir gran parte del globo.
+Para América del Sur, tenemos un centro en Brazil. Tiene como característica que se sincronizan rápidamente.
+
+En el caso de un archivo de video, funcionaría de la siguiente manera: 
+
+- El archivo es enviado a un Storage S3 y pasaría a un conversor de archivos AWS Elemental MediaConvert que crearía copias del archivo
+con diferentes tamaños y calidades. 
+- Después de ésto, se notifica a CloudWatch que redirecciona de nuevo a los Amazon S3 en las diferentes locaciones.
+
+El tener diferentes archivos es muy útil porque dependiendo de la conexión y dispositivo del cliente, Amazon enviará la respuesta de archivo
+adecuada para que el streaming nunca se entrecorte.
+
+**Características de CloudFront:**
+
+- No hay contratos, no hay pagos por adelantado. Te cobran por lo que se consumió.
+- Es fácil de administrar ya que puedes simularlo con instancias EC2 en distintas regiones lo cual implica un desarrollo completo.
+- Se soporta cualquier tipo de archivo que pueda ser compartido por un servidor web.
+- CloudFront garantiza ciertos niveles de calidad en la distribución de contenido.
+- Es muy seguro ya que el contenido va sobre HTTPS.
+- Podrías enviar código lambda para que puedas tener cierto código dinámico en cualquier parte del mundo.
+
