@@ -179,3 +179,21 @@ para ese dominio en particular.
 - La entrada A son nuestros subdominios o dominios que creamos.
 - Cuando creamos un subdominio tenemos varias opciones en Type; las más usadas son IPv4 que significa que pondremos la dirección IP del dominio
  y CNAME es el alias de Amazon de nuestro recurso.
+
+# API Gateway
+
+**Un API Gateway es un endpoint público abierto a internet que recibe peticiones de tipo HTTP.**
+Si se pide algún contenido que anteriormente se haya resuelto, se regresará la versión disponible en caché;
+sino se conectará con algún sistema como una instancia EC2, lambda, etc.
+Cuando algo no está en caché el API Gateway lo notará y redireccionará a través de Route 53 llevando a diferentes servicios como
+funciones lambda, servidores EC2 o elastic beanstalk.
+
+### **Existen diferentes arquitecturas para un API Gateway:**
+
+- Tenemos un cliente web que se conecta a la API Gateway de Amazon lo cual podría ir a un Load Balancer dependiendo de tu configuración y
+ por último llegaríamos a la infraestructura de Docker.
+- El usuario estando en su dispositivo o una API, realiza la petición al API Gateway (si existe en caché se regresa directamente al usuario), 
+envía a una función lambda que procesa lo que deba procesar y por último ésta se conecta con una base de datos. Una vez se tiene la información, 
+se regresa al API Gateway y por último al usuario.
+- El usuario pide todo el contenido estático a Amazon S3, sin embargo si es algo dinámico, se pide al API Gateway, que va a lambda finalmente
+ consultando a la base de datos.
