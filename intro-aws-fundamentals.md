@@ -351,6 +351,18 @@ Por ejemplo, podemos conceder a una máquina virtual el acceso a una base de dat
 
 > Resumen realizado gracias a Ciro Villafraz
 
+### Extra sobre IAM
+
+- **Users:** Es como se va autenicar un usuario o un sistema externo en AWS. 
+- **User Groups:** Un usuario puede estar en muchos grupos y un grupo puede tener muchos usuarios
+- **Policies:** Define a que le da permiso al usuario. Enfasis en a que se le da a cceso pero no ha quien 
+- **Roles:** Cuando tienes un programa ejecutandose en AWS y necesitas darle permisos a algo, ocupas darle un rol a ese programa. 
+La diferencia entre rol y usuario, es que el rol no tiene un usuario y contraseña. Entonces los roles los asignas a servicios o entidades
+que estan dentro de AWS
+
+> Normalmente un usuario puede estar en un grupo (user groups) y el grupo tiene asignadas politícas. 
+**Reminder: Las Politicas son para los usuarios y los Roles para los servicios.**
+
 # Secrets Manager
 
 Secrets Manager es un servicio de AWS que nos ayuda a proteger los datos secretos (contraseñas, claves y tokens)
