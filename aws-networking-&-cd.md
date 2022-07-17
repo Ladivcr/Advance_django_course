@@ -201,7 +201,7 @@ se regresa al API Gateway y por último al usuario.
 **APIGateway se puede conectar a cualquier recurso de computo, esto puede ser: Elastic Beanstalk, Funciones Lambda, Instancias EC2, Buckets s3
 que sirve web todo el tiempo, enre otros**
 
-# **Pasos para crear un API Gateray con Lambda**
+# **Pasos para crear un API Gateway con Lambda**
 
 1. En la barra de búsqueda escribimos "Lambda" para buscar el servicio 
 2. Entramos al servicio "Lambda"
