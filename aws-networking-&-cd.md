@@ -221,5 +221,6 @@ Nos pedira una configuración, seleccionamos:
 10. Rest API
 11. Security: Open
 
-> Hasta este punto, ya tienes la función lambda y su respectivo trigger creado. 
+> Listo, ya tienes la función lambda y su respectivo trigger creado, podrás incluso abrir el endpoint de API Gateway y 
+> ver una respuesta del tipo: "Hello from Lambda" 
 
