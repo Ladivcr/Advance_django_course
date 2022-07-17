@@ -197,3 +197,6 @@ envía a una función lambda que procesa lo que deba procesar y por último ést
 se regresa al API Gateway y por último al usuario.
 - El usuario pide todo el contenido estático a Amazon S3, sin embargo si es algo dinámico, se pide al API Gateway, que va a lambda finalmente
  consultando a la base de datos.
+ 
+**APIGateway se puede conectar a cualquier recurso de computo, esto puede ser: Elastic Beanstalk, Funciones Lambda, Instancias EC2, Buckets s3
+que sirve web todo el tiempo, enre otros**
