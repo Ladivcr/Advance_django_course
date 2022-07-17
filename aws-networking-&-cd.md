@@ -200,3 +200,26 @@ se regresa al API Gateway y por último al usuario.
  
 **APIGateway se puede conectar a cualquier recurso de computo, esto puede ser: Elastic Beanstalk, Funciones Lambda, Instancias EC2, Buckets s3
 que sirve web todo el tiempo, enre otros**
+
+# **Pasos para crear un API Gateray con Lambda**
+
+1. En la barra de búsqueda escribimos "Lambda" para buscar el servicio 
+2. Entramos al servicio "Lambda"
+3. Presionamos en "Create function"
+4. Seleccionamos "Author from scratch"
+5. Le damos un nombre 
+6. Seleccionamos el lenguaje con el que la vamos a programar 
+> Por ahora es todo, la demás configuración se deja por defecto
+7. Presionamos en "Create function"
+
+Observamos que una vez que la función es creada, debemos de añadir un trigger. 
+Para ello seleccionamos:
+
+8. Add trigger: API Gateway
+Nos pedira una configuración, seleccionamos: 
+9. Create a new API
+10. Rest API
+11. Security: Open
+
+> Hasta este punto, ya tienes la función lambda y su respectivo trigger creado. 
+
