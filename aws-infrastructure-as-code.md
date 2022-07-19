@@ -26,4 +26,14 @@ reutilizar el template sin problema.
 servidor y pasar tiempo tratando de solucionar el error. La otra opción es hacer uso del template que ya tenemos y volver a desplegarlo
 desde cero. Esa es la escencia de la infraestructura inmutable. 
 
+# Herramientas para desplegar infraestructura como código
+
+1. **Terra:** Despliegues multi cloud, posee una version open source y otra enterprise
+2. **Pulumi:** Despligues multi cloud, podes sacar ventajas tus conocimientos en un lenguaje
+3. **Serverless Framework:** Para el despliegue de Lambdas, DynamoDB, api gateway, s3, kinesis
+4. **SDK:** provista diferentes lenguajes, para python se llama boto3
+5. **CDK (Cloud Development Kit):** Diferencia con el sdk, es que no va usar librerias particulares, sino que dentro del mismo codigo python
+ vamos a llamar a los recursos y crearlos. Por detras cdk va a generar un template de CFN.
+6. **AWS SAM (Serverless Aplication Model):** Para el despliegue de Lambdas, DynamoDB, api gateway, kinesis. Cambia la definición del recurso,
+ para desplegar una lambda en CFN se declara como “AWS::Lambda::Function” y en SAM “AWS::Serverless::Function”
 
