@@ -69,7 +69,7 @@ especificado. Amazon lo va a especificar con una versión por default (2010-09-0
 - `Parameters: set of parameters`: [Opcional] Valores que se le pasan a la plantilla cuando se crea o actualiza
 un stack. Pueden ser referenciados desde Resources u Outputs. 
 - -  Ejemplos: 
-```yaml
+```yml
 Parameters:
     myKeyPair:
         Description: "Amazon EC2 key pair"
@@ -78,14 +78,14 @@ Parameters:
         Description: "Subnet IDs"
         Type: "List<AWS::EC2::Subnet::Id>"
 ```
-```yaml
+```yml
 Parameters:
     DbSubnetIpBlocks:
         Description: "Comma-delimeted list of three CIDR blocks"
         Type: CommaDelimetedList
         Default: "10.0.46.0/24, 10.0.112.0/24, 10.0.176.0/24"
 ```
-```yaml
+```yml
 Parameters:
     DbPort:
         Default: 3306
@@ -105,7 +105,7 @@ Parameters:
 Similar a una tabla de búsqueda. Utiliza la función **Fn::FindInMap**
 - - Ejemplo: Nosotros tenemos un servidor, ese servidor lo vamos a desplegar en tres regiones: Fráncfort, Sao Paulo y Virginia. El mapping lo que va a evaluar es la región donde se encuenttra y con ayuda del mapping
 usa ese AMI evaluando el id de la imagen.
-```yaml
+```yml
 Mappings:
   RegionMap: 
     us-east-1: 
@@ -121,7 +121,7 @@ Mappings:
 ```
 
 ### ¿Cómo quedaria nuestra función lambda usando parámetros? 
-```yaml
+```yml
 AWSTemplateFormatVersion: '2021-09-09'
 Description: Mi primer lambda en Platzi
 
@@ -141,5 +141,53 @@ Parameters:
         - nodejs8.10
         - java8
         - dotnetcore2.1
-    
+```
+
+# Clase práctica creación de un template
+
+[Formato yml para DynamoDB](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html)
+
+```yml
+AWSTemplateFormatVersion: '2021-09-09'
+Description: Mi primer lambda en Platzi
+
+Parameters:
+  DynamoAtributo: 
+    Type: String
+
+Resources:
+  DynamodesdeCero: 
+    Type: AWS::DynamoDB::Table
+    Properties: 
+      AttributeDefinitions: 
+        - AttributeName: !Ref DynamoAtributo
+          AttributeType: S
+      KeySchema: 
+        - AttributeName: !Red DynamoAtributo
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST //On demand
+      ContributorInsightsSpecification: 
+        ContributorInsightsSpecification
+      GlobalSecondaryIndexes: 
+        - GlobalSecondaryIndex
+      KeySchema: 
+        - KeySchema
+      KinesisStreamSpecification: 
+        KinesisStreamSpecification
+      LocalSecondaryIndexes: 
+        - LocalSecondaryIndex
+      PointInTimeRecoverySpecification: 
+        PointInTimeRecoverySpecification
+      ProvisionedThroughput: 
+        ProvisionedThroughput
+      SSESpecification: 
+        SSESpecification
+      StreamSpecification: 
+        StreamSpecification
+      TableClass: String
+      TableName: String
+      Tags: 
+        - Tag
+      TimeToLiveSpecification: 
+        TimeToLiveSpecification
 ```
