@@ -57,3 +57,89 @@ desde cero. Esa es la escencia de la infraestructura inmutable.
 - **Transaccional:** Espera a que todos los recursos estén creados para desplegar la aplicación, sino hará un rollback.
 
 > Empresa que usan Cloud Formation: Barcelona FC, Expedia, Coinbase, nextdoor.
+
+# Anatomía de un template en CloudFormation
+- `AWSTemplateFormatVersion: '2021-09-09'`: [Opcional] Define las capacidades de la plantilla, si no es 
+especificado. Amazon lo va a especificar con una versión por default (2010-09-09). 
+- `Description: String`: [Opcional] Es un texto para describir la plantilla
+- `Metadata: String`: [Opcional] Información adicional del template
+- - AWS::CloudFormation::Init
+- - AWS::CloudFormation::Interface
+- - AWS::CloudFormation::Designer
+- `Parameters: set of parameters`: [Opcional] Valores que se le pasan a la plantilla cuando se crea o actualiza
+un stack. Pueden ser referenciados desde Resources u Outputs. 
+- -  Ejemplos: 
+```yaml
+Parameters:
+    myKeyPair:
+        Description: "Amazon EC2 key pair"
+        Type: "AWS::EC2::KeyPair::KeyName"
+    mySubnetIDs:
+        Description: "Subnet IDs"
+        Type: "List<AWS::EC2::Subnet::Id>"
+```
+```yaml
+Parameters:
+    DbSubnetIpBlocks:
+        Description: "Comma-delimeted list of three CIDR blocks"
+        Type: CommaDelimetedList
+        Default: "10.0.46.0/24, 10.0.112.0/24, 10.0.176.0/24"
+```
+```yaml
+Parameters:
+    DbPort:
+        Default: 3306
+        Description: "TCP/IP port for the database"
+        Type: Number
+        MinValue: 1150 // Rango permitido
+        MaxValue: 65535 // Rango permitido
+    DbPwd:
+        NoEcho: true // Valor Seguro (****)
+        Description: "The database admin account password"
+        Type: String
+        MinLength: 1
+        MaxLength: 41
+        AllowedPattern: ^[a-zA-Z0-9]*$ //Cumplir expresión
+```
+- `Mappings: set of mappings`: [Opcional] Llave valor asociados que se usan para parámetros condicionales.
+Similar a una tabla de búsqueda. Utiliza la función **Fn::FindInMap**
+- - Ejemplo: Nosotros tenemos un servidor, ese servidor lo vamos a desplegar en tres regiones: Fráncfort, Sao Paulo y Virginia. El mapping lo que va a evaluar es la región donde se encuenttra y con ayuda del mapping
+usa ese AMI evaluando el id de la imagen.
+```yaml
+Mappings:
+  RegionMap: 
+    us-east-1: 
+      "HVM64": "ami-0ff8a91507f77f867"
+    us-west-1:
+      "HVM64": "ami-0bdb828fd58c52235"
+    eu-west-1:
+      "HVM64": "ami-047bb4163c506cd98"
+    ap-southeast-1:
+      "HVM64": "ami-08569b978cc4dfa10"
+    ap-northeast-1:
+      "HVM64": "ami-05cd52961ce9f0d85"
+```
+
+### ¿Cómo quedaria nuestra función lambda usando parámetros? 
+```yaml
+AWSTemplateFormatVersion: '2021-09-09'
+Description: Mi primer lambda en Platzi
+
+Parameters:
+    NombreLambda:
+      Description: Nombre de la funciónn lambda
+        Type: String
+       
+    RuntimeLambda: 
+      Description: Ingresa el runtime de la función lambda
+      Type: String
+      Default: python3.7
+      AllowedValues: 
+        - python3.7
+        - python2.7
+        - ruby2.5
+        - nodejs8.10
+        - java8
+        - dotnetcore2.1
+    
+```
