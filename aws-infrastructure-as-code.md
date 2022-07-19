@@ -37,6 +37,9 @@ desde cero. Esa es la escencia de la infraestructura inmutable.
 6. **AWS SAM (Serverless Aplication Model):** Para el despliegue de Lambdas, DynamoDB, api gateway, kinesis. Cambia la definición del recurso,
  para desplegar una lambda en CFN se declara como “AWS::Lambda::Function” y en SAM “AWS::Serverless::Function”
 
+### What is CloudFormation?
+> AWS CloudFormation is an AWS service that uses template files to automate the setup of AWS resources.
+
 # Introducción y ventajas de usar Cloudformation
 
 - **Flujo de despliegue:** Código, se verifica y hay una fase de despliegue. **Se pueden crear templates en formato YAML o JSON**.
