@@ -37,3 +37,20 @@ desde cero. Esa es la escencia de la infraestructura inmutable.
 6. **AWS SAM (Serverless Aplication Model):** Para el despliegue de Lambdas, DynamoDB, api gateway, kinesis. Cambia la definición del recurso,
  para desplegar una lambda en CFN se declara como “AWS::Lambda::Function” y en SAM “AWS::Serverless::Function”
 
+# Introducción y ventajas de usar Cloudformation
+
+- **Flujo de despliegue:** Código, se verifica y hay una fase de despliegue. **Se pueden crear templates en formato YAML o JSON**.
+- **Servicios:** Stacks, stack sets, integración full con todos los componentes de AWS.
+- **Beneficios:** AWS brinda soporte sobre tu código de cloudformation en caso de que no despliegue tu integración, es decir brinda soporte sobre
+ tu código si tienes el plan bussiness contratado.
+- Integración nativa con todos los servicios de AWS.
+- **Designer:** Te permite crear infraestructura de forma visual y si ya lo tienes creado, cargas tu plantilla y veras como luce.
+- **Multicuenta:** Desplegar en 3 cuentas diferentes la misma infraestructura.
+- **Flexibilidad:** Creación de recursos dinámicamente con custom resources.
+- **Cloudformation:** Gratis, se te cobra por los recursos que este despliegue.
+- **Escalabilidad:** Puede crecer desde el recurso mas simple hasta una arquitectura más compleja.
+- **Seguridad:** Todos los despliegues están completamente asegurados, cifrado de llaves, etc.
+- **Estabilidad:** Al ser administrado por AWS tiene un alto nivel de SLA.
+- **Transaccional:** Espera a que todos los recursos estén creados para desplegar la aplicación, sino hará un rollback.
+
+> Empresa que usan Cloud Formation: Barcelona FC, Expedia, Coinbase, nextdoor.
