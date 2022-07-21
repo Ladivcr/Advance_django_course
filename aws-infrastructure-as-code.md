@@ -154,6 +154,8 @@ Description: Mi primer lambda en Platzi
 Parameters:
   DynamoAtributo: 
     Type: String
+  NombreDynamo: 
+    Type: String
 
 Resources:
   DynamodesdeCero: 
@@ -163,31 +165,16 @@ Resources:
         - AttributeName: !Ref DynamoAtributo
           AttributeType: S
       KeySchema: 
-        - AttributeName: !Red DynamoAtributo
+        - AttributeName: !Ref DynamoAtributo
           KeyType: HASH
       BillingMode: PAY_PER_REQUEST //On demand
-      ContributorInsightsSpecification: 
-        ContributorInsightsSpecification
-      GlobalSecondaryIndexes: 
-        - GlobalSecondaryIndex
-      KeySchema: 
-        - KeySchema
-      KinesisStreamSpecification: 
-        KinesisStreamSpecification
-      LocalSecondaryIndexes: 
-        - LocalSecondaryIndex
-      PointInTimeRecoverySpecification: 
-        PointInTimeRecoverySpecification
-      ProvisionedThroughput: 
-        ProvisionedThroughput
       SSESpecification: 
-        SSESpecification
-      StreamSpecification: 
-        StreamSpecification
-      TableClass: String
-      TableName: String
-      Tags: 
-        - Tag
-      TimeToLiveSpecification: 
-        TimeToLiveSpecification
+        SSEEnabled: true
+      TableName: !Ref NombreDynamo
+      
+Outputs: 
+  NombreDynamo: 
+    Value: !Ref DynamodesdeCero
+    Export: 
+      Name: NombreDynamo
 ```
