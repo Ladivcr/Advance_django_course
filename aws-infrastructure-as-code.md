@@ -145,7 +145,8 @@ Parameters:
 
 # Clase práctica creación de un template
 
-[Formato yml para DynamoDB](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html)
+### Template para crear una tabla en DynamoDB
+- [Formato yml para DynamoDB](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html)
 
 ```yml
 AWSTemplateFormatVersion: '2021-09-09'
