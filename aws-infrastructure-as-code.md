@@ -235,3 +235,35 @@ Outputs:
     Export: 
       Name: NombreDynamo
 ```
+
+# Stacks: características y despliegue
+
+### ¿Qué es un Stack? 
+Colección de recursos que se manejan como una unidad
+- Ejemplo: Tenemos una base de datos, tenemos una función lambda y tenemos un S3 de almacenamiento, todos esos recursos 
+ estan dentro de un stack, una colección de recursos que se va a desplegar en AWS.
+
+### Gestión de recursos
+Cloudformation asegura que todos los recursos sean creado o eliminados
+- Ejemplo: Si un recurso falla durante la creación, todos los demás recursos serán eliminados. Como un rollback a todos los recursos del stack. 
+
+### ¿Qué pasa si borro un stack? 
+Todos los recursos asociados se borran. 
+
+### ¿Qué es un Drift? 
+Dentro de Cloudformation tenemos algo llamado "Drift". Lo que hace es detectar una desviación entre lo que desplegadmos originalmente
+ y lo que esta en la consola. 
+ - Ejemplo: Despliegas una función lambda, una base de datos en Dynamo y un bucket en S3. Pero entraste manualmente y cambiaste la politica del 
+ bucket en S3. Ahí tienes una desviación. Puedes usar Drift para identificar la desviación, corregirla y volver al estado original. 
+ 
+ > **Las desviaciones son malas prácticas, no se debería tener nunca una desviación.**
+
+### ¿Qué puedo identificar con un Drift? 
+Recursos agregados, eliminados y con propiedades diferentes. 
+
+### Despliegues de stacks
+1. Nuestro stack: Función lambda, Bucket S3, Base de datos Dynamo
+2. El stack se convierte en un template con ayuda de un template.yml
+3. El template se carga a Cloudformation: ya sea cargandolo a un s3 y copiando la ruta del archivo o cargarlo directamente a Cloudformation
+4. Se le hace una validación al template.yml
+5. Si el check pasa, se procede a despliegar todos los recursos en Cloudformation
