@@ -267,3 +267,12 @@ Recursos agregados, eliminados y con propiedades diferentes.
 3. El template se carga a Cloudformation: ya sea cargandolo a un s3 y copiando la ruta del archivo o cargarlo directamente a Cloudformation
 4. Se le hace una validación al template.yml
 5. Si el check pasa, se procede a despliegar todos los recursos en Cloudformation
+
+# Stack Sets: despliegues multicuenta
+
+## Características
+### ¿Qué tipo de cuentas existen? 
+Cuentas administrador y cuentas target
+
+### ¿Desde dónde se despliegan recursos Multi Cuenta? 
+Se debe hacer desde una cuenta maestra que tenga permisos sobre las otras
