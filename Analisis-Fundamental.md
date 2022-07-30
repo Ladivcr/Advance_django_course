@@ -54,8 +54,25 @@ va generando ganancias y esas ganancias que se van generando son las ganancias r
 También Crece. Es equitativo un lado al otro, significa que si un lado sube, el otro también lo hará
 > **Activo = Pasivo + Patrimonio**
 
-# Estado De Resultados
+# ESTADO DE RESULTADOS: Qué ingresos y Egresos de capital tiene la empresa contablemente hablando 
 
+## ¿Cómo genera ganancias la compañia?
+
+- **Proceso**: 
+- - Ingresos o ventas = Dinero que ingresa a la compañia
+- - Costo de venta = Lo que se descuenta al realizar una venta
+- - Beneficio Bruto = Ingreso por venta - Costo por venta [El primer beneficio que genera la compañoa]
+- - Gastos (operativos, administrativos) = Al beneficio bruto necesitamos descontar los gastos, puede ser la mano de obra
+ u otra cosa. Marketing por ejemplo. Estamos sacando al ingreso que genera la compañia, todas las cosas que debe de 
+ pagar la compañia. 
+- - Beneficio Operativo (EBITDA): Es el primer ingreso que genera la compañia ya habiendo descontado los gastos que va a 
+tener siempore fijos. -> Depreciación y Amortización Resultado antes de impuestos.
+- Con eso llegamos al resultado antes de impuestos (EBIT), grosso modo le sacamos el (DA).
+- A este resultado le restamos los intereses e impuestos que paga la compañia y así, nos quedamos con
+el **Beneficio/Resultado Neto**.
+
+
+> EBITDA: **E**arnings **B**efore **I**nterest, **T**axes, **D**epreciation and **A**mortization
 # Traducción/Glosario/Ayuda
 
 - Total Current Assets = Activo Corriente
@@ -64,6 +81,19 @@ También Crece. Es equitativo un lado al otro, significa que si un lado sube, el
 - Total Liabilities = Totalidad de los Pasivos (Corriente y No Corriente, sumados)
 - Total Equity = Patrimonio (Patrimonio y Ganancias Retenidas)
 - Total Assets = Total Liabilities + Total Equity (Deberia ser igual)
+- Earnings = Ganancia que genera la empresa 
+- Interest = Intereses a pagar
+- Taxes = Impuestos a pagar 
+- Depreciation = Las depreciaciónes 
+- Amortization = Amortizaciones 
+- *Total Revenue = Las ventas, el primer ingreso que genera la compañia 
+- Cost of Revenue = El coste de esa venta 
+- Gross Profit = El primer beneficio/resultado que genera la compañia
+- Total Operating Expenses = Gastos operativos
+- Operating Income = Nuestro EBITDA
+- Net Income Before Taxes = Es nuestro EBITDA después de quitarle los intereses (pero no impuestos)
+- Net Income After Taxes = Ahora si ya habiendo pagado los impuestos 
+- *Net Income = Ganancia que genera la compañia después de interes, impuestos, etc. 
 
 # Enlaces de ayuda
 - [HyperCharts](https://hypercharts.co/): Es posible ver el **Income Statement** de casi cualquier empresa, 
