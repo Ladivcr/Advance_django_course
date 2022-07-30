@@ -21,7 +21,7 @@ Ayuda a encontrar potencial de subcotización.
 ## ¿Qué tiene la empresa y cómo lo financio? 
 Grosso modo, que posee que dinero tiene y donde lo tiene puesto y de dónde saco ese dinero. 
 
-### Que tiene -> **Activos**
+### **ACTIVOS:** ¿Qué es lo que tiene?
 
 - **Activos Corrientes:** Dinero que puedo conseguir *rápidamente*. (Ejemplo: Efectivo)
 > En análisis fundamental "rápidamente" se considera a **menos de 12 meses**. 
