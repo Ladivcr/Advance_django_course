@@ -86,14 +86,16 @@ el **Beneficio/Resultado Neto**.
 - Taxes = Impuestos a pagar 
 - Depreciation = Las depreciaciónes 
 - Amortization = Amortizaciones 
-- *Total Revenue = Las ventas, el primer ingreso que genera la compañia 
-- Cost of Revenue = El coste de esa venta 
-- Gross Profit = El primer beneficio/resultado que genera la compañia
-- Total Operating Expenses = Gastos operativos
-- Operating Income = Nuestro EBITDA
-- Net Income Before Taxes = Es nuestro EBITDA después de quitarle los intereses (pero no impuestos)
+- *Total Revenue = Las ventas, el primer ingreso que genera la compañia. Ingresos o ventas
+- Cost of Revenue = El coste de esa venta. Costo de venta
+- Gross Profit = El primer beneficio/resultado que genera la compañia. Beneficio bruto
+- Total Operating Expenses = Gastos operativos. Al ingreso de la compañía le sacas todo lo que debe pagar la empresa.
+- Operating Income = Beneficio Operativo. Nuestro EBITDA. Primer ingreso de la compañía descontándole los gastos que
+ tiene fijos.
+- Net Income Before Taxes = Resultado antes de impuestos (EBIT)
 - Net Income After Taxes = Ahora si ya habiendo pagado los impuestos 
-- *Net Income = Ganancia que genera la compañia después de interes, impuestos, etc. 
+- *Net Income = Beneficio/Resultado Neto. Ganancia que genera la compañia después de interes, impuestos, etc. 
+Es mejor llamarlo resultado ya que beneficio hace referencia a algo ganado y las compañías no siempre ganan
 
 # Enlaces de ayuda
 - [HyperCharts](https://hypercharts.co/): Es posible ver el **Income Statement** de casi cualquier empresa, 
