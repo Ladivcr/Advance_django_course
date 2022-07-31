@@ -109,3 +109,33 @@ Es mejor llamarlo resultado ya que beneficio hace referencia a algo ganado y las
 # Enlaces de ayuda
 - [HyperCharts](https://hypercharts.co/): Es posible ver el **Income Statement** de casi cualquier empresa, 
 representadas en graficas a través de los años. 
+- [Economipedia: Estados financieros](https://economipedia.com/definiciones/estados-financieros.html)
+
+# Extra: Aportes de alumnos
+
+- **Balance General:** Es la foto instantánea de donde está el dinero y las deudas
+- **Estado de Resultados:** Nos va a permitir conocer el Beneficio Neto de la empresa, que es el dinero que se
+ queda realmente la empresa de la diferencia Ingresos - Todos los Costos
+- **Flujo de Caja:** Nos dice cuanto efectivo tiene la empresa realmente para afrontar las obligaciones y a partir
+ de esto, tomar decisiones de tomar otra deuda para poder cumplirlas o de tener efectivo a favor, reinvertir. Es decir, la 
+ liquidez de la empresa.
+
+### Ejemplo con Disney
+- Total Revenue: 15613
+- Operating Income: 1337
+- Net Change in Cash: -2022
+- Net Income: 901
+
+Por todo lo explicado anteriormente, entendería que:
+
+De sus Ingresos que fueron 15613, solo se queda con 901 pero, tiene un flujo de efectivo negativo (y muy grande) Por lo que, aunque de sus ventas se quede con 901, no cuenta con efectivo por lo que se verán en la necesidad o, de cobrar deudas (si es que hay), financiar pagos que tengan que hacer o adquirir crédito, es decir, necesitarán generar deuda para poder pagar sus gastos operativos y de día a día. No tiene liquidez.
+
+> Ray Trápala
+---
+La diferencia principal entre el Estado de Resultados y el Estado de Flujo de efectivo, es que este último mide la
+liquidez de la empresa (lo que realmente entra de dinero o cash a la empresa en un periodo determinado), y el Estado 
+de resultados mide la rentabilidad de la empresa (la operación de la empresa en un periodo determinado)
+
+[La importancia del flujo de efectivo y su diferencia con el resto de resultados](https://docplayer.es/22145683-La-importancia-del-flujo-de-efectivo-y-su-diferencia-con-el-estado-de-resultados.html)
+
+> Marcelo Sánchez
