@@ -73,6 +73,15 @@ el **Beneficio/Resultado Neto**.
 
 
 > EBITDA: **E**arnings **B**efore **I**nterest, **T**axes, **D**epreciation and **A**mortization
+
+# ESTADO DE FLUJO DE EFECTIVO: Cuáles son los ingresos y egresos de dinero en *efectivo* 
+
+- CFO (Cash Flow from Operations): Flujo de efectivo de las operaciones que realiza la compañia. El dinero que ingresa
+y que egresa de la compañia por ejecutar las acciones que realizan.
+- CFI (Cash Flow from Investments): Flujo de efectivo proveniente de las inversiones. 
+- CFF (Cash Flow From Financing): Flujo de caja de la financiación. De la financiación tenemos dos maneras, nosotros
+o el pasivo. 
+
 # Traducción/Glosario/Ayuda
 
 - Total Current Assets = Activo Corriente
