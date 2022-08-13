@@ -161,3 +161,15 @@ Ejemplo: ¿Puedes pagar tus deudas con lo que tienes en el bolsillo?
 Conocer la liquidez de una compañia nos ayuda a saber cuan seguro estará nuestro dinero en el corto plazo.
 
 
+# Indicadores de Liquidez: Current Ratio 
+
+> **Current Ratio = Activos corrientes / Pasivos corrientes**
+
+Este ratio nos responde a la pregunta de si ¿es capaz de cubrir la empresa sus deudas del corto plazo con lo que posee?
+
+### ¿Qué cantidad representa un buen Current Ratio?
+
+No existe como tal uno que sea bueno o malo. Pero lo que se suele buscar es **al menos un 1.5**.
+Recordemos que la formula nos dice: activos corrientes/pasivos corrientes. **Al ser 1.5 significa que los activos
+corrientes superan a los pasivos corrientes casi por el doble.**
+
