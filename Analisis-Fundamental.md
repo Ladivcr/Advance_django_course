@@ -173,3 +173,15 @@ No existe como tal uno que sea bueno o malo. Pero lo que se suele buscar es **al
 Recordemos que la formula nos dice: activos corrientes/pasivos corrientes. **Al ser 1.5 significa que los activos
 corrientes superan a los pasivos corrientes casi por el doble.**
 
+# Indicadores de Liquidez: Quick Ratio 
+
+**Quick Ratio**: Posibilidad de pagar las deudas del corto plazo sin tener que vender el stock.
+
+> **Quick Ration = (Activos Corrientes - Inventario) / Pasivos Corrientes**
+
+Este ratio nos responde a la pregunta de si una empresa **¿puede pagar sus deudas del corto plazo con lo que posee
+a pesar de no ser capaz de vender su stock?**
+
+
+
+
