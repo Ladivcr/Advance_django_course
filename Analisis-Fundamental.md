@@ -139,3 +139,25 @@ de resultados mide la rentabilidad de la empresa (la operación de la empresa en
 [La importancia del flujo de efectivo y su diferencia con el resto de resultados](https://docplayer.es/22145683-La-importancia-del-flujo-de-efectivo-y-su-diferencia-con-el-estado-de-resultados.html)
 
 > Marcelo Sánchez
+
+# La importancia del pago de deudas a corto plazo
+
+**Liquidez**: Capacidad para pagar sus deudas en el corto plazo. Sirve para saber que tan seguro es 
+poner nuestro dinero en la empresa en el corto plazo
+
+**Ratio**: Compara dos partes de los estados contables (Estado de Resultados, Balance General,
+Estado de Flujo de Efectivo)
+
+### ¿Qué es la liquidez?
+
+Es la capacidad de una empresa para pagar sus deudas en el corto plazo. 
+Ejemplo: ¿Puedes pagar tus deudas con lo que tienes en el bolsillo? 
+
+
+### ¿Por qué es importante? 
+
+¿Invertirias en una empresa que debe $1,000,000 y tiene $10 dólares en el Banco? 
+
+Conocer la liquidez de una compañia nos ayuda a saber cuan seguro estará nuestro dinero en el corto plazo.
+
+
