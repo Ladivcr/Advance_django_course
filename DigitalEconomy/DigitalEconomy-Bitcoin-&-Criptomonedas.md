@@ -80,3 +80,28 @@ aprender a tomar ventaja de él con lo que sigue en tu camino.
 
 > Contribución creada con aportes de: Alberto Núñez y Brandon Argel.
 
+# ¿Cómo funciona Bitcoin? 
+
+### Peer to peer
+
+Bitcoin funciona de una persona a otra, no necesitamos intermediarios en el camino. 
+O la validación de un ente gubernamental o institución bancaria. La validación es la 
+propia comunidad quien válida. Al ser un sistema descentralizado.  
+
+
+### Descentralizado 
+
+
+### Anonimo 
+
+Grosso modo, toda la información que nosotros creamos se sube a la red. Pero de forma de
+hashes. Es decir, encriptado. Todo esto es almacenado a la red de forma anónima. 
+Pero a su vez, todo es transparente.
+
+### Mineros
+
+Son las personas que deciden prestar su poder de cómputo para que cada una de estas
+transacciones puedan ser validadas. Ellos son recompensados con bitcoin para que el sistema funcione. 
+
+### Wallet/Billeteras
+
