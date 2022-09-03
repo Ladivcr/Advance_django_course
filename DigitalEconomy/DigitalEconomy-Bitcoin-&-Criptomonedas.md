@@ -91,17 +91,94 @@ propia comunidad quien válida. Al ser un sistema descentralizado.
 
 ### Descentralizado 
 
+Nos permite no depender de un solo ente como validación sino de la
+propia comunidad. Por ejemplo, si realizarámos una transacción 
+y los servidores del banco se caen, tendríamos que esperar para 
+poder realizar la transacción. Con Blockchain, especificamente con 
+bitcoin, si eso pasa. La transacción sigue ya que hay más nodos 
+de la misma comunidad. Por lo que no dependemos de un sistema central. 
 
-### Anonimo 
+### Anónimo 
 
-Grosso modo, toda la información que nosotros creamos se sube a la red. Pero de forma de
-hashes. Es decir, encriptado. Todo esto es almacenado a la red de forma anónima. 
-Pero a su vez, todo es transparente.
+Grosso modo, toda la información que nosotros creamos al trabar 
+con Bitcoin se sube a la red. Pero de forma de
+hashes. Es decir, encriptado. Todo esto es almacenado en la red 
+de forma anónima. Pero a su vez, todo es transparente.
+Cada transacción que realizamos, se almacena en la red de forma
+anónima en un libro de transacciones. De esta manera
+podemos ver las transacciones realizadas por equis número. 
+Pero no sabemos a quién pertenece ese número en sí. 
 
 ### Mineros
 
-Son las personas que deciden prestar su poder de cómputo para que cada una de estas
-transacciones puedan ser validadas. Ellos son recompensados con bitcoin para que el sistema funcione. 
+Son las personas que deciden prestar su poder de cómputo para que
+cada una de estas transacciones puedan ser validadas. Ellos
+son recompensados con bitcoin para que el sistema funcione. 
 
 ### Wallet/Billeteras
 
+Es la representación en Internet de una billetera en la que guardamos
+nuestro dinero, en este caso, se trata de bitcoin o criptomonedas
+lo que guardaremos.
+Tenemos dos claves: Pública y Privada. Son como las claves del banco. 
+La clave pública es la que se comparte con cualquier persona para 
+que nos pueda enviar dinero y la clave privada es la clave de acceso
+a nuestra billetera, la que no se comparte con nadie. 
+
+> Blockchain es lo que hace que todo esto funcione. Bitcoin esta 
+creado sobre blockchain. 
+
+> Cuando se realiza una transacción, cada transacción es añadida a todos
+los servidores de los mineros. Primero son concatenadas en forma de 
+bloques y luego son añadidas a los servidores para posteriormente
+completar la transacción. De esta manera, la información queda 
+asegurada y respaldada.
+
+- **Dato curioso en Bitcoin**: Solo van a existir 21 millones de Bitcoin 
+en el mundo. Esto para mitigar problemas que suelen ocurrir
+cuando se imprime más dinero, como la inflación y otra serie de problemas
+que vienen a partir de eso. 
+
+### ¿Cómo se crea un Bitcoin? 
+
+Cada vez que los mineros validan las transacciones. 
+La suma de transacciones. Ellos ganan una pequeña cantidad de Bitcoins.
+Y cada vez que ellos ayudan a la comunidad con la mineria, se van 
+creando más bitcoins.
+
+Pero para que esto no se acabe de un día para otro. 
+Cada 210,000 bloques la dificultad para la generación de bitcoin aumenta
+y la recompensa se reduce a la mitad, aumentando así su escasez.
+
+# La oferta crece: conoce las criptomonedas
+
+### Top 5 de las monedas más importantes (all coin)
+> All coin: Cualquier criptomoneda alternativa a bitcoin
+
+[Septiembre 2, 2022]
+1. **Bitcoin**: La moneda pionera
+2. **Ethereum**: Viene con una propuesta nueva. **Smart Contracs**.
+Básicamente contratos inteligentes y digitales. 
+3. **Tether**: Es básicamente la representación del dinero físico,
+en el mundo cripto. 
+4. **Binance Coin**: Es la criptomoneda de uno de los exchange más 
+importantes del mundo
+5. **Ada o Cardano**: Viene con un protocolo y una alternativa. Más
+del ámbito cientifico. 
+
+### Tipos de criptomonedas
+
+
+Al tener otras criptomonedas. Tenemos diferentes 
+propuestas como: 
+
+- Privacidad
+- Pagos digitales
+- Smart Contracts
+- Internet de las cosas
+- Contenidos Digitales
+- Stablecoins
+- Exchange Tokens
+- CBDC (Central Bank Deal Currency) - Monedas digitales de los bancos 
+centrales. Son las alternativas digitales de los gobiernos para crear
+sus propias criptocurrencies.
