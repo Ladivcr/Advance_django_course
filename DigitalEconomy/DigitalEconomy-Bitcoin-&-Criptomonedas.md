@@ -182,3 +182,27 @@ propuestas como:
 - CBDC (Central Bank Digital Currency) - Monedas digitales de los bancos 
 centrales. Son las alternativas digitales de los gobiernos para crear
 sus propias criptocurrencies.
+
+
+# Ventajas y desventajas de las criptomonedas en la era digital 
+
+### Ventajas
+
+- La seguridad y transparencia del Bitcoin es muy alta. 
+- Es global y descentralizada, cualquier persona con los conocimientos
+mínimos necesarios puede acceder y disfrutar sus beneficios.
+- Bajos costos transaccionales, e inmediatex de acuerdo al cripto activo.
+- La emisión del bitcoin es limitada, no hay control sobre ello y así 
+fue descrito en su protocolo de creación. 
+- La adopción del bitcoin y las criptomonedas va en aumento, y actualmente
+existen decenas de miles de comercios en el mundo que las aceptan como 
+método de pago.
+
+### Desventajas
+- El uso o gestión de las billeteras y transacciones dependen de los
+conocimientos del usuario.
+- Un error en la implementación puede llevar a pérdidas significativas
+de dinero. 
+- La gran volatidilidad en los precios supone en principio una limitante
+para los usuarios, pues implica grandes beneficios o grandes pérdidas, 
+aumentando el miedo a la gran fluctuación. 
