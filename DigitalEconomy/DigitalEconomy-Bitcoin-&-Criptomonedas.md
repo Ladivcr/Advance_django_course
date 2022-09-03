@@ -179,6 +179,6 @@ propuestas como:
 - Contenidos Digitales
 - Stablecoins
 - Exchange Tokens
-- CBDC (Central Bank Deal Currency) - Monedas digitales de los bancos 
+- CBDC (Central Bank Digital Currency) - Monedas digitales de los bancos 
 centrales. Son las alternativas digitales de los gobiernos para crear
 sus propias criptocurrencies.
