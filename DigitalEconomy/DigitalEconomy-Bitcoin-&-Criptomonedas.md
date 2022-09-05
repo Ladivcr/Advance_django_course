@@ -222,3 +222,49 @@ existen varias posibilidades para rentabilizar en este ecosistema:
 - **NFT (Not Fungible Token - Token no fungible):** son los cripto-activos, la propiedad digital de algún activo en blockchain, mucho más allá del
 arte, los metaversos, incluso una adopción para los videojuegos, nosotros podemos comerciar estos cripto-assets
 
+# ¿Dónde comprar bitcoin y criptomonedas?
+
+Existe una gran cantidad de opciones y herramientas de intercambio de criptomonedas en todo el mundo, las más conocidas son binance y localbitcoins,
+ya que están totalmente globalizadas.
+
+- **Latinoamérica**
+- - Binance
+- - Buda
+- - Bitso
+- - Paxful
+- - Localbitcoins
+- - Ripio
+- - Lemoncash
+- - Bybit
+- **Europa**
+- - Paxful
+- - Binance
+- - Kraken
+- - Bybit
+- - Bitstamp
+- - Bit2Me
+- **Estados Unidos**
+- - Coinbase
+- - Gemini
+- - Binance US
+- - Paxful
+
+### Aspectos importantes
+ - **KYC (Know your costumer - Conoce a tu cliente):** Para registrarte en estas plataformas es necesario validar tu identidad con algunos datos
+  y documentos, que accedas a sus términos y condiciones de uso, esto para que te responsabilices de tus acciones en la plataforma
+- **Fees:** es la comisión de hacer alguna transacción
+- **P2P (Peer to peer - Persona a persona):** compras o vendes directamente a otra persona, tiene la ventaja de tener menor comisión, pero hay que ser
+ cauteloso a quien compras y vendes, pues puede llegar a ser una estafa, para esto podemos ver la popularidad, porcentaje de transacciones completadas, 
+ el trackeo o la calificación que otras personas le han dado
+- **Seguridad:** utilizar contraseñas seguras, dispositivos de confianza, y otras medidas de seguridad, como: autenticación en dos pasos y poder bloquear
+ el acceso a esto cuando necesitemos
+
+> **Not tour keys not your coins**
+
+Una desventaja de utilizar plataformas de intercambio, es que no tienes acceso a la clave privada, eso lo maneja la plataforma por completo, por lo que 
+esta plataforma se convierte en un intermediario o un ente centralizado.
+
+**Recomendación:** Si harás inversiones a largo plazo, no las hagas en plataformas de intercambio, lo mejor es que tomes propiedad, control
+y seas responsable con tus activos digitales.
+
+> Contribución creada con aportes de: Brandon Argel.
