@@ -206,3 +206,19 @@ de dinero.
 - La gran volatidilidad en los precios supone en principio una limitante
 para los usuarios, pues implica grandes beneficios o grandes pérdidas, 
 aumentando el miedo a la gran fluctuación. 
+
+# Ecosistema digital: trading, minería, NFT y DeFi
+
+Dentro del ecosistema digital de las criptomonedas, existen varias formas de beneficiarnos, sin embargo, esto no es tan fácil, 
+existen varias posibilidades para rentabilizar en este ecosistema:
+
+### Maneras de monetizar en el ecosistema digital
+- **Trading:** se basa en comprar una criptomoneda, para después venderla en un costo un poco más alto, puede sonar sencillo,
+ pero esto es una profesión en la que necesitas mucha disciplina, estudio y práctica, no lo tomes a la ligera, no es un juego
+- **Minería:** se trata de ser parte de los validadores de cada transacción en este ecosistema, para recibir una pequeña recompensa,
+ necesitas conocer los equipos, protocolos, criptomonedas, el consenso, y conocer los costos de inversión y los probables beneficios
+- **DeFi (Decentralized finance - Finanzas descentralizadas):** Productos y servicios como: préstamos, intereses, etc. También existen en este
+ ecosistema
+- **NFT (Not Fungible Token - Token no fungible):** son los cripto-activos, la propiedad digital de algún activo en blockchain, mucho más allá del
+arte, los metaversos, incluso una adopción para los videojuegos, nosotros podemos comerciar estos cripto-assets
+
