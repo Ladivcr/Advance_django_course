@@ -361,3 +361,34 @@ Estas son algunas Dapps recomendadas:
 - Trustwallet
 
 > Contribución creada con aportes de: Brandon Argel y Josue Martin.
+
+# Seguridad y almacenamiento 
+
+La seguridad es un tema crucial, no solo en el mundo cripto, sino en el mundo del internet.
+
+### Tips de seguridad
+- Utiliza un gestor de contraseñas, como bitwarden
+- No utilices la misma contraseña y usuario en todos tus accesos
+- Tener un antivirus en cada uno de nuestros dispositivos y mantenerlos actualizados
+- Nunca instales softwares desarrollados por compañías en las que no confíes
+- Solo utiliza billeteras verificadas y confiables
+- Actualiza el software de la billetera en cuanto esté disponible
+- Verifica que la dirección pública sea la correcta cuando la envíes a las personas que te transfieran fondos
+- Revisa dos veces la dirección pública de tu destinatario cuando envíes dinero
+- Si accedes a una billetera en línea, asegúrate de que la dirección sea segura: (https://)
+- Nunca accedas a billeteras en línea desde una red pública
+- Siempre activa la autenticación de dos pasos (2FA) en todas tus billeteras
+- Cuantas más capas de seguridad utilices en tus billeteras es mucho mejor
+
+### Redes
+Las redes son protocolos creados dentro de blockchain, nos facilitan las transacciones entre diferentes criptomonedas y también aumentan la seguridad.
+
+**Ambos participantes de una transacción deben utilizar la misma red, esto para evitar el riesgo de perder el dinero.**
+
+Existen muchas redes, las principales son:
+
+- ERC-20
+- BEP-20
+- BTC
+
+> Contribución creada con aportes de: Brandon Argel y Josué Ramírez.
