@@ -268,3 +268,96 @@ esta plataforma se convierte en un intermediario o un ente centralizado.
 y seas responsable con tus activos digitales.
 
 > Contribución creada con aportes de: Brandon Argel.
+
+# Billeteras y tipos de billeteras
+
+Una billetera es la herramienta más importante para el mundo de las criptomonedas, es el lugar que nos permite guardar nuestros criptoactivos.
+
+Para tener una billetera, debemos tener algunos aspectos de seguridad y entender cuál se adapta mejor a nosotros, ya que el mundo cripto
+es tan diverso, que de acuerdo a nuestros objetivos, podremos utilizar una u otra.
+
+### ¿Cómo funcionan?
+Para acceder a ellas y realizar transacciones, necesitaremos dos claves, una pública, y otra privada:
+
+- **Clave pública:** Es la clave que compartimos para que puedan enviarnos o podamos recibir alguna transacción, en el mundo cripto nada está
+ a nuestro nombre, por eso debemos ser cuidadosos de dar correctamente esta clave.
+- **Clave privada:** Es un código o contraseña que nos ayuda a almacenar nuestras criptomonedas, es como la clave o llave de una bóveda en la
+ que almacenas tu dinero.
+
+### Tipos de billeteras
+De acuerdo a nuestros objetivos, necesitamos utilizar una billetera u otra.
+
+Esto no significa que solamente debas tener una billetera, puedes tener tus criptoactivos diversificados, una a la mano para pequeñas compras,
+otra para largo plazo en una billetera muy segura, otra para trading y rentabilizar tus criptoactivos, etc.
+
+Dentro del mundo cripto existen muchos tipos de billeteras, en las cuales también existen diferentes herramientas:
+
+### **Hardware wallets** 
+Es un dispositivo con un software, en el que puedes almacenar criptomonedas.
+
+Es recomendable utilizar este dispositivo para almacenar criptoactivos a largo plazo.
+
+También es importante tener en cuenta que si lo perdemos, ya no podremos recuperar lo que teníamos dentro del dispositivo.
+
+Las mejores opciones son:
+
+- Ledger
+- Trezor
+- hardware cripto wallet
+
+### **Mobile wallets**
+Es un software que se instala en tu teléfono móvil, son muy seguras, te dan el acceso a tus claves privadas, pero debes
+tener mucha responsabilidad, porque si algo le ocurre, o alguien puede acceder y no tienes aspectos de seguridad, tu dinero podría estar en riesgo.
+
+Es recomendable utilizar las billeteras móviles para mediano plazo, y para transacciones rápidas y pequeñas.
+Existen muchas opciones, pero las más utilizadas son:
+
+- Mycelium
+- Bitcoin Wallet
+- Metamask
+
+### **Desktop wallets**
+ Es una aplicación para tu computadora, en la que puedes almacenar tus criptoactivos, te da acceso a tus llaves
+ públicas y privadas.
+
+- Electrum
+- Exodus
+
+### **Paper wallets**
+Es un sistema que nos permite pasar nuestras monedas del mundo online, al mundo offline, a través de un código QR.
+
+- Bitaddress
+- Bitcoin.com
+
+### **Exchange Wallets**
+Son las plataformas de intercambio que nos permiten intercambiar criptomonedas por dinero local, o dinero local por criptomonedas.
+
+No te dan acceso a tus claves privadas porque son instituciones centralizadas.
+
+No es recomendable mantener a largo plazo tus activos en este tipo de plataformas, las puedes usar para realizar operaciones de
+corto hasta mediano plazo.
+
+Estas son algunas billeteras de intercambio, cada una tiene sus ventajas y desventajas, y depende de gustos, así que te invito a probarlas:
+
+- Binance
+- Buda
+- Bitso
+- Bybit
+
+### **Lightning Network Wallets**
+Es una capa creada sobre bitcoin, que nos permite enviar transacciones muy pequeñas a un bajo costo y rápidamente:
+
+- Muun wallet
+- Bluewallet
+
+### **Dapps Wallets**
+Son aplicaciones descentralizadas que permiten acceso al ecosistema DeFi.
+
+Tienes acceso a claves públicas y privadas.
+
+Estas son algunas Dapps recomendadas:
+
+- Metamask
+- Trustwallet
+
+> Contribución creada con aportes de: Brandon Argel y Josue Martin.
