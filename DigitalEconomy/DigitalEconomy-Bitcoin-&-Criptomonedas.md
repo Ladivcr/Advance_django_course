@@ -491,3 +491,63 @@ se les asigna a las criptomonedas y así gestionar nuestras transacciones en
 el mercado de manera exitosa.
 
 > Contribución creada con aportes de: Brandon Argel.
+
+
+# ¿Es bitcoin un activo financiero?
+Viendo la trayectoria que lleva bitcoin, no solo como tecnología o 
+implementación, también con las subidas exorbitantes en su precio, 
+podemos decir que **sí es un activo digital, pero no financiero**.
+
+Bitcoin todavía no es una moneda aceptada a nivel global legalmente,
+aunque cada vez aumenta más su adopción, de hecho, en algunos países:
+como El Salvador, ya ha sido aceptada.
+
+### ¿Qué es un activo financiero?
+Un **activo financiero** es algo que nos genera algún tipo de beneficio 
+en el tiempo, y debe cumplir con las siguientes características:
+
+- Debe ser **rentable en el tiempo, generar beneficios** sobre la toma de 
+decisiones al adquirir el activo
+- La **posibilidad de incurrir en pérdidas** sobre el capital de inversión. 
+Mientras mayor sea el riesgo, también podría ser mayor la rentabilidad
+- Capacidad de convertir el activo financiero en **moneda local**, 
+sin sufrir pérdidas en la transacción local realizada.
+
+### ¿Por qué Bitcoin no es un activo financiero?
+Bitcoin, al ser descentralizado, no es respaldado por ningún banco central o 
+gobierno, y no es parte de los mercados o bolsas de valores.
+
+No tiene las regulaciones suficientes para ser un activo financiero formal, 
+puede cumplir con algunas características, pero no con todas las necesidades 
+de un activo financiero.
+
+- No es una moneda en curso legal en el mundo, aunque su adopción aumenta 
+cada vez más
+- No es equivalente a dinero local, pues este cambio se enfrenta 
+constantemente a las fluctuaciones constantes de su valor en el mercado
+- Aún no es un medio de pago tradicional en el mundo, o con una aceptación 
+regida por marcos legales
+- - En el salvador sí es un medio de pago
+- - En algunos países puedes transaccionar con Bitcoin sin repercusiones 
+legales
+- - En china es ilegal el uso de Bitcoin, y piensa poner en marcha su 
+Criptomoneda centralizada, el Yuan digital
+- - El Legalizar Bitcoin en un país conlleva regulaciones y cierto control 
+centralizado, pero esto no quita que Bitcoin sea un activo digital
+
+### ¿Bitcoin podría convertirse en un activo financiero?
+Para que bitcoin se convierta en un activo financiero, debe estar regulado 
+por instituciones centralizadas, además de tener marcos legales en todo el 
+mundo de acuerdo a las restricciones.
+
+Sin duda, esto rompería con nuestra filosofía de descentralización, pero esto 
+nos deja, que bitcoin sea un activo digital, que nos ha demostrado su 
+potencial y capacidad de crecimiento.
+
+Solo ha pasado poco más de una década, desde que nació bitcoin, aún nos falta 
+mucho por aprender, aplicar y por ver cómo van a funcionar en el futuro.
+
+Los gobiernos están e irán aceptando a bitcoin poco a poco, también es 
+probable que en algunos países continúe como un activo digital independiente.
+
+> Contribución creada con aportes de: Brandon Argel y Marcos Lopez.
