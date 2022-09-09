@@ -425,7 +425,7 @@ Nos permite jugar con varios conceptos DeFi, e interactuar con varios protocolos
 - Polygon (MATIC)
 - Ethereum
 - Binance smart chain
-- 
+
 Además, esta herramienta nos permite
 - Comprar / Enviar / Canjear criptoassets
 - Conectarnos en wallets físicos
