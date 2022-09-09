@@ -392,3 +392,44 @@ Existen muchas redes, las principales son:
 - BTC
 
 > Contribución creada con aportes de: Brandon Argel y Josué Ramírez.
+
+
+# ¿Cómo usar una billetera?
+
+Antes de comenzar, necesitamos tener algunas medidas de seguridad generales, que nos ayudarán a tener un mejor control, proteger, y ser más
+responsables con nuestros datos.
+
+### Guía
+- Instalamos la extensión de MetaMask en nuestro navegador
+- - Entramos a la página de metamask
+- - Damos clic en el botón de descargar (Download now)
+- - Seleccionamos la opción de instalar para nuestro navegador (Install MetaMask for “Tu navegador”)
+- Una vez añadimos la extensión, nos abrirá una página con un botón para comenzar, también podemos acceder a ella desde
+ la sección de extensiones, haciendo clic en MetaMask, y le damos clic en empezar (Get started)
+- Ahora habrá dos opciones:
+- - Importar billetera: si has utilizado antes MetaMask, selecciona esta opción e ingresa tu frase secreta con tu nueva contraseña
+- - Crear billetera: si eres nuevo en MetaMask
+- Ahora, ingresamos una contraseña (de preferencia con un gestor de contraseñas), aceptamos los términos y condiciones, y creamos nuestra billetera
+- Esto nos generará una frase secreta de respaldo o una frase semilla BIP39, que sirve para regenerar nuestra clave privada, que a su vez también
+ genera las claves públicas
+- Ahora, aunque esta no sea la clave privada, si nos ayudará a acceder a nuestra billetera, es importante guardarla en un lugar seguro, y
+ no compartirla con absolutamente nadie, y hacemos clic en el botón de siguiente
+- Confirmamos nuestra frase secreta de respaldo
+- Por último, leemos las sugerencias que nos da MetaMask y ¡así de fácil tenemos nuestra primera billetera!
+Ahora tendremos acceso a nustra clave pública, con la que podremos realizar cripto-transacciones.
+
+### MetaMask
+Es muy usado para las redes ERC20, aunque también nos podemos conectar a otras redes, y es muy sencillo de utilizar.
+
+Nos permite jugar con varios conceptos DeFi, e interactuar con varios protocolos, como:
+- Polygon (MATIC)
+- Ethereum
+- Binance smart chain
+- 
+Además, esta herramienta nos permite
+- Comprar / Enviar / Canjear criptoassets
+- Conectarnos en wallets físicos
+- Crear e importar varias cuentas
+- Agregar alertas
+
+Lo más importante, al inicio, es poder experimentar y entender cómo es que funciona este ecosistema, esta billetera es muy útil, pero no es recomendable guardar aquí nuestros cripto-activos para largo plazo.
