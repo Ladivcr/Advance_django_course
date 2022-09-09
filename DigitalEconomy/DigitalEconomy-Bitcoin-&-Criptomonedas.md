@@ -433,3 +433,61 @@ Además, esta herramienta nos permite
 - Agregar alertas
 
 Lo más importante, al inicio, es poder experimentar y entender cómo es que funciona este ecosistema, esta billetera es muy útil, pero no es recomendable guardar aquí nuestros cripto-activos para largo plazo.
+
+# ¿Necesito comprar un bitcoin entero?
+
+Debido a la cotización del precio del Bitcoin, adquirir una unidad no es 
+accesible para todas las personas. Sin embargo, podemos 
+adquirir una fracción y obtener el equivalente en divisas debido a la 
+capacidad de división que cada bitcoin tiene, gracias al protocolo inicial
+definido por Satoshi Nakamoto. 
+
+### Satoshi
+Es el nombre que se le da a los decimales en el Bitcoin, 
+fue acuñado gracias a su creador, quien desde el inicio definió
+en el protocolo que existirían 8 decimales después de la coma.
+
+1 satoshi = 0.00000001 bitcoin
+10 satoshis = 0.0000001 bitcoin
+100 satoshis = 0.000001 bitcoin
+1,000 satoshis = 0.00001 bitcoin
+10,000 satoshis = 0.0001 bitcoin
+100,000 satoshis = 0.001 bitcoin
+1’000,000 satoshis = 0.01 bitcoin
+10’000,000 satoshis = 0.1 bitcoin
+100’000,000 satoshis = 1 bitcoin
+
+Al día de hoy, existen varias herramientas que podemos utilizar
+para convertir BTC a USD, COP, MXN, y prácticamente a cualquier moneda, 
+incluso puedes buscarlo directamente en Google.
+
+### Divisas a bitcoin
+Satoshis = Monto a comprar / Cotización del bitcoin
+
+- Ejemplo: **Quieres comprar 1,000 USD, y el valor de 1 bitcoin está a
+40,000 USD.**
+
+Satoshis = 1,000 / 40,000
+0.025 = 1,000 / 40,000
+
+### Bitcoin a Divisas
+Dinero = Satoshis * Cotización del bitcoin
+
+- Ejemplo: **Quieres saber el valor de tus fondos, 0.1 bitcoins, y
+ el bitcoin tiene un valor de 40,000 USD.**
+Dinero = 0.1 * 40,000
+4,000 = 0.1 * 40,000
+
+### Herramientas
+Existen muchas herramientas para realizar estos cálculos al instante,
+puedes calcular la cantidad de satoshis que quieres enviar, o saber
+el equivalente a tu moneda local.
+
+- **Qué es coinmarketcap**
+Bitcoin es el padre de las criptomonedas, por lo tanto, todas ellas 
+determinan su valor en referencia al bitcoin. De esta forma, entender
+el funcionamiento de los Satoshis nos ayudará a entender el valor que
+se les asigna a las criptomonedas y así gestionar nuestras transacciones en 
+el mercado de manera exitosa.
+
+> Contribución creada con aportes de: Brandon Argel.
