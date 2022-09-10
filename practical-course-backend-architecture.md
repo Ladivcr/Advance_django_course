@@ -36,3 +36,7 @@ utilizar). Podemos realizar el diseño a bajo nivel, que se refiere a especifica
 que hemos realizado previamente en el diagrama agnostico de la arquitectura. Desde que tecnologías vamos a utilizar, hasta como se van a comunicar
 entre ellas.
 
+# Escenarios Trade off
+Sacrificar una cosa por otra. Esto no es necesariamente malo, pero hay que tener en cuenta que cada decisión que tomamos puede afectar a otra cosa.
+Cuando nos encontramos en un escenario Trade off, no hay decisiones buenas o malas. Pero es necesario que evaluemos que vamos a sacrificar
+a cambio de que y si esto vale la pena. Así como pensar en las consecuencias que esto puede tener a futuro. 
