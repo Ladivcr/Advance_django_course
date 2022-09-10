@@ -28,3 +28,11 @@ Sin embargo, independientemente de la implementación, **generalmente debe expon
 Antes de realizar una arquitectura, primero, debemos tener la descripción de lo que se busca realizar así como 
 las especificaciones de ello. Todo esto viene descrito en lo que se llamada "el documento de diseño". 
 Una muestra de lo que sería un documento de diseño la podemos encontrar [aquí](https://github.com/jorgevgut/airquality-mx/wiki/High-level-System-Design)
+
+# Diseño a bajo nivel 
+
+Una vez tenemos un primer bosquejo/diagrama de la arquitectura (diagrama agnostico, es decir, no hemos especificado que herramientas se van a 
+utilizar). Podemos realizar el diseño a bajo nivel, que se refiere a especificar con mucho detalle, cómo va a funcionar cada una de las secciones
+que hemos realizado previamente en el diagrama agnostico de la arquitectura. Desde que tecnologías vamos a utilizar, hasta como se van a comunicar
+entre ellas.
+
