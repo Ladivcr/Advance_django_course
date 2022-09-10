@@ -40,3 +40,27 @@ entre ellas.
 Sacrificar una cosa por otra. Esto no es necesariamente malo, pero hay que tener en cuenta que cada decisión que tomamos puede afectar a otra cosa.
 Cuando nos encontramos en un escenario Trade off, no hay decisiones buenas o malas. Pero es necesario que evaluemos que vamos a sacrificar
 a cambio de que y si esto vale la pena. Así como pensar en las consecuencias que esto puede tener a futuro. 
+
+# Algunas definiciones
+
+### Stateless (sin estado)
+
+En un servicio, se refiere a que cada solicitud será única y no tendrá ningún tipo de relación con alguna solicitud anterior, es decir, no se va a 
+guardar nada, cada transacción iniciará desde 0. 
+
+> Analogía: Imagina una computadora SIN disco duro, cada proceso que haga esta computadora no se va a guardar, imagina que por cada proceso, enciendes la computadora, hacer el proceso y luego la apagas de nuevo, eso es stateless.
+
+En cambio, **Statefull** sí que puede guardar cosas y comunicarse con procesos anteriores, usar datos generados de un proceso para hacer otro proceso.
+
+### Horizontal Scaling (escala horizontal)
+
+Anteriormente, cuando un sistema crecía y empezaban a incrementar la cantidad de solicitudes al servidor en miles de solicitudes por segundo
+solíamos pensar que simplemente teníamos que agregarle un mejor CPU, más memoria RAM, más discos duros, mejorar la conexión a internet…
+¿Pero qué pasaba si mi demanda aumentaba a millones, pero yo ya tenía el servidor más potente del mundo y no podía agregarle nada más
+y aun así no abastecía para satisfacer millones de usuarios?
+
+**A esto se le llama escala vertical**, sin embargo, poco a poco se fue adoptando **el concepto de escala horizontal** en donde, en lugar de
+tener un servidor superpotente con el mejor procesador y teras de RAM, podemos tener varias computadoras atendiendo esas miles solicitudes,
+y si la demanda crece a millones, nos basta con simplemente agregar más computadoras que puedan atenderlas.
+
+> Aportación de: RetaxMaster
