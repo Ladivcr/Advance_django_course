@@ -64,3 +64,13 @@ tener un servidor superpotente con el mejor procesador y teras de RAM, podemos t
 y si la demanda crece a millones, nos basta con simplemente agregar más computadoras que puedan atenderlas.
 
 > Aportación de: RetaxMaster
+
+
+### Throtling
+Es básicamente hacer que tu servidor devuelva un error intencionado, no es un error real. Se suele hacer cuando se tiene que lidiar con muchas 
+peticiones en un corto tiempo. Para no sobrecargar el servidor y que eventualmente el servicio falle.
+
+### BackOff
+Es el cómo manejamos los retry’s, es decir, en lugar de hacer el retry un segundo después, se pospone a que sea realizado X segundos después, cuando es posible que el servidor tenga menos peticiones.
+
+> Aportación de RetaxMaster
