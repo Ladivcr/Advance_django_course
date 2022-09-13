@@ -74,3 +74,56 @@ peticiones en un corto tiempo. Para no sobrecargar el servidor y que eventualmen
 Es el cómo manejamos los retry’s, es decir, en lugar de hacer el retry un segundo después, se pospone a que sea realizado X segundos después, cuando es posible que el servidor tenga menos peticiones.
 
 > Aportación de RetaxMaster
+
+# Algunas preguntas y planteamientos de interés
+
+- **¿Por qué se refiere a algunos sistemas como sistemas "monolíticos"?
+> Se representan en una sola pieza de arquitectura, usando múltiples
+tecnologías y hasta diferentes lenguajes de programación, pero se ejecutan
+en un solo servidor remoto.
+
+- **¿Cuál de los siguientes ejemplos es característico de un sistema 
+distribuido y verdadero para TODOS los sistemas distribuidos?**
+> Cada componente puede representarse como un nodo en una red y pueden 
+comunicarse entre sí utilizando protocolos como, por ejemplo, HTTP, RTCP, 
+TCP/IP.
+
+- **En el contexto de Arquitectura de Software y sistemas en backend,
+selecciona la opción que mejor describe a un "documento de diseño".**
+> Un documento que pretende solucionar problemas impuestos por ciertos casos 
+de uso, generalmente requerimientos de negocio. Establece un objetivo claro 
+del problema a resolver y detalla elementos técnicos sean a alto o bajo 
+nivel, tales como arquitectura, plan de implementación y modelado de datos, 
+con tal de ofrecer solución a los problemas.
+
+- **¿Para qué sirve un diagrama de secuencias?**
+> Sirve para demostrar cómo interactúan diferentes elementos en un proceso o 
+que son parte de un mismo sistema.
+
+- **¿Cuál de las siguientes es una práctica generalizada y altamente 
+recomendada al elaborar documentos de diseño?**
+>  Tener un "design review" en donde otras personas puedan ofrecer 
+retroalimentación con tal de mejorar el diseño actual.
+
+- **¿Por qué es valioso incluir información acerca de los "límites" de un 
+diseño arquitectónico de software?**
+> Conocer los límites del sistema nos brinda información valiosa acerca de 
+cómo el mismo puede escalar, así como puede servir de referencia para los 
+casos de uso que se desean soportar.
+
+- **Antes de comenzar el desarrollo, ¿cual de éstas es la mejor idea para 
+incluir en un documento de diseño para asegurarnos que estamos tomando las 
+mejores decisiones?**
+> Incluir además de la solución propuesta, por lo menos, una alternativa.
+
+- **¿Cuál de las siguientes afirmaciones es verdadera en cuanto a bases de 
+datos**
+> Es posible crear una base de datos que solamente se utilice para realizar 
+operaciones de escritura, replicar dicha base en un clúster de decenas de 
+bases de datos que solo se utilicen para lectura y con ello lograr menor 
+latencia para tráfico que corresponda a miles de usuarios concurrentes que 
+consulten información.
+
+- **¿Cuál de estas herramientas puede utilizarse para disminuir la latencia 
+pero sacrificando consistencia?**
+> Caché. 
