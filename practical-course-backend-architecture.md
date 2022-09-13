@@ -77,7 +77,7 @@ Es el cómo manejamos los retry’s, es decir, en lugar de hacer el retry un seg
 
 # Algunas preguntas y planteamientos de interés
 
-- **¿Por qué se refiere a algunos sistemas como sistemas "monolíticos"?
+- **¿Por qué se refiere a algunos sistemas como sistemas "monolíticos"?**
 > Se representan en una sola pieza de arquitectura, usando múltiples
 tecnologías y hasta diferentes lenguajes de programación, pero se ejecutan
 en un solo servidor remoto.
