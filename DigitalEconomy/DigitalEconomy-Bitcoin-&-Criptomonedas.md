@@ -559,7 +559,7 @@ ofrecen, quiénes están colaborando, y sus inversores.
 
 Podemos utilizar varias herramientas para averiguar esto e investigar un poco más sobre ellos, y saber si son proyectos con potencial.
 
-En (CoinMarketCap)[https://coinmarketcap.com/] podemos encontrar básicamente a todos los cripto-proyectos más importantes, con información 
+En [CoinMarketCap](https://coinmarketcap.com/) podemos encontrar básicamente a todos los cripto-proyectos más importantes, con información 
 de sobre ellos y muchos más detalles.
 
 ## Capitalización del mercado
@@ -582,7 +582,7 @@ la atención, o si está funcionando.
 
 Las personas que están interesadas en invertir, y ser parte de un proyecto de inicio a fin.
 
-(Crunchbase)[https://www.crunchbase.com/] nos brinda información sobre esto, podemos encontrar la capitalización del mercado, inversores,
+[Crunchbase](https://www.crunchbase.com/) nos brinda información sobre esto, podemos encontrar la capitalización del mercado, inversores,
 trabajadores, dinero recaudado, y mucha más información financiera.
 El detalle de esta plataforma, es **de paga**.
 
@@ -595,7 +595,7 @@ Telegram es una herramienta en la que existen cientos de comunidades de todos lo
 
 ## Análisis técnico
 
-(DealRoom)[https://dealroom.co/]
+[DealRoom](https://dealroom.co/)
 Es el análisis del precio y la cotización de un activo, la inversión de capital en relación con los movimientos que está teniendo
 en el precio, para saber si es favorable entrar a este proyecto o no.
 
