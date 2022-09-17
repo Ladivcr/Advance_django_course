@@ -585,6 +585,7 @@ Las personas que están interesadas en invertir, y ser parte de un proyecto de i
 [Crunchbase](https://www.crunchbase.com/) nos brinda información sobre esto, podemos encontrar la capitalización del mercado, inversores,
 trabajadores, dinero recaudado, y mucha más información financiera.
 El detalle de esta plataforma, es **de paga**.
+Pero puedes ver un poco de información al día en [DealRoom](https://dealroom.co/)
 
 ## Comunidad
 
@@ -595,7 +596,6 @@ Telegram es una herramienta en la que existen cientos de comunidades de todos lo
 
 ## Análisis técnico
 
-[DealRoom](https://dealroom.co/)
 Es el análisis del precio y la cotización de un activo, la inversión de capital en relación con los movimientos que está teniendo
 en el precio, para saber si es favorable entrar a este proyecto o no.
 
