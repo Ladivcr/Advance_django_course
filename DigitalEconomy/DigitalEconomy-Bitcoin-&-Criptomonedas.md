@@ -551,3 +551,56 @@ Los gobiernos están e irán aceptando a bitcoin poco a poco, también es
 probable que en algunos países continúe como un activo digital independiente.
 
 > Contribución creada con aportes de: Brandon Argel y Marcos Lopez.
+
+# Análisis de proyectos
+
+Antes de tomar en cuenta un proyecto para que sea parte de nuestro portafolio o de nuestra trayectoria, necesitamos conocerlos y saber lo que
+ofrecen, quiénes están colaborando, y sus inversores.
+
+Podemos utilizar varias herramientas para averiguar esto e investigar un poco más sobre ellos, y saber si son proyectos con potencial.
+
+En (CoinMarketCap)[https://coinmarketcap.com/] podemos encontrar básicamente a todos los cripto-proyectos más importantes, con información 
+de sobre ellos y muchos más detalles.
+
+## Capitalización del mercado
+
+Es el dinero invertido en un proyecto.
+Indica si ha captado en interés de otras personas, y junto a otros factores podemos interpretar el éxito que pueda llegar a tener este proyecto.
+
+Siempre teniendo en cuenta la posibilidad de riesgo.
+
+Además, en CoinMarketCap, podemos encontrar una breve descripción de lo que trata el proyecto, las propuestas y los protocolos.
+
+## Partners
+
+Son proyectos creados sobre una blockchain, que también colaboran con el protocolo en sítimp.
+
+Al analizar una criptomoneda es importante ver las alianzas y los proyectos que se desarrollan con ella, para saber si está llamando
+la atención, o si está funcionando.
+
+## Inversores
+
+Las personas que están interesadas en invertir, y ser parte de un proyecto de inicio a fin.
+
+(Crunchbase)[https://www.crunchbase.com/] nos brinda información sobre esto, podemos encontrar la capitalización del mercado, inversores,
+trabajadores, dinero recaudado, y mucha más información financiera.
+El detalle de esta plataforma, es **de paga**.
+
+## Comunidad
+
+Si existe mucho apoyo detrás de este proyecto, ayudando a que evoluciones, es porque realmente ven potencial en él, esto es un concepto
+básico de la oferta y la demanda.
+
+Telegram es una herramienta en la que existen cientos de comunidades de todos los cripto-proyectos, con personas apasionadas por el ecosistema.
+
+## Análisis técnico
+
+(DealRoom)[https://dealroom.co/]
+Es el análisis del precio y la cotización de un activo, la inversión de capital en relación con los movimientos que está teniendo
+en el precio, para saber si es favorable entrar a este proyecto o no.
+
+Esto nos ayudará a tomar muchas mejores decisiones, que aporten no solo a nuestro portafolio, sino a nuestro crecimiento en este ecosistema.
+
+Nuestra personalidad y objetivos tienen que ver mucho que ver con el tiempo de inversor o inversora que nos convertiremos.
+
+> Contribución creada con aportes de: Brandon Argel y Marcos Lopez.
