@@ -604,3 +604,45 @@ Esto nos ayudará a tomar muchas mejores decisiones, que aporten no solo a nuest
 Nuestra personalidad y objetivos tienen que ver mucho que ver con el tiempo de inversor o inversora que nos convertiremos.
 
 > Contribución creada con aportes de: Brandon Argel y Marcos Lopez.
+
+# Tipos de inversores
+
+Todos nosotros tenemos personalidades y perfiles distintos, dentro y fuera de este ecosistema también existen diferentes tipos de inversores.
+
+Cada inversor toma diferentes decisiones respecto a sus planes y objetivos.
+
+## Trader o Intraday
+
+Es una persona que busca beneficios a corto plazo, su interés no está en esperar años para que este ecosistema funcione mejor.
+
+Se encuentra activamente buscando oportunidades en el mercado, como:
+
+Temporalidades bajas:
+- Comprar activos cuando bajan de precio.
+Acción de precio: 
+- Cuando el precio sube vendo los activos adquiridos.
+
+## Swing
+
+Es una persona que busca beneficios a mediano plazo.
+
+Después de observar cómo es que fluctúa el precio, y evalúa el potencial del proyecto por varias semanas o meses, toma decisiones objetivas
+para llevar transacciones favorables.
+
+## Long Term
+
+El objetivo de las personas con este perfil es almacenar activos digitales de interés por varios años o incluso décadas.
+
+¿Cuál perfil elegir?
+
+No existe un perfil mejor que otro.
+Sea cual sea el perfil que elijas, lo más importante es que te quedes con estas decisiones y sepas que es un proceso un poco largo.
+
+Claramente, este ecosistema no es un juego, existe una muy alta probabilidad de riesgo, que podemos minimizar si decidimos aprender día tras día.
+
+Elige un perfil que se adapte a tu personalidad, así como tus activos e intereses con el cripto mercado.
+Sin embargo, cada uno de ellos requiere una enorme cantidad de tiempo, estudio, herramientas, disciplina, enfoque y estrategia que nos
+permita ser consistentes en el tiempo.
+
+
+> Contribución creada con aportes de: Brandon Argel.
