@@ -646,3 +646,30 @@ permita ser consistentes en el tiempo.
 
 
 > Contribución creada con aportes de: Brandon Argel.
+
+# ¿Cómo empezar en el mundo de las criptomonedas?
+
+## Lectura
+
+Educarte es lo más importante, no solo en el mundo de las criptomonedas, sino para ingresar a cualquier otra actividad.
+
+Es importante tener el compromiso de ser parte de ello, y de siempre seguir la ruta correcta que te convertirá en una persona profesional y preparada.
+
+En este ecosistema todo avanza muy rápido, así que debemos de estar siempre en constante aprendizaje.
+
+## Investigación
+
+Existen muchísimos proyectos, alternativas y opciones para estudiar y aprender de ellos, así como conceptos en los cuales basarnos para tomar las mejores decisiones.
+
+## Herramientas
+
+- **Qué es Coinmarketcap:** Información sobre las criptomonedas
+- **Qué esTelegram:** Red social segura para compartir información e intereses con otras personas o grupos
+- **Qué es Portal News:** Noticias actuales sobre el mundo cripto
+- **Qué es TabTrader:** Aplicación para mantenerte al tanto de las criptomonedas de tu interés
+- **Qué es TradingView:** Plataforma de análisis, información, noticias, acción, y fores
+- **Qué es Coinmarketcal:** Calendario con los eventos cripto más importantes; proyectos, criptomonedas, etc.
+- **Qué es Glassnode:** Información numérica y gráficos sobre criptomonedas
+- **Qué es Coinstats:** Aplicación para dar seguimiento a tu propio portafolio y ver tus activos digitales
+
+> Contribución creada con aportes de: Brandon Argel.
