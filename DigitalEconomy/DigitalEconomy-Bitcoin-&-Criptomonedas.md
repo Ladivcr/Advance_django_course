@@ -673,3 +673,48 @@ Existen muchísimos proyectos, alternativas y opciones para estudiar y aprender 
 - **Qué es Coinstats:** Aplicación para dar seguimiento a tu propio portafolio y ver tus activos digitales
 
 > Contribución creada con aportes de: Brandon Argel.
+
+
+# Gestión de riesgo y regla 90/90/90
+
+**La regla del 90/90/90 dice que el 90% de los inversores principiantes pierden el 90% de su dinero en los primeros 90 días aprendizaje e inversión.**
+
+Lo único que podemos controlar en el mundo de las inversiones son las pérdidas, una buena gestión de riesgo puede marcar la diferencia entre 
+tomar o no mejores decisiones, y potenciar tus beneficios.
+
+Preservar tu capital y alcanzar la rentabilidad es totalmente posible, siempre y cuando entiendas que debemos seguir una estrategia metódica 
+y completa sin dejar nada al azar.
+
+Regla del 90/90/90
+El 90% de los inversores principiantes pierden el 90% de su dinero en los primeros 90 días aprendizaje e inversión.
+
+Pero no es para que te alarmes, más bien para poder mostrarte el camino correcto y que no seas parte de ese porcentaje.
+
+Ser parte de cualquier proceso de aprendizaje, lleva tiempo. Así que primero se necesita estudiar, educarse, y practicar mucho antes
+de comenzar a invertir.
+
+También debes invertir solo la cantidad que estés dispuesto a arriesgar para practicar, podrás salir de estas probabilidades, y
+ser parte de ese 10% que con el tiempo obtiene beneficios consistentes.
+
+
+## Gestión de riesgo
+La gestión del riesgo es el conjunto de herramientas o recomendaciones que podemos seguir para disminuir nuestra aversión en el ecosistema.
+
+Y de hecho, potenciar nuestros posibles beneficios consistentes en el tiempo.
+
+Algo importante, es saber que lo único que podemos controlar en el mundo de las inversiones en general, es cuánto perdemos.
+
+## Recomendaciones
+- No arriesgues más de 1% de tu capital de inversión por transacción
+- No exponga tu capital de inversión a más de 3% riesgo diario
+- Nunca olvides proteger tu operación con un Stop Loss o una alarma que vende un activo cuando su valor desciende por debajo de un límite marcado.
+- Siempre busca una proyección de beneficio superior a tres veces la pérdida de tu operación
+- Ten en cuenta que ni siquiera el inversor más experimentado es inmune a las pérdidas
+- Siempre sigue tu plan e instrucciones, no dejes nada al azar
+- No permitas que la avaricia y el exceso de confianza se apoderen de tu operativa
+- Lleva una bitácora de trading, en la que registres cada una de tus operaciones
+- Opera de forma objetiva, si sientes que estás siendo impulsado por tus emociones, aléjate del mercado
+
+Un ejemplo práctico para usar un stop loss, es si tienes bitcoin a un valor de 30,000 usd y subió de nuevo a 60,000 usd, añades un stop loss al 95% de su valor actual (57,000 usd), para sí comienza a bajar detengas las pérdidas, y se venda automáticamente tu bitcoin.
+
+Contribución creada con aportes de: Brandon Argel.
