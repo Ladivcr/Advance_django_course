@@ -718,3 +718,28 @@ Algo importante, es saber que lo único que podemos controlar en el mundo de las
 Un ejemplo práctico para usar un stop loss, es si tienes bitcoin a un valor de 30,000 usd y subió de nuevo a 60,000 usd, añades un stop loss al 95% de su valor actual (57,000 usd), para sí comienza a bajar detengas las pérdidas, y se venda automáticamente tu bitcoin.
 
 Contribución creada con aportes de: Brandon Argel.
+
+# Fraudes digitales
+
+Un fraude digital es algún tipo de engaño o estafa, para intentar conseguir algún tipo de beneficio, perjudicando a alguien.
+
+Los fraudes digitales no solo existen en el ecosistema cripto, sino, en todo internet, y cualquier persona está expuesta a ser víctima de uno.
+
+Tipo de fraudes digitales
+
+- Regalos en redes sociales: Piden que les envíes dinero, con la promesa de duplicar tus beneficios. Ten en cuenta que nadie te regala dinero.
+- Malware: No instales programas piratas, ni programas que no estén verificados. Los programas que son gratis, es porque el producto eres tú, y tus datos.
+- Identidades falsas o phishing: Ganan tu confianza, haciéndose pasar por otra persona (que tal vez admires o conozcas), para manipularte y hacer acciones que no deberías realizar.
+- Esquemas piramidales: Son negocios “innovadores”, te dicen que debes invertir, pero no te dicen los fundamentes del negocio, una vez inviertes, tienes que traer más clientes, para obtener los beneficios de tu inversión (el dinero de los nuevos participantes), al final los más recientes participantes no reciben beneficios, y el “empresario” desaparece con su dinero.
+- Pump y Dump: Son grupos que saben de algún proyecto con poco o nada de futuro, que hacen campañas para sobrevalorar dicho proyecto, atraen inversores para elevar artificialmente su precio.
+- Falsas oportunidades de inversión: Son oportunidades que “solo se dan una vez en la vida”, el estafador dice ser un experto sobre el tema, y te asegura muchos beneficios si inviertes, te dan poco o nada de fundamento o información.
+
+## ¿Cómo evitarlos?
+- La educación nunca puede faltar
+- Opera tu propio dinero
+- No entregues tus llaves privadas
+- Protege tus datos e información
+- Investiga sobre dicha oportunidad o persona antes de invertir, si crees que vale la pena
+- No instales programas piratas o de creadores desconocidos
+
+> Contribución creada con aportes de: Brandon Argel
