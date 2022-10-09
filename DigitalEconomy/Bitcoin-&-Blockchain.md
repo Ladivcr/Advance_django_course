@@ -31,7 +31,7 @@ Bitcoin es la primera moneda digital descentralizada de la historia.
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
-- Prueba de Trabajo: Búsqueda de un número variable que permite que se puedan insertar bloques en blockchain.
+- Prueba de Trabajo: Búsqueda de un número o variable que permite que se puedan insertar bloques en blockchain y además requieren un nivel de cálculo y cómputo complejo.
 - (Adam Back) HashCash el ancestro de PoW: Nació para evitar spam. Funciona para no poder utilizar un bitcoin dos veces.
 - P2P: Ordenadores conectados entre sí y permiten el intercambio directo de información de igual a igual. Servidores descentralizados.
 - Criptografía: Tecnologia para resguardar la integridad de los datos y así evitar que personas no autorizadas accedan a la información.
