@@ -93,6 +93,39 @@ Cuando se creen el total de Bitcoins, será cuando finalmente sea un sistema tot
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Lightning Network 
+
+Desde el inicio, Bitcoin ha estado limitado a ciertas dificultades para poder progresar al nivel que Satoshi lo 
+propuso en su white paper. El primer problema ha sido la escalabilidad, que se traduce en la falta de rapidez y 
+volumen en su red para poder relizar transacciones más eficaces. En su núcleo, Bitcoin soporta solo 2,048 
+transacciones por bloque, alrededor de 7 transacciones por segundo.
+
+Debido a esto, el tráfico y las comisiones por transacción suben. En algún momento se llegaron a superar los 50 
+dólares por transacción.
+
+Para ello, surge una propuesta complementaria llamada Lightning Network. Es un software independiente que se 
+comunica con la red de Bitcoin, que permite transacciones desde montos bajos, instantáneas y con comisiones muy 
+bajas. Aunque esta propuesta aún se encuentra en una etapa temprana y con sus propias desventajas.
+
+## Lightning Network
+
+- Transacciones instantáneas
+- Comisiones realmente bajas
+- Software independiente, que requiere de comunicación con la blockchain de Bitcoin
+- LN puede integrarse en otras redes
+### ¿Por qué usar LN?
+
+- Escalabilidad
+- Micropagos
+- Privacidad
+- Pagos instantáneos
+- Responder
+
+Actualmente, se siguen desarrollando más herramientas usando Lightning Network para mejorar y ampliar el 
+proyecto, que definitivamente lograrán una evolución para Bitcoin.
+
+> Aporte creado por: Luis Enrique Herrera.
+
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
