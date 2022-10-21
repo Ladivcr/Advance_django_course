@@ -126,6 +126,32 @@ proyecto, que definitivamente lograrán una evolución para Bitcoin.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Pilares de Bitcoin
+
+Veamos un poco más a profundidad lo que Bitcoin representa a un nivel ideal para el sistema financiero:
+
+## Las virtudes Satoshi
+
+- Abierto: Significa que Bitcoin es accesible para cualquier persona, no solo para el usuario regular, sino 
+también para aquellos que deseen contribuir con desarrollos y proyectos que aumenten su valor, pues al ser una 
+solución de código abierto, cualquiera que tenga las habilidades técnicas es libre de poder crear nuevas 
+alternativas. Sencillamente, aún hay mucho que hacer por Bitcoin.
+- Escaso: Hay un límite de bitcoins por generar, y esto a su vez se volverá más complejo. A comparación del 
+sistema FIAT, que permite una impresión artificial de valor, lo cual está llevando a una inestabilidad 
+insostenible. Bitcoin es un ecosistema basado en valor real, por las propias personas y sus cualidades 
+tecnológicas.
+- Público: La información y sus detalles dentro de Bitcoin es totalmente accesible a quien desee saber más sobre 
+prácticamente cualquier cosa que se pueda pensar respecto a la cadena de bloques.
+- Sin fronteras: No hay un límite para su acceso a nadie mientras se tenga una conexión a internet.
+- Resistente a la censura: A pesar del intento de muchos, Bitcoin ha podido sobrellevar los ataques y las 
+regulaciones para poder controlarlo o manipularlo.
+- Descentralizado: Su control depende de todos y no recae en un ente central.
+- Confianble: Su valor procede de los usuarios que han depositado su confianza por el potencial a largo plazo. No 
+olvidemos que nosotros como mayoría podemos darle poder a todo lo que nos propongamos, y Bitcoin representa la 
+oportunidad de recuperar algo que nunca debimos ceder.
+
+> Aporte creado por: Luis Enrique Herrera.
+
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
