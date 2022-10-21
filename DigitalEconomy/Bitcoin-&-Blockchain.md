@@ -68,6 +68,31 @@ hacer la labor, Bitcoin seguirá creciendo.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# El rol de quienes minan Bitcoin
+
+Mineros son aquellas personas que entregan el poder de cómputo de sus equipos para asegurarse de que los bloques de la 
+cadena de BlockChain sean agregados correctamente. Esta ejecución es lo que se conoce como Proof-of-work, que se traduce
+en la resolución de complejos algoritmos para el funcionamiento descentralizado y seguro de Bitcoin a partir de poder
+de cómputo. Este protocolo también ha sido implementado en otras criptomonedas.
+
+## Función de los mineros
+La función de los mineros de Bitcoin se extiende a tres tareas:
+
+- Se encargan de comprobar que las transacciones sean realizadas debidamente
+- Certificar que nadie pueda usar la misma moneda dos veces o introducir monedas falsas
+- Crear nuevos bitcoins con la inserción de nuevos bloques
+## Recompensas del minero
+ 
+ Se dividen en dos:
+
+- Al resolver el hash de un bloque nuevo: Se ganan cierta cantidad de bitcoins, reduciéndose a la mitad cada 210,000 
+bloques para aumentar la dificultad de minado, y por consecuencia, la demanda del bitcoin. Solo podrán minarse 21 millones de bitcoins en total en el sistema. Alternativamente, se puede participar en el minado entrando a un pool de minado, donde varias personas unen poder de cómputo en una red y entre todos ganan una porción proporcional.
+
+- Al validar transacciones con rapidez que se incluyen en los bloques: Se tratan de comisiones por transacciones. Cada vez se está volviendo una prioridad más grande debido al crecimiento de la red, evitando la posibilidad de ataques.
+Cuando se creen el total de Bitcoins, será cuando finalmente sea un sistema totalmente consolidado, y cuando se sepa el valor final de Bitcoin.
+
+> Aporte creado por: Luis Enrique Herrera.
+
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
