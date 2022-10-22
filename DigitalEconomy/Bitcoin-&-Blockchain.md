@@ -230,6 +230,28 @@ impacto en la sociedad.
 
 # Blockchain 3.0: DApps
 
+Se introdujo para abordar problemas como: 
+- Escalabilidad
+- Sostenibilidad
+- Seguridad
+- Costo
+- Dilemas de interoperabilidad
+
+> Redes blockchain programables, capaces de soportar aplicaciones descentralizadas, con mucha mayor capacidad que Bitcoin y Ethereum 
+
+## Tecnologías 
+Escalables, con una interfaz amigable para los usuarios y eficientes 
+
+- Proof of Stake (PoS), Proof of History (PoH), etc. 
+- DApps (IPFS)
+
+## Objetivos 
+- Ejecuta de forma automática acciones programadas en blockchain 
+- Registro y transferencia de valor más allá del dinero 
+- Autonomía, nuevos modelos de negocio, anonimato 
+- Escalabilidad 
+
+
 En la historia de Bitcoin y Blockchain, llegamos a un punto en donde todo lo que se ha visto sobre Bitcoin se relaciona a 
 algo muy curioso: las aplicaciones o apps. ¿Cambiaría algo de nuestras queridas aplicaciones?
 
