@@ -152,6 +152,37 @@ oportunidad de recuperar algo que nunca debimos ceder.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Blockchain más allá de Bitcoin 
+
+## Tipos de Blockchain 
+- Públicas: Accesible a cualquier persona del mundo (Bitcoin, Ethereum, etc) 
+- Privadas: Válidas para solventar problemas de eficiencia, seguridad y fraude dentro de instituciones financieras tradicionales (Hyperledger, etc)
+- Híbridas: Intento de aprovechar lo mejor de ambos mundos. La participación en la red es privada pero la 
+contabilidad es accesible de forma púbblica (R3, Energy Web, etc)
+
+No olvidemos las características de esta tecnología, las que permiten que Bitcoin sea algo extraordinario.
+La inmutabilidad, la transparencia y la trazabilidad.
+
+Con esto, es claro que podemos crear innovaciones que aprovechen estas cosas, y las opciones son prácticamente infinitas.
+Desde ámbitos que han tenido poca evolución tecnológica hasta las mejoras dentro de tecnologías ya conocidas, pero que 
+incluso puedan renovarse radicalmente.
+
+Imaginemos un mundo donde, con el apoyo que Bitcoin puede brindar, conformemos nuevos sistemas de educación, de salud, de 
+cadenas de suministro, de investigación científica, y la lista sigue y sigue.
+
+Esto no está limitado a los sectores públicos. Podemos imaginar casos de uso privados, que puedan confiar en esta 
+tecnología para poder proteger sus datos de agentes externos, pero manteniendo una transparencia hacia las personas que les 
+compete.
+
+Realmente habría que ahondar y experimentar el cambio de paradigma que surgiría si nos acostumbramos a estas nuevas ofertas 
+y soluciones.
+
+## Evolución de Blockchain
+- Blockchain 1.0: Digital currency
+- Blockchain 2.0: Smart contracts
+- Blockchain 3.0: dApps
+- Blockchain 4.0: Industry
+
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
