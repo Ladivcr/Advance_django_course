@@ -203,6 +203,30 @@ sido un gran salto.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Blockchain 2.0: Smart Contracts
+
+Una nueva forma de intercambiar valor
+En esta etapa, ya no solamente se empezó a transaccionar con “monedas digitales”, sino que se desarrolló toda una 
+funcionalidad para integrar otro tipo de activos, a través de la creación de contratos inteligentes. **Estos en realidad 
+son formatos de código para realizar transacciones de una manera programada, facilitando el intercambio de valor más allá 
+de las criptomonedas.**
+
+Así, los contratos inteligentes o smart contracts son utilizados como un mecanismo de seguridad para transaccionar 
+diferentes bienes tangibles y no tangibles. Nacen con Ethereum, la iniciativa de Vitálik Buterin, un programador ruso que 
+creó la Ethereum Virtual Machine (EVM), para el despliegue de estos contratos con ayuda de su propio lenguaje de 
+programación.
+
+Dentro de la EVM, es posible generar contratos que creen “tokens”, un recurso que representa valor parecido a una moneda o 
+propiedad digital, con sus especificaciones, pudiendo originar diferentes servicios a partir de la blockchain de Ethereum. 
+En esencia, es una plataforma que pretende llevar esta tecnología a una escala mayor con su propuesta un tanto más completa 
+y atractiva.
+
+Por supuesto, se puede imaginar una integración de este tipo de software para optimizar áreas como lo legal, lo mercantil, 
+y así erradicar casi por completo el margen de error humano inherente en la mayoría de las actividades. Es ideal imaginar 
+que se concreten corporaciones, instituciones y sistemas de una manera más eficiente y que sin duda tendrían un mejor 
+impacto en la sociedad.
+
+> Aporte creado por: Luis Enrique Herrera.
 
 
 # Conceptos
