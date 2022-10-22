@@ -228,6 +228,35 @@ impacto en la sociedad.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Blockchain 3.0: DApps
+
+En la historia de Bitcoin y Blockchain, llegamos a un punto en donde todo lo que se ha visto sobre Bitcoin se relaciona a 
+algo muy curioso: las aplicaciones o apps. ¿Cambiaría algo de nuestras queridas aplicaciones?
+
+En realidad, sí. Pero nada que no nos gustaría. Ahora conoceremos las Distributed Apps (dApps).
+
+## ¿Qué son las dApps?
+
+Actualmente, las aplicaciones más usadas y de las que muchos de nosotros dependemos en nuestro día a día, pertenecen a 
+empresas de las que no podemos decidir absolutamente nada. Hasta cierto punto, tiene sentido, pues al ser corporaciones 
+privadas, deberían ser libres de decidir sobre su empresa, ¿cierto?
+
+Pero… ¿Qué pasa cuando lo que manejan son datos personales y hacen uso de ellos?
+
+Tomando en cuenta esto y muchos otros casos en los que sería mejor si las manejáramos de forma descentralizada (como las 
+finanzas), es como surgieron las dApps. Son aplicaciones cuyo control no está bajo un solo eje o servidor, sino que es 
+administrada por una red blockchain que almacena, distribuye y asegura nuestra información.
+
+En términos prácticos, la usabilidad sería la misma, solamente que adquiriendo la seguridad y la confianza de una 
+tecnología que nos devuelve el control de nuestros datos. Por supuesto, conlleva tomar nuevas responsabilidades e incluso 
+adaptarse a algunos procedimientos nuevos, aunque nada más son pasos sencillos a seguir para poder obtener un mayor 
+beneficio.
+
+Hasta ahora, lo cierto es que este tipo de aplicaciones todavía no tiene suficiente atención como para considerarlas 
+consolidadas, pero depende de las personas y las propuestas, la rapidez con la que adoptemos estas soluciones, que prometen 
+un crecimiento equitativo para las industrias y el mundo de las finanzas.
+
+> Aporte creado por: Luis Enrique Herrera.
 
 # Conceptos
 
