@@ -183,6 +183,28 @@ y soluciones.
 - Blockchain 3.0: dApps
 - Blockchain 4.0: Industry
 
+# Blockchain 1.0: Digital Currency
+
+Con el nacimiento de Bitcoin, surgió la primera edad de Blockchain. Esta tomó conceptos ya hechos en la era “cypherpunk”, 
+desde los años 80´s. Pero no fue sino hasta que se dió a conocer el white paper que el significado de las “monedas 
+digitales” tomó un verdadero sentido.
+
+Conceptos como DLT y P2P habían dejado ya su marca en la Internet. La implementación de una tecnología de registro 
+distribuido (DLT), ya ha sido aplicada en propuestas que han tenido cierta reputación con la popularización de este tipo de 
+arquitecturas de red y sus ventajas.
+
+Casos como el de Napster es de los más conocidos y además pionero en esta tendencia: una plataforma de distribución de 
+música en formato MP3 con auge en la primera década de este siglo.
+
+Blockchain es el resultado de estas invenciones junto con otro protocolo muy importante: PoW (Proof Of Work). A partir de 
+aquí, se empieza a construir la gran cadena de transacciones que ya hemos tratado. Con ella, también empezaron a crecer 
+nuevas capas que han llevado a Blockchain a una evolución que todavía sigue en sus primeras etapas, pero que sin duda han 
+sido un gran salto.
+
+> Aporte creado por: Luis Enrique Herrera.
+
+
+
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
@@ -190,5 +212,5 @@ y soluciones.
 - (Adam Back) HashCash el ancestro de PoW: Nació para evitar spam. Funciona para no poder utilizar un bitcoin dos veces.
 - P2P: Ordenadores conectados entre sí y permiten el intercambio directo de información de igual a igual. Servidores descentralizados.
 - Criptografía: Tecnologia para resguardar la integridad de los datos y así evitar que personas no autorizadas accedan a la información.
-
-
+- DLT: Tecnologías de registro distribuido
+- PoW (Proof of Work): Este protocolo funciona bajo el concepto de requerir un trabajo al cliente, que luego es verificado por la red. Normalmente el trabajo solicitado, consiste en realizar complejas operaciones de cómputo.
