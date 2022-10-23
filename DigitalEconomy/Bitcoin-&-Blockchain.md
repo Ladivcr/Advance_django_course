@@ -363,6 +363,24 @@ Funciona como una loteria
 - Proof of Humanity (PoH): Es un proyecto que busca demostrar la existencia real de personas, e identificarlas digitalmente en un contexto blockchain
 - Proof-of-Location (PoL): Introduce la localización por GPS para sus nodos y correspondiente validación
 
+# Limitaciones de Blokchain 
+
+## Inmutabilidad de la información
+Por ejemplo, cuando suponemos que existe inmutabilidad de la información, también debemos pensar en los problemas que esto puede causar: no siempre será tan práctico 
+no poder modificar una parte de esos datos.
+
+## Velocidad de transferencia (procesamiento de información)
+La velocidad de la transferencia de estos datos también puede ser un inconveniente. Probablemente, haya todavía mejores vías para llegar a un estándar más óptimo y más 
+confiable a comparación de las actuales redes de comunicación y conexión.
+
+## Seguridad y privacidad
+La blockchain es tan segura, que hasta nos protege de nosotros mismos. Así que, si llegas a perder tus claves de acceso, es seguro que pierdes tus activos. Por lo que 
+esta podría ser una desventaja que depende totalmente de nosotros.
+
+Y en general, factores como la escalabilidad, la privacidad y vulnerabilidad son áreas de mejora que siempre estarán presentes, y queda en nuestro esfuerzo y en 
+nuestra curiosidad la tarea de poder obtener un ecosistema más confiable y sostenible cada día.
+
+Aporte creado por: Luis Enrique Herrera.
 
 # Conceptos
 
