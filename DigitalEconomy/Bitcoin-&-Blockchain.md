@@ -316,6 +316,54 @@ cada vez más ambiciosos.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Protocolos de consenso
+
+## ¿Qué es? 
+
+Es el mecanismo que regula la forma en que los nodos crean bloques llegando a un acuerdo entre sí para poder hacerlo e incorporar ese bloque a la cadena. 
+
+Existen diferentes algoritmos de consenso, la selección del algoritmo depende en gran medida del tipo de aplicación que se quiera implementar. 
+
+## Proof of Work 
+
+Los mineros ponen sus equipos a trabajar en resolver un acertijo criptográfico (hash). A mayor capacidad de cómputo mayor la probabilidad de resolver el acertijo. 
+
+### Desventajas
+
+- Altos costos de energía
+- Vulnerabilidad al ataque del 51 % 
+
+> Si un minero llega a tener más del 51 % del equipo de computo, este puede llegar a crear e insertar bloques a su antojo. Insertando transacciones a si mismo que no deberían ocurrir. 
+
+## Proof of Stake
+
+En lugar de mineros gastando energía para recibir una recompensa por minar bloques, en PoS los nodos "validadores" deben invertir una cantidad de criptomonedas. 
+
+PoS elige de forma aleatoria al nodo validador que agrega el próximo bloque a la cadena. 
+
+Funciona como una loteria 
+
+## Ventajas
+
+- Velocidad
+- Eficiencia (Consume menos energía)
+- Menos Hardware
+
+## Desventajas
+
+- Vulnerabilidad
+- Concentración de riqueza 
+
+# Otros protocolos de consenso 
+
+- Delegated Proof of Stake (DPoS): Consiste en delegar a un pequeño grupo de validadores la labor de producir nuevos bloques
+- Proof of History (PoH): pretende acelerar el proceso de consenso al proporcionar un medio para codificar el tiempo en sí mismo en la cadena de bloques.
+- Proof of Elapsed time (PoET):  El trabajo de este algoritmo de selección es concederle a cada participantes un objeto de tiempo. Este objeto de tiempo podemos verlo como un contador recesivo que tiene una determinada cantidad de tiempo descrita en el. Al acabar ese tiempo, el reloj cronómetro empieza un acontecimiento de activación del partícipe quien desde ese instante pasa a ser un generador de bloques. 
+- Practical Byzantine Fault Tolerance (PBFT): Se usa en blockchains privadas. 
+- Proof of Humanity (PoH): Es un proyecto que busca demostrar la existencia real de personas, e identificarlas digitalmente en un contexto blockchain
+- Proof-of-Location (PoL): Introduce la localización por GPS para sus nodos y correspondiente validación
+
+
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
