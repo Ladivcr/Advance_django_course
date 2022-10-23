@@ -280,6 +280,42 @@ un crecimiento equitativo para las industrias y el mundo de las finanzas.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Blockchain 4.0: Industry
+
+Es una solución idónea para hacer más eficientes los entornos industriales. 
+
+Se presenta como apuesta firme para empresas. La industria 4.0 se vislumbra como una industria más segura,
+cotrolada, flexible y eficiente, gracias a las ventajas que otorga Blockchain. 
+
+## Tecnologías 
+
+Trazabilidad de cadena de valor de suministros y la gestión de los objetos de internet de las cosas
+
+- IoT
+- Smart Contracts
+- Blockchain 
+
+## Objetivos 
+
+- Mejorar procesos existentes e impactar para modificar la producción de bienes
+- Cambiar las relaciones entre diferentes empresas
+- El cliente final verá cambios en la forma en que recibe productos y servicios 
+
+Las empresas han visto el tremendo potencial de Bitcoin y Blockchain para el futuro. La eficiencia que prometen es abrumadora, y por eso no deja de ser una propuesta 
+que cambiaría muchos de los procesos en nuestra vida cotidiana para bien.
+
+Desde las más comunes, hasta cosas como el Internet de las cosas (IoT), hay pocas cosas que se pierden a la vista de una tecnología que muestra un buen camino a los 
+sistemas de producción de bienes y servicios.
+
+Al dejar de preocuparnos por los detalles que pueden solucionar los smart contracts, las dApps y demás, nos dejaría la vía libre para enfocar nuestros esfuerzos en 
+todo aquello que la tecnología aún no puede resolver.
+
+Después de la primera década de Bitcoin, ya se puede notar que esta tecnología no es algo pasajero. Al contrario, existe tanta información (y desinformación) que tan 
+solo es cuestión de dedicar algo de tiempo para concluir que es, cuando menos, algo de lo que podremos escuchar los siguientes años con más frecuencia en proyectos 
+cada vez más ambiciosos.
+
+> Aporte creado por: Luis Enrique Herrera.
+
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
