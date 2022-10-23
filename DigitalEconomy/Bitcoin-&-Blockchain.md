@@ -382,6 +382,7 @@ nuestra curiosidad la tarea de poder obtener un ecosistema más confiable y sost
 
 Aporte creado por: Luis Enrique Herrera.
 
+
 # Conceptos
 
 - Blockchain: Es una base de datos distribuida en varios nodos de una red. Cadena de bloques de información.
