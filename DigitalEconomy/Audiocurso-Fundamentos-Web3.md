@@ -53,3 +53,42 @@ estos momentos.
 Web3 es el inicio de una nueva revolución y aquí estamos para ser parte de su creación.
 
 > Contribución creada con aportes de: Jimmy Buriticá Londoño y Zea Cuervo.
+
+# Bitcoin y Blockchain 
+
+El 31 de octubre del 2008, Satoshi Nakamoto (una persona anónima, entusiasta de la criptografía) publicó el documento llamado Bitcoin, el sistema de 
+dinero electrónico de persona a persona, comúnmente conocido como el White Paper de Bitcoin.
+
+## El White Paper de Bitcoin
+
+Este paper sentó las bases para la revolución que hoy conocemos como Web3. Allí se especifica el funcionamiento de un sistema nuevo que reúne varias 
+tecnologías existentes y las mezcla de manera inusual e innovadora.
+
+El documento describe cómo funciona el Blockchain (o cadenas de bloques). Este consisten en un sistema de almacenamiento de datos que:
+
+- Utiliza criptografía
+- Es inmutable
+- Es público
+- Es descentralizado (se aloja en múltiples nodos y no en un servidor en específico)
+Los múltiples nodos en los que vive el sistema de almacenamiento permiten la descentralización y conforman la red de Bitcoin.
+
+## La red de Bitcoin
+
+Los nodos en esta red se encargan de verificar las transacciones y permiten llegar a consensos a través de algoritmos, sin necesidad de confiar
+en la palabra de una persona o de una entidad centralizada.
+
+Bitcoin no depende de ningún ente central y cualquier persona puede participar en la red. Además, da incentivos a todo aquel que se una, incluyendo a los 
+mineros y a los desarrolladores de la comunidad que son quienes permiten su funcionamiento.
+
+## Ventajas de la red de Bitcoin
+
+Algunas de las ventajas que ofrece este sistema descentralizado son:
+- Autonomía: cada nodo es capaz de comprobar el estado de los datos. Esto permite que la red funcione sin necesidad de organizaciones o gobiernos.
+- Seguridad: los ataques cibernéticos son mucho menos probables porque los puntos de fallo están repartidos en múltiples nodos.
+
+La red de Bitcoin fue la primera plataforma que logró este nivel de descentralización. Pero, actualmente, esto no solo se está aplicando a
+transacciones monetarias.
+
+Con base en el funcionamiento de Bitcoin, han surgido nuevas plataformas donde también se computan datos y se crean aplicaciones.
+
+> Contibución creada con aportes de: Felix Anibal Garcia Ramirez y Zea Cuervo.
