@@ -92,3 +92,53 @@ transacciones monetarias.
 Con base en el funcionamiento de Bitcoin, han surgido nuevas plataformas donde también se computan datos y se crean aplicaciones.
 
 > Contibución creada con aportes de: Felix Anibal Garcia Ramirez y Zea Cuervo.
+
+# Descentralización
+
+Un sistema descentralizado no depende de ningún ente central y permite que cualquier persona puede participar en la red. La descentralización
+resuelve muchos de los problemas de la Web 2, como:
+
+- Censura
+- Mal manejo de los datos personales
+- Propiedad digital
+- Visibilidad
+
+
+Además, con la descentralización se potencian distintos estilos de economías como:
+
+- Economía creativa: la descentralización permite a los creadores digitales tener mayor control sobre sus productos.
+- Economía en comunidad: se prioriza la comunidad y a su potencial a través de sistemas de votación y de organización basados
+en la tecnología Blockchain.
+
+## Creación de apps descentralizadas
+Con la Web 2, las aplicaciones residen en el servidor de alguien más. Pero la descentralización de la Web3 permite crear apps que no están
+ligadas a un solo servidor. Una de las plataformas Blockchain que hace esto realidad es Ethereum.
+
+Ethereum es una Blockchain programable, una red global que permite la ejecución de aplicaciones financieras y de otros tipos. 
+Al crear una app aquí, esta:
+
+- Será resistente a la censura
+- Tendrá una alta disponibilidad al tener muchos puntos de fallo
+- Será anónima
+
+## Smart Contracts
+
+Dentro de la Blockchain existen los Smart Contracts o contratos inteligentes. Estos son piezas de código que se ejecutan en la Blockchain.
+
+## DApps
+
+Las aplicaciones que interactúan con los contratos inteligentes se llaman DApps o Aplicaciones Descentralizadas.
+
+## Ecosistema de Ethereum
+
+Al utilizar Smart Contracts y Dapps, Ethereum ha permitido la creación de todo un ecosistema de aplicaciones, servicios y activos digitales, 
+categorizados en tres grupos: DeFi, NFTs y DAOs.
+
+- DeFi: finanzas descentralizadas
+- NFT: tokens no fungibles
+- DAO: organizaciones descentralizadas autónomas
+
+La descentralización permite que cualquier persona pueda poseer una parte del internet y por eso es un concepto revolucionario. 
+
+> Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
+
