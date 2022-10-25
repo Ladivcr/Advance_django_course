@@ -142,3 +142,69 @@ La descentralización permite que cualquier persona pueda poseer una parte del i
 
 > Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
 
+# Finanzas descentralizadas
+
+Las finanzas descentralizadas o DeFi (por sus siglas en inglés), son un 
+conjunto de instrumentos que, a través de tecnologías de la Web3, forman
+un ecosistema mayor y emulan a los instrumentos financieros con lo que 
+contamos hoy en día a través de los bancos.
+
+## Visibilidad y transparencia en DeFi - finanzas descentralizadas
+
+La principal característica de las DeFi es que funcionan a través de Smart 
+Contracts en la Blockchain, permitiendo visibilidad y transparencia que no 
+podemos encontrar en el sistema financiero tradicional
+
+En el sistema financiero actual no hay posibilidad de comprobar los libros de 
+todos los bancos y se debe confiar en que las instituciones financieras 
+reporten los datos y que estos sean reales.
+
+Opuesto a esto, **en DeFi, no hay necesidad de confiar, los datos están allí 
+y son públicos y transparentes**. Mediante Smart Contracts todas las 
+transacciones son visibles en la Blockchain y podemos asegurarnos de lo que 
+sucede.
+
+> DeFi busca eliminar al intermediario y actuar por medio de Smart Contracts.
+
+## Términos más comunes en DeFi
+El ecosistema de DeFi es muy amplio, pero estos son los términos más comunes que se necesitan para entenderlo:
+
+### Monedas estables - Stablecoins
+Las Stablecoin o monedas estables son criptomonedas cuyo precio sigue el 
+valor de otro activo. Por ejemplo, 1 moneda equivale al precio de $1 USD. 
+Algunos ejemplos de monedas estables son: Tether, UST y USDC.
+
+Estas monedas son muy utilizadas en las dinámicas de intercambio en DeFi.
+
+### Plataformas de intercambio
+Los administradores de mercado son las entidades responsables de garantizar 
+liquidez en los mercados secundarios. Suavizan las fluctuaciones en los 
+precios para permitir el mercado.
+
+En DeFi, los Smart Contracts son los encargados de ajustar los precios y la 
+liquidez la provee cualquier otro usuario usando las funcionalidades de la 
+DAO (organización descentralizada).
+
+### Piscinas de liquidez
+Si se depositan criptomonedas, se permite el intercambio a otros usuarios y, 
+además, se gana parte de la comisión. Este tipo de instrumentos se llaman 
+piscinas de liquidez.
+
+Cuando los usuarios proveen liquidez, obtienen su recompensa con tokens (que 
+pueden utilizarse para reclamar parte de las comisiones). Al intercambio de 
+tokens por ganancias se le denomina yield farming o granjeo de beneficios.
+
+### Mecanismos de préstamos
+Los préstamos son basados en Smart Contracts en donde se dejan como colateral 
+las criptomonedas a cambio de stablecoins.
+
+### Otras herramientas:
+- Seguros descentralizados
+- Estrategias de arbitraje
+- Plataformas de trading
+
+Aunque la Web3 ha tenido un impacto notable en las finanzas, también puede 
+tener otros casos de uso que están revolucionando al mundo.
+
+> Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
+
