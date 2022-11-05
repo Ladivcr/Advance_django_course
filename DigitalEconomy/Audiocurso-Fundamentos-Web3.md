@@ -326,3 +326,58 @@ En este caso, los NFT se utilizan como pase de entrada para acceder a partes res
 
 
 > Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
+
+# Decentralized Autonomous Organizations (DAO)
+
+En las organizaciones descentralizadas autónomas o DAO la jerarquía es reemplazada por reglas escritas en Smart Contracts y las decisiones se toman votando
+en la Blockchain.
+
+**En otras palabras, las DAO son máquinas de incentivos automatizadas, por medio de las cuales se expresa un objetivo y se premia a quienes colaboren en pro
+de este objetivo.**
+
+## Toma de decisiones en las DAO
+
+Las decisiones se toman en comunidad por medio de procesos de votación. **Quienes votan son las personas que participan en la DAO y poseen tokens que les permiten
+operar los Smart Contracts**.
+
+> **La votación depende de cada DAO. Hay diferentes estrategias y se deben diseñar a la hora de implementar la DAO.**
+
+## ¿Cómo establecer una DAO?
+Establecer una DAO implica un análisis de cómo se tomarán las decisiones y de cómo se garantizarán los incentivos a los participantes.
+
+**El éxito de una DAO depende del diseño de su flujo de valor.**
+
+## Tipos de DAO
+
+- **Financieras:** como MakerDAO, que mantiene y regula la stablecoin DAI
+- **Sociales:** como Friends With Benefits, en la cual las personas se organizan para completar objetivos más allá de la conversación
+- **De inversión:** como Yield Guild, que es una DAO para inversión en videojuegos y metaverso, donde los miembros invierten en conjunto en videojuegos play to earn y obtienen beneficios de estos.
+- **Developer DAO:** es organizada por y para desarrolladores en donde se construye el networking y las oportunidades.
+- **Indie DAO:** creada para profesionales independientes en diseño y programación.
+
+## Smart Contracts en las DAO
+Se dice que “las DAO son comunidades con cuenta bancaria compartida”. La realidad es que no solo es así, pues los Smart Contracts pueden manejar varios aspectos
+de la organización.
+
+## Manejo de fondos compartidos
+Al manejar un fondo compartido con DAO, este se asegura con **multifirma, un mecanismo que únicamente permite mover los fondos si la transacción es firmada por dos o más billeteras.**
+
+## Toma de decisiones
+Con los Smart Contracts también se pueden publicar mociones y los miembros de la organización pueden votar a favor o en contra de ellas.
+
+## La comunidad en las DAO
+La comunidad es primordial para las DAO, por eso se usan otras herramientas además de los Smart Contracts para la organización. Algunas plataformas utilizadas 
+incluyen:
+
+- **Discord:** plataforma de mensajería utilizada por los gamers que ha sido adoptada por el ecosistema cripto.
+- **Sourcecred o Coordinape:** plataformas para foros y para medir y registrar las colaboraciones y reputación de los miembros.
+- **Snapshot:** plataforma para agilizar las votaciones.
+
+> Construir una DAO es como armar un lego organizacional, utilizando piezas de tecnología como blockchain.
+
+**El ecosistema de las DAO promete no solo cambiar la manera en que las personas se organizan, sino también cómo se autogobiernan.**
+
+Las DAO serán como pequeñas ciudades digitales nativas de internet que no dependen de fronteras ni de gobiernos. Allí las personas lograrán sus metas en
+comunidad gracias al poder de la Web3.
+
+> Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
