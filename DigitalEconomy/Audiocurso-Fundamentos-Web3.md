@@ -278,3 +278,51 @@ El arte es tan solo uno de los casos de uso de NFT. Existen otros ámbitos en do
 - Otros que aún no se nos ocurren
 
 > Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
+
+# Otros casos de uso de los NFT
+
+Es bien sabido que los NFT son ampliamente utilizados en el mundo del arte, pero existen otros casos de uso para ellos. Aquí tienes algunos ejemplos.
+
+## Videojuegos basados en Blockchain o videojuegos NFT
+Son videojuegos donde los activos digitales están registrados en la Blockchain, lo que permite que sus poseedores puedan comercializarlos en un mercado
+secundario fuera del juego.
+
+# Play to earn
+Es una nueva modalidad de juego que ha surgido gracias a Blockchain. Con esta modalidad, los jugadores pueden:
+
+- Coleccionar ítems que son NFT
+- Ganar tokens
+- Cambiar los activos digitales por dinero en el mundo real
+
+Es así como se crea no solo un sistema de incentivos para jugar, sino también un mercado de activos digitales.
+
+## Ejemplo de videojuego NFT
+- Axie Infinity: Es un videojuego en donde puedes coleccionar mascotas digitales que luchan contra mascotas de otros jugadores.
+
+Al ganar, recibes pociones que puedes usar para que tus Axies se enamoren y se reproduzcan, o que puedes intercambiar por otros tokens.
+
+En este videojuego, basado en la Blockchain, también existe un mercado en donde puedes comprar y vender Axies.
+
+## NFT para la música
+En este campo, los músicos pueden acuñar un NFT para una canción y asegurar un porcentaje cada vez que la canción sea comercializada en un mercado secundario.
+
+Además, permite incluir a los seguidores y que ellos también reciban un porcentaje de las ganancias cuando la canción se venda.
+
+## Suscripciones NFT
+En este caso, los NFT se utilizan como pase de entrada para acceder a partes restringidas de comunidades en línea.
+
+## Otros casos de uso de los NFT
+
+- **Control de la reputación:** Se puede hacer visible la reputación de una persona en distintas comunidades por medio de un NFT, donde cada vez que se contribuye, el NFT se actualiza.
+
+- **Certificaciones o títulos:** Se entrega un NFT único que indica la aprobación de un programa educativo cuando la persona aprueba un curso.
+
+- **Registro de activos físicos:** Se reemplazan los contratos de papel por NFT que permiten garantizar una propiedad, como un automóvil o una casa.
+
+- **Organización autónoma descentralizada:** Se reemplazan las jerarquías por contratos inteligentes y los miembros de la organización votan en la Blockchain
+ y se gobiernan de manera autónoma.
+
+# **Tanto los NFT, como la Web3 se encuentran en un campo experimental, que hasta ahora está comenzando y, por lo tanto, tiene muchos retos y problemas por resolver. Esto es una oportunidad para que las personas se organicen de diferentes maneras y lleguen al objetivo principal: la colaboración.**
+
+
+> Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
