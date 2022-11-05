@@ -417,3 +417,56 @@ Existen muchos aspectos por mejorar en la Web3 y seguro encontraremos muchos má
 La Web3 es una industria floreciente, por lo que se necesita de nuestras habilidades para resolver los retos y accionar las oportunidades.
 
 > Contribución creada con aportes de: Pablo Campiño, Oscar Rodriguez y Zea Cuervo.
+
+# Futuro de la Web3
+
+La adopción de la Web3 y de las criptomonedas no ha parado de crecer. Las posibilidades que se abren con esta nueva tecnología atraen, cada vez más, la atención de:
+
+- Inversionistas
+- Desarrolladores
+- Emprendedores
+- Artistas
+- Usuarios de todo tipo que quieren formar parte de esta revolución.
+Es por eso que podemos imaginar que esto sucederá para el futuro de la Web3.
+
+## Propuestas de proyectos
+Aparecerán nuevas propuestas de proyectos que aún no imaginamos. Lo que sí podemos saber es que se requerirán profesionales en desarrollo de software, mercadotecnia, 
+creación de contenido, manejo de comunidades, diseño, etc.
+
+## Evolución del Metaverso y activos digitales
+Veremos una transformación y crecimiento del metaverso y de los activos digitales en la Blockchain. El metaverso será el lugar donde se desarrollarán las 
+interacciones personales y de negocios.
+
+En el metaverso se podrá trasladar el yo-digital de un sitio a otro para participar en distintos ecosistemas. Por supuesto, todo esto soportado por la capa de datos 
+que ofrece la Blockchain.
+
+## Crecimiento de propiedades digitales
+Poco a poco las propiedades digitales serán más importantes. La Web3 permitirá abrir nuevas oportunidades para comprar, vender y alquilar productos digitales.
+
+## DeFi - finanzas descentralizadas
+En DeFi cada día aparecen nuevas plataformas con distintas mecánicas, buscando ofrecer instrumentos financieros más sólidos para los usuarios. Así, cada vez
+tendremos más y mejores alternativas a bancos o plataformas centralizadas.
+
+## DAO - organizaciones descentralizadas autónomas
+Las DAO tendrán un gran impacto en la economía creativa. Más personas se sumarán a crear productos, ofrecer servicios y trabajar de freelance por recompensas
+en las DAO.
+
+Las DAO también ofrecerán nuevos paradigmas laborales, en los que será más común ver especialistas en distintas áreas colaborar en distintas DAOs al
+mismo tiempo, enfocando su trabajo en sus fortalezas y especializaciones.
+
+## Programación
+Gracias al movimiento de código abierto, se ha incrementado la innovación y reutilización de código. De esa manera, se resuelve la problemática una sola vez y se 
+comparten las soluciones con los demás.
+
+La reutilización de código a nivel mundial da paso a una evolución sin precedentes.
+
+La Web3 se mueve de manera acelerada, pero incentiva la colaboración, la coordinación de esfuerzos y la composibilidad.
+
+**Este es el momento de ser pionero o pionera.** Experimenta lo que podrías hacer con la Web3. Hazlo sin prisa y sin miedo a perder la oportunidad, porque lo que
+hay es espacio para innovar y cada día aparecen más posibilidades para explorar.
+
+**¿Cómo te gustaría que fuera la Web del futuro? Anímate y empieza a trabajar por hacer realidad eso que sueñas.**
+
+Nunca pares de aprender 💚
+
+> Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
