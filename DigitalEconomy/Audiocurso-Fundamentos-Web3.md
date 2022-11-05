@@ -381,3 +381,39 @@ Las DAO serán como pequeñas ciudades digitales nativas de internet que no depe
 comunidad gracias al poder de la Web3.
 
 > Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
+
+# Retos de la Web3
+
+La Web3 es un universo lleno de oportunidades, pero sigue estando en una etapa temprana. Por lo tanto, aún tiene muchos retos por delante, en los que tú puedes ayudar.
+
+Estos son algunos aspectos que se deben mejorar en la Web3.
+
+## Adopción y facilidad de uso
+La Web3 requiere una alta capacidad de comprensión, ya que muchos conceptos son abstractos y difíciles. Para muchas personas, estos no son fáciles de entender con 
+la primera explicación.
+
+Por eso, es necesario un esfuerzo educativo para que más personas entren al ecosistema y creen contenido. Así, todos y todas podremos aprender más sobre Web3,
+cripto, Blockchain, NFT, DeFi, DAOS, etc.
+
+## Concientización de la seguridad
+La Web3 implica una gran libertad, pero esto a la vez conlleva una gran responsabilidad.
+
+Desafortunadamente, existen personas que toman ventaja de la falta de conocimiento y hacen estafas para obtener las frases semillas de las wallets y
+robar los cripto activos.
+
+## Nivel de usabilidad
+La complejidad de Web3 es alta y la abstracción es poca.
+
+**El reto consiste en generar nuevas aplicaciones e integraciones entre servicios para ofrecer a los usuarios una capa de aplicaciones más simple y segura
+que permitan participar de manera sencilla.**
+
+## Nuevas legislaciones
+
+Los gobernantes también se encuentran en la transición hacia el mundo de la Web3. Ellos buscarán crear leyes y regulaciones para que el ecosistema sea compatible 
+con la legislación actual.
+
+Existen muchos aspectos por mejorar en la Web3 y seguro encontraremos muchos más adelante. Esto representa una oportunidad para nosotros.
+
+La Web3 es una industria floreciente, por lo que se necesita de nuestras habilidades para resolver los retos y accionar las oportunidades.
+
+> Contribución creada con aportes de: Pablo Campiño, Oscar Rodriguez y Zea Cuervo.
