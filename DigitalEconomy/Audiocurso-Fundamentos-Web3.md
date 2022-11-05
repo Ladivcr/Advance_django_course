@@ -208,3 +208,73 @@ tener otros casos de uso que están revolucionando al mundo.
 
 > Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
 
+# NFT
+
+NFT son las siglas para Non-Fungible Token, que en español se traduce como Token no fungible. Los NFT garantizan la autenticidad de los objetos digitales por medio
+del registro de información única en la Blockchain, a través de la Web3.
+
+## ¿Qué es un token?
+Un token es una representación del valor de algo. Por ejemplo, en los casinos se utilizan fichas (tokens) para representar determinadas sumas de dinero.
+
+En la Blockchain funciona igual, la diferencia es que se usan tecnologías de criptografía y redes computacionales para lograr una representación del valor
+comprobable y segura.
+
+## ¿Qué es fungible?
+
+Algo es fungible cuando puede ser reemplazado por otro elemento y no va a existir ninguna diferencia de valor entre ambos.
+
+Por ejemplo, un billete de $1 es fungible, pues puede ser reemplazado por otro billete de $1 y ambos tendrán exactamente el mismo valor.
+
+## ¿Qué es no-fungible?
+
+Un elemento no fungible es algo que es único e irrepetible. Así se haga una réplica del elemento inicial, no tendrá el mismo valor que el objeto original.
+
+Por ejemplo, La Mona Lisa y una copia de la Mona Lisa son iguales, pero no valen lo mismo. La Mona Lisa es no-fungible.
+
+## ¿Para qué sirven los NFT?
+
+En el mundo digital las cosas son fácilmente replicables. Una ilustración digital o una fotografía se pueden copiar con un clic y es muy difícil saber cuál es
+el archivo digital. Para eso están los NFT.
+
+Con la tecnología Blockchain, los NFT resuelven el problema de la replicación digital e identificación del archivo original o la autenticidad de objetos digitales.
+
+Los NFT:
+
+- Posibilitan la existencia de representaciones de los objetos digitales que puedan diferenciarse de otros
+- Garantizan originalidad
+- Aseguran pertenencia al poseedor del token
+- Permiten asociar un objeto digital de fácil reproducción a un token único en la Blockchain
+- Facultan la existencia de activos digitales únicos, comprobables y transferibles
+
+## Uso de los NFT en el arte digital
+
+Hay gran variedad de casos de uso para los NFT. Sin embargo, uno de los usos más representativos de los NFT se da en el arte digital.
+
+### Arte digital o Criptoarte
+Es arte que se registra de manera digital en la Blockchain garantizando su originalidad y escasez. El proceso del criptoarte es así:
+
+- Se firman las obras de arte de forma digital
+- Se subastan o venden por criptomonedas
+- Se transfieren al comprador
+
+### Ventajas del criptoarte frente al arte tradicional
+
+- Se protege el trabajo del artista, evitando que las obras sean duplicadas sin autorización
+- Los costos de exhibición son menores
+- La difusión es menos tediosa (especialmente para artistas desconocidos)
+- La ganancia se potencia, ya que el autor no solo gana con la venta, sino con el comercio futuro generado por la obra (se establece un porcentaje de ganancia para el autor cada vez que esta sea revendida).
+
+### Tipos de criptoarte
+- **Galerías de arte original auténtico:** artistas acuñan un NFT para garantizar que una ilustración es auténtica.
+- **Colecciones de arte generativo:** se usan algoritmos para generar cada una de las piezas. Para su adquisición, los coleccionistas pueden participar directamente en el proceso de mint (proceso de creación y registro en la Blockchain).
+
+## Otros usos para los NFT
+El arte es tan solo uno de los casos de uso de NFT. Existen otros ámbitos en donde también se usan los NFT, como:
+
+- Videojuegos
+- Comercialización de música
+- Modelos de suscripción
+- Registro de certificaciones
+- Otros que aún no se nos ocurren
+
+> Contribución creada con aportes de: Oscar Rodriguez y Zea Cuervo.
