@@ -120,14 +120,39 @@ a Proof of Stake.
 
 Al día de hoy (22/Nov/22), solo hay dos redes para usar como testnet
 
-## Rinkeby -> [Goerli](https://goerlifaucet.com/)
+## Rinkeby -> Goerli 
+[Faucet Goerli](https://goerlifaucet.com/)
 - Cadena más larga
 - Útil para testear aplicaciones complejas
 - Más largo de sincronizar
 
-## Ropsten -> [Sepolia](https://faucet.sepolia.dev/)
+## Ropsten -> Sepolia
+[Faucet Sepolia](https://faucet.sepolia.dev/)
 - Cadena más corta
 - Menos aplicaciones desplegadas
 - Más rápido para sincronizar
 
 > Es necesario solicitar tokens de ETH de prueba para las Testnets. 
+
+# Ropsten y Rinkeby 
+
+Al interactuar en la blockchain, se genera un costo. Cada operación requiere 
+de un pago, pues al intentar agregar cosas a este tipo de redes, y al haber 
+muchos usuarios queriendo hacerlo a la vez, estas se congestionan e implican 
+tarifas muchas veces altas por acción dentro de la red.
+
+Por eso, se debe estar muy seguro a la hora de trabajar en las redes 
+principales. Entonces, con esto en mente, se desarrollaron las redes de 
+prueba. Dos de las más conocidas son Ropsten y Rinkeby.
+
+Ambas tienen en teoría el mismo funcionamiento que la red principal de 
+Ethereum, aunque sin el mismo mantenimiento. Dentro de alguna de ellas, 
+puedes solicitar ethers de prueba, que son “depositados” de forma inmediata. 
+Estos no tienen valor real.
+
+Gracias a esta importante herramienta, podemos trabajar en un entorno similar 
+al de una red normal, sin tener que gastar fondos reales en operaciones que 
+solo sirven como prueba.
+
+> Aporte creado por: Luis Enrique Herrera.
+
