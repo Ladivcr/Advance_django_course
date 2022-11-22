@@ -86,3 +86,26 @@ por lo que en Platzi tenemos un curso especial dirigido a este lenguaje y en don
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Uso de Wallets: Metamask
+
+Una wallet es una aplicación que te ayuda a interactuar con la blockchain, 
+administrar una cuenta y tu llave privada, la cual está encriptada en el 
+interior de dicha wallet. Se encuentran en el navegador como extensión, así 
+como en aplicaciones móviles e incluso como dispositivos físicos (hardware 
+wallets).
+
+Sin embargo, nosotros usaremos Metamask. Se puede descargar como aplicación 
+en el móvil, aunque es más utilizada en el navegador. Al entrar en su página 
+web (https://metamask.io) para abrir una cuenta, recuerda seguir los pasos 
+con mucho cuidado, además de siempre anotar y guardar en un lugar seguro tus 
+claves de acceso. Si llegas a extraviarlas, Metamask no será capaz de 
+recuperarlas.
+
+Metamask no solo almacena Ethers (la criptodivisa nativa de Ethereum), sino 
+también las de otras redes. Cuenta con una interfaz sencilla y con 
+funcionalidades bastante completas.
+
+Una de la que más nos interesa como desarrolladores, es la función de acceso 
+a redes de prueba o testnets.
+
+Aporte creado por: Luis Enrique Herrera.
