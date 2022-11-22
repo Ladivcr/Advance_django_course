@@ -105,7 +105,7 @@ Metamask no solo almacena Ethers (la criptodivisa nativa de Ethereum), sino
 también las de otras redes. Cuenta con una interfaz sencilla y con 
 funcionalidades bastante completas.
 
-Una de la que más nos interesa como desarrolladores, es la función de acceso 
-a redes de prueba o testnets.
+**Una de la que más nos interesa como desarrolladores, es la función de acceso a redes de prueba o testnets**.
 
-Aporte creado por: Luis Enrique Herrera.
+> Aporte creado por: Luis Enrique Herrera.
+
