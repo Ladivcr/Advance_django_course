@@ -120,12 +120,12 @@ a Proof of Stake.
 
 Al día de hoy (22/Nov/22), solo hay dos redes para usar como testnet
 
-## Rinkeby -> (Goerli)[https://goerlifaucet.com/]
+## Rinkeby -> [Goerli](https://goerlifaucet.com/)
 - Cadena más larga
 - Útil para testear aplicaciones complejas
 - Más largo de sincronizar
 
-## Ropsten -> (Sepolia)[https://faucet.sepolia.dev/]
+## Ropsten -> [Sepolia](https://faucet.sepolia.dev/)
 - Cadena más corta
 - Menos aplicaciones desplegadas
 - Más rápido para sincronizar
