@@ -109,3 +109,25 @@ funcionalidades bastante completas.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Actualización sobre testnet en Ethereum 
+Las actualizaciones se deben al cambio en la red de Ethereum de Proof of Work
+a Proof of Stake. 
+
+- **Ropsten**: Testing PoW -> PoS (deprecated)
+- **Goerli**: Testing PoW -> PoS
+- **Rinkeby**: Sin cambios (deprecated)
+- **Sepolia**: Nueva PoS testnet
+
+Al día de hoy (22/Nov/22), solo hay dos redes para usar como testnet
+
+## (Goerli)[https://goerlifaucet.com/]
+- Cadena más larga
+- Útil para testear aplicaciones complejas
+- Más largo de sincronizar
+
+## (Sepolia)[https://faucet.sepolia.dev/]
+- Cadena más corta
+- Menos aplicaciones desplegadas
+- Más rápido para sincronizar
+
+> Es necesario solicitar tokens de ETH de prueba para las Testnets. 
