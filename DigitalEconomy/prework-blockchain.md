@@ -156,3 +156,26 @@ solo sirven como prueba.
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# [RemixIDE](https://remix.ethereum.org/)
+
+RemixIDE es un IDE (Integrated Development Environment) que se usa desde el 
+navegador. Es importante siempre revisar el certificado de seguridad en la 
+barra de navegación para evitar entrar a un sitio inseguro.
+
+RemixIDE cuenta con componentes para poder desplegar desde ahí los contratos, 
+incluyendo un compilador.
+
+En la interfaz, del lado izquierdo, puedes encontrar el menú de ventanas 
+principal para acceder al IDE, al compilador y demás. Desde aquí se hacen las 
+configuraciones iniciales, como la versión del compilador, el lenguaje que se 
+empleará, la versión de la EVM y otros parámetros.
+
+En la sección de despliegue (deploy), se puede elegir la red que se 
+utilizará, y los parámetros específicos del contrato, como el límite de gas, 
+que es básicamente una unidad de recurso dentro de la EVM, que se consume al 
+desplegar un contrato y varía de acuerdo a las características de cada uno.
+
+RemixIDE también cuenta con su propia terminal, por lo que podremos 
+visualizar los datos de salida en el mismo entorno.
+
+> Aporte creado por: Luis Enrique Herrera.
