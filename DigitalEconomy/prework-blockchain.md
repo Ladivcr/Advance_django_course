@@ -179,3 +179,149 @@ RemixIDE también cuenta con su propia terminal, por lo que podremos
 visualizar los datos de salida en el mismo entorno.
 
 > Aporte creado por: Luis Enrique Herrera.
+
+# [Truffle Suite](https://trufflesuite.com/)
+
+Es un entorno de desarrolllo diseñado para facilitar la creación de 
+aplicaciones basadas en blockchain. Permite compilar y desplegar contratos 
+inteligentes, así como hacer la interfaz de tu aplicación. 
+
+# Instalación
+Seguiremos unos cuantos pasos para instalar dos de los componentes de la 
+suite: Truffle y Ganache. Para esto, necesitarás ya tener instalado Node.js y 
+npm. También te sugerimos usar una extensión para VS Code, se llama 
+“Solidity” y su autor es Juan Blanco.
+
+## Truffle
+- Ingresa a la página: www.trufflesuite.com
+- Abre una terminal con bash (CLI), y en el directorio principal ejecuta el comando: `$ npm update -g`
+- Al término del proceso, escribe: `$ npm install -g truffle`
+- Para comprobar que todo salió bien y revisar la versión instalada, ejecuta: `$ truffle --version`
+
+## Ganache
+Para la versión de escritorio:
+- - Visita: www.trufflesuite.com/ganache
+- - El sitio web reconoce tu SO, solo debes dar clic en el botón de descarga
+- - Al término, puedes encontrar el logo de Ganache ya disponible. Abre la aplicación
+- - Al elegir “Quickstart”, se abrirá la interfaz general. En la parte superior se encuentra el menú de las ventanas principales: Accounts, Blocks, Transactions, Contracts, Events y Logs
+
+Para la versión de CLI:
+- - Ejecuta el comando: `$ npm install -g ganache-cli`
+- - Posteriormente, ejecuta el siguiente comando para verificar: `$ ganache-cli --version`
+- - Para iniciar el programa, ejecuta: `$ ganache-cli`
+
+Ambas versiones de Ganache sirven para lo mismo, es solamente cuestión de elegir una o incluso usar las dos.
+
+
+# Empecemos a entrar en Blockchain
+
+Es momento de emplear estas herramientas para un ejercicio práctico. Recuerda 
+que para todo aquello con lo que no estes familiarizado, en Platzi contamos 
+con los cursos complementarios que te ayudarán a seguir mejor cualquier 
+procedimiento.
+
+Vamos a desplegar un sencillo contrato, empezando con la herramienta Truffle:
+
+- En tu terminal, crea un directorio nuevo, que es donde iniciarás Truffle: `$ 
+take hello-blockchain`
+- Una vez adentro de la carpeta “hello-blockchain”, ejecuta: `$ truffle init`
+- Verás el mensaje “Init succesful, sweet!”, unas líneas más abajo, si todo 
+salió bien.
+- En la misma carpeta, ejecuta lo siguiente para abrir el directorio dentro 
+de VS Code: `$ code .`
+
+Ya estás cada vez más cerca de lograr algo asombroso. Aunque no lo creas, el 
+número de personas animándose a probar nuevas tecnologías como esta es 
+bastante inferior si lo comparamos al resto. Sigue así 😃
+
+# VS Code y Truffle
+Entonces, procederemos a visualizar la carpeta y los archivos que has 
+descargado:
+
+- En VS Code, encontrarás las carpetas: “contracts”, “migrations”,“test” y 
+“truffle-config.js”
+- Dirígete a esta última, y busca la línea “development”. Descomenta esa y 
+las siguientes tres líneas hasta la que dice “network_id”. Se encuentran 
+cerca de la línea 40
+- Después, dirígete a la carpeta “contracts” y crea un nuevo archivo llamado: 
+“HelloBlockchain.sol” (sin ningún cambio para que no haya problemas)
+- Copia en el editor de este archivo el código que se proporciona en el área 
+de recursos, el que se indica para el contrato de Solidity
+- Ahora, dirígete a la carpeta “migrations” y crea un archivo llamado 
+“2_hello_blockchain.js”
+- Copia el código del área de recursos, el que se indica como script de 
+despliegue en ese archivo nuevo
+- Abre dos ventanas de terminal. Una para Ganache y otra para Truffle
+- En una de ellas, ejecuta: `$ ganache-cli` (al final, es importante que arroje 
+un mensaje “Listening on 127.0.0.1:8545”)
+- En la otra ventana, ejecuta: `$ truffle console --network development`
+
+# Ya falta poco
+
+¡Muy bien!, si ya llegaste a este punto significa que estás por dar tus 
+primeros pasos reales como desarrollador blockchain.
+
+Recapitulemos un poco: hasta ahora, hemos instalado un entorno básico y ya 
+cuentas con la magia de Truffle para poder hacer contratos de una forma más 
+cómoda y rápida. **Al trabajar con esta Suite, usaremos dos terminales para 
+poder ver lo que ocurre con mayor facilidad**.
+
+En el último paso dado, la consola deTruffle se debió iniciar, y lo puedes 
+verificar al notar que en la otra ventana (donde está corriendo Ganache) 
+aparecieron algunas líneas que empiezan con “eth” (no te preocupes si no 
+entiendes el código por ahora, eso es lo que aprenderás conforme vayas 
+avanzando en este camino).
+
+# Todo trabajo da su recompensa
+Ahora seguiremos con unos pasos finales, que son realmente interesantes:
+
+- Escribe el siguiente comando en la consola Truffle: `> 
+web3.eth.getBlock(0)` En el output de esa ventana, se puede visualizar la 
+información del bloque Génesis o cero En la terminal de Ganache también verás 
+el registro de la operación “eth_getBlockByNumber”
+- Ejecuta en la consola de Truffle: `> compile`
+- Ejecuta en la misma consola: `> migrate`
+- Con esto, se muestran las transacciones necesarias para el despliegue y 
+también para la creación de nuevos bloques
+- En la consola Truffle puedes ver los detalles de cada transacción, como el 
+nombre del contrato, el hash, el gas usado, el valor en ETH enviado, etc. Al 
+final, se resume el total de las transacciones y el costo total. Casi como un 
+ticket de compra común.
+- Un bonus: Ejecuta en la consola de Truffle: `> const instance = await 
+HelloBlockchain.deployed()` Y finalmente, llama a la función “sayHi” 
+ejecutando: `> instance.sayHi.call()` Verás una línea adicional en la consola de 
+Ganache que dice “eth_call” y un mensaje que dice en verde “¡Hello, 
+Blockchain!” en la consola de Truffle
+
+**!Felicidades!**, has desplegado tu primer contrato inteligente en una 
+blockchain local. No ha sido precisamente fácil, pero con la práctica y la 
+constancia, estos serán conceptos y procesos que dominarás con rapidez.
+
+
+## Ejemplos 
+El siguiente código de prueba sirve para crear tu primer contrato en Solidity: 
+```solidity
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.4.22 <0.9.0;
+
+contract HelloBlockchain {
+    
+    function sayHi() public pure returns (string memory) {
+        return "!Hello, blockchain!";
+    }
+
+}
+```
+
+El código para el script de despliegue es: 
+
+```solidity
+var helloBlockchain = artifacts.require("./HelloBlockchain.sol");
+
+module.exports = function (deployer) {
+	deployer.deploy(helloBlockchain)
+}
+```
+
+> Aporte creado por: Luis Enrique Herrera
