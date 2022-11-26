@@ -193,12 +193,18 @@ npm. También te sugerimos usar una extensión para VS Code, se llama
 “Solidity” y su autor es Juan Blanco.
 
 ## Truffle
+> Truffle te permite administrar tus contratos inteligentes y crear scripts para desplegarlos de forma sencilla y con una estructura clara. 
+> Además te pérmite generar test para depurar el código. 
+
 - Ingresa a la página: www.trufflesuite.com
 - Abre una terminal con bash (CLI), y en el directorio principal ejecuta el comando: `$ npm update -g`
 - Al término del proceso, escribe: `$ npm install -g truffle`
 - Para comprobar que todo salió bien y revisar la versión instalada, ejecuta: `$ truffle --version`
 
 ## Ganache
+
+> Brinda la opción de tener una blockchain personal para desplegar los contratos y probar las aplicaciones de forma local. 
+
 Para la versión de escritorio:
 - - Visita: www.trufflesuite.com/ganache
 - - El sitio web reconoce tu SO, solo debes dar clic en el botón de descarga
@@ -212,6 +218,8 @@ Para la versión de CLI:
 
 Ambas versiones de Ganache sirven para lo mismo, es solamente cuestión de elegir una o incluso usar las dos.
 
+## Drizzle
+Es una colección de librerias para Front End que facilita la creación de aplicaciones. 
 
 # Empecemos a entrar en Blockchain
 
