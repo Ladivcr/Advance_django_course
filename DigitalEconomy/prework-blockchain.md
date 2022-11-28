@@ -333,3 +333,47 @@ module.exports = function (deployer) {
 ```
 
 > Aporte creado por: Luis Enrique Herrera
+
+# Hardhat 
+
+Es una de las herramientas más utilizadas para poder desarrollar localmente con solidity.
+**Una de las ventajas** es que te permite realizar todo el proceso de desarrollo, fácilmente desde la compilación, despliegue y test, hasta el devops de 
+los contratos. Lo mejor es que desarrollas en una red de prueba (Hardhat network) basada en la red de Ethereum, pero con mejoras que te ayudarán a 
+identificar errores en los Smart Contracts. 
+
+> Hardhat es una de las herramientas más usadas para el desarrollo blockchain. Desde la compilación, testing, despliegue y el debugging de los contratos. Su red, 
+> “Hardhat Network”, es una red de prueba basada en la de Ethereum, aunque ofrece unas ventajas que te ayudarán a identificar errores en tus contratos de una 
+> manera más práctica. Esto es algo muy poderoso de la herramienta.
+
+Utiliza npm con su paquete Hardhat, que se apoya de otros plug-ins para aumentar su funcionalidad.
+
+## Iniciemos con Hardhat
+
+- Entra a tu terminal, y en tu directorio principal crea una carpeta nueva: `$ take hola-hardhat`
+- Ya adentro en la carpeta, inicia npm: `$ npm init`
+- Deja la información por defecto del package.json
+- Ahora, ejecuta el siguiente comando para la instalación: `$ npm install --save-dev hardhat`
+- Al término de la instalación, ejecuta: `$ npx hardhat`
+- Al estar instalado, puedes empezar un nuevo proyecto. Te ofrecerá algunas opciones de arranque rápido. Elige la opción `“Create a basic sample project”` para 
+conocer un poco más sobre el ambiente de trabajo.
+
+Después de que termine de descargar los archivos, ábrelos en VS Code con el comando: `$ code .`
+
+Con estas carpetas y archivos, ya cuentas con lo necesario para empezar a trabajar en el desarrollo de contratos. El apartado de “contracts” es en donde 
+guardarás los archivos con extensión “.sol”, los que entiende Solidity. Dale una revisada a todo, para que empieces a familiarizarte 😃
+Es solo una prueba
+
+Recuerda que esta red es algo que te permite conocer de forma similar cómo se trabaja dentro de la red Ethereum. Hardhat te provee de cuentas con balances de 
+prueba para que las uses, pero no debes mezclar estas cuentas para transacciones reales.
+
+Por último, para desplegar un contrato, lo haremos junto con un script que se adjuntó en la descarga:
+
+- Ejecuta: `$ npx hardhat compile`
+- Después: `$ npx hardhat run scripts/sample-script.js`
+- Verás el mensaje: “Hello, Hardhat!”, además de la dirección donde se encuentra el contrato
+
+Listo, es así de fácil. Es importante recalcar la particular ventaja con Hardhat, pues al hacer un fork de la red de Ethereum, puedes trabajar con
+protocolos que ya se encuentran funcionando en la red principal, lo cual te permitirá darte una mejor idea de lo que podrás hacer en el entorno de verdad.
+
+> Aporte creado por: Luis Enrique Herrera.
+
