@@ -377,3 +377,40 @@ protocolos que ya se encuentran funcionando en la red principal, lo cual te perm
 
 > Aporte creado por: Luis Enrique Herrera.
 
+# Conectando la blockchain con el navegador: Web3.js 
+
+## Cómo conectarnos a la red de Ethereum
+
+**Web3.js es una colección de librerías que interactúan de manera local o remota con tu nodo de Ethereum para una comunicación con la wallet, utilizando 
+protocolos como HTTP, IPC o WebSocket.** En RemixIDE puedes encontrar unos ejemplos de archivos web3.js para que los vayas conociendo. Visita el link a la 
+documentación que se proporciona en el área de recursos.
+
+Para este ejemplo, usaremos npm y además un protocolo que se llama **JSON RPC**.
+
+### Procedimiento de uso
+
+- Ejecuta en tu terminal: **$ npm install web3**
+- Desde OpenZeppelin, copia el estándar ERC20 que se encuentra en la sección de “Contracts” en su página web
+- Entra a RemixIDE, y pega el código en un nuevo archivo.
+- Revisa en el compilador de Remix que la versión del pragma coincida, además del lenguaje Solidity
+- Haz clic en “Compile”, y revisa que no haya errores en la terminal de Remix.
+- Ahora, entra a tu cuenta de Metemask, y elige la Red de Prueba de Ropsten. Copia tu direccón en el portapapeles
+- Vuelve a Remix, entra a la ventana de “Deploy” y elige en la opción “Environment”: Injected Web3
+- Remix reconoce a que red queremos conectarnos (Ropsten) y la cuenta con la que estamos trabajando (la de Metamask)
+- Da clic en “Deploy” más abajo
+
+### Final
+
+La transacción en este momento tardará un poco, pues se estará realizando la solicitud para agregarla a la blockchain. Aquí es donde uno de los
+mineros validará el proceso. Puedes ver el proceso pendiente en la terminal de RemixIDE.
+
+Al terminar de confirmar la transacción, puedes entrar a tu wallet y comprobar la transacción hecha en el explorador de blockchain por defecto en Metamask.
+Solo da clic en la transacción, y en la ventana emergente de “Implementación de contrato” del lado superior derecho al lado de “Detalles”, puedes dar clic
+al vínculo que te llevará a Etherscan.
+
+Si el status de la transacción fue exitosa, marcará con un mensaje en verde que así fue. Ya has ingresado tu primera transacción en una blockchain de prueba. 
+¡Felicitaciones!
+
+> Aporte creado por: Luis Enrique Herrera.
+
+
