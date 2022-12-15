@@ -42,3 +42,48 @@ Se espera mucho de esta innovadora propuesta, y a pesar de los obstáculos, se c
 cambiarán la forma en la que interactuamos y hacemos transacciones de todo tipo dentro de Internet.
 
 > Contribución creada con los aportes de: Luis E. Herrera
+
+# Componentes de Ethereum 
+
+1. **Red P2P:** Es la red que permite la comunicación y envío de datos entre un usuario y otro sin necesidad de un intermediario.
+ Aunque en realidad es más complejo que eso, se puede entender que los canales dentro de una red P2P son compartidos y anónimos, es decir, los usuarios no tienen
+ que conocerse entre ellos para poder hacer uso de estos canales, y no hay un control respecto a qué datos son tomados como prioridad o con algún privilegio (o censura).
+
+2. **Algoritmo de consenso (consenso de Nakamoto):** Fue el mismo de Bitcoin hasta la aparición de Ethereum 2.0, y no es más que la forma en la que se acordó cómo
+ se actualizaría la información dentro de la red, de manera que se evitara la inserción de datos de manera arbitraria y creando un sistema protegido contra los intentos
+ de corrupción.
+ 
+3. **Ether:** Es la criptomoneda nativa del proyecto. Sirve para muchas cosas, además de tener un valor como lo tiene Bitcoin. En ella se basan todas las
+  operaciones que tienen lugar dentro de la red, basadas en transacciones que se realizan con ayuda de otros instrumentos.
+  
+  > Es importante diferenciar entre Ether y Ethereum. Ether es la moneda y Ethereum es la red.
+  
+4. **Ethereum Virtual Machine (EVM):**  Es el software creado para servir como una computadora que se aloja en la nube, con el propósito de procesar los
+   programas que funcionan en la propia red.
+
+5. **Algoritmo criptográfico de seguridad (Ethash):** Es la herramienta creada a partir de una aplicación matemática que brinda una protección a todo el sistema, 
+sin la cual, la seguridad de una red incorruptible no existiría.
+
+6. **Clientes (Gethm Parity):** Son los paquetes de conexión que permiten funcionar como un nodo que aloje la información de la red, así como interactuar con ella.
+
+## Conceptos relevantes de Ethereum
+
+- **Clientes/Nodos:**  Los clientes son los encargados de empaquetar el sistema sobre el cual se puede ejecutar un nodo en la red BlockChain.
+ Cuando instalas en tu computador este cliente, automáticamente te conviertes en un nodo participante en la red de Ethereum.
+
+- **Walletes:** Las wallets o billeteras son aplicaciones que nos permiten administrar nuestras cuentas de Ethereum o de cualquier otra red, para poder
+ interactuar con otras personas que también sean parte de esta red. Además de controlar nuestros fondos y activos.
+
+- **Smart Contracs:** Son los programas que nos permiten comunicarnos con la blockchain a partir de ciertas condiciones especificadas dentro del contrato inteligente.
+ Estos contratos se ejecutan dentro de la EVM para ser analizados y posteriormente implementados en la blockchain
+
+- **Web3:** Es una nueva web descentralizada sobre la cual no necesariamente va a existir un ente central, sino que al ser una red descentralizada o P2P los usuarios
+ son los encargados tomar decisiones autónomas sin necesidad de recurrir o de pedir información a un ente central.
+
+## La base de Ethereum 
+
+Para poder entender cómo es que se interactúa con esta blockchain, primero hay que saber que todo se maneja a través de transacciones.
+Aquí es donde entra el Ether, así como los componentes que regulan su administración y el uso de la red para una correcta distribución de los datos,
+evitando la congestión del tráfico en las transacciones. Para ello, es necesario conocer el concepto de “gas”.
+
+> Contribución creada con los aportes de: Luis E. Herrera y Johan Muñoz
