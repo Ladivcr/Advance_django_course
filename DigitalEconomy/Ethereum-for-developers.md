@@ -87,3 +87,7 @@ Aquí es donde entra el Ether, así como los componentes que regulan su administ
 evitando la congestión del tráfico en las transacciones. Para ello, es necesario conocer el concepto de “gas”.
 
 > Contribución creada con los aportes de: Luis E. Herrera y Johan Muñoz
+
+# La moneda ETH y el Gas
+
+
