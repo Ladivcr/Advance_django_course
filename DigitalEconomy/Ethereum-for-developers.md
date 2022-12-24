@@ -90,4 +90,25 @@ evitando la congestión del tráfico en las transacciones. Para ello, es necesar
 
 # La moneda ETH y el Gas
 
+Ether, también conocida como ETH, es la moneda nativa de la red de Ethereum. Sirve para hacer transferencias de valor,
+pagar a los mineros, correr programas y como mecanismo de seguridad contra potenciales errores en la máquina virtual
+EVM (Ethereum Virtual Machine) a través del GAS.
+
+## El gas en Ethereum 
+
+La unidad de medición principal para el Ether se llama “Gwei” en honor a un ingeniero informático chino, Wei Dai,
+quien contribuyó con aportes en el área de la criptografía dedicada a las criptomonedas. Esta unidad se divide a
+su vez en “wei”, la unidad mínima, de la cual se necesitan 10^18 para completar un Ether.
+
+Entonces, otro concepto a conocer bien es el de “gas”, que se refiere a una cantidad de Ether en dichas unidades
+para poder interactuar con la red de Ethereum, y que como su nombre alude, sirva como gasolina para alimentar a la EVM. 
+En otras palabras, se debe pagar por cada transacción que se conecte a la blockchain, una pequeña tarifa para hacer
+uso de esta máquina virtual.
+
+Esto es necesario, ya que la EVM, al tratarse de una computadora en términos prácticos, es susceptible a los percances
+que podría ocasionar el código, como bucles infinitos y bugs que afecten su correcto funcionamiento.
+Así, con el gas se puede asegurar un proceso delimitado por su duración, y de esta forma evitar que este tipo
+de fallas perdure sin control alguno.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
 
