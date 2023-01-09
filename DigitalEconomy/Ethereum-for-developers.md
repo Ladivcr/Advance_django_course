@@ -192,3 +192,37 @@ matemáticas aplicadas a la privacidad de nuestros datos, y reconocer el papel t
 crucial para el funcionamiento de las redes blockchain.
 
 > Contribución creada con los aportes de: Luis E. Herrera.
+
+# ¿Qué son las Wallets?
+
+Las wallets son un software o dispositivo encargado de administrar las llaves de 
+un usuario. Estas no alojan los activos, solo son un puente para que su dueño 
+pueda interactuar con su cuenta de Ethereum en la red blockchain, y así permitirle 
+hacer uso de las distintas aplicaciones en la red con sus activos de forma segura.
+
+En Ethereum se manejan los activos a través de la autenticación con las llaves 
+(sin importar la identidad real del usuario), por lo que es fundamental cuidar 
+ambas llaves, en especial de la privada, ya que al exponer o extraviar ambas se 
+corre el riesgo de no poder recuperar los activos en dicha cuenta.
+
+Ninguna wallet o empresa podrá hacer algo al respecto (aquí entra la ya famosa 
+frase: “Your keys, your coins. Not your keys, not your coins”).
+
+## Conceptos importantes de las wallets
+
+- **Accounts:** Son los registros dentro de Ethereum que poseen un balance en ETH, 
+y que son administradas por las entidades (ya sea personas o programas) que poseen 
+sus respectivas llaves para poder hacer transacciones.
+- **Transacciones:** Una instrucción controlada por una cuenta que cambia el
+estado del sistema.
+- **Firmas digitales:** Es una cadena de carácteres producida a partir de un texto 
+con el hash de una llave privada.
+- **Tokens:** Es un tipo de moneda o activo con una utilidad o distinción que 
+puede ser rastreado y transferido, y cuyo valor (que puede ser nulo) depende de su 
+proyecto padre y el ether.
+
+Recuerda, la función de las wallets solo es administrar las llaves vinculadas a 
+una cuenta y dar acceso a la blockchain, no el de salvaguardarlas. Por lo que la 
+responsabilidad de esto recae cien por ciento en el representante de la cuenta.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
