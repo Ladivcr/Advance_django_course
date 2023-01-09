@@ -145,3 +145,50 @@ hacen uso de la que simplemente se conoce como la red Ethereum.
 
 > Contribución creada con los aportes de: Luis E. Herrera
 
+
+# ¿Qué es la criptografía asimétrica?
+
+La criptografía es la práctica y el estudio de métodos para proteger información a 
+través de codificar mensajes. Por su parte, la criptografía asimétrica es 
+posiblemente el aspecto más importante de cualquier blockchain, ya que a 
+diferencia del pasado, no se requiere una llave única que deban compartir el 
+emisor y receptor para generar un canal de comunicación segura.
+
+Este tipo de criptografía consiste en la creación computada de una serie de 
+caracteres al azar, que servirán como “llaves”. La generación de esta serie de 
+letras y números depende de un algoritmo basado en principios matemáticos, los 
+cuales otorgan seguridad a los sistemas como la blockchain.
+
+## ¿Cómo funciona la criptografía asimétrica?
+
+Básicamente, se trata de la creación de una serie de caracteres a partir de una 
+llave privada (una serie elegida al azar), las cuales estarán mutuamente 
+correlacionadas, y que para los procesos de verificación, solo podrán ser 
+comparadas correctamente entre ellas.
+
+Por ejemplo: si se quisiera encriptar un mensaje secreto para enviarlo sin temor a 
+que pudiera ser interceptado, lo que se haría con ayuda de la criptografía 
+asimétrica, sería cifrar el mensaje con la llave generada por la llave privada del 
+destinatario, es decir, la llave pública. Esta llave es, por cierto, la que se 
+puede compartir con este fin.
+
+Después de llegar a su destino, el remitente tendría que descifrar el mensaje con 
+su llave privada (que solo debe conocer el remitente), con la que se creó la llave 
+pública que encriptó dicho mensaje. Solo esta llave puede “desbloquear” el 
+contenido, y es virtualmente imposible, con el poder de cómputo actual, tratar de 
+romper la seguridad de este cifrado. Es lo que hace a la criptografía de este tipo 
+tan poderosa y útil.
+
+## Qué es la función HASH
+
+Técnicamente, existen funciones informáticas para este tipo de cifrado llamadas 
+funciones hash, las cuales se encargan de encriptar los datos que se pasen a la 
+computadora y convertirlos en un solo código de un tamaño determinado, sin 
+importar la extensión del contenido original. Sirven para proteger las cuentas y 
+los balances de los usuarios de blockchain.
+
+Con este concepto primordial abordado, ahora es más fácil entender el poder de las 
+matemáticas aplicadas a la privacidad de nuestros datos, y reconocer el papel tan 
+crucial para el funcionamiento de las redes blockchain.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
