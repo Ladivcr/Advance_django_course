@@ -226,3 +226,34 @@ una cuenta y dar acceso a la blockchain, no el de salvaguardarlas. Por lo que la
 responsabilidad de esto recae cien por ciento en el representante de la cuenta.
 
 > Contribución creada con los aportes de: Luis E. Herrera.
+
+
+# ¿Qué son los Smart Contracts?
+
+El término smart contracts se le ocurrió a un desarrollador llamado Nick Szabo, 
+que contribuyó precisamente con la idea de programas especiales que se ejecuten 
+redes descentralizadas con criptografía.
+
+Más en detalle, un smart contract es un programa o protocolo que se ejecuta de 
+forma automática y descentralizada dentro de una blockchain, y sirve para 
+controlar una acción o documentar un evento de acuerdo a los parámetros del código 
+que lo componen.
+
+## ¿Qué usos tiene un smart contract?
+
+El objetivo de los smart contracts es evitar la necesidad de confiar en un tercero 
+para evitar la intermediación en los procesos, y así:
+- Abaratar costos
+- Reducir tiempos de operación
+- Minimizar fraudes
+
+Dicho de otra forma, son herramientas informáticas que ayudan a cumplir 
+efectivamente tareas en las que el humano podría intervenir con malas intenciones 
+o simplemente, sin el debido cuidado.
+
+La utilidad de estos programas se pueden imaginar en distintas ramas de la 
+actividad humana, pero es más notorio su efecto y los beneficios dentro del mundo 
+de las finanzas (DeFi).
+
+> Contribución creada con los aportes de: Luis E. Herrera.
+
