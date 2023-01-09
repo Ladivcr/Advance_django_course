@@ -112,3 +112,36 @@ de fallas perdure sin control alguno.
 
 > Contribución creada con los aportes de: Luis E. Herrera.
 
+
+# Etapas de desarrollo y actualizaciones programadas
+
+## 4 Etapas de desarrollo de Ethereum
+
+Estas son las 4 actualizaciones programadas de Ethereum: 
+
+- Frontier
+- Homestead
+- Metropolis
+- Serenity -> Ethereum 2.0
+
+Estas actualizaciones están subdivididas en distintas actualizaciones que 
+responden a problemas que van surgiendo en el momento. Algunas de ellas se hacen a 
+través de consenso de toda la red y muchas se tienen deben ejecutar a través de un 
+fork.
+
+## Los forks en Ethereum
+
+La ruta de desarrollo de estas nuevas versiones consiste en diversas bifurcaciones 
+del código mismo (forks), que se refiere a que se crean ramas independientes, en 
+donde la versión anterior y la nueva se separan para tomar cada una su propio 
+camino. De esta manera, es posible seguir desarrollando cada una sin afectar a la 
+otra, claramente con el fin de poder seguir mejorando a la nueva versión.
+
+En el 2016, sucedió un ataque a la red de Ethereum, por lo que tuvo que realizarse 
+un fork para reestablecer la seguridad de la blockchain. Desde entonces, permanece 
+esa versión vieja bautizada como “Ethereum Classic”, que todavía mantiene pocos 
+adeptos, a pesar de que la gran mayoría de los que participan en este proyecto 
+hacen uso de la que simplemente se conoce como la red Ethereum.
+
+> Contribución creada con los aportes de: Luis E. Herrera
+
