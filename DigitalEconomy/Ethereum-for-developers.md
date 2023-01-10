@@ -257,3 +257,42 @@ de las finanzas (DeFi).
 
 > Contribución creada con los aportes de: Luis E. Herrera.
 
+# Qué es DeFi o finanzas descentralizadas
+
+**DeFi significa finanzas descentralizadas.** Es muy probable que las finanzas 
+tradicionales se vean muy afectadas por el uso de los smart contracts y las 
+plataformas que están siendo construidas en blockchain. Esto porque en teoría, 
+según varias escuelas del pensamiento económico, los sistemas monetarios funcionan 
+mejor al no estar controlados por un ente central. Así se desarrolla un mercado 
+más libre y más fructífero.
+
+## Los actores dentro de DeFi
+
+Hay diferentes elementos y áreas en el ecosistema DeFi, como por ejemplo:
+- Decentralized Exchanges (DEX)
+- Stable coins
+- Préstamos
+- Seguros
+- Derivados (contratos)
+- Margin trade
+- Oráculos
+
+## Ejemplo de uso de DeFi
+
+La idea es aplicar la filosofía de “cero intermediarios” para poder usar servicios 
+financieros diversos. No solo esto, sino también poder desarrollar mecanismos 
+internos que aceleren la gestión de sistemas que incrementen los beneficios, algo 
+que en las finanzas tradicionales tardaría mucho más tiempo en hacerse posibles.
+
+Algunos de esos elementos, como los stable coins, ayudan a proveer una estabilidad 
+al mercado aun volátil de las criptodivisas. Otros son propuestas que facilitan el 
+intercambio de estos activos como lo sería en el sistema fíat tradicional, tanto 
+de forma controlada (DEX) como de forma arriesgada a cambio de ganancias 
+inmediatas (trading).
+
+Hablando de oráculos, estos son sistemas de distinta complejidad que proveen 
+información del mundo real a las blockchain con el fin de darles una utilidad que 
+sea relevante. Con esto, los smart contracts pueden generar cambios reales en 
+algún contexto cotidiano, por ejemplo.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
