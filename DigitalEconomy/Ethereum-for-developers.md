@@ -324,3 +324,24 @@ Aunque, por supuesto, puede hallarse una finalidad mucho más noble para los NFT
 serio y profundo.
 
 > Contribución creada con los aportes de: Luis E. Herrera.
+
+# Qué son las aplicaciones descentralizadas o dApps
+
+Las aplicaciones descentralizadas, también conocidas como dApps, son aquellas que no dependen de un servidor central para funcionar y mantenerse,
+sino de los mismos usuarios.
+
+## ¿En qué consisten las aplicaciones descentralizadas?
+
+Las aplicaciones descentralizadas se organizan a través de los mecanismos del consenso dentro de la blockchain, involucrando
+a todos los participantes de la red que usen cierta dApp, sin que una entidad central se apropie de la red ni intervenga o manipule los datos.
+
+El principal atractivo de estas aplicaciones es precisamente que los datos personales no pasan por el control de un servidor concentrado, 
+el cual es el responsable de administrar este tipo de información y cuenta con total acceso a ella, abriendo la posibilidad a un uso ilimitado
+e inmoral, en algunos casos.
+
+Esto también implica que los participantes tomen decisiones respecto a la dApp de forma equitativa.
+
+Las aplicaciones descentralizadas cambian totalmente el paradigma de cómo se usan las aplicaciones de software y brindan una mayor seguridad y protección de la 
+información privada, además de una genuina participación, si así se desea.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
