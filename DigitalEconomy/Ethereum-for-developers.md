@@ -296,3 +296,31 @@ sea relevante. Con esto, los smart contracts pueden generar cambios reales en
 algún contexto cotidiano, por ejemplo.
 
 > Contribución creada con los aportes de: Luis E. Herrera.
+
+# Qué es un NFT. Non-Fungible Token
+
+Actualmente, un *NFT* (Non Fungible Token) tiene la reputación de ser algo que puede ser vendido por mucho dinero si se logra convencer al
+mercado de su “valor”.
+
+Sin embargo, el propósito va mucho más allá. Si bien, un NFT puede representar algo tan simple y subjetivo como un activo sin valor útil (obras de arte), 
+también puede representar algo único que sí sea de utilidad en el mundo real.
+
+## Qué es un NFT
+
+“Fungible” implica que es algo que puede ser replicado una indeterminada cantidad de veces, y puede seguir valiendo lo mismo. Un buen ejemplo es la 
+acuñación de monedas, que a diario se hacen monedas, pero no pierden su valor aun habiendo tantas iguales. Para el sistema monetario esto es un beneficio ya
+que si fueran no fungibles y rastreables, el valor podría ser subjetivo a lo que las personas le asignen dependiendo su procedencia.
+
+Un NFT es algo que por definición no puede ser replicado, y aunque pueda ser copiado de alguna forma (tal y como es posible copiar y 
+pegar una imagen JPG, por ejemplo), este viene con un certificado de autenticidad dentro de la blockchain, sustentado en un smart contract.
+
+**A este tipo de smart contract en Ethereum se le conoce como ERC-721, que es un estándar diseñado específicamente para NFT.** 
+Con este, se crea un token que se vincula a cierto artículo que se quiera autenticar.
+
+Los creadores de contenido, artistas y deportistas han encontrado en los NFT una vía para poder compartir y vender sus creaciones de forma directa sin
+tener que depender de nadie para su distribución y su verificación, generando mayores ganancias para ellos.
+
+Aunque, por supuesto, puede hallarse una finalidad mucho más noble para los NFT que realmente transforme las dinámicas sociales en un contexto más
+serio y profundo.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
