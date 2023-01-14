@@ -345,3 +345,56 @@ Las aplicaciones descentralizadas cambian totalmente el paradigma de cómo se us
 información privada, además de una genuina participación, si así se desea.
 
 > Contribución creada con los aportes de: Luis E. Herrera.
+
+
+# Proof-of-Work, Proof-of-Stake y sistemas híbridos
+
+Los algoritmos de consenso son los encargados de coordinar y organizar la red de forma que los usuarios puedan 
+interactuar con ella sin arbitrariedades ni aplicaciones donde el control sea de un solo actor.
+
+La prueba que necesita la red para que los participantes crean, compartan y hagan transacciones de manera justa
+con ciertos requerimientos hacia los usuarios con el fin de que la red sea sustentable.
+
+## Qué es el consenso Proof of Work
+
+El primer consenso que se conoció se llama ***Proof of Work (PoW)***, y se trata de un mecanismo que implementó Bitcoin, 
+para poner en funcionamiento el proyecto distribuido y descentralizado.
+
+Se trata de un sistema en el que la creación de la criptodivisa se da a partir de un gasto energético, proveniente de
+las computadoras que están conectadas como nodos completos dentro de la red llamados mineros.
+
+Los nodos que deseen participar en este “juego”, deben realizar un trabajo computacional para poder tener la oportunidad 
+de insertar un bloque a la gran cadena de transacciones (básicamente a la base de datos que conforma la red).
+
+Quien pueda resolver lo necesario para hacerlo, gana esa tarea para así obtener una retribución monetaria por cada
+bloque generado, pagado con la misma criptodivisa.
+
+Este consenso, si bien es efectivo, no deja de tener ciertos problemas. En primer lugar, se habla del alto
+costo energético, ya que requiere miles de computadoras consumiendo la energía necesaria para un proceso
+altamente exigente.
+
+Sin duda, esto causa un impacto perjudicial para el medio ambiente, además de otras cuestiones relacionadas
+con la seguridad de la red y su escalabilidad.
+
+Proof of Work es el resultado de décadas de investigaciones previas al Bitcoin, con la intención de poder crear redes
+de comunicación equilibradas, en las que no haya posibilidad de congestiones de datos que provoquen saturación en la
+red, al solicitar una prueba de gasto energético si se quiere interactuar o enviar información a través de la misma.
+
+## Qué es el consenso Proof of Stake y los sistemas híbridos
+
+Ethereum quiso mejorar este consenso, con ayuda de uno nuevo Proof of Stake (PoS). Este protocolo cambia a los
+mineros en el PoW por un plan de participación “accionaria” en el que al azar, los nodos que cuenten con cierta
+cantidad de Ether, tienen derecho a convertirse en validadores, que serán los que inserten bloques nuevos a la 
+cadena de bloques.
+
+Esa cantidad de Ether estará congelada, así se garantiza que si el nodo intenta algo malicioso, perderá sus fondos.
+
+Se espera que sea un consenso que ciertamente sea más amigable para el medio ambiente, que incentive a una mayor
+incorporación de nuevos usuarios, mejorar la seguridad y las penalizaciones contra ataques, y brindar en general
+una escalabilidad más rápida.
+
+Por supuesto, existen otros protocolos como son los sistemas híbridos, que no son más que combinaciones con 
+características de estos u otros consensos, incluyendo aquellas propuestas que aún carecen de la credibilidad
+de la comunidad en el ecosistema.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
