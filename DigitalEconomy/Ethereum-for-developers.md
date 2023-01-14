@@ -398,3 +398,51 @@ características de estos u otros consensos, incluyendo aquellas propuestas que 
 de la comunidad en el ecosistema.
 
 > Contribución creada con los aportes de: Luis E. Herrera.
+
+
+# Ethash y Casper
+
+Existen diferentes mecanismos de consenso. Antes de Ethereum 2.0, el protocolo de consenso usado era “Ethash”,
+este es con el que se cifran los bloques y se insertan a la cadena. Con la llegada de PoS (Proof-of-Stake), Ethereum
+hará uso de un nuevo protocolo llamado “Casper”.
+
+## Qué son los mecanismos de consenso Ethash y Casper
+
+Ethash es el algoritmo que utiliza la blockchain de Ethereum para minar y proteger a su red, el cual hace uso
+de un alto consumo energético para asegurar mayor protección y defenderla de posibles atacantes.
+
+Sin embargo, Ethereum busca hacer transición a Casper, un mecanismo de consenso que no requiere de 
+ese consumo energético.
+
+Lo que se busca es dejar de validar bloques y transacciones con Ethash y empezar a usar un mecanismo de PoW
+(Proof of Work) para validar las transacciones y con el que los nodos se van a ganar el derecho a participar
+en el juego del mecanismo descentralizado para actualizar la base de datos, sin necesidad de una autoridad central.
+
+Esta transición es lo que se conoce como Ethereum 2.0.
+
+# Qué es un Fork en blockchain
+
+La traducción literal de fork al español es “tenedor”. En blockchain, fork hace referencia a lo que sucede cuando
+una base de datos sufre un desacuerdo o se hace una actualización que no es compatible con el pasado, esto produce
+una bifurcación en el código central de un software.
+
+El tenedor parte de una agarradera (rama principal) hacia las puntas en las que se divide. El código toma diferentes
+caminos y, dependiendo de su propósito, estos siguen o pierden continuidad. Por lo tanto, las ramificaciones heredan
+las características de la rama principal, pero la diferencia radicará en las variaciones y los cambios que propiciaron 
+dichas divisiones en primer lugar.
+
+En cuanto a las blockchain, estas se generan debido a un desacuerdo o la incompatibilidad entre los participantes
+respecto al consenso. Al iniciar una nueva rama o más, siguen su desarrollo hasta que se formaliza su invalidez, o su 
+mantenimiento cese.
+
+## Entonces, ¿cuál camino elegir?
+
+Es importante recalcar que la mayoría de los participantes estén de acuerdo con lo que se haga dentro de las
+plataformas, así se conserva la intención de proporcionar una comunidad lo más estable posible. Claro, es posible 
+pertenecer a más de una comunidad si se desea, hay que recordar que estas redes son de libre asociación.
+
+La organización descentralizada es algo relativamente nuevo, por lo que las dinámicas aún son algo por descubrir.
+Sin embargo, eso no impide que se busque una armonía entre los que quieran cambios, y los que prefieren ser más 
+conservadores.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
