@@ -446,3 +446,47 @@ Sin embargo, eso no impide que se busque una armonía entre los que quieran camb
 conservadores.
 
 > Contribución creada con los aportes de: Luis E. Herrera.
+
+# Qué es EIP y soluciones de escalado
+
+EIP (Ethereum Improvement Proposals) o propuestas de mejora son protocolos para evitar, en lo posible, divisiones y desacuerdos, facilitando la
+implementación y evitando que haya forks.
+
+En estas propuestas de mejora se estipulan cambios que justifiquen debidamente una transición que pueda ser necesaria. Es por eso que se ha dado
+el cambio progresivo de Ethereum a PoS, aunque cualquiera que tenga alguna otra teoría más efectiva que pueda comprobar ante la comunidad,
+puede terminar aportándola para su desarrollo.
+
+## Qué son las soluciones de escalado
+
+Algo sumamente crucial para la adopción de estas tecnologías, es el tema de cuánto alcance tienen sus características para que la gente en general
+decida hacer uso de ellas. Además de la seguridad, la meta es mejorar la usabilidad en términos prácticos, como la velocidad de las transacciones.
+
+Es necesario que se empiecen a realizar transacciones cada vez más rápidas, y compararlas con las del sistema tradicional, o incluso superarlas.
+La naturaleza de las blockchain es algo que todavía no ha definido la totalidad de su potencial, aunque ya hay propuestas que tratan de
+resolver este inconveniente.
+
+En 2022, bitcoin tenía la posibildiad de hacer 7 transacciones por segundo, Etherum 30 y Visa 1700. Por lo que es muy necesario que se puedan 
+efectar más transacciones sin comprometer otros aspectos de la red, como seguridad y descentralización. 
+
+Entre las estrategías para el escalado de la red, en general, en ciencias de la computación se conoce como **Sharding**:
+> Sharding se refiere al prcoeso de fragmentación de una base de datos o motor de búsqueda, para aligerar la concentración de recursos y facilitar funciones. 
+
+Una implementación que actualmente (2022) esta funcionando en Ethereum es **The Beacon Chain**.
+> Es una cadena paralela a la Blockchain de Ethereum que sirve para validar transacciones y bloques con un sistema de PoS.
+
+
+En Ethereum existen por ejemplo:
+
+- Polygon (MATC)
+- Raiden Network (LN)
+- xdai (sidechain)
+- Optimism (OVM Rollups)
+- zkSync (scalable skRollups)
+
+Estas propuestas se aplican en un ámbito paralelo al de la red principal, a modo de una segunda capa del código 
+fuente de Ethereum (layer 2). Sin duda, hay todo un trabajo tras bambalinas que dará paso a nuevas y emocionantes posibilidades.
+
+>  L2 Solutions. Soluciones de segunda capa. Porque la primer capa, la capa original de Ethereum (la cadena de bloques original) es descentralizada y segura.
+>  Y no se quiere comprometer eso, por lo tanto se le añaden capas como soluciones para no comprometer la seguridad de la red base.
+
+> Contribución creada con los aportes de: Luis E. Herrera.
