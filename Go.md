@@ -158,3 +158,43 @@ func main() {
 cadena que se le de.
 - Print: "Print" No formatea nada, solo toma el string y lo muestra en consola.
 - Println: "Print Line" Es lo mismo que `Print()`. Sin embargo, añade `\n` al final.
+
+# Tipos de datos primitivos
+
+En Go/Golang puedes o no declarar el tipo de dato, pero si lo haces puedes ganar un buen 
+performance a nivel de tu código. 
+
+```Go
+//Numeros enteros
+// Si no especificas, lo toma dependiendo de la arquitectura de tu sistema operativo
+//si tienes 32 bits, lo toma como 23 y si tienes 64 bits, toma 64 bits. 
+
+//int = Depende del OS (32 o 64 bits)
+//int8 = 8bits = -128 a 127
+//int16 = 16bits = -2^15 a 2^15-1
+//int32 = 32bits = -2^31 a 2^31-1
+//int64 = 64bits = -2^63 a 2^63-1
+
+//Optimizar memoria cuando sabemos que el dato simpre va ser positivo
+//uint = Depende del OS (32 o 64 bits)
+//uint8 = 8bits = 0 a 127
+//uint16 = 16bits = 0 a 2^15-1
+//uint32 = 32bits = 0 a 2^31-1
+//uint64 = 64bits = 0 a 2^63-1
+
+//numeros decimales
+// float32 = 32 bits = +/- 1.18e^-38 +/- -3.4e^38
+// float64 = 64 bits = +/- 2.23e^-308 +/- -1.8e^308
+
+//textos y booleanos
+//string = ""
+//bool = true or false
+
+//numeros complejos
+//Complex64 = Real e Imaginario float32
+//Complex128 = Real e Imaginario float64
+//Ejemplo : c:=10 + 8i
+
+```
+
+# Paquete fmt: algo más que imprimir en consola 
