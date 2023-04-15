@@ -59,3 +59,61 @@ arrojar un warning. Esto porque nos obliga a implementar buenas prácticas.
 > go run lo que hace es compilarlo en una carpeta temporal, te muestra lo que tiene 
 que hacer y lo elimina. 
 
+
+# Variables, constantes y zero values
+- **Para constantes la sintaxis es:** TipoDeVariable Nombre TipoDeDato = Valor
+> const pi float64 = 3.14
+- **Para variables enteras es:** NameVariable := IntValue, NameVariable = IntValue  
+> base := 12, base = 12
+> La diferente entre una y otra es que, si tiene los dos puntos. Nos indica que la variable no
+> ha sido creada antes. Si no tiene los dos puntos, signfica que fue creada antes y le estoy 
+> asignando un valor. 
+- **También puede ser:** var NameVariable int = 14, var area int
+> Es decir, indicando el tipo de dato. Lo cual para la lectura de código, es mejor. 
+
+
+```Go
+package main
+import "fmt"
+
+func main() { 
+  // Declaración de constantes
+  const pi float64 = 3.14
+  const pi2 = 3.1415
+  
+  fmt.Println("pi: ", pi, "\npi2:", pi2)
+  >>pi:  3.14 
+  >>pi2: 3.1415
+  
+  // Declaración de variables enteras
+  base := 12
+  var altura int = 14
+  var area int
+  
+  fmt.Println(base, altura, area)
+  >>12 14 0
+  
+  // Zero values
+  var a int
+  var b float64 
+  var c string 
+  var d bool
+  
+  fmt.Println(a, b, c, d)
+  >>0 0  false
+  // Area cuadrado 
+  const baseCuadrado = 10 
+  areaCuadrado := baseCuadrado * baseCuadrado 
+  fmt.Println("Area cuadrado", areaCuadrado)
+}
+```
+
+### Zero values 
+Cuando creas variables y no le asignas un valor. Por defecto tiene el valor de zero. Que
+se conoce como _zero value_.
+
+Algunos valores por defecto para los tipo de datos más comúnes son: 
+- var a int: 0
+- var b float64: 0
+- var c string: ""
+- var d bool: false
