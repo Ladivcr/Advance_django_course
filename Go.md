@@ -117,3 +117,44 @@ Algunos valores por defecto para los tipo de datos más comúnes son:
 - var b float64: 0
 - var c string: ""
 - var d bool: false
+
+# Operaodres aritméticos
+
+```Go
+package main
+
+import "math"
+import "fmt"
+
+func main() {
+	// area del rectangulo
+	base := 4
+	altura := 2
+	fmt.Println("Area del rectangulo ", base * altura )
+
+	// area del trapecio
+	base = 3 // Observese que ya no hay dos puntos, porque es reasignación
+	baseAbajo := 2
+	areaTrapecio := altura * (base + baseAbajo) / 2
+	fmt.Println("Area del trapecio ", areaTrapecio)
+
+	// area del circulo
+	radio := 2
+	areaCirculo := math.Pi * math.Pow(float64(radio), 2) // Funciones de la libreria math
+	fmt.Println(areaCirculo)
+  
+  // Incremental y Decremental 
+  // Es buena práctica hacer ++ y/o -- 
+  X := 0
+  X++
+  >>1
+  X--
+  >>0
+}
+```
+
+### Diferencias entre prints
+- Printf: "Print Formatter" permite formatear números, variables y strings en el primer parámetro de 
+cadena que se le de.
+- Print: "Print" No formatea nada, solo toma el string y lo muestra en consola.
+- Println: "Print Line" Es lo mismo que `Print()`. Sin embargo, añade `\n` al final.
