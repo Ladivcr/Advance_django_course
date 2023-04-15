@@ -118,7 +118,7 @@ Algunos valores por defecto para los tipo de datos más comúnes son:
 - var c string: ""
 - var d bool: false
 
-# Operaodres aritméticos
+# Operadores aritméticos
 
 ```Go
 package main
