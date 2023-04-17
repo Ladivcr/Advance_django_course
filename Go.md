@@ -153,12 +153,6 @@ func main() {
 }
 ```
 
-### Diferencias entre prints
-- Printf: "Print Formatter" permite formatear números, variables y strings en el primer parámetro de 
-cadena que se le de.
-- Print: "Print" No formatea nada, solo toma el string y lo muestra en consola.
-- Println: "Print Line" Es lo mismo que `Print()`. Sin embargo, añade `\n` al final.
-
 # Tipos de datos primitivos
 
 En Go/Golang puedes o no declarar el tipo de dato, pero si lo haces puedes ganar un buen 
@@ -198,3 +192,54 @@ performance a nivel de tu código.
 ```
 
 # Paquete fmt: algo más que imprimir en consola 
+
+
+```Go
+package main
+
+import "fmt"
+
+func main() {
+	// Declaración de variables
+	helloMessage := "Hello"
+	worldMessage := "World"
+
+	// Println 
+	fmt.Println(helloMessage, WorldMessage)
+	>>Hello World
+	
+	//Printf
+	nombre := "Platzi" // %s string 
+	cursos := 500 // %d enteros
+	fmt.Printf("%s tiene más de %d cursos\n", nombre, cursos)
+	fmt.Printf("%v tiene más de %v cursos\n", nombre, cursos)
+	>>Platzi tiene más de 500 cursos
+	
+	//Sprintf
+	message := fmt.Sprintf("%s tiene más de %d cursos\n", nombre, cursos)
+	fmt.Println(message)
+	>>Platzi tiene más de 500 cursos
+	
+	//Tipo datos
+	fmt.Printf("helloMessage: %T\n", helloMessage)
+	fmt.Printf("cursos: %T\n", cursos)
+	>>helloMessage: string
+	>>cursos: int
+	
+}
+```
+> Cuando no sabemos cuál es el tipo de dato que irá en el `Printf`, podemos hacer uso de `%v`
+
+### Diferencias entre prints
+- Printf: "Print Formatter" permite formatear números, variables y strings en el primer parámetro de 
+cadena que se le de.
+- Print: "Print" No formatea nada, solo toma el string y lo muestra en consola.
+- Println: "Print Line" Es lo mismo que `Print()`. Sin embargo, añade `\n` al final.
+- Sprintf: "Save print" Genera un string pero no lo imprime en consola, solo lo guarda como un string. 
+
+> Para saber el tipo de dato de una variable podemos usar el comodin `%T` de la siguiente forma: ``fmt.Printf("helloMessage: %T\n", helloMessage)``
+
+
+# Uso de funciones
+
+
