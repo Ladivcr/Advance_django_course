@@ -1,6 +1,8 @@
 # Curso básico de programación en Go
 
 - Go online: https://go.dev/play/
+- Documentación que incluye paquetes externos: https://pkg.go.dev/?utm_source=godoc
+- Documentación de paquetes estandar (Oficial): https://pkg.go.dev/std
 
 # ¿Qué es, por qué y quienes utilizan Go? 
 
