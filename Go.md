@@ -3,6 +3,8 @@
 - Go online: https://go.dev/play/
 - Documentación que incluye paquetes externos: https://pkg.go.dev/?utm_source=godoc
 - Documentación de paquetes estandar (Oficial): https://pkg.go.dev/std
+- Docuemntación offline: https://zealdocs.org/
+
 
 # ¿Qué es, por qué y quienes utilizan Go? 
 
@@ -280,3 +282,76 @@ func main() {
 }
 ```
 > Créditos para: Brayan Alexis Lechon Andrago
+
+# El poder de los ciclos en Golang: for, for while y for forever
+
+```Go
+package main
+
+import "fmt"
+
+func main() {
+	// For condicional
+	for i := 0; i <= 10; i++ {
+		fmt.Println(i)
+	}
+	fmt.Printf("\n")
+	// For While
+	counter := 0
+	for counter < 10 {
+		fmt.Println(counter)
+		counter++
+	}
+	fmt.Printf("\n")
+
+	// For forever
+	counterForever := 0
+	for {
+		fmt.Println(counterForever)
+		counterForever++
+		if counterForever == 10 {
+			break
+		}
+	}
+
+	// For range
+	arreglo := [8]int{0, 2, 4, 6, 8, 10, 12, 14}
+	fmt.Println("\nPrimer ejemplo")
+	for idx, j := range arreglo {
+		fmt.Printf("indice idx: %d tiene como valor #%d\n", idx, j)
+	}
+	fmt.Println("Segundo ejemplo")
+	for idx := range arreglo {
+		fmt.Printf("Valor de idx: %d\n", idx)
+	}
+	fmt.Println("Tercer ejemplo")
+	for _, j := range arreglo {
+		fmt.Printf("Valor de i: %d\n", j)
+	}
+
+}
+```
+
+# Operadores lógicos y de comparación 
+
+### Operadores de comparación
+
+> Retornan True o False en caso de cumplirse o no una expresión. 
+
+- valor1 == valor2: Retorna TRUE si valor1 y valor2 son exactamente iguales.
+- valor1 != valor2: Retorna TRUE si valor1 es diferente de valor2.
+- valor1 < valor2: Retorna TRUE si valor1 es menor que valor2
+- valor1 > valor2: Retorna TRUE si valor1 es mayor que valor2
+- valor1 >= valor2: Retorna TRUE si valor1 es igual o mayor que valor2
+- valor1 <= valor2: Retorna TRUE si valor1 es menor o igual que valor2.
+
+### Operadores lógicos 
+
+> Son aquellos que retorna TRUE o FALSE si cumplen o no una condición utilizando puertas lógicas.
+
+**AND**: Este operador indica que todas las condiciones declaradas deben cumplirse para poderse marcar como TRUE. En Go, se utiliza este símbolo &&.
+
+**OR**: Este operador indica que al menos una de las condiciones debe cumplirse para marcarse como TRUE. En Go, se representa con el símbolo ||.
+
+**NOT**: Este operador retornará el opuesto al boleano que está dentro de la variable.
+
