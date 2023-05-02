@@ -539,3 +539,51 @@ func main(){
 }
 
 ```
+
+# Recorrido de Slices con Range
+
+```Go 
+package main 
+
+import "fmt"
+func isPalindromo(text string) {
+	var textReverse string
+	for i := len(text) - 1; i>=0; i-- {
+		textReverse += string(text[i])
+	}
+	
+	if text == textReversed {
+		fmt.Println("Es palindromo")
+	} else {
+		fmt.Println("No es un palindromo")
+	}
+}
+func main() {
+	slice := []string{"hola", "que", "hace"}
+	
+	//indice, valor
+	// si no nos importa el indice, usamos "piso"
+	for _, valor := range slice {
+		fmt.Println(valor)
+	}
+	>> hola
+	>> que 
+	>> hace
+	// si solo queremos el indice 
+	for i := range slice {
+		fmt.Println(i)
+	}
+	>> 0 
+	>> 1
+	>> 2
+	isPalindromo("ana")
+	>> Es palindromo
+	isPalindromo("amor a roma")
+	>> Es palindromo
+	isPalindromo("casa")
+	>> No es palindromo
+	
+}
+
+
+```
