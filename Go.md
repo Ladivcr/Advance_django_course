@@ -482,3 +482,60 @@ conexión como última ejecución.
 nos interese que continue, puede ser un error controlado. Es decir, tomamos el error pero el ciclo sigue.
 
 - **break** en lugar de **continue** lo que hace es cortar el flujo del ciclo for. 
+
+# Arrays y Slices
+
+- **Los arrays son inmutables**
+- No podemos añadir elementos pero podemos cambiar el valor de los que ya hay
+- **len(array)**: Longitud del arreglo & **cap(array)**: Capacidad del arreglo
+- **Los slices** se declaran similar a los arrays pero la diferencia es que **no se le indica la longitud**
+```Go 
+package main 
+import "fmt"
+
+func main(){
+	// array 
+	var array [4]int
+	fmt.Println(array)
+	>> [0 0 0 0] //Son los zero values de este tipo de dato
+	var array [4]int
+	array[0] = 1
+	array[1] = 2
+	fmt.Println(array)
+	>> [1 2 0 0]
+	fmt.Println(array, len(array), cap(array))
+	>> [1 2 0 0] 4 4
+	// len(array) Longitud del arreglo
+	// cap(array) Capacidad máxima del array
+	
+	// Slice
+	slice := []int{0, 1, 2, 3, 4, 5, 6}
+	fmt.Println(slice, len(slice), cap(slice))
+	>> [0 1 2 3 4 5 6 7] 7 7
+	
+	// Métodos en el slice
+	fmt.Println(slice[0])
+	fmt.Println(slice[:3])
+	fmt.Println(slice[2:4])
+	fmt.Println(slice[4:])
+	>> 0 
+	>> [0 1 2]
+	>> [2 3]
+	>> [4 5 6]
+	
+	// Append
+	slice = append(slice, 7)
+	fmt.Println(slice)
+	>> [0 1 2 3 4 5 6 7]
+	
+	// Append nueva list
+	newSlice := []int{8, 9, 10}
+	slice = append(slice, newSlice...)
+	fmt.Println(slice)
+	>> [0 1 2 3 4 5 6 7 8 9 10]
+	/* Los tres puntos nos indican que Go, "descomprime"
+	 el slice y añade elemento por elemento al otro  slice*/
+	
+}
+
+```
