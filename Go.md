@@ -349,9 +349,47 @@ func main() {
 
 > Son aquellos que retorna TRUE o FALSE si cumplen o no una condición utilizando puertas lógicas.
 
-**AND**: Este operador indica que todas las condiciones declaradas deben cumplirse para poderse marcar como TRUE. En Go, se utiliza este símbolo &&.
+**AND**: Este operador indica que todas las condiciones declaradas deben cumplirse para poderse marcar como TRUE. En Go, **se utiliza este símbolo &&**.
 
-**OR**: Este operador indica que al menos una de las condiciones debe cumplirse para marcarse como TRUE. En Go, se representa con el símbolo ||.
+**OR**: Este operador indica que al menos una de las condiciones debe cumplirse para marcarse como TRUE. En Go, **se representa con el símbolo ||**.
 
 **NOT**: Este operador retornará el opuesto al boleano que está dentro de la variable.
 
+# El condicional if
+
+
+```Go
+package main
+import "fmt"
+
+func main() {
+valor1 := 1
+valro" := 2
+
+// if - else
+if valor1 == 1 {
+fmt.Println("Es 1")
+} else {
+	fmt.Println("No es uno")
+}
+// With and
+if valor1 == 1 && valor2 == 3 {
+	fmt.Println("Es verdad")
+}
+// With or
+if valor1 == 0 || valor2 == 2 {
+	fmt.Println("Es verdad. OR")
+}
+
+// Convertir texto a número 
+// Documentación de la función: https://pkg.go.dev/strconv
+value, err := strconv.Atoi("53") // Value guarda el valor y err el error en caso de existir
+if err != nil { // Si existe error, no será nil. Pero si no existe, es nil.
+	lof.Fatal(err) // Imprime en consola que paso y termina el código 
+}
+fmt.Println("value:", value)
+
+}
+
+
+```
