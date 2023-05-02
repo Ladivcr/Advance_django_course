@@ -390,6 +390,46 @@ if err != nil { // Si existe error, no será nil. Pero si no existe, es nil.
 fmt.Println("value:", value)
 
 }
+```
 
+# Múltiples condiciones anidadas con Switch 
 
+> Se recomienda usar cuando estas utilizando múltiples condiciones anidadas con if. En 
+su lugar, es mejor usar switch. 
+
+```Go
+package main 
+
+import "fmt"
+func main() {
+	modulo := 5 % 2
+	swtich modulo {
+	case 0: 
+		fmt.Println("Es par")
+	default: 
+		fmt.Println("Es impart")
+	}
+	
+	// Alternativa de escritura
+	swtich modulo := 5 % 2; modulo {
+	case 0: 
+		fmt.Println("Es par")
+	default: 
+		fmt.Println("Es impart")
+	}
+	
+	// Switch abierto, sin condición 
+	value := 200
+	/*Lo ideal es usar con condicion cuando vas a iterar sobre una variable y 
+	usar uno abierto cuando vas a iterar en múltiples condiciones, tal como si fuese un if*/
+	switch {
+	case value > 100: 
+		fmt.Println("Es mayor")
+	case value < 0: 
+		fmt.Println("Es menor a 0")
+	default: 
+		fmt.Println("No condición")
+	}
+
+}
 ```
