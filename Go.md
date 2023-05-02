@@ -433,3 +433,52 @@ func main() {
 
 }
 ```
+
+# El uso de los keywords defer, break y continue 
+
+```Go
+package main
+
+import "fmt"
+
+func main(){
+	// defer
+	fmt.Println("Hola")
+	fmt.Println("Mundo")
+	/ /Si ejecutamos el código en este punto, el resultado es: 
+	>> Hola
+	>> Mundo
+	// Si añadimos defer
+	defer fmt.Println("Hola")
+	fmt.Println("Mundo")
+	// Va a imprimir todas las lineas después de defer
+	// y antes de morir el código, imprimira la línea de defer
+	>> Mundo 
+	>> Hola
+	
+	// continuea y break
+	// En ambos casos se usan dentro de un ciclo for
+	for i:=0; i<10; i++ {
+		fmt.Println(i)
+		
+		// continue
+		if i == 2 {
+			fmt.Println("Es 2")
+			continue
+		}
+		// break 
+		if i == 8 {
+			fmt.Println("Break")
+			break
+		}
+	}
+}
+```
+- Podemos usar **defer** para casos como la apertura de una conexión a la base de datos. Le 
+indicamos un **defer** a la conexión de tal forma que cuando termino de ejecutar todo, cierra la 
+conexión como última ejecución.
+
+- Podemos usar **continue** cuando una condición dada dentro del ciclo for puede ser algo que 
+nos interese que continue, puede ser un error controlado. Es decir, tomamos el error pero el ciclo sigue.
+
+- **break** en lugar de **continue** lo que hace es cortar el flujo del ciclo for. 
