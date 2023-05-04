@@ -632,3 +632,29 @@ func main(){
 	>> 0 false	
 }
 ```
+
+# Structs: La forma ed hacer clases en Go 
+
+```Go
+pacakge main 
+
+import "fmt"
+
+type car struct {
+	brand string 
+	year int 
+}
+
+func main(){
+	myCar := car(brand: "Ford", year: 2020)
+	fmt.Println(myCar)
+	>> {Ford 2020}
+	
+	// Otra manera 
+	var otherCar car 
+	otherCard.brand = "Ferrari"
+	fmt.Println(otherCar)
+	>> {Ferrari 0} // ZeroValue porque no pasamos un año 
+}
+
+```
