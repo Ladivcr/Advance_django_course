@@ -586,5 +586,18 @@ func main() {
 	
 }
 
+```
 
+# Llave valor con Maps
+
+```Go 
+package main
+
+func main(){
+	// para crear un diccionario usamos make
+	// la forma es: make(map[tipoDatoKey]tipoDatoValue)
+	m := make(map[string]int)
+	
+
+}
 ```
