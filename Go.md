@@ -598,6 +598,37 @@ func main(){
 	// la forma es: make(map[tipoDatoKey]tipoDatoValue)
 	m := make(map[string]int)
 	
-
+	m["jose"] = 14
+	m["Pepito"] = 20
+	
+	fmt.Println(m)
+	>> map[Jose: 14 Pepito: 20]
+	
+	for key, value := range m {
+		fmt.Println(key, value)
+		// El recorrido es concurrente por lo que puede que no vayan 
+		// en orden los datos a como fueron introducidos
+		// Si queremos orden, utilizar slice
+		>> jose 14
+		>> Pepito 20 
+	}
+	// Encontrar un valor
+	value := m["jose"]
+	fmt.Println(value)
+	>> 14
+	// Valor que no existe
+	value := m["joseph"]
+	fmt.Println(value)
+	>> 0 // Si accedes a una llave que no fue guardada, te pone el ZeroValue del tipo de dato
+	// el ZeroValue de int es cero. 
+	
+	// Verificar si una llave existe o no en el diccionario 
+	value, ok := m["jose"]
+	fmt.Println(value, ok)
+	>> 14 true
+	
+	value, ok := m["joseph"]
+	fmt.Println(value, ok)
+	>> 0 false	
 }
 ```
