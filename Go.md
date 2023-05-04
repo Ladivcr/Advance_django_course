@@ -633,7 +633,7 @@ func main(){
 }
 ```
 
-# Structs: La forma ed hacer clases en Go 
+# Structs: La forma de hacer clases en Go 
 
 ```Go
 pacakge main 
@@ -655,6 +655,41 @@ func main(){
 	otherCard.brand = "Ferrari"
 	fmt.Println(otherCar)
 	>> {Ferrari 0} // ZeroValue porque no pasamos un año 
+}
+
+```
+
+# Modificadores de acceso en funciones y Structs
+
+- Una estructura puede modificar su acceso a partir de la primer letra. 
+> Si la primer letra es mayúsculas. Significa que es público y si es minúscula, significa 
+> que es privado. Aplica también para las variables que se usan en el struct. 
+
+```Go
+// src/mypackage/mypackage.go
+pacakage mypackage
+// es el mismo nombre del archivo
+
+// CarPublic Car con acceso público 
+type Carpublic struct {
+	Brand string
+	year int
+}
+
+package main
+
+import "fmt"
+// Para colocar un alias a la importanción es
+// poniendo de lado izquierdo el alias
+import "go/src/mypackage" // Se escribe todo el path hasta la carpeta
+pk import "go/src/mypackage" // Importación con alias
+func main() {
+	var myCar = mypackage.CarPublic 
+	var myCar = pk.CarPublic // haciendo uso del alias
+	myCar.Brand = "Ferrari"
+	fmt.Println(myCar)
+	>> {Ferrari 0}
+	
 }
 
 ```
