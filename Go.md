@@ -778,3 +778,31 @@ func main(){
 - Si modificas el valor que esta apuntado a la dirección de memoria, las demás variables
 que apuntan a esa dirección de memoria, también cambian de valor. 
 
+# Stringers: Personalizar el output de Structs
+
+```Go 
+package main 
+
+import "fmt"
+
+type pc struct {
+	ram int 
+	brand string
+	disk int
+}
+
+// Para el formateo de strings necesitamos que el nombre de la función 
+// sea string pero con la primer letra mayúscula y debemos indicar
+// el tipo de dato de retorno. Un string en este caso. 
+func (myPC pc) String() string {
+	return fmt.Sprintf("Tengo %d GB RAM, %d GB Disco y es una %s", myPC.ram, myPC.disk, myPC.brand)
+}
+
+func main(){
+	myPC := pc(ram:  16, brand:"msi", disk: 100}
+	fmt.Println(myPC)
+	>> "Tengo 16 GB RAM, 100 GB Disco y es una msi"
+	
+}
+
+```
