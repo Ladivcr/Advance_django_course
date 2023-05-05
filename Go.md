@@ -693,3 +693,88 @@ func main() {
 }
 
 ```
+
+# Structs y Punteros
+
+Los punteros no es más que el acceso a la memoria. 
+Cuando guardamos una variable, el runtime crea una dirección de memoria y a esa
+dirección de memoria le guarda el valor de dicha variable. 
+
+```Go
+package main 
+
+import "fmt"
+
+type pc struct {
+	ram int
+	disk int
+	brand string 
+}
+
+// Para poder acceder a la marca de la estructura pc
+// añadimos los parentesis antes del nombre de la función
+// De esta forma pasamos los parámetros y convertimos esta función 
+// en una función de nuestro objeto pc
+
+func (myPC pc) ping(){
+	fmt.Println(myPC.brand, "Pong")
+}
+
+func (myPC *pc) duplicateRAM(){
+	// Con el asterisco indicamos que vamos acceder
+	// a sus valores mediante el puntero
+	myPC.ran = myPC.ram * 2
+}
+
+func main(){
+	a := 50
+	b := &a //Puntero de a. Es la dirección de memoria donde esta guardado a
+	
+	fmt.Println(a)
+	fmt.Println(b)
+	>> 50
+	>> 0xc000138010
+	// & Accede a la dirección de memoria
+	// * Accede al valor de la dirección de memoria
+	fmt.Println(b)
+	fmt.Println(*b)
+	>> 0xc000138010
+	>> 50
+	
+	// Si modificas el valor que esta apuntado a la dirección de memoria
+	// las demás variables que apuntan a esa dirección de memoria, también cambian de valor.
+	*b = 100 
+	fmt.Println(a)
+	>> 100 
+	
+	myPC := pc{ram: 16, disk: 200, brand: "msi"}
+	fmt.Println(myPC)
+	>> {16 200 msi}
+	
+	myPC.ping()
+	>> msi pong
+	
+	fmt.Println(myPC) 
+	>> {16 200 msi}
+	myPC.duplicateRAM()
+	
+	fmt.Println(myPC) 
+	>> {32 200 msi}
+	myPC.duplicateRAM()
+	
+	fmt.Println(myPC)
+	>> {64 200 msi}
+	
+}
+
+
+```
+### Observaciones
+
+- El “&” accede a la dirección del espacio de memoria de la variable.
+
+- “*” accede al valor que contiene ese espacio de memoria, dado el nombre de una variable o una dirección especifica.
+
+- Si modificas el valor que esta apuntado a la dirección de memoria, las demás variables
+que apuntan a esa dirección de memoria, también cambian de valor. 
+
