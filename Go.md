@@ -696,6 +696,8 @@ func main() {
 
 # Structs y Punteros
 
+- Recursos de punteros: https://www.digitalocean.com/community/conceptual-articles/understanding-pointers-in-go-es
+
 Los punteros no es más que el acceso a la memoria. 
 Cuando guardamos una variable, el runtime crea una dirección de memoria y a esa
 dirección de memoria le guarda el valor de dicha variable. 
@@ -806,3 +808,68 @@ func main(){
 }
 
 ```
+
+# Interfaces y listas de interfaces
+
+Una interfaz no es más que un método en el cual puedes compartir otros métodos diferentes. 
+Por ejemplo, si tenemos un mismo método que aplica a varios structs. La forma de crear
+un solo punto de entrada, para no repetir, es crear una interfaz. 
+
+- **SE RECOMIENDA USAR LAS INTERFACES, CUANDO LOS STRUCTS COMPARTEN FUNCIONES. 
+MISMO NOMBRE PERO DIFERENTES PARÁMETROS U OPERACIONES**
+
+```Go
+package main 
+
+import "fmt"
+
+// Interface
+type figuras2D interface {
+	area() float64 // porque en nuestros dos calculos de área, es lo que se retorna
+}
+
+type cuadrado struct {
+	base float64
+}
+
+type rectangulo struct {
+	base float64
+	altura float64
+}
+
+func (c cuadrado) area() float64 {
+	return c.base * c.base
+}
+
+func (r rectangulo) area() float64 {
+	return r.base * r.altura
+}
+
+func calcular(f figuras2D) {
+	fmt.Println("Area:", f.area())
+}
+
+func main(){
+	myCuadrado := cuadrado{base: 2}
+	myRectangulo := rectangulo{base: 2, altura: 4}
+	
+	calcular(myCuadrado)
+	calcular(myRectangulo)
+	>> Area: 4
+	>> Area 8
+	
+	// Lista de interfaces
+	// Para una lista de interfaces, es como usar slices. Pero con la 
+	// particularidad de que usas dos veces la llave y la primer llave se queda en blanco
+	// Y en la segunda llave se añaden los datos, DIFERENTES TIPOS DE DATOS
+	myInterface := []interface{}{"Hola", 12, 4.90}
+	fmt.Println(myInterface...)
+	>> Hola 12 4.9 
+}
+
+```
+
+> Observamos que en ambos structs, el método tiene el mismo nombre: "area". De tal forma
+que en la interface solo añadimos ese nombre como método. Cuando hacemos uso de 
+la función calcular. Es cómo si el struct de Figuras2D tomara nuestras variables y a ambas
+aplicara: `Mivariable.area()`
