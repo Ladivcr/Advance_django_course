@@ -873,3 +873,12 @@ func main(){
 que en la interface solo añadimos ese nombre como método. Cuando hacemos uso de 
 la función calcular. Es cómo si el struct de Figuras2D tomara nuestras variables y a ambas
 aplicara: `Mivariable.area()`
+
+# ¿Qué es la concurrencia? 
+
+> "La concurrencia está alineando con múltiples cosas al mismo tiempo mientras que el paralelismo está haciendo múltiples cosas al mismo tiempo." - Rob Pike 
+
+- Concurrencia te permite estar pendiente de varios procesos, comienzas uno, empiezas otro, ves si el anterior ya terminó, luego crear otro así
+
+- El paralelismo, es usar varios hilos del procesador para hacer varios procesos a la vez, pero siempre estas esperando que la tarea termine.
+
