@@ -152,7 +152,7 @@ la misma cantidad de dinero, para las mismas cosas de consumo, en un cierto peri
 - Tasa de interés (la que más nos interesa, por los créditos). 
 - Operaciones de mercado abierto.
 - Fijar el tipo de cambio. Básicamente, hacer que la moneda de cada país sea competitiva para el 
-resto edl mundo. 
+resto del mundo. 
 
 **Algunas de sus funciones:**
 - Administrar las reservas internacionales. 
@@ -196,3 +196,51 @@ las tasas de interés para que todo vuelva a remontar con tasas de interés baja
 El Banco Central, en esencia, presta dinero al gobierno, permitiéndole mantener un déficit y aumentar 
 el gasto en bienes y servicios mediante sus programas de incentivos y de seguros de paro.
 
+# Ciclos económicos
+
+- Ciclo económico: Es el conjunto de fases por las que pasa la actividad económica. 
+## Fases del ciclo económico 
+
+- **Expansión:** Existe mayor crecimiento. Época de vacas gordas. 
+- **Auge:** El crecimiento llega a sus notas más altas.
+- **Recesión:** La actividad económica baja de forma contínua.
+- **Depresión:** Se extiende la recesión continuada. 
+- **Recuperación:** La economía pasa de estar estancada a tener una pequeña recuperación. 
+
+### Ciclo econímico 
+Banco central baja las tasas % -> Es más barato comprar -> Consumen + productos o servicios ->
+El gasto de unos es el ingreso de otros -> Recibe + ingreso -> Consumen + productos o servicios ->
+Mucho dinero circulando -> Más empleos, más poder adquisitivo -> Misma cantidad de personas pero más
+dinero -> Inflación -> Banco central sube las tasas %, las cosas se vuelcen caras -> Dejan de consumir
+-> Las empresas dejan de producir -> Pierden el empleo algunas personas -> Deja de circular dinero -> Banco central baja las tasas % -> Y volvemos a empezar. 
+
+## Productividad 
+
+En una transacción hay que dar algo para obtener algo. 
+**Por lo tanto:** Cuánto obtenemos depende de cuánto producimos. 
+
+Atras de una transacción hay un producto o servicio, atrás de ese producto o servicio esta la
+productividad. 
+
+## Crecimiento vía productividad 
+- **Factores Variables:** Experiencia, Empuje, Creatividad, Oportunidad
+
+No es lo mismo la persona que acaba de empezar a una persona que lleva en el rubro 10 o 15 años. De
+ahí la experiencia. Pero también influye el empuje. Si tienes experiencia pero no empuje, no vas a 
+crecer. A pesar de ello, las oportunidades también nos benefician. Sea que llegan o que las salimos 
+a buscar. 
+
+## Crecimiento vía deuda
+
+- Cuando la productividad es alta, nos permite consumir más de lo que se produce. 
+En cambio, cuando la productividad es baja 
+- Nos obliga a consumir menos para pagar la deuda. 
+### Crecimiento económico 
+
+| Productividad | Deuda |
+| --- | --- |
+| No forman ciclos económicos | Forman ciclos económicos |
+| El ingreso depende del dinero | El ingreso depende del crédito |
+| El crecimiento depende de la creatividad | El crecimiento depende de pedir créditos |
+| Consumo lo que puedo pagar | Consumo aunque no tenga para pagar | 
+| Crecimiento lento | Crecimiento acelerado |
