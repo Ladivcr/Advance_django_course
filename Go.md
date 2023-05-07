@@ -876,6 +876,8 @@ aplicara: `Mivariable.area()`
 
 # ¿Qué es la concurrencia? 
 
+- [Concurrencia en Golang](https://blog.friendsofgo.tech/posts/concurrencia-en-golang/)
+
 > "La concurrencia está alineando con múltiples cosas al mismo tiempo mientras que el paralelismo está haciendo múltiples cosas al mismo tiempo." - Rob Pike 
 
 - Concurrencia te permite estar pendiente de varios procesos, comienzas uno, empiezas otro, ves si el anterior ya terminó, luego crear otro así
@@ -899,7 +901,7 @@ func say(text string, wg *sync.WaitGroup) { // Gorutine
 	fmt.Println(text)
 }
 
-func main22() {
+func main() {
 
 	var wg sync.WaitGroup // El paquete sync permite interacturar de forma primitiva con las gorutine. Variable que acumula un conjunto de gorutines y los va liberando poco a poco.
 
@@ -919,6 +921,95 @@ func main22() {
 
 	// Nota: Para fines practicos se hace uso de la funcion Sleep(), pero en realidad NO es una buena practica, es mejor utilizar los WaitGroups
 
+}
+
+- Usualmente los **WaitGroups** no se utilizan ya que, aunque le dan más optimización al código, suelen
+ser complejos de mantener en el largo plazo. En su lugar existen los **channels**. Son grosso modo, 
+canales en los que se comunican las gorutine. 
+
+# Channels: La forma de organizar las goroutines
+Los channels manejan de forma nativa la comunicación entre ellos además de otros datos primitivos. 
+Como por ejemplo, los WaitGroups. 
+
+- Un channel, es un conducto en el cual solo puedes manejar un tipo de datos. 
+
+```Go 
+package main 
+
+import "fmt"
+
+// La flecha indica que ese canal solo es de entrada de datos
+// Es una buena práctica indicarlo en todo momento
+// Si fuera solo de salida seria: c <- chan string
+func say(text string, c chan<- string) {
+	// El canal y el dato que le pasamos, deben de ser del mismo tipo de dato
+	c <- text // para indicar que vamos a ingresar el texto al canal
+}
+func main(){
+	// Una buena práctica es indicarle el número de goroutines que manejaremos 
+	// Podemos no hacerlo y dejarlo dinamico. 
+	c := make(chan string, 1)
+	
+	fmt.Println("Hello")
+	
+	// Indicamos la función como goroutine 
+	go say("Bye", c)
+	
+	// Para garantizar que la goroutine del main espere la ejecución de la función "say"
+	// Extraemos la salida del canal
+	fmt.Println(<-c) // si para ingresar el dato, el chanel estaba de lado izquierdo de la flecha
+	// Para sacarlo, channel esta de lado derecho de la flecha
+}
+```
+
+Si comparamos los chanels contra los WaitGroups, suele ser menos eficiente por la complejidad. 
+Sin embargo, si lo ponemos en una balanza, es mucho más eficiente en tiempo de desarrollo el uso de 
+Channels. Si ocupamos una gran optimización, mejor usar los WaitGroups. Pero de no ser el caso.
+Los channels seran la mejor opción.
+
+
+# Range, Close y Select en channels
+
+```Go 
+package main
+
+import "fmt"
+
+func message(text string, c chan string) {
+	c <- text
+}
+
+func main() {
+	c := make(chan string, 2)
+
+	c <- "Mensaje 1"
+	c <- "Mensaje 2"
+
+	fmt.Println(len(c), cap(c))
+
+	// Range y close
+	close(c)
+	//c<-"Mensaje 3"
+
+	for message := range c {
+		fmt.Println(message)
+	}
+
+	// Select
+	email1 := make(chan string)
+	email2 := make(chan string)
+
+	go message("mensaje 1", email1)
+	go message("mensaje 2", email2)
+
+	for i := 0; i < 2; i++ {
+		select {
+		case m1 := <-email1:
+			fmt.Println("Email recibido de email 1", m1)
+		case m2 := <-email2:
+			fmt.Println("Email recibido de email 2", m2)
+		}
+	}
 }
 
 ```
