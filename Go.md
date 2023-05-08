@@ -1108,7 +1108,22 @@ func main() {
 ```
 
 
+# ¿Con qué seguir? 
 
+- Gophers Slack: [gophers.slack.com](http://gophers.slack.com/)
+> Es un canal de slack en el que podrás encontrar canales de todo tipo referentes a Go. 
+- Go tour: [tour.golang.org](http://tour.golang.com/)
+> Es un tour sobre lo básico en Go
+- Golang Weekly: [golangweekly.com](https://golangweekly.com/)
+> Es una newsletter donde semanalmente llegan noticias del estado actual del lenguaje
+- Play With Go: [play-with-go.dev](https://play-with-go.dev/)
+> Es una plataforma que esta enfocada en que lleves a la práctica tu código en Go. Tiene
+ejercicios prácticos y teoría. Puedes ejecutar tu código directamente en el navegador, por lo que
+un editor no es necesario
+- Go by example: [gobyexample.com](https://gobyexample.com/)
+> Colocan ejemplos a nivel práctico sobre como resolver ciertos aspectos del lenguaje. 
+- Go Time: [Spotify](https://open.spotify.com/show/2cKdcxETn7jDp7uJCwqmSE?si=q88UkEYQTxS0t1QVws22tw&amp;nd=1)
+> Es un canal dedicado a Go en el que están compartiendo el estado del arte de Go. 
 
 
 
