@@ -4,7 +4,7 @@
 - Documentación que incluye paquetes externos: https://pkg.go.dev/?utm_source=godoc
 - Documentación de paquetes estandar (Oficial): https://pkg.go.dev/std
 - Docuemntación offline: https://zealdocs.org/
-
+- Paquetes de terceros: https://awesome-go.com/
 
 # ¿Qué es, por qué y quienes utilizan Go? 
 
@@ -1013,3 +1013,108 @@ func main() {
 }
 
 ```
+
+# Range, Close y Select en channels
+
+```
+package main 
+
+import "fmt"
+
+func message(text string, c chan){
+	c <- text
+}
+func main(){
+	c := make(chan string, 2) 
+	c <- "Mensaje1"
+	//c <- "Mensaje2"
+	
+	//len() me dice cuantos datos o cuantas goroutines hay dentro del channel
+	//cap() me dice la cantidad máxima que puede almacenar el channel
+	fmt.Println(len(), cap())
+	>> 1 2
+	c <- "Mensaje2"
+	
+	// Range y Close
+	// Close lo que hace es decirle al runtime de go, que va a cerrar el canal 
+	// Por lo que ese canal no va a recibir ningun dato más, tenga o no capacidad. 
+	// LO IDEAL ES CERRAR LOS CANALES CUANDO SE DEJAN DE USAR
+	close(c)
+	
+	c <- "Mensaje3"
+	>> exit status 2 error
+	
+	for message := range c {
+		fmt.Println(message)
+		>> Mensaje1
+		>> Mensaje2
+	}
+	// Range es ideal para cuando queremos iterar entre cada uno de los elementos
+	// de un canal que usualmente esta abierto o con datos desconocidos. 
+	
+	// Cuando manejamos varias canales y no tenemos certeza de cuál es el que va a 
+	// responder primero. Es ahí cuando utilizamos select 
+	// Select
+	email := make(chan string)
+	email2 := make(chan string)
+	go message("Mensaje1", email1)
+	go message("Mensaje2", email2)
+	for i:=0; i < 2; i++ {
+		select {
+			case m1 := <-email1: 
+				fmt.Println("Email recibido de email1", m1)
+			case m2 := <-email2: 
+				fmt.Println("Email recibido de email2", m2)
+		}
+	}
+}
+```
+
+# Go get: El manejador de paquetes
+
+- Para paquetes de terceros: https://awesome-go.com/
+```Bash
+// Para instalar paquetes es con go get RouteOrNamePackage
+$ go get golang.org/x/website/tour 
+// -v indica "verbosidad". De esta manera podemos ver el output de lo que instala
+$ go get -v golang.org/x/website/tour
+// Lo ideal es usar -v -u con esto indicamos que este o no instalada, nos muestre
+// el ourput de lo que esta instalando/reinstalando
+$ go get -v -u golang.org/x/website/tour
+```
+
+# Go modules: Ir más allá del GoPath con Echo 
+
+- Instalar Echo en su última versión estable: `go get -v -u github.com/labstack/echo`
+
+```Go
+package main
+
+import (
+	"github.com/labstack/echo"
+	"net/http"
+)
+
+func main() {
+	// Instanciar echo
+	e := echo.New()
+
+	e.GET("/", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello world")
+	})
+
+	e.Logger.Fatal(e.Start(":1323"))
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
