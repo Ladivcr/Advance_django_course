@@ -244,3 +244,42 @@ En cambio, cuando la productividad es baja
 | El crecimiento depende de la creatividad | El crecimiento depende de pedir créditos |
 | Consumo lo que puedo pagar | Consumo aunque no tenga para pagar | 
 | Crecimiento lento | Crecimiento acelerado |
+
+
+# Las 3 fuerzas que mueven la economía
+
+1. Un incremento de la productividad
+El crecimiento a través de la productividad es más lento que el crecimiento vía deuda, porque, para ser productivo TIENES que trabajar: encontrar formas de producir más con lo mismo o mejor aún, con menos;
+desarrollar nuevas tecnologías, crear nuevos sistemas o mejorar los actuales. En pocas palabras, la productividad es el verdadero soporte del crecimiento económico sostenido a largo plazo,
+tanto para los individuos como para los países.
+
+El pequeño problema con la productividad es que el crecimiento es a largo plazo, por lo tanto, si se quieren acelerar las cosas se debe hacer uso del crédito. O sea, se debe crear deuda.
+
+El gasto de uno es el ingreso del otro, así que el crédito es un gasto para quien lo pide, pero un ingreso para quien le pagan con él.
+Por eso es que el crédito es un motor de crecimiento a corto plazo. Por supuesto, el exceso de crédito tanto para las personas como para los países trae acompañados varios dolores de cartera.
+
+2. El ciclo de deudas a corto plazo 
+
+La deuda tiene un papel fundamental en los vaivenes económicos, porque al adquirirla nos permite consumir más de lo que producimos y nos obliga a consumir menos de lo que producimos cuando la pagamos.
+
+**Estos vaivenes forman los llamados ciclos económicos**. Los ciclos económicos tienen picos donde hay mucho ingreso, por lo tanto hay mucho gasto 
+(y mucho crédito, ya que como hay mucho ingreso pues hay que comprar una nueva pantalla, o un nuevo auto, o un nuevo guardarropa, porque las cosas están bien y siempre van a estar bien, ¿o no?), 
+seguido de un valle donde bajan los ingresos, baja el gasto, baja el crédito otorgado e incluso baja el pago de créditos.
+
+3. El ciclo de deudas a largo plazo 
+ La diferencia principal entre corto y largo plazo es el tiempo. Anteriormente dijimos que el ciclo de la deuda a corto plazo dura entre 5 y 8 años.
+ Para el ciclo de la deuda a largo plazo toma entre 75 y 100 años en presentarse, y cuando se llega al fin del ciclo, la economía tarda en promedio 10 años en recuperarse (de ahí el término de “Década Perdida”).
+ 
+ El ciclo de la deuda sigue un camino similar al de corto plazo (Solo que aquí al proceso de recuperación no se le llama **recesión**, se le llama **depresión**): se crea crédito, esto incrementa el ingreso
+ porque se gasta más, al gastar más los precios de los bienes y activos financieros suben y la gente se
+ siente más rica (por lo menos en papel). Cómo se siente rica, la gente pide más crédito para seguir gastando o emprendiendo y vivir felices por siempre.
+ Desafortunadamente, el ciclo llega a su fin: se alcanza el punto de los pagos de las deudas son mayores que los ingresos, derivado de que el crecimiento de la deuda fue mucho mayor que el de las fuentes de
+ generación de ingresos. Como los ingresos se van al pago de deudas, el gasto cae, y recordando que el gasto de uno es el ingreso de otro, el ingreso cae también. Habiendo menos ingresos, se es menos sujeto al crédito.
+ Así que también cae el crédito y hay menos ingresos.
+ 
+ Para corregir el rumbo se debe comenzar un proceso doloroso pero necesario conocido como desapalancamiento, o sea, deshacerse de deudas y comenzar a incrementar el ingreso.
+ 3.1 **Se cortan gastos:** lo hacen tanto las personas como los países. En los países se presenta cancelación de proyectos, eliminación de apoyos, etc. A esto se le conoce como austeridad.
+ 3.2 **Reducción de deuda:** ya sea con reestructurar o condonaciones. Esto parece genial a primera instancia, pero generalmente olvidamos que si no se paga lo que se debe, se crea un desfalco a las instituciones,
+ y ese desfalco generan quiebras que afectan a las personas, pues pierden sus fuentes de ingreso.
+3.3 **Transferencia de los que tienen a los que no:** usualmente creando impuestos para la gente adinerada, como los que se crean para las inversiones o las herencias.
+3.4 **Impresión de dinero:** a través del banco central que se usa para comprar bonos del gobierno con la intención que el dinero inyecte esos dineros derivados de la venta de proyectos productivos
