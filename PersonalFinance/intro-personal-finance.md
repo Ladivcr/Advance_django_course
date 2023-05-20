@@ -284,3 +284,58 @@ seguido de un valle donde bajan los ingresos, baja el gasto, baja el crédito ot
  y ese desfalco generan quiebras que afectan a las personas, pues pierden sus fuentes de ingreso.
 - 3.3 **Transferencia de los que tienen a los que no:** usualmente creando impuestos para la gente adinerada, como los que se crean para las inversiones o las herencias.
 - 3.4 **Impresión de dinero:** a través del banco central que se usa para comprar bonos del gobierno con la intención que el dinero inyecte esos dineros derivados de la venta de proyectos productivos
+
+# Actuar racionalmente con el dinero 
+- Economía del comportamiento: Estudia por qué a veces nos comportamos de manera ilógica aún en contra de nosotros mismos. 
+> Intenta comprender, todo lo que influye a las personas en sus decisiones para crear modelos económicos más humanos. 
+
+- Se el soberano de tus finanzas: Tú eres el único que decide que hacer, que ahorrar, como generar más dinero, etc.
+
+- Detecta a qué tipo de influencia eres más susceptible: 
+-  - Autoridad
+-  - Agrado 
+-  - Escasez
+-  - Reciprocidad
+-  - Comproisos
+-  - Prueba Social 
+
+# Incrementa tu productividad
+
+**Crecer con productividad**
+- Ten más fuentes de ingresos 
+- Establece metas de productividad financiera
+- Otórgate el permiso de ampliar tus expectativas de la vida
+- Aprender de los errores de tu país
+- Decide crecer mediante la productividad y no mediante la deuda
+
+# Cursos para profundizar: Introducción 
+- Curso de finanzas personales: Recalibración y auditoría
+> Cada cierto tiempo, necesitamos recalibrar en nuestros gastos  y realizar una auditoría monetaría
+- Curso de presupuesto y flujo de caja: Presupuestar estratégicamente
+> Rendir cuentas a veces puede ser muy cansado y estresante. Si presupuestas estratégicamente, tienes mejores resultados 
+- Curso de creatividad financiera: Crea ingresos
+> Después de cada nuevo curso existe la probabilidad de generar otra fuente de ingresos 
+- Curso de excel básico: Ve un paso adelante 
+> Facilita la apreciación de tus finanzas con herramientas
+
+# Cursos para profundizar: Intermedio 
+- Curso de Manejo de Deuda: Deudas estratégicas
+> Aprender a poner a tu favor los créditos, completa tu entrenamiento económico
+- Curso de Excel Financiero: Lleva a otro nivel tus finanzas
+> Conoce y crea tus propios archivos financieros, lleva tus emprendimientos a otro nivel
+- Curso de Finanzas para el Futuro: Tú "yo" del futuro
+> ¿Sabías que hay arquetipos financieros? ¿Te imaginas tomar 1 año sabático cada 3 años? 
+- Curso de Finanzas para Emprendedores: Emprendedor exitoso 
+> Diseña tu historia de éxito, conoce el camino para ser emprendedor
+- Curso de Economía digital: La "nueva" economía
+> Nuevas reglas, nuevos contextos, mismos jugadores
+
+# Cursos para profundizar: Avanzado 
+- Curso de Introducción al Trading: Ingresos extras
+> Descubre tu faceta de inversor. Diversifica ingresos
+- Curso de Introducción al Trading con Criptomonedas: Refugio financiero 
+> Conoce este refugio financiero. Aprende a integrarlo en tu estrategia de inversión 
+- Curso de Trading Financiero con R y Fundamentos de R: Automatización financiera
+> Genera utilidades a corto plazo de manera dinámica
+
+
