@@ -222,6 +222,7 @@ financiada por deuda que por patrimonio.
 - Ratio de deuda a largo plazo: Pasivo no corriente/Activo
 - Ratio de apalancamiento financiero: Activo/Patrimonio neto 
 
+# Ratios de Eficiencia
 # ¿Por qué es tan importante la eficiencia de una empresa? 
 
 > **¿Qué es la eficiencia?** Es la capacidad de una empresa de generar ingresos con sus recursos. Ejemplo: Un taxista ¿cuánto dinero genera con su vehículo?
@@ -239,4 +240,16 @@ Si por otro lado, no es solvente y no es liquida. El Inventory Turnover, toma re
 pagar las deudas. 
 
 - **Interpretación:** Un alto Inventory Turnover significa que la empresa rota de inventario mas rápido, es decir, que esta vendiendo rápidamente sus productos y esta siendo mas eficiente.
+
+# Days Inventory: Frecuencia de renovación del inventario 
+- **365/Inventory Turnover**
+
+El Days Inventory nos responde a la pregunta: ¿Cada cuántos días renueva su inventario? 
+
+- **Interpretación:** Lo que nos dice este ratio es por ejemplo: Si Coca-cola tiene 10 refrescos en stock, cuantos días tarda en vender los 10 refrescos y generar de nuevo esos 10 refrescos.  
+El resultado de la división son los días que tarda en renovar el inventario. Por lo que lo IDEAL es que la cifra sea lo menos posible para que de esta manera la empresa lo renueve más y más veces en un mismo año. 
+Si el inventory turnover es más grande, significa que la empresa renueva el inventario más cantidades de veces que puede ser trimestral o anual (generalmente es anual).
+
+**Nota:** Empresas como Bancos, no tiene Days Inventory, debido a que lo que los bancos venden no es un producto, es un servicio. Y esto también aplica para empresas de tecnología como las SaaS. 
+Facebook, Twitter o Dropbox. Son un ejemplo de ello. Este ejemplo nos enseña que a que no hay un Ratio Universal para toda empresa, todo depende del sector en que se desarrollan.
 
