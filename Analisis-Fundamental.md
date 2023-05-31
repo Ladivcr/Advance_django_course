@@ -267,4 +267,5 @@ Facebook, Twitter o Dropbox. Son un ejemplo de ello. Este ejemplo nos enseña qu
 Si la empresa es liquida y solvente, no hace falta. Podemos hacerlo, pero no hace falta. 
 
  
+ # Indicadores de Rentabilidad: Ratios de rentabilidad
  
