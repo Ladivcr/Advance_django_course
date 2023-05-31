@@ -238,3 +238,5 @@ Porque igual puede pagar sus deudas, entonces no tiene mucha probabilidad de que
 Si por otro lado, no es solvente y no es liquida. El Inventory Turnover, toma relevancia. Porque nos ayudará a determinar si vendiendo su inventario, podrá generar ingresos suficientes para
 pagar las deudas. 
 
+- **Interpretación:** Un alto Inventory Turnover significa que la empresa rota de inventario mas rápido, es decir, que esta vendiendo rápidamente sus productos y esta siendo mas eficiente.
+
