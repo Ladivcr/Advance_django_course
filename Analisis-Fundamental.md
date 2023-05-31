@@ -197,4 +197,28 @@ Para hacerlo, basta con usar los valores de: **Total Current Assets/Cash and Sho
 ### Es necesario comparar la empresa que estas analizando con sus competidores. De preferencia 3 o más empresas. Esto con la finalidad de tener 
 ### una visión más amplia sobre el sector. 
 
-# La importancia del pago de deudas en el largo plazo 
+# Ratios de solvencia: La importancia del pago de deudas en el largo plazo 
+
+> Solvencia: Capacidad de pago de deudas por parte de una empresa en el largo plazo. Es similar a la liquidez, solo que en lugar de hacer referencia al corto plazo, hace referencia al largo plazo. 
+> **Largo plazo hace referencia a 12 meses en adelante**
+
+- **¿Por qué es importante evaluar la solvencia?**
+Conocer la solvencia de una compañia nos ayuda a saber cuan grande es la posibilidad de que quiebre. 
+
+# El principal indicador de solvencia: Debt Equity (D/E) -> D = Deuda; E = Patrimonio 
+
+## Debt Equity: Pasivos/Patrimonio 
+El Debt Equity nos responde a la pregunta: **¿En qué porcentaje se encuentra la empresa financiada por deuda y no con patrimonio?**
+y nos muestra la proporción de patrimonio y deuda que una empresa está utilizando para financiar sus activos.
+
+- **Interpretación:** Si el valor de este indicador es igual a 1, nos quieres decir que la empresa está financiada por el patrimonio y por la deuda en las mismas proporciones.
+Mientras más pequeño sea este valor, nos indica que la empresa está más financiada por patrimonio que por deuda y mientras más grande sea, nos indica que la empresa está más 
+financiada por deuda que por patrimonio.
+
+## Otros ratios de solvencia 
+- Ratio de endeudamiento: Pasivo/Patrimonio neto
+- Ratio de endeudamiento a largo plazo: Pasivo no corriente/Patrimonio neto
+- Ratio de deuda: Pasivo/Activo
+- Ratio de deuda a largo plazo: Pasivo no corriente/Activo
+- Ratio de apalancamiento financiero: Activo/Patrimonio neto 
+
