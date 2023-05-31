@@ -183,5 +183,18 @@ Este ratio nos responde a la pregunta de si una empresa **¿puede pagar sus deud
 a pesar de no ser capaz de vender su stock?**
 
 
+# Indicadores de Liquidez: Cash Ratio 
 
+> **Efectivo / Pasivos corrientes**
 
+Este ratio nos response a la pregunta: ¿Puede la empresa pagar todas sus deudas del corto plazo con lo que tiene actualmente en el Banco?
+
+Es el más dificil de superar por las empresas ya que se divide la cantidad de dinero EFECTIVO (sin contar inmuebles, instalaciones o deudas que cobrar) para todos los pasivos corrientes.
+
+**Para calcular este Ratio es necesario que hagas uso de Investing** Ya que ahí si tenemos los datos necesarios para calcularlo. 
+Para hacerlo, basta con usar los valores de: **Total Current Assets/Cash and Short Term Investments** y **Total Current Liabilities**
+
+### Es necesario comparar la empresa que estas analizando con sus competidores. De preferencia 3 o más empresas. Esto con la finalidad de tener 
+### una visión más amplia sobre el sector. 
+
+# La importancia del pago de deudas en el largo plazo 
