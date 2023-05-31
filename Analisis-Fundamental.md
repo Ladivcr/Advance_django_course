@@ -253,3 +253,18 @@ Si el inventory turnover es más grande, significa que la empresa renueva el inv
 **Nota:** Empresas como Bancos, no tiene Days Inventory, debido a que lo que los bancos venden no es un producto, es un servicio. Y esto también aplica para empresas de tecnología como las SaaS. 
 Facebook, Twitter o Dropbox. Son un ejemplo de ello. Este ejemplo nos enseña que a que no hay un Ratio Universal para toda empresa, todo depende del sector en que se desarrollan.
 
+# Assets Turnover: Índice de rotación de activos
+- **Ventas/Activo fijo**
+ 
+ El assets turnover nos responde a la pregunta: ¿Cuán biena es usando sus activos para generar ingresos?
+ 
+ Toma en consideración que hay empresas que no tienen inventario, sino que solo tienen activos. Entonces puedes usarlo para empresas que NO tienen inventario, para poder medir la eficiencia de dicha empresa.
+ Puedes usarlo para empresas que tienen inventario pero te tomará más tiempo. 
+ 
+ - **Interpretación:**  Entre más grande sea el resultado, es mejor, porque significa que la esta rotando más veces. Lo que nos dice que mejor uso le esta dando. 
+
+**Nota:** Para empresas que no tienen inventario, empresas bancarias por ejemplo. Es ahí donde vamos a usar el Assets Turnoover, para medir la eficiencia. Sin embargo, no siempre lo usaremos. 
+Si la empresa es liquida y solvente, no hace falta. Podemos hacerlo, pero no hace falta. 
+
+ 
+ 
