@@ -185,7 +185,7 @@ a pesar de no ser capaz de vender su stock?**
 
 # Indicadores de Liquidez: Cash Ratio 
 
-> **Efectivo / Pasivos corrientes**
+- **Efectivo / Pasivos corrientes**
 
 Este ratio nos response a la pregunta: ¿Puede la empresa pagar todas sus deudas del corto plazo con lo que tiene actualmente en el Banco?
 
@@ -207,7 +207,7 @@ Conocer la solvencia de una compañia nos ayuda a saber cuan grande es la posibi
 
 # El principal indicador de solvencia: Debt Equity (D/E) -> D = Deuda; E = Patrimonio 
 
-## Debt Equity: Pasivos/Patrimonio 
+- **Debt Equity: Pasivos/Patrimonio** 
 El Debt Equity nos responde a la pregunta: **¿En qué porcentaje se encuentra la empresa financiada por deuda y no con patrimonio?**
 y nos muestra la proporción de patrimonio y deuda que una empresa está utilizando para financiar sus activos.
 
@@ -221,4 +221,20 @@ financiada por deuda que por patrimonio.
 - Ratio de deuda: Pasivo/Activo
 - Ratio de deuda a largo plazo: Pasivo no corriente/Activo
 - Ratio de apalancamiento financiero: Activo/Patrimonio neto 
+
+# ¿Por qué es tan importante la eficiencia de una empresa? 
+
+> **¿Qué es la eficiencia?** Es la capacidad de una empresa de generar ingresos con sus recursos. Ejemplo: Un taxista ¿cuánto dinero genera con su vehículo?
+
+# Inventory Turnover: Rendimiento de las ventas de una empresa (Rotación de inventario)
+- **Costos/Precio inventario promedio**
+El Inventory Turnover nos responde a la pregunta: ¿Cuántas veces renueva su inventario en determinado periodo de tiempo? 
+Lo que medimos es cuantas veces en el año, la empresa roto o renovo el inventario. 
+
+Este es un ratio que podemos obviar dependiendo de la situación de la empresa. Si tenemos una empresa que posiblemente pueda pagar sus deudas en el corto plazo, o sea, que 
+es liquida. Y tenemos la misma empresa que también puede pagar sus deudas en el largo plazo, o sea, es solvente. Pero no es tan eficiente, no genera tantas ventas. No hay mucho problema. 
+Porque igual puede pagar sus deudas, entonces no tiene mucha probabilidad de quebrar. Y eso es lo que buscamos en una empresa. Para garantizar que nuestro capital tiene cierto capital de resguardo. 
+
+Si por otro lado, no es solvente y no es liquida. El Inventory Turnover, toma relevancia. Porque nos ayudará a determinar si vendiendo su inventario, podrá generar ingresos suficientes para
+pagar las deudas. 
 
