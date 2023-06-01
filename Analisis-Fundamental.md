@@ -268,4 +268,42 @@ Si la empresa es liquida y solvente, no hace falta. Podemos hacerlo, pero no hac
 
  
  # Indicadores de Rentabilidad: Ratios de rentabilidad
+ ## Introducción a los ratios de rentabilidad
+ - **Rentabilidad = Ganancias**
+ - **Eficiencia = Ventas**
  
+ - **¿Qué es la rentabilidad?** Es la capacidad de generar ganancias de una empresa.
+ 
+- ¿Qué tiene que ocurrir con la eficiencia para darle más importancia a la rentabilidad? 
+> Si la eficiencia es baja (nuestros inventarios rotan poco y tardo más días en renovar inventario), mi rentabilidad tiene que ser alta para compensar. Tal vez soy una empresa de productos exclusivos
+> que gano más por el valor de la marca y me permite vender más caro. Por ende, mi rentabilidad es alta.
+
+# ROE: Ganancia para los accionistas 
+- **Beneficio neto/Patrimonio**
+
+El ROE responde a la pregunta: **¿Cuántos dólares de ganancia le corresponden a cada dólar de patrimonio?**
+
+### Ejemplo
+Si la empresa X generara 10 dolares de Beneficio neto y estos 10 dolares, fuesen divididos por 10 dolares de Patrimonio. Significa que por cada dolar de Patrimonio va a haber un dolar de beneficio, o sea, 
+un dolar de ganancia. Y esto implica que la empresa esta generando un dolar de ganancia por cada dolar que yo pongo. 
+
+Toma en consideración que esto no significa que la empresa te pagará a ti un dolar por cada dolar que tú pongas. Significa que genero ganancias pero puede usarlas 
+como pago de dividendos, para comprar equipo, etc, etc. 
+
+# Net Margin: Margen de beneficio neto 
+- **Beneficio neto / Ventas**
+
+El Net Margin nos responde a la pregunta: **¿Qué porcentaje del dinero que ingresa se queda en la empresa?**
+
+- **Interpretación**: Lo que nos dice es, del dinero que ingresa. Cuanto realmente queda como ganancia.
+**Un Net Margin más alto lo que nos indica es una mejor ganancia. A más alto Net Margin, mejores ganancias. Por lo que siempre es mejor que sea un valor más grande.**  
+
+- ¿Qué tiene que hacer una empresa para generar más beneficios sin cambiar el margen?
+> Si una empresa quiere una ganancia de mil dólares, pero vende diez artículos con ganancia de 10 en cada uno, no será posible. 
+En cambio, si vende 100 artículos con ganancia de 10 en cada uno, llegará a la meta de mil dólares sin cambiar el margen. En conclusión: debe ser más eficiente
+
+### NOTA
+En MorningStart o cualquier web que uses. Cuando veas el Net Margin. La interpretación es la siguiente: "De cada 100 dolares que entran, la empresa se quedará con X%". 
+Donde dicho porcentaje es el que te encontrarás en estas Web. Si encuentras 26,94 %  significa que de cada 100 dolares que entran, la empresa se queda con 26,94 dolares.
+
+**Las empresas deben de tener un buen Net Margin sostenido en el tiempo y no únicamente en el último año (o trimestre)**.
