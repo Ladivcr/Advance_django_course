@@ -1,5 +1,7 @@
 # Curso para invertir en Bolsa: Análisis Fundamental
 
+> =GOOGLEFINANCE("Ticker de la acción"; "price") # Función por parte de Google shets
+
 ## ¿Qué es el análisis fundamental y para qué se utiliza? 
 
 Es determinar el valor intrínseco de una empresa, es decir, el valor al que debería cotizar o lo que nos debería costar la acción.
@@ -307,3 +309,25 @@ En MorningStart o cualquier web que uses. Cuando veas el Net Margin. La interpre
 Donde dicho porcentaje es el que te encontrarás en estas Web. Si encuentras 26,94 %  significa que de cada 100 dolares que entran, la empresa se queda con 26,94 dolares.
 
 **Las empresas deben de tener un buen Net Margin sostenido en el tiempo y no únicamente en el último año (o trimestre)**.
+
+# Ratios de valuación
+## Introducción a los ratios de evaluación 
+
+- **¿Qué es la valuación?**: Es encontrar el valor intrínseco de una empresa. Ejemplo, dada una pelota firmada. ¿Cuánto vale realmente dicha pelota?
+
+# Earnings Per Share: Cuanto gana una empresa por acción 
+**EPS o BPA**= Earging Per Share o Beneficio Por Acción en español
+- **(Beneficio neto - dividendos) / Acciones en circulación**
+
+El EPS nos response a la pregunta: **¿Cuántos dólares beneficio genero la empresa para cada accionista?** Por ejemplo, un EPS de 3. Nos dice que hay 3 dolares de beneficio para cada accionista. 
+Si le quitamos la parte de dividendos y dejamos solamente: Beneficio neto/Acciones en circulación. Tenemos cuanto dinero genero por cada acción. 
+
+# Indicador de valor: Price Earning Ratio
+## PER o P/E Ratio
+- **Precio/EPS**
+
+El PER nos responde a la pregunta: **¿Cuánto pagan los accionistas por cada dólar de beneficio producido para sus acciones?** La idea es que nosotros no paguemos de más por ese beneficio por acción. 
+- **Interpretación**: Si tenemos tres acciones del mismso sector con los PER: 12.78, 34.1, 76.9. Lo que nos dice el PER más bajo es que estamos pagando menos por cada dolar de ganancia que genera, es más
+barata frente a las otras acciones. Pero ojo, antes de pensar que esta subvaluada e invertir, debemos de usar las métricas anteriores para determinar que tiene solides dicha acción. 
+
+
