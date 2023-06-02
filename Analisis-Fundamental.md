@@ -357,3 +357,19 @@ El PBV nos responde a la pregunta: **¿Cuánto pagan los accionistas cada dólar
 - - P/B igual a 1: Un P/B igual a 1 significa que el precio de mercado de la acción es igual a su valor contable por acción. Esto indica que el mercado valora la empresa en línea con su patrimonio neto.
 
 - - P/B superior a 1: Un P/B superior a 1 implica que el precio de mercado de la acción es mayor que su valor contable por acción. Esto puede indicar que el mercado está asignando un valor premium a la empresa en relación con sus activos netos. Puede sugerir que los inversores tienen altas expectativas de crecimiento futuro, confianza en la gestión de la empresa u otros factores positivos.
+
+# Indicador de valor: Price to Cash Flow
+
+- **Precio/(Cash Flow Operativo / Acciones)**
+
+El PCF nos responde a la pregunta: **¿Cuánto pagan los accionistas cada dólar de ganancia en efectivo?**
+
+
+- **Nota**: Toma en consideración que puede ocurrir que cuando búsques el valor en Morning Start o alguna otra web, este no aparezca o salga con un guíon en el caso del PCF o del PER. Esto
+significa que la empresa como tal no genero ganancias. O tal vez tenga un valor negativo, si tiene un valor negativo, no lo uses. No sirve para el análisis. 
+
+- **Interpretación**: Si el Price Cash Flow o cualquiera de los anteriores ratios de valuación es demasiado alto (1000 por ejemplo), significa que la empresa está muy cara. ¿Por que razón? Porque significa que tenemos que 
+ pagar una gran cantidad de dinero para producir 1 dolar de ganancia operativa, no se debería pagar un valor demasiado alto por una empresa.
+Nosotros podríamos esperar un Ratio de Valuación alto de empresas que tengan un gran potencial de crecimiento, es decir, de empresas que actualmente tienen un pequeño mercado pero en un futuro pueda alcanzar uno
+mucho más grande (Ej: Uber), debido a que si su mercado se expande, también se expande su valor, a diferencia de las grandes empresas que ya se encuentran en una posición alta, debido a que estas ya no pueden ir más 
+alto porque ya están arriba, entonces no se espera una gran expansión.
