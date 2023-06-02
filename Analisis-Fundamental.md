@@ -373,3 +373,17 @@ significa que la empresa como tal no genero ganancias. O tal vez tenga un valor 
 Nosotros podríamos esperar un Ratio de Valuación alto de empresas que tengan un gran potencial de crecimiento, es decir, de empresas que actualmente tienen un pequeño mercado pero en un futuro pueda alcanzar uno
 mucho más grande (Ej: Uber), debido a que si su mercado se expande, también se expande su valor, a diferencia de las grandes empresas que ya se encuentran en una posición alta, debido a que estas ya no pueden ir más 
 alto porque ya están arriba, entonces no se espera una gran expansión.
+
+# Evaluar una empresa respecto a su historia 
+
+- Notas sobre los ratios
+Al final cuando hemos llenado el excel de clase, debemos ver el contraste entre el valor actual de la acción y el valor historico promedio, obtenido con el valor de la empresa que estas análizando y
+sus competidores. Pero todo, sustentado con los valores de los ratios. 
+
+- - Current Ratio: Si la empresa esta por debajo del promedio no es del todo relevante. Debemos de comparar contra sus competidores y descubrir porque esta por debajo. Qué es lo que pasa para que este 
+por debajo frente a sus competidores.
+- - Cash Ratio: Básicamente lo que nos dice un valro de 0.9 es que si tuvieras una deuda de 100 mil pesos, tienes el efectivo para pagar 90 mil de esa deuda. 
+- - Debt/Equity: Un valor por debajo de 0.5 es un buen valor. Por debajo de 1 es bueno pero por encima de 1, ya es bastante grande y no nos interesá. O sea, entre más pequeño sea. Es mucho mejor. 
+- - ROE: Se trata de saber si una empresa es rentable. Si tenemos un valor de 23, significa que por cada 100 dolares tiene 23 de ganancia. No es una proporción tan directa pero es más o menos así. 
+De 10 a 15 es un buen ROE de 15 a 20 es un muy buen ROE y de 20 en adelante es un excelente ROE. Pero, ojo, debe ser un ROE sostenido en el tiempo. 
+
