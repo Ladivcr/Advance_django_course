@@ -330,4 +330,30 @@ El PER nos responde a la pregunta: **¿Cuánto pagan los accionistas por cada d�
 - **Interpretación**: Si tenemos tres acciones del mismso sector con los PER: 12.78, 34.1, 76.9. Lo que nos dice el PER más bajo es que estamos pagando menos por cada dolar de ganancia que genera, es más
 barata frente a las otras acciones. Pero ojo, antes de pensar que esta subvaluada e invertir, debemos de usar las métricas anteriores para determinar que tiene solides dicha acción. 
 
+# Indicador de valor: Price to Sales Ratio, el precio en relación a las ventas
+**Precio/(Ventas/Cantidad de acciones)**
 
+El PS nos respondea la pregunta: **¿Cuánto pagan los accionistas por cada dólar de ventas (es decir, de ingreso) producido para sus acciones?**
+Se utiliza principalmente en empresas en etapas tempranas o en industrias donde las ganancias pueden ser volátiles o no representativas de la salud financiera de la empresa.
+
+> El PER siempre será más grande que el PS. 
+
+# Book Value (BV): Cuánto vale lo que posee la empresa 
+- **Patrimonio/Cantidad de acciones**
+
+El BV nos responde a la pregunta: **¿Qué porcentaje del patrimonio le corresponde a cada acción?**
+Recordemos que el patrimonio es: El capital de los accionistas más las ganancias retenidas. 
+El BV es un indicador financiero que se utiliza para evaluar el valor de los activos y la salud financiera de una empresa. Como tal no suele usarse para análisar sino que se usa para 
+entender el **price to book value**. Que es otro ratio.  
+
+# Price Book Value (PBV)
+- **Precio/BV**
+
+El PBV nos responde a la pregunta: **¿Cuánto pagan los accionistas cada dólar propio de la empresa?**
+
+- **Interpretación**: 
+- - P/B inferior a 1: Un P/B inferior a 1 puede indicar que el precio de mercado de la acción es inferior a su valor contable por acción. Esto podría sugerir que la acción está subvalorada en relación con sus activos netos y puede presentar una oportunidad de compra.
+
+- - P/B igual a 1: Un P/B igual a 1 significa que el precio de mercado de la acción es igual a su valor contable por acción. Esto indica que el mercado valora la empresa en línea con su patrimonio neto.
+
+- - P/B superior a 1: Un P/B superior a 1 implica que el precio de mercado de la acción es mayor que su valor contable por acción. Esto puede indicar que el mercado está asignando un valor premium a la empresa en relación con sus activos netos. Puede sugerir que los inversores tienen altas expectativas de crecimiento futuro, confianza en la gestión de la empresa u otros factores positivos.
