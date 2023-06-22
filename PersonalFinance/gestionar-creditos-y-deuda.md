@@ -1,5 +1,5 @@
 # Curso de Finanzas Personales: Cómo Gestionar Créditos y Deudas
-
+Página de interés -> **[Deudores anónimos](https://debtorsanonymous.org/en-espanol/)**
 # Caer en la tentación de las deudas
 
 ## Causas de endeudamiento 
@@ -112,3 +112,41 @@ Calificación otorgada por Sociedades de Información Crediticia, respecto a tu 
 - No abuses de los créditos otorgados.
 - Buscar tener diferentes tipos de créditos.
 - Evita solicitar créditos innecesarios.
+
+# ¿Qué tan endeudados estamos? 
+## Percepción vs. Realidad
+El percibir no puede ser válido en las finanzas personales, necesitamos saber de forma objetiva, matemáticamente financiera, 
+si realmente estamos en un nivel de endeudamiento peligroso, o si tu deuda es sana.
+## Qué es sobreendeudamiento
+- Endeudarse no es malo; sobreendeudarse sí lo es
+- Si tus deudas anuales son mayores al 30% de tus ingresos anuales
+## Descubre tu nivel de endeudamiento
+- Revisa tu presupuesto del Curso Presupuesto Personal
+- Identifica tus deudas (incluyendo hipotecas, pagos a meses sin intereses, deudas familiares/amigos)
+- Suma el total de tus deudas mensuales
+- Divide ese total entre tus ingresos mensuales
+
+> Para saber el porcentaje de endeudamiento/nivel de endeudamiento, se puede usar la siguiente formula: **Ingresos totales/Monto de la deuda**
+Si sumas los porcentajes de cada deuda que tengas. El total debe de ser menor al 30 % para considerarse un nivel de deuda sana.
+
+
+# Ayuda para salir de deudas
+
+**1. La psicológica (también conocida como bola de nieve)**
+- Haz una lista de todas tus deudas
+- Ordénalas de menor a mayor monto
+- Enfócate en la de menor monto. Empieza por pagar la primera
+- Sigue ese orden hasta terminar
+
+**2. La smart**
+- Haz una lista de tus deudas (de la más cara a la más baja)
+- Ordénalas según su tasa de interés más alto o de la más cara a la más barata
+- Empieza por la más cara, dando aportaciones adicionales o buscando opción de re-compra de deuda
+
+**3. La creativa**
+Considera las siguientes opciones para pagar las deudas de la lista: 
+- Solicitar un préstamo familiar o de amigos, ofreciéndoles pagarles **la mitad de los intereses** actuales
+- negociar **congelamiento de deuda** o renegociación de condiciones con el mismo pago
+- Evalúa solicitar un crédito con Crowdfunding que te permita pagar la deuda a una **tasa más baja**
+
+
