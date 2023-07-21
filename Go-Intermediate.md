@@ -14,3 +14,8 @@
 - Según StackOverflow, es la quinta tecnología más amada por los desarrolladores y la tercera más
 deseada para trabajar
 
+## Notas sobre algunos comandos
+- `go run main.go` es equivalente a realizar: `go build main.go`
+  que generara un archivo main y para ejecutarlo se realiza con: `./main`
+> `go run main.go` nos sirve para cuando estamos probando nuestro código en un entorno de desarrollo.
+> Mientras que `go build main.go` nos sirve para producción.
