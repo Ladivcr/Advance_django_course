@@ -53,3 +53,27 @@
 | Documentos | Filas (registros) |
 |Campos | Columnas |
 
+# Json vs. Bson
+## JSON
+**Ventajas de JSON:**
+- Amigable
+- Se puede leer
+- Es un formato muy usado
+
+**Desventajas de JSON:**
+- Basado en texto
+- Consume mucho espacio
+- Es limitado: string, boolean, number, arrays
+
+## BSON
+**Ventajas de BSON:**
+- Representación binaria de JSON
+- No consume espacio
+- Alto rendimiento
+- Tipos de datos: +, date, raw binary, integer, long, float
+
+**Desventajas de BSON:**
+- No es estándar
+- Es un formato para la máquina.
+
+> Si quieres ver que tipos de datos extra ofrece mongo sobre Json. [Click aquí](https://www.mongodb.com/basics/bson)
