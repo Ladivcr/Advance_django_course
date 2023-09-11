@@ -77,3 +77,19 @@
 - Es un formato para la máquina.
 
 > Si quieres ver que tipos de datos extra ofrece mongo sobre Json. [Click aquí](https://www.mongodb.com/basics/bson)
+
+# Insertando un documento
+- Indicar que base de datos usarás. Si no existe, automáticamente se crea. 
+```Bson
+use("platzi_store")
+```
+- Insertar un documento. Si la colección no existe, atomáticamente se crea.
+```Bson
+db.products.insertOne({name: "Product 1", price: 1000})
+```
+```Bson
+db.products.insertOne({_id: 1, name: "Product 1", price: 1000})
+```
+> Por defecto, mongo genera su propio id y lo indica con _id. De tal forma que si tú no lo indicas y ejectuas el mismo insert dos veces, los datos se
+> repetirán al no tener una validación de por medio. En cambio, si tú indicas el _id y corres el mismo insert dos veces, te arrojará un error en el segundo insert por temás
+> de duplicación. **Lo recomendable es dejar que mongo se encargue del _id.**
