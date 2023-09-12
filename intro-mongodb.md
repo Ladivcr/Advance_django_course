@@ -166,3 +166,5 @@ db.products.updateOne(
 ```
 Si el documento, tenía en el campo `price` un valor de 1000. Al ejecutar la query anterior, el valor
 del campo se actualizará a un valor de 4000. Justamente porque fue incrementado en 3000. 
+
+**Nota:** Toma en consideración que si el identificador coincide con varios documentos, a todos les va actualizar dicho valor. 
