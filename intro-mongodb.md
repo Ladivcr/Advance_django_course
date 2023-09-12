@@ -119,3 +119,15 @@ db.products.insertMany([
 **Nota:** Cuando insertas varios documentos y que usas la clace **_id**. Si hay error de duplicación, MongoDB
 no va a insertar los siguientes documentos que vengan después del documento donde ocurrio el error. Sin emabrgo,
 si inserta los documentos anteriores al error. 
+
+Si únicamente quieres saltarte los errores, basta con añadir: `{ordered: false}` a la instrucción. Quedando de la siguiente manera:
+
+```Bson
+use("platzi_store")
+db.products.insertMany([
+    {name: "Product 1", price: 100},
+    {name: "Product 2", price: 1101},
+    {name: "Product 3", price: 1011}],
+    {ordered: false}
+)
+```
