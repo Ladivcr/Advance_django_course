@@ -131,3 +131,38 @@ db.products.insertMany([
     {ordered: false}
 )
 ```
+
+# Actualizando un documento
+
+Cuando se va actualizar un documento, debemos de identificar primero el documento mediante algún valor único.
+El `_id` que genera mongo es un buen identificador por ejemplo. Un email podría ser otra opción. 
+
+**Operador $set**: Actualiza el valor de un campo
+```Bson
+use("platzi_store")
+db.products.updateOne(
+    // query/identificador del documento
+    {_id: ObjectId("6500e36680a1cce2f8358afa")},
+    // operador -> Clace: nuevo valor
+    {$set: {name: "Product 1.0"}})
+```
+Podemos no solo actualizar información, sino incluso añadir nueva información
+```Bson
+use("platzi_store")
+db.products.updateOne(
+    {_id: ObjectId("6500e36680a1cce2f8358afa")},
+    {$set:
+        {name: "Product 1.0", price: 3000, tags: ["A", "B", "C"]}
+    }
+)
+```
+
+**Operador $inc**: Incrementa el valor de  el valor de un campo. El campo debe de ser un numérico.
+```Bson
+use("platzi_store")
+db.products.updateOne(
+    {_id: ObjectId("6500e36680a1cce2f8358afa")},
+    {$inc: {price: 3000}})
+```
+Si el documento, tenía en el campo `price` un valor de 1000. Al ejecutar la query anterior, el valor
+del campo se actualizará a un valor de 4000. Justamente porque fue incrementado en 3000. 
