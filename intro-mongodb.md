@@ -131,6 +131,20 @@ db.products.insertMany([
     {ordered: false}
 )
 ```
+# Listado de operadores de actualización:
+- **$inc:** Incrementa el valor de un atributo numérico en una cantidad específica.
+- **$mul:** Multiplica el valor de un atributo numérico por un factor específico.
+- **$rename:** Cambia el nombre de un atributo.
+- **$set:** Asigna un valor específico a un atributo.
+- **$unset:** Elimina un atributo de un documento.
+- **$min:** Actualiza el valor de un atributo con el valor mínimo especificado, sólo si el valor actual es mayor que el valor especificado.
+- **$max:** Actualiza el valor de un atributo con el valor máximo especificado, sólo si el valor actual es menor que el valor especificado.
+- **$currentDate:** Establece el valor de un atributo con la fecha y hora actual.
+- **$addToSet:** Añade un valor a un atributo de tipo conjunto (array), sólo si el valor no existe en el conjunto.
+- **$pop:** Elimina el primer o último elemento de un atributo de tipo conjunto (array).
+- **$pull:** Elimina un valor específico de un atributo de tipo conjunto (array).
+- **$push:** Añade un valor a un atributo de tipo conjunto (array).
+- **$pullAll:** Elimina varios valores específicos de un atributo de tipo conjunto (array).
 
 # Actualizando un documento
 
@@ -168,6 +182,7 @@ Si el documento, tenía en el campo `price` un valor de 1000. Al ejecutar la que
 del campo se actualizará a un valor de 4000. Justamente porque fue incrementado en 3000. 
 
 # Actualizando varios documentos
+### $inc
 ```Bson
 use("sample_training")
 db.products.updateMany(
@@ -176,3 +191,22 @@ db.products.updateMany(
 ```
 **Nota:** Toma en consideración que si el identificador coincide con varios documentos, a todos les va actualizar dicho valor. Por eso la instrucción es `Many`
 
+### $set
+```Bson
+use("sample_training")
+db.products.updateMany(
+    {city: "CLEVELAND"},
+    {$set: {myAttr: "Hola"}})
+```
+En este caso, a todos los documentos que cumplan con tener por valor `CLEVELAND` en el campo `city`. Se les añadirá el campo: `myAttr` con el valor `Hola`.
+
+### $rename
+Supongamos que nombraste mal el campo: `myAttr`. Que su nombre debía ser: `my_data`
+```Bson
+use("sample_training")
+db.products.updateMany(
+    {city: "CLEVELAND"},
+    {$rename: {myAttr: "my_data"}})
+```
+
+Esto modificará únicamente el nombre del campo por `my_data`. Sin afectar su valor asociado. 
