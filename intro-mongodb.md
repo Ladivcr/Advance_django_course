@@ -333,3 +333,30 @@ db.iot.updateOne({
 ```
 Al marcar `upsert` como `true`. Mongo ejecuta la consulta y si ya hay un registro, lo actualiza, en caso de que no
 haya ningún registro, lo añade. 
+
+# Eliminando documentos
+
+Para realizar la eliminación de un documento, es muy similar a actualizar o insertar. 
+Se hace de la siguiente forma:
+
+```Bson
+use("platzi_store")
+db.products.deleteOne({_id: ObjectId("6500e36680a1cce2f8358afc")})
+```
+Para eliminar varios documentos es de la siguiente forma:
+```Bson
+use("platzi_store")
+db.products.deleteMany({price: 1101})
+```
+Se eliminan todos los productos que tengan por precio el valor de 1101.
+
+```Bson
+use("platzi_store")
+db.products.deleteMany({name: {$in: ["Product 1.0", "Product 3"]}})
+```
+Se eliminan únicamente los documentos con nombres que esten dentro del arreglo.
+```Bson
+use("platzi_store")
+db.products.drop()
+```
+Elimina toda la colección de productos. 
