@@ -145,6 +145,7 @@ db.products.insertMany([
 - **$pull:** Elimina un valor específico de un atributo de tipo conjunto (array).
 - **$push:** Añade un valor a un atributo de tipo conjunto (array).
 - **$pullAll:** Elimina varios valores específicos de un atributo de tipo conjunto (array).
+- **$in**: Coincide con cualquiera de los valores especificados en una matriz.
 
 # Actualizando un documento
 
