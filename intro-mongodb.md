@@ -221,3 +221,90 @@ db.products.updateMany(
 Dado que buscamos eliminar el atributo. No se le paso un valor, sino solo el nombre del campo. En este caso: `my_data`
 
 # Array Update Operators
+Los atributos usados anteriormente solo funcionan para datos especificos pero ¿cómo actualizamos datos que corresponden a un array?
+```Bson
+use("platzi_store")
+db.inventory:find()
+[
+  {
+    _id: 1,
+    item: {name: 'item ab', code: '123', description: 'Single line description.'
+    },
+    qty: 15,
+    tags: [ 'school', 'book', 'bag', 'headphone', 'appliance' ]
+  },
+  {
+    _id: 2,
+    item: {name: 'item cd', code: '123', description: 'First line\nSecond line'
+    },
+    qty: 20,
+    tags: [ 'appliance', 'school', 'book' ]
+  },
+  {
+    _id: 3,
+    item: {name: 'item ij', code: '456', description: 'Many spaces before     line'
+    },
+    qty: 25,
+    tags: [ 'school', 'book' ]
+  },
+  {
+    _id: 4,
+    item: {name: 'item xy', code: '456', description: 'Multiple\nline description'
+    },
+    qty: 30,
+    tags: [ 'electronics', 'school' ]
+  },
+  {
+    _id: 5,
+    item: { name: 'item mn', code: '000' },
+    qty: 20,
+    tags: [ 'appliance', 'school' ]
+  }
+]
+```
+
+### $push
+```Bson
+db.inventory.updateOne({_id: 4}, {
+    $push: {
+        tags: "headphone"
+    }
+})
+
+```
+La instrucción anterior añade el elemento string: `headphone` al final del array cuyo nombre es `tags` en el documento 
+con `_id` 4.
+
+### $pull
+Para quitar elementos de un array se hace de la siguiente manera: 
+```Bson
+db.inventory.updateOne({_id: 4}, {
+    $pull: {
+        tags: "headphone"
+    }
+})
+```
+Para aplicar la eliminación en todos, es muy similar. Basta con usar `updateMany()` y 
+dejar la query vacía. Eso no aplicaría ningún filtro de tal forma que la operación se 
+aplicaría a todos los documentos. 
+```Bson
+db.inventory.updateMany({}, {
+    $pull: {
+        tags: "book"
+    }
+})
+```
+¿Y cómo proceder si quiero eliminar dos elementos de los arreglos para todos los documentos? 
+Podríamos ejecutar dos veces la instrucción intercambiando el valor pero no sería lo optimo.
+Lo ideal es hacer uso de un operador interno: 
+### $in
+```Bson
+db.inventory.updateMany({}, {
+    $pull: {
+        tags: {
+            $in: ["appliance", "school"]
+        }
+    }
+})
+```
+
