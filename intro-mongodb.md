@@ -141,7 +141,8 @@ db.products.insertMany([
 - **$max:** Actualiza el valor de un atributo con el valor máximo especificado, sólo si el valor actual es menor que el valor especificado.
 - **$currentDate:** Establece el valor de un atributo con la fecha y hora actual.
 - **$addToSet:** Añade un valor a un atributo de tipo conjunto (array), sólo si el valor no existe en el conjunto.
-- **$pop:** Elimina el primer o último elemento de un atributo de tipo conjunto (array).
+- **$pop:** Elimina el primer o último elemento de un atributo de tipo conjunto (array). Si le pasas
+como parámetro 1, tomará el último elemento, si le pasas -1, tomára el primer elemento.
 - **$pull:** Elimina un valor específico de un atributo de tipo conjunto (array).
 - **$push:** Añade un valor a un atributo de tipo conjunto (array).
 - **$pullAll:** Elimina varios valores específicos de un atributo de tipo conjunto (array).
@@ -309,3 +310,26 @@ db.inventory.updateMany({}, {
 })
 ```
 
+# Update or insert (upsert)
+Supongamos que queremos realizar dos instrucciones a partir de una condición. 
+Es decir, queremos insertar un documento en caso de que no exista, pero si ya existe,
+queremos únicamente añadir datos a un campo. 
+
+Podríamos realizar una especie de if haciendo uso de `insertOne` y `updateOne`, pero mongo nos da la posibilidad de hacerlo más optimo usando
+`upsert`.
+
+```Bson
+use("platzi_store")
+db.iot.updateOne({
+    sensor: "A001",
+    date: "2022-01-04",
+}, {
+    $push: {
+        readings: 12434
+    }
+}, {
+    upsert: true
+})
+```
+Al marcar `upsert` como `true`. Mongo ejecuta la consulta y si ya hay un registro, lo actualiza, en caso de que no
+haya ningún registro, lo añade. 
