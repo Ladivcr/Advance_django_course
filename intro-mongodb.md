@@ -360,3 +360,49 @@ use("platzi_store")
 db.products.drop()
 ```
 Elimina toda la colección de productos. 
+
+# Usando $eq y $ne
+
+### $eq
+Cuando haces uso del `find()` en mongo, implicitamente ya estas haciendo uso del operador `$eq`.
+```Bson
+use("platzi_store")
+db.inventory.find({qty: 20})
+// De manea explicíta sería:
+db.inventory.find({qty: { $eq: 20} })
+```
+Ambas consultas retornan la misma información. 
+
+**Para realizar consultas en subdocumentos** (documentos dentro de documentos) se hace
+de la siguiente forma 
+```Bson
+use("platzi_store")
+db.inventory.find({"item.name": "ab"})
+
+// De forma explicita
+db.inventory.find({"item.name": {$eq: "ab"}})
+
+```
+Cuando se accede a subdocumentos, es necesario que la clave vaya en encerrada con comillas. 
+
+### $ne
+Para el caso dónde queremos hacer uso de `$ne`. La única forma de usarlo es de manera explicita, siempre.
+```Bson
+use("platzi_store")
+db.inventory.find({qty: {$ne: 20}})
+```
+Este tipo de operadores son de query, por lo que lo podemos utilizar en un update por ejemplo.
+```Bson
+use("platzi_store")
+db.inventory.updateMany(
+    { qty: {$ne: 20} },
+    {
+        $inc: {
+            qty: 10
+        }
+    }
+)
+```
+Todos los productos cuyo qty no sea igual a 20, serán incrementados en 10. 
+
+# Usando $gt, $gte, $lt, $lte
