@@ -208,5 +208,16 @@ db.products.updateMany(
     {city: "CLEVELAND"},
     {$rename: {myAttr: "my_data"}})
 ```
-
 Esto modificará únicamente el nombre del campo por `my_data`. Sin afectar su valor asociado. 
+
+### $unset
+En el caso en el que queremos eliminar un atributo. Se hace uso de: `$unset` de la siguiente manera: 
+```Bson
+use("sample_training")
+db.products.updateMany(
+    {city: "CLEVELAND"},
+    {$unset: {my_data: ""}})
+```
+Dado que buscamos eliminar el atributo. No se le paso un valor, sino solo el nombre del campo. En este caso: `my_data`
+
+# Array Update Operators
