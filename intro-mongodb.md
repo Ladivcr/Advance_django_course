@@ -458,7 +458,7 @@ La expresión me retorna todos los registros que empiecen por la letra s, indepe
 haciendo uso de `i`. Y `m` me garantiza que es multilínea. Así que no importa que línea sea en el texto. 
 
 
-# Projection
+# [Projection](https://www.mongodb.com/docs/manual/reference/operator/projection/positional/)
 Cuando quieres realizar una consulta en la que el resultado solo te devuelva el valor para ciertos campos, es ahí donde
 entra el uso de Projection. Es como hacer un select con las columnas específicas
 ```Bson
