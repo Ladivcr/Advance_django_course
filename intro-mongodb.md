@@ -148,6 +148,12 @@ como parámetro 1, tomará el último elemento, si le pasas -1, tomára el prime
 - **$pullAll:** Elimina varios valores específicos de un atributo de tipo conjunto (array).
 - **$in**: Coincide con cualquiera de los valores especificados en una matriz.
 
+**Operadores de comparación**
+- **$gt:** (greater than - >)
+- **$gte**: (greater than or equal - >=)
+- **$lt:** (less than - <)
+- **$lte:** (less than or equal - <=)
+
 # Actualizando un documento
 
 Cuando se va actualizar un documento, debemos de identificar primero el documento mediante algún valor único.
@@ -406,3 +412,33 @@ db.inventory.updateMany(
 Todos los productos cuyo qty no sea igual a 20, serán incrementados en 10. 
 
 # Usando $gt, $gte, $lt, $lte
+
+- $gt (greater than - >)
+- $gte (greater than or equal - >=)
+- $lt (less than - <)
+- $lte (less than or equal - <=)
+
+
+La manera de usarlos es combinandolos con la instrucción `find()`. De la siguiente forma
+```Bson
+use("platzi_store")
+db.inventory.find({ qty: { $gt: 25 } })
+```
+La consulta anterior me retornará todos los documentos tales que su valor para `qty` sea mayor a 25.
+```Bson
+use("platzi_store")
+db.inventory.find({ qty: { $lt: 25 } })
+```
+Me retornará todos los documentos tales que su valor ``qty` sea menor a 25.
+Si queremos realizar dos condiciones para acotar el resultado sería: 
+```Bson
+use("platzi_store")
+db.inventory.find({ qty: { $gte: 40, $lte: 60 } })
+```
+La consulta anterior me retornaría solo los elementos cuyo valor de `qty` se encuentré entre 60 y 40, ambos incluidos.
+```Bson
+use("platzi_store")
+db.inventory.find({ "item.name": { $eq: "item ij" }, qty: { $gte: 40, $lte: 60 } })
+```
+Lo anterior me retornaría solo aquellos documentos cuyo nombre sea `item ij` y además, se encuentre su valor de 
+`qty` comprendido entre 40 y 60.
