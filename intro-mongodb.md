@@ -474,3 +474,75 @@ el nombre sea: `xy` o `ij`. Lo interesante es que solo se te retornarán los cam
 - Si usas cero en la consulta anterior. Te devuelven todas los campos de los documentos, menos los que marcaste con cero.
 - En el caso contrario, que marcaste como 1/true los campos. Solo esos son devueltos.
 - **El _id** es el único campo que admite otro valor aún si los demás campos son todos cero o todos 1. 
+
+# Array operators
+
+**Operadores de arrays**
+    
+    - **$in**: Para seleccionar documentos que tengan un campo con un valor que coincida con cualquiera de los valores
+    especificados en un array. **Sirve para objetos y para valores especificos**.
+    
+    - **$nin**: Selecciona documentos que no tengan un campo con un valor que coincida con ninguno de los valores
+    especificados en un array. (Contrario a $in)
+    
+    - **$all**: Selecciona documentos que tengan un campo con un array que contenga todos los valores especificados en
+    la consulta.
+    
+    - **$elemMatch**: Para seleccionar documentos que tengan un campo con un array que contenga al menos un elemento que cumpla con ciertos
+    criterios de consulta.
+    
+    - **$size**: Selecciona documentos que tengan un campo con un array de un tamaño específico.
+
+### $in (similar a un or)
+```Bson
+use("platzi_store")
+db.inventory.find({ tags: { $in: ["book", "electronics"]} })
+```
+Nos devuelve todos los elementos que tengan `book` **o** `electronics` en `tags`.
+### $nin
+```Bson
+use("platzi_store")
+db.inventory.find({ tags: { $nin: ["book", "electronics"]} })
+```
+Si en lugar de usar `$in`, hacemos uso de `$nin`. Nos devuelve los valores
+en los que no aparezca `book` **o** `electronics`.
+
+### Observación en el find
+```Bson
+use("platzi_store")
+db.inventory.find({ tags: ["school", "book"] })
+```
+Si hacemos una búsqueda como la anterior, es una búsqueda "estricta" ya que traera aquellos elememntos que cumplan 
+con tener el array en tags igual a como lo indicamos. 
+Si cambiamos el orden en la consulta por: 
+```Bson
+use("platzi_store")
+db.inventory.find({ tags: ["book", "school"] })
+```
+Es probable que no obtengamos nada, porque el orden importa. 
+
+### $all (similar a un and)
+
+Si tomamos la consulta anterior, que es probable que no nos devuelva nada debido al orden de las etiquetas en el array
+de tags y lo reescribimos de la siguiente manera:
+```Bson
+use("platzi_store")
+db.inventory.find({ tags: {$all: ["book", "school"]} })
+```
+Aquí ya nos retornará valores, porque no evalua el orden sino que tenga ambos valores.
+
+### $size
+```Bson
+use("platzi_store")
+db.inventory.find({ tags: {$size:  2} })
+```
+Nos devuelve aquellos documentos en los que el array de tags sea de tamaño 2. 
+
+### $elemMatch
+
+```Bson
+use("platzi_store")
+db.survey.find({ results: {$elemMatch:  { product: "xyz" }} })
+```
+En la query anterior, básicamente indicamos que para el elemento result (que tiene asociado un arreglo de subdocumentos) en la colección
+de survey. Nos retorne todos los documentos que dentro del array, tienen por valor `xyz` en el elemento `product`.
