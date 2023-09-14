@@ -456,3 +456,20 @@ db.inventory.find({ "item.description": { $regex: /^s/im } })
 ```
 La expresión me retorna todos los registros que empiecen por la letra s, independientemente de si es mayúscula o minúscula, 
 haciendo uso de `i`. Y `m` me garantiza que es multilínea. Así que no importa que línea sea en el texto. 
+
+
+# Projection
+Cuando quieres realizar una consulta en la que el resultado solo te devuelva el valor para ciertos campos, es ahí donde
+entra el uso de Projection. Es como hacer un select con las columnas específicas
+```Bson
+use("platzi_store")
+db.inventory.find({qty:{$gte:20}, "item.name": {$in: ["xy", "ij"]}}).projection({"item":true,"tags":true})
+db.inventory.find({qty:{$gte:20}, "item.name": {$in: ["xy", "ij"]}}).projection({"item":1,"tags":1})
+```
+> Ambdas consultas retornan lo mismo.
+En la consulta anterior, se retornan todos los elementos en los que `qty` sea mayor o igual a 20 así como 
+el nombre sea: `xy` o `ij`. Lo interesante es que solo se te retornarán los campos de `item` y `tags`.
+- **No es posible intercalar true con false o 1 con 0. Todos son true o todos son false. Lo mismo si usas 1 o 0.**
+- Si usas cero en la consulta anterior. Te devuelven todas los campos de los documentos, menos los que marcaste con cero.
+- En el caso contrario, que marcaste como 1/true los campos. Solo esos son devueltos.
+- **El _id** es el único campo que admite otro valor aún si los demás campos son todos cero o todos 1. 
