@@ -466,7 +466,8 @@ use("platzi_store")
 db.inventory.find({qty:{$gte:20}, "item.name": {$in: ["xy", "ij"]}}).projection({"item":true,"tags":true})
 db.inventory.find({qty:{$gte:20}, "item.name": {$in: ["xy", "ij"]}}).projection({"item":1,"tags":1})
 ```
-> Ambdas consultas retornan lo mismo.
+> Ambas consultas retornan lo mismo.
+
 En la consulta anterior, se retornan todos los elementos en los que `qty` sea mayor o igual a 20 así como 
 el nombre sea: `xy` o `ij`. Lo interesante es que solo se te retornarán los campos de `item` y `tags`.
 - **No es posible intercalar true con false o 1 con 0. Todos son true o todos son false. Lo mismo si usas 1 o 0.**
