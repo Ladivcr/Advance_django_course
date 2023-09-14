@@ -478,20 +478,19 @@ el nombre sea: `xy` o `ij`. Lo interesante es que solo se te retornarán los cam
 # Array operators
 
 **Operadores de arrays**
-    
-    - **$in**: Para seleccionar documentos que tengan un campo con un valor que coincida con cualquiera de los valores
+- **$in**: Para seleccionar documentos que tengan un campo con un valor que coincida con cualquiera de los valores
     especificados en un array. **Sirve para objetos y para valores especificos**.
     
-    - **$nin**: Selecciona documentos que no tengan un campo con un valor que coincida con ninguno de los valores
+- **$nin**: Selecciona documentos que no tengan un campo con un valor que coincida con ninguno de los valores
     especificados en un array. (Contrario a $in)
     
-    - **$all**: Selecciona documentos que tengan un campo con un array que contenga todos los valores especificados en
+- **$all**: Selecciona documentos que tengan un campo con un array que contenga todos los valores especificados en
     la consulta.
     
-    - **$elemMatch**: Para seleccionar documentos que tengan un campo con un array que contenga al menos un elemento que cumpla con ciertos
+- **$elemMatch**: Para seleccionar documentos que tengan un campo con un array que contenga al menos un elemento que cumpla con ciertos
     criterios de consulta.
     
-    - **$size**: Selecciona documentos que tengan un campo con un array de un tamaño específico.
+- **$size**: Selecciona documentos que tengan un campo con un array de un tamaño específico.
 
 ### $in (similar a un or)
 ```Bson
