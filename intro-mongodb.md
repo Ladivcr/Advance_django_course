@@ -442,3 +442,17 @@ db.inventory.find({ "item.name": { $eq: "item ij" }, qty: { $gte: 40, $lte: 60 }
 ```
 Lo anterior me retornaría solo aquellos documentos cuyo nombre sea `item ij` y además, se encuentre su valor de 
 `qty` comprendido entre 40 y 60.
+
+# Usando $regex
+
+```Bson
+use("platzi_store")
+db.inventory.find({ "item.description": { $regex: /line/ } })
+```
+La expresión me traera todos los documentos que tengan la palabra `line` en `item.description`
+```Bson
+use("platzi_store")
+db.inventory.find({ "item.description": { $regex: /^s/im } })
+```
+La expresión me retorna todos los registros que empiecen por la letra s, independientemente de si es mayúscula o minúscula, 
+haciendo uso de `i`. Y `m` me garantiza que es multilínea. Así que no importa que línea sea en el texto. 
