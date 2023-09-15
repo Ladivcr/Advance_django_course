@@ -703,7 +703,33 @@ db.listingsAndReviews.aggregate([
     { $project: { address: 1},
     { $group: { _id: "$address.country", count: { $sum: 1 } }
 ])
+```
 
 Lo anterior nos retornara un arreglo con documentos que solo contienen el campo: `_id` cuyo valor
 corresponde al `adddress.country` y otro campo llamado `count` con la suma total de las habitaciones
 que tienen wifi. 
+
+# Sort, limit y skip
+
+- **.sort()**: Para ordenar los doc, con un 1 de menor a mayor o de la A a la Z y con un -1 al contrario ( 10-0, Z-A).
+- **.limit()**:Limita la cantidad de doc que queremos traer, ej: .limit(3) trae 3 docs.
+- **.skip()**: Indica desde que posición nos traera los doc, ej: en una lista del 1 al 10; .skip(3) nos da los doc desde el 4 hasta el 10.
+
+```Bson
+use("sample_training")
+db.zips.find({ pop: { $gte: 100} }).sort({ pop: 1})
+```
+Nos trae los documentos cuya población sea mayor o igual a 100 y los ordenará de manera ascendente. 
+```Bson
+use("sample_training")
+db.zips.find({ pop: { $gte: 100} }).sort({ pop: 1}).limit(2)
+```
+Nos trae los documentos cuya población sea mayor o igual a 100 y los ordenará de manera ascendente. Y solo me mostrará
+los dos primero registros, es decir, los que menos población tienen. 
+
+```Bson
+use("sample_training")
+db.zips.find().skip(0).limit(2)
+```
+Me mostrará dos documentos en la primer página. Si cambio `skip(0)` por `skip(1)`
+ahora vería la segunda página. Es decir. `skip()` controla la página y `limit` lo que veo por página.
