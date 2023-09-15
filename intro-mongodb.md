@@ -668,4 +668,42 @@ db.companies.find({
 La consulta anterior nos retornara los documentos en los que en el arreglo de `relationships` en **la 
 posición cero** (la primer persona), la persona tenga el nombre de "zuckenberg" y solo nos retornará el atributo name y relationships. 
 
+# Aggregation Framework
+Las operaciones de agregación procesan registros de datos y devuelven resultados calculados.
+Las operaciones de agregación agrupan valores de varios documentos y pueden realizar una variedad de operaciones en
+los datos agrupados para devolver un único resultado.
+Son como pipelines, cada resultado de una pipeline es la entrada de la siguiente pipeline. 
 
+```Bson
+use("sample_airbnb")
+db.listingsAndReviews.find({
+    amenities: "Wifi"
+}, {
+    price: 1,
+    amenities: 1
+})
+```
+La consulta anterior me retornará todas las locaciones que tengan wifi y únicamente me permitirá 
+ver su precio y las comodidades. 
+
+Podemos obtener el mismo resultado pero haciendo uso del `aggregation framework`.
+```Bson
+use("sample_airbnb")
+db.listingsAndReviews.aggregate([
+{ $match: {amenities: "Wifi"} },
+{ $project: { price: 1, amenities: 1}
+])
+```
+La diferencia es que el aggregate funciona por capaz y eso es lo que le da el poder. 
+Veamos un ejemplo similar
+```Bson
+use("sample_airbnb")
+db.listingsAndReviews.aggregate([
+    { $match: {amenities: "Wifi"} },
+    { $project: { address: 1},
+    { $group: { _id: "$address.country", count: { $sum: 1 } }
+])
+
+Lo anterior nos retornara un arreglo con documentos que solo contienen el campo: `_id` cuyo valor
+corresponde al `adddress.country` y otro campo llamado `count` con la suma total de las habitaciones
+que tienen wifi. 
