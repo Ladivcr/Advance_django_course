@@ -652,3 +652,20 @@ db.trips.find({
 ```
 La consulta anterior me retornará el número total de documentos que cumplan con que la estación inicial es igual a la final **y**
 la duración del viaje es mayor o igual a 1200 minutos. 
+
+
+# Query in subdocs
+Anteriormente ya habíamos realizado queries en subdocumentos. Esta es otra forma de proceder: 
+```Bson
+use("sample_training")
+db.companies.find({
+    "relationships.0.person.last_name": "Zuchenberg"
+}, {
+    name: 1
+    relationships: 1
+})
+```
+La consulta anterior nos retornara los documentos en los que en el arreglo de `relationships` en **la 
+posición cero** (la primer persona), la persona tenga el nombre de "zuckenberg" y solo nos retornará el atributo name y relationships. 
+
+
