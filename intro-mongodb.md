@@ -545,3 +545,110 @@ db.survey.find({ results: {$elemMatch:  { product: "xyz" }} })
 ```
 En la query anterior, básicamente indicamos que para el elemento result (que tiene asociado un arreglo de subdocumentos) en la colección
 de survey. Nos retorne todos los documentos que dentro del array, tienen por valor `xyz` en el elemento `product`.
+
+# Operadores lógicos
+
+- **$and**: Que cumpla las dos o más condiciones dadas.
+- **$or**:  Los que cumplan al menos una condición.
+- **$nor**: Los que no cumplan con ninguna condición.
+- **$not**: Excluye un elemento en especifico y no tiene forma de array
+
+### $and (forma implicita)
+```Bson
+use("sample_training")
+db.inspections.find({
+    sector: "Tax preparers - 891",
+    result: "Unable to locate"
+}).count()
+```
+
+### $and (forma explicita)
+```Bson
+use("sample_training")
+db.inspections.find({
+    $and: [
+    { sector: "Tax Preparers - 891" },
+    { result: "Unable to Locate" }
+    ]
+}).count()
+```
+Como podemos observar, al usar **$and** de forma explicita, 
+es necesario pasarle todas las condiciones en un arreglo. 
+
+### $or (únicamente forma explicita)
+```Bson
+use("sample_training")
+db.inspections.find({
+    $or: [
+    { sector: "Tax Preparers - 891" },
+    { result: "Unable to Locate" }
+    ]
+}).count()
+```
+
+### $nor (únicamente forma explicita)
+```Bson
+use("sample_training")
+db.inspections.find({
+    $nor: [
+    { sector: "Tax Preparers - 891" },
+    { result: "Unable to Locate" }
+    ]
+}).count()
+```
+
+### $not (únicamente forma explicita) 
+El `$not` se usa directamente con un atributo
+```Bson
+db.inspections.find(
+    { result: { $not: { $regex: /Unable to Locate/ } }}
+})
+```
+Me retorna todos aquellos resultados que no tengan en `result` la
+expresión de `Unable to Locate`.
+
+# Expresive Operator
+Veamos la siguiente expresión
+```Bson
+use("platzi_store")
+db.monthlyBudget.find({ spent: { $gte: 100 } })
+```
+Nos retornará aquellos documentos cuyo gasto sea mayor o igual a 100. Pero si lo hacemos con `expresive operator` sería de la siguiente 
+manera: 
+```Bson
+use("platzi_store")
+db.monthlyBudget.find({
+    $expr: {
+     $gte: ["$spent", 100]
+     }
+ })
+```
+Nota que ahora la manera de indicar un campo es ligeramente diferente a como lo hemo realizado. 
+Pero hay más potencial con `expresive operator`. Veamos la siguiente consulta:
+
+```Bson
+use("platzi_store")
+db.monthlyBudget.find({
+    $expr: {
+     $gte: ["$spent", "$budget"]
+     }
+ })
+```
+La consulta anterior nos retornará todos los documentos en los que el `spent` ya haya excedido a `budget`.
+Es decir, estamos comparado dos campos (ojo, ambos campos son númericos).
+
+Algo a notar es que cuando ya hiciste uso del `expresive operator`. Debesde seguir respentando dicha sintaxis. 
+Un ejemplo de uso de más operadores
+```Bson
+use("platzi_store")
+db.trips.find({
+    $expr: {
+        $and: [
+            { $eq: ["$start station id", "$end station id"] },
+            { $gte: ["$tripduration", 1200] }
+        ]
+     }
+ }).count()
+```
+La consulta anterior me retornará el número total de documentos que cumplan con que la estación inicial es igual a la final **y**
+la duración del viaje es mayor o igual a 1200 minutos. 
