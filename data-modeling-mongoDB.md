@@ -69,9 +69,7 @@ En RELACIONES: Podemos Identificar entidades. Identificar atributos. Identificar
 En PATRONES: Podemos Identificiar y aplicar patrones para que nuestro sistema trabaje mejor.
 
 
-# Workload
-
-(Workload)[https://drive.google.com/file/d/1vjUfujfZNQWKqbymEYwRLbHSgoHTVvKI/view]
+# [Workload](https://drive.google.com/file/d/1vjUfujfZNQWKqbymEYwRLbHSgoHTVvKI/view)
 
 El Workload o Carga de trabajo se construye tomando en cuenta los Escenarios, los Expertos y el Sistema Actual y
 nos permite identificar que cosas tenemos y como se comportan para así empezar a tomar decisiones a nivel de
