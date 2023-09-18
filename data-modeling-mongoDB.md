@@ -67,3 +67,28 @@ En el WORkLOAD: Podemos identificar el tamaño de los datos. Consultas e indicie
 En RELACIONES: Podemos Identificar entidades. Identificar atributos. Identificar relaciones. Embeber vs referenciar.
 
 En PATRONES: Podemos Identificiar y aplicar patrones para que nuestro sistema trabaje mejor.
+
+
+# Workload
+
+(Workload)[https://drive.google.com/file/d/1vjUfujfZNQWKqbymEYwRLbHSgoHTVvKI/view]
+
+El Workload o Carga de trabajo se construye tomando en cuenta los Escenarios, los Expertos y el Sistema Actual y
+nos permite identificar que cosas tenemos y como se comportan para así empezar a tomar decisiones a nivel de
+diseño en nuestra base de datos.
+
+Para construir el Workload podemos usar un documento (no limitativo) que nos permita empezar a definir el modelado
+y saber que aspectos debemos tener en cuenta al momento de diseñar la base de datos. El documento puede tener las 
+siguientes secciones:
+
+- **Casos de usos:** Describimos lo mas importante acerca del caso de negocio que se esté manejando.
+- **Sección principal:** Se resaltan los actores principales.
+- **Suposiciones acerca del negocio:** Establecemos ciertas declaraciones que pueden ir variando a través del tiempo.
+- **Operaciones:** Se detallan mas a fondo los actores que influyen en nuestro negocio y la forma en la que se relacionan
+  con nuestra base de datos **resaltando aspectos importantes como: frecuencia, información que se envía, tipo de operación, etc.**
+- **Entidades:** Creamos ciertas entidades que existen en nuestro negocio, así como suponer ciertas cosas sobre ellas gracias a la
+  información suministrada por los expertos en el area.
+- **Observaciones finales:** Pueden ser acotaciones generales con respecto a la información recolectada.
+
+
+**📌 Mongo Atlas posee un sistema de replicación y cuando escribimos en una base de datos puede existir un delay mientras se replica la información en otros nodos.**
