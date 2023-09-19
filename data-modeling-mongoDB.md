@@ -317,3 +317,61 @@ db.createCollection('products', {
     }
 })
 ```
+### Obteniendo los `jsonSchemas` existentes
+
+Si por ejemplo, no contamos con una documentación que nos indique cuáles son los `Schemas` existentes. Podemos obtener la información
+sobre los schemas en la base de datos haciendo: 
+```Bson
+use("platzi_store")
+db.getCollectionInfos()
+```
+
+### Cambiando valores del schema sin eliminar el schema
+
+Una vez que hemos revisando el schema que deseamos cambiar. Por ejemplo, queremos cambiar el valor de `additionalProperties` que esta 
+en `false` por `true`. Tenemos que hacer lo siguiente: 
+
+```Bson
+use("platzi_store")
+db.runCommand({
+    collMod: "products",
+    validator: {
+            $jsonSchema: {
+                bsonType: 'object',
+                required: ['name'],
+                additionalProperties: true,
+                properties: {
+                    name: {
+                        bsonType: 'string'
+                    },
+                    sizes: {
+                        bsonType: "array",
+                        minItems: 1,
+                        uniqueItems: true,
+                        items: {
+                            bsonType: "string"
+                        }
+                    },
+                    category: {
+                        bsonType: "object",
+                        required: ["name"],
+                        properties: {
+                            name: {
+                                bsonType: 'string'
+                            },
+                            image: {
+                                bsonType: 'string'
+                            },
+                        }
+                    }
+                }
+            }
+        }
+
+})
+```
+**Nota que debemos de pasar toda la información del validador del schema** pero únicamente cambiando el valor
+del campo que buscamos modificar. Tenemos que pasar todo porque va a reescribirlo, básicamente. 
+**Toma en consideración que para hacer eso es necesario que el usuario cuente con permisos de administrador en la base de datos**.
+
+
