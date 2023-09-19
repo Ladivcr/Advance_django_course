@@ -168,3 +168,60 @@ db.createCollection('users', {
 Podemos ver que la manera de validar un número es muy sencilla, se hace uso de: `minimum` y `maximun`. En el caso de un boleano 
 basta con usar `"bool"` y en el caso del enum es muy sencillo. Es un arreglo con las opciones validas.
 
+# Validando arrays y subdocumentos
+
+Supongamos que tenemos el siguiente `insertOne` en mongo:
+```Bson
+use("platzi_store")
+
+db.products.insertOne({
+    name: "Camiseta",
+    sizes: ["XL"],
+    category: {
+        name: "name category",
+        image: ""
+    }
+})
+```
+Para validarlo sería creando el `jsonSchema` siguiente: 
+
+```Bson
+use("platzi_store")
+db.createCollection('products', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['name'],
+            properties: {
+                name: {
+                    bsonType: 'string'
+                },
+                sizes: {
+                    bsonType: "array",
+                    minItems: 1,
+                    uniqueItems: true,
+                    items: {
+                        bsonType: "string"
+                    }
+                },
+                category: {
+                    bsonType: "object",
+                    required: ["name"],
+                    properties: {
+                        name: {
+                            bsonType: 'string'
+                        },
+                        image: {
+                            bsonType: 'string'
+                        },
+                    }
+                }
+            }
+        }
+    }
+})
+```
+Podemos observar dos cosas. Para validar un array, basta con indicar el tipo de objetos que debe de llevar ese array, así como 
+indicar el mínimo (o incluso el máximo) de objetos. Así como indicar si son objetos únicos o no. 
+Y para el caso de validar subdocumentos es prácticamente anidar un `jsonSchema` ya que validas lo que va dentro de
+ese subdocumento. 
