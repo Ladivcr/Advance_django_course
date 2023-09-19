@@ -90,3 +90,36 @@ siguientes secciones:
 
 
 **📌 Mongo Atlas posee un sistema de replicación y cuando escribimos en una base de datos puede existir un delay mientras se replica la información en otros nodos.**
+
+# Validando strings
+
+```Bson
+use("platzi_store")
+db.createCollection('users', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['email', 'password'],
+            properties: {
+                name: {
+                    bsonType: 'string'
+                },
+                last_name: {
+                    bsonType: 'string'
+                },
+                email: {
+                    bsonType: 'string',
+                    pattern: "^[A-Za-z\d.-]{1,}@[A-Za-z\d.-]{1,}[.]{1}[A-Za-z\d.-]{1,}$"
+                },
+                password: {
+                    bsonType: 'string',
+                    pattern: "^.{16,40}$"
+                }
+            }
+        }
+    }
+})
+```
+
+El código anterior crea una colección llamada "users" con múltiples validaciones a efectuar a la hora de que se inserta un nuevo dato a la colección. Toma en consideración que si ya insertaste, debes de eliminar esos datos y primero crear el schema. 
+En caso de que quieras modificar la validación, es posible usar [`collMod`](https://www.mongodb.com/docs/manual/core/schema-validation/update-schema-validation/)
