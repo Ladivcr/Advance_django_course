@@ -229,3 +229,91 @@ Podemos observar dos cosas. Para validar un array, basta con indicar el tipo de 
 indicar el mínimo (o incluso el máximo) de objetos. Así como indicar si son objetos únicos o no. 
 Y para el caso de validar subdocumentos es prácticamente anidar un `jsonSchema` ya que validas lo que va dentro de
 ese subdocumento. 
+
+# Tips para validación en MongoDB
+
+Supongamos que buscamos garantizar que la base de datos solo acepte los registros con los campos indicados en el `jsonSchema`. P
+Esto sería un poco quitarle flexibilidad a Mongo pero en caso de ser necesario se hace añadiendo la propiedad: 
+`additionalProperties: false`. Que por defecto viene como `true`.
+
+```Bson
+use("platzi_store")
+db.createCollection('products', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['name'],
+            additionalProperties: false,
+            properties: {
+                name: {
+                    bsonType: 'string'
+                },
+                sizes: {
+                    bsonType: "array",
+                    minItems: 1,
+                    uniqueItems: true,
+                    items: {
+                        bsonType: "string"
+                    }
+                },
+                category: {
+                    bsonType: "object",
+                    required: ["name"],
+                    properties: {
+                        name: {
+                            bsonType: 'string'
+                        },
+                        image: {
+                            bsonType: 'string'
+                        },
+                    }
+                }
+            }
+        }
+    }
+})
+```
+**IMPORTANTE:** Cuando se coloca la propiedad `additionalProperties` en false, también se debe agregar obligatoriamente la
+propiedad _id en el array de required y además validarlo en properties. De lo contrario Mongo no permitirá la inserción de documentos,
+así tengan la estructura correcta.
+Por lo que la validación anterior, debería quedar de la siguiente forma: 
+```Bson
+use("platzi_store")
+db.createCollection('products', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['name', "_id"],
+            additionalProperties: false,
+            properties: {
+                name: {
+                    bsonType: 'string'
+                },
+                _id: {
+                    bsonType: "objectId"
+                },
+                sizes: {
+                    bsonType: "array",
+                    minItems: 1,
+                    uniqueItems: true,
+                    items: {
+                        bsonType: "string"
+                    }
+                },
+                category: {
+                    bsonType: "object",
+                    required: ["name"],
+                    properties: {
+                        name: {
+                            bsonType: 'string'
+                        },
+                        image: {
+                            bsonType: 'string'
+                        },
+                    }
+                }
+            }
+        }
+    }
+})
+```
