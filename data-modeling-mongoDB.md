@@ -167,6 +167,8 @@ db.createCollection('users', {
 ```
 Podemos ver que la manera de validar un número es muy sencilla, se hace uso de: `minimum` y `maximun`. En el caso de un boleano 
 basta con usar `"bool"` y en el caso del enum es muy sencillo. Es un arreglo con las opciones validas.
+
+
 **NOTA:** Observa que para validar el `password` y el `email` hemos hecho uso de `pattern` para poder usar expresiones regulares. 
 
 
