@@ -444,3 +444,51 @@ conjunto, es decir, cuando hace parte **necesaria** de esa información. O sea, 
 subdocumentos hacen parte de una dependencia directa del documento (i.e. Ordenes de compra y sus items).
 En ese caso se recomienda **EMBEBIDA**
 
+# Relaciones 1 a 1 referenciadas
+
+Uno de los casos donde se usa la relación REFERENCIADA, es cuando el documento ya es muy grande, 
+cerca del límite de 16 mb y mejor se saca información para mejorar el rendimiento.
+
+También se pueden usar combinados, si usas el ObjectId, para referenciar el total de datos y
+agregar los 2 o 3 campos de los más comunes que se usan juntas para evitar la consulta a la 
+2da colección.
+
+Supongamos que tenemos el siguiente documento referenciado
+```Bson
+use("platzi_store")
+
+db.stores.insertOne({
+    storeId: "ST001",
+    name: "SoBlanc Store",
+    address: "Cr 234"
+})
+
+
+db.stores_details.insertOne({
+    storeId: "ST001",
+    description: "lorem ipsum",
+    manager: {
+        email: "tester@test.com",
+        cellphone: "21321321312"
+    }
+})
+```
+Para realizar la consulta y obtener los datos de ambas colecciones podriamos hacer dos consultas pero no es lo recomendable. 
+Cuando trabajamos con datos referenciados se hace mucho uso del `aggregationFramework`
+```Bson
+use("platzi_store")
+
+db.stores.aggregate([
+    { 
+        $lookup: {
+        from: "stores_details",
+        localField: "storeId",
+        foreignField: "storeId",
+        as: "detail"
+
+
+        }
+    }
+   
+])
+```
