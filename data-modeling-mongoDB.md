@@ -485,10 +485,12 @@ db.stores.aggregate([
         localField: "storeId",
         foreignField: "storeId",
         as: "detail"
-
-
         }
     }
    
 ])
 ```
+- `from:` Indica a que colección quieres ir 
+- `localField:` Indica el campo que esta dentro de stores y va a permitir realizar el enlace
+- `foreignField:` En la otra colección, cuál es el atributo que va a permitir el enlace
+- `as:` En dónde va a dejar esa relación, es decir, el nombre con el que añadira el subdocumento en el resultado
