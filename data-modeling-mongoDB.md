@@ -375,3 +375,36 @@ del campo que buscamos modificar. Tenemos que pasar todo porque va a reescribirl
 **Toma en consideración que para hacer eso es necesario que el usuario cuente con permisos de administrador en la base de datos**.
 
 
+# Embeber vs. Referenciar
+
+En las bases de datos relacionales tenemos tres tipos de relaciones: 1:1, 1:N y N:N.
+En el caso de bases de datos como Mongo, la manera en la que expresamos estas relaciones
+es mediante: Embebido o Referenciado. 
+
+Para realizar el modelamiento de datos manejamos 2 formas de realizarlo:
+
+- **Embeber:** Usar sub-documentos para realizar las relaciones, que esta un documento dentro de otro.
+- - Mejora rendimiento en busqueda de muchos datos relacionados
+- - Limitado a 1-1 y 1-N en una direccion
+- - Cambios contenidos
+
+- **Referenciar:** Los documentos estan separados y se hacen referencia entre ellos con identificadores. En UML, se expresan con cajitas separadas y una cardinalidad.
+- - Reduce el tamaño de la base de datos
+- - No repetir datos
+- - Actualizacion de datos unica para muchos
+- - Permite 1-1, 1-N, N-1 y N-N
+
+
+Una de estas dos tecnicas de modelamiento se utilizara en base al uso que necesitemos. Pero una
+forma de poder abarcarlo es realizando algunas de estas preguntas:
+
+- ¿Que tan frecuente es consultada la informacion?
+- ¿Que tan frecuente se actualiza la informacion?
+- ¿La informacion se consulta en conjunto o por partes?
+
+> Si se consulta en conjunto se recomienda EMBEBIDA
+> Si se consulta por partes se recomienda REFERENCIADA
+> En el 90% de los casos, cuando hay una relacion 1:1, esta suele estar EMBEBIDA.
+
+# Relaciones 1 a 1 embebidas
+
