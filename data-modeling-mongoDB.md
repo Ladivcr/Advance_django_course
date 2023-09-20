@@ -408,3 +408,39 @@ forma de poder abarcarlo es realizando algunas de estas preguntas:
 
 # Relaciones 1 a 1 embebidas
 
+```Bson
+use("platzi_store")
+
+db.users.insertOne({
+    email: "tester2@gmail.com",
+    password: "tartaglia",
+    role: "customer",
+    social_accounts: ["twitter", "facebook"],
+    address: {
+        street: "cr 891",
+        city: "Cali",
+        zip: "11011"
+    },
+    shipping_address: {
+        street: "cr 223 12",
+        city: "Cali",
+        zip: "13011"
+    }
+})
+```
+Como puedes observar, en el caso de relaciones 1:1 embebidas ya las hemos trabajado anteriormente.
+Y las consultas que les aplicamos son realmente sencillas: 
+```Bson
+use("platzi_store")
+
+db.users.find({
+    "address.city": "Bogota"
+}).count()
+```
+Podemos hacerlas directas al propio subdocumento debido a que esta embebido.
+
+**OBSERVACIÓN PARA SABER CUANDO USAR UNA RELACIÓN EMBEBEBIDA:** Si la información se consulta en
+conjunto, es decir, cuando hace parte **necesaria** de esa información. O sea, cuando los 
+subdocumentos hacen parte de una dependencia directa del documento (i.e. Ordenes de compra y sus items).
+En ese caso se recomienda **EMBEBIDA**
+
