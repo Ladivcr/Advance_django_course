@@ -689,3 +689,99 @@ db.stores.aggregate([
     }
 ])
 ```
+# Referencias circulares o bidireccionales
+
+Forma parte del N-N. Donde cada coleccion tiene documentos que apuntan a todos los relacionados
+de otra coleccion (O en la misma). O sea, tenemos la referencia del documento `A` al documento
+`B` y del documento `B` al documento `A`
+
+### Casos de uso
+
+- Usa refencia cuando la relacion es n-n
+- Cuando la información es consultada en conjunto. Por si necesitamos las referencias que tiene algun documento sin importal cual sea. Para resolver más facil relaciones y rapido.
+
+
+Ahora trabajemos en la otra referencia.
+Facilitar la busqueda de ID
+
+Se hace de la siguiente forma: 
+
+```Bson
+db.products.aggregate([
+  { 
+    $lookup: { // buscar las id que necesitamos
+      from: 'stores',
+      localField: '_id',
+      foreignField: 'products_ids',
+      as: 'stores'
+    }
+  },
+  {
+    $project: { // filtrar para ver mejor las id
+      _id: 1, // id producto
+      stores: { // en tiendas
+        _id: 1 // id tienda
+      }
+    }
+  }
+])
+```
+
+Modificar un producto para añadir la referencia al documento
+```Bson
+
+// prod 1
+db.products.updateOne(
+    {_id: ObjectId('649923c970dfee1c60f23f54')},
+    {
+        $set: {
+            stores_ids: [
+                ObjectId("649923f457514437ac501dd4")
+            ]
+        }
+    }
+)
+
+// prod 2
+db.products.updateOne(
+    {_id: ObjectId('649923c970dfee1c60f23f55')},
+    {
+        $set: {
+            stores_ids: [
+                ObjectId("649923f457514437ac501dd4"),
+                ObjectId("649923f457514437ac501dd5"),
+            ]
+        }
+    }
+)
+
+//prod 3
+db.products.updateOne(
+    {_id: ObjectId('649923c970dfee1c60f23f56')},
+    {
+        $set: {
+            stores_ids: [
+                ObjectId("649923f457514437ac501dd5")
+            ]
+        }
+    }
+)
+```
+
+Para ver las tiendas en el producto se hace de la forma
+
+````Bson
+use("platzi_store")
+
+db.products.aggregate([
+  { 
+    $lookup: { // buscar las id que necesitamos
+      from: 'stores',
+      localField: 'stores_ids',
+      foreignField: '_id',
+      as: 'stores'
+    }
+  }
+])
+
+```
