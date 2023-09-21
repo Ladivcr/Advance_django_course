@@ -544,3 +544,148 @@ db.orders.find({
   "items.qty": 2
 })
 ```
+
+# Relaciones 1 a muchos referenciadas
+
+En las relaciones 1 a muchos referenciadas un documento puede estar asociado a otros documentos
+de otra coleccion, esto mediante una identificacion que normalmente estan en la otra coleccion y
+que indican al documento.
+
+### Casos de uso
+
+- Cuando la relacion puede incrementar considerablemente
+- Cuando la entidad se actualiza de forma constante
+- Cuando la entidad es usada por muchos documentos
+
+### Ejemplo
+
+Se tiene que un usuario puede tener varias ordenes. Entonces mediante una relación  con una
+identificacion de usuario en las ordenes de compra se puede saber a que usuario pertenecen.
+
+```Bson
+// Para buscar las ordenes asociadas al usuario
+db.orders.find({
+    user_id: ObjectId('6497b8b4affb4e4355c4f297')
+})
+```
+
+Pero hay un problema, vamos a obtener las ordenes pero del usuario no obtendremos su información, 
+más que el ID. 
+Para solucionar eso, recurrimos al ``aggregation framework``.
+
+```Bson
+// para un usuario, mostrarme sus ordenes
+// Lookup del agregation framework
+db.users.aggregate([
+    {
+        $lookup: { // join
+          from: `orders`,
+          localField: `_id`,
+          foreignField: 'user_id',
+          as: 'orders'
+        }
+    }
+])
+```
+Pero ¿qué pasa si quiero hacer la consulta a una sola orden de compra?
+Para ello hacemos uso de `$match`
+
+```Bson
+db.orders.aggregate([
+    {
+        $match: { // filtrar
+          _id: ObjectId('650c843f25d85506e1a41a65') // order id
+        }
+    },
+    {
+        $lookup: { //Join
+          from: `users`,
+          localField: `user_id`,
+          foreignField: '_id',
+          as: 'user'
+        }
+    }
+])
+```
+
+# Relaciones muchos a muchos
+
+La relacion muchos a muchos (N-N) es cuando un documento de una coleccion `A` puede estar relacionado 
+con varios documentos de una coleccion `B` y viceversa.
+
+Esta relacion es siempre Referencial.
+
+**Se pueden realizar de 2 formas:**
+
+- Con una coleccion intermediaria, que hace de puente entre 1 o más colecciones.
+- Embeber dentro de cada documento un arreglo con los identificadores de sus relaciones.
+
+**Casos de uso**
+
+- Usar referencia cuando la relacion es N-N
+
+**Ejemplo:**
+
+Un producto puede pertenecer a varias tiendas y una tienda puede tener varios productos. 
+Esto ya nos dice que lo debemos realizar un arreglo para referenciar.
+
+Se utiliza una nomenclatura como cualquier otra propiedad pero con un doble corchete y de tipo ObjectId: products_ids[]:<ObjectId>.
+
+Para **Insertar productos** es de la siguiente forma: 
+```Bson
+db.products.insertMany([
+    {
+        name: 'Product 1',
+        sizes: ['L', 'M'],
+        price: 12   
+    },
+    {
+        name: 'Product 2',
+        sizes: ['S', 'M'],
+        price: 9   
+    },
+    {
+        name: 'Product 3',
+        sizes: ['L', 'M', 'XL'],
+        price: 16   
+    },
+])
+```
+**Insertar las tiendas en las que se encuentran esos productos**
+
+```Bson
+
+db.stores.insertMany([
+    {
+        name: 'Store A',
+        products_ids: [
+            ObjectId("64991cdf44ec03dd012ecccd"),
+            ObjectId("64991cdf44ec03dd012eccce")
+        ]
+    },
+    {
+        name: 'Store B',
+        products_ids: [
+            ObjectId("64991cdf44ec03dd012ecccc"),
+            ObjectId("64991cdf44ec03dd012eccce")
+        ]
+    },
+])
+
+
+```
+
+**Relizar consultas a los productos**
+
+```Bson 
+db.stores.aggregate([
+    {
+        $lookup: {
+          from: 'products',
+          localField: 'products_ids', // automaticamente detecta que es una lista
+          foreignField: '_id',
+          as: 'products'
+        }
+    }
+])
+```
