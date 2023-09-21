@@ -770,7 +770,7 @@ db.products.updateOne(
 
 Para ver las tiendas en el producto se hace de la forma
 
-````Bson
+```Bson
 use("platzi_store")
 
 db.products.aggregate([
@@ -784,4 +784,48 @@ db.products.aggregate([
   }
 ])
 
+```
+
+# Desnormalización
+
+En el caso de las bases de datos relacionales (como postgres) ahí lo que se usa es un proceso de normalización, en dónde se trata de
+estandarizar los datos. En el caso de una base de datos documental como lo es mongo. Lo que se trata es de aplicar un proceso de
+`desnormalización`.
+
+La desnormalización es el proceso de optimizar el funcionamiento de una BD agregando datos redundantes.
+Esto es hacer duplicidad de datos y agregar direcciones no esenciales para acelerar las consultas o reducir la cantidad.
+
+
+**Esta mal visto la duplicidad de datos en una base de datos relacional, pero en una base de datos documental puede ser un aliado. Porque nos ahorramos consultas o aceleramos esas mismas consultas por tener indexación.**
+Tambien permite mantener datos historicos, datos que no queremos que cambien en una instancia, aunque tengan cambios sus originales.
+
+- Reduce los Join y simplifica las consultas.
+
+**Ejemplo**
+
+Tenemos una coleccion ‘order’ que esta desnormalizada, donde se hace embeding a los productos como items. Estos tendran la referencia
+sus productos correspondientes (product_id), datos extra como la cantidad (qty) y datos que pueden o no ser actualizados por ser una instancia 
+de la orden (title, price) y que se quieran acceder rapidamente.
+
+**Inserción**
+
+```Bson
+db.orders.insertOne({
+    user_id: ObjectId('6497b8b4affb4e4355c4f297'),
+    date: '2020-12-12',
+    items: [
+        {
+            name: 'Producto 1',
+            qty: 1,
+            price: 12,
+            product_id: ObjectId('649923f457514437ac501dd4')
+        },
+        {
+            name: 'Producto 2',
+            qty: 2,
+            price: 22,
+            product_id: ObjectId('649923f457514437ac501dd4')
+        }
+    ]
+})
 ```
