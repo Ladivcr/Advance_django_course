@@ -500,8 +500,6 @@ forma referencial. Pero lo recomendable es embebebido.
 
 # Relaciones 1 a muchos embebidas
 
-# Relaciones 1 a Muchos embebidas
-
 La relacion embebida 1 a muchos embebida, es tener una lista (arreglo) de sub-documentos de una 
 coleccion. El documento puede tener varios sub-documentos de una coleccion y esos sub-documentos 
 dependen del documento padre y solo tienen ese.
