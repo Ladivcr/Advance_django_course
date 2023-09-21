@@ -497,3 +497,50 @@ db.stores.aggregate([
 
 **NOTA:** La mejor práctica es expresar las relaciones de manera embebida, a menos que el documento ya este muy grande, cambiamos a una
 forma referencial. Pero lo recomendable es embebebido. 
+
+# Relaciones 1 a muchos embebidas
+
+# Relaciones 1 a Muchos embebidas
+
+La relacion embebida 1 a muchos embebida, es tener una lista (arreglo) de sub-documentos de una 
+coleccion. El documento puede tener varios sub-documentos de una coleccion y esos sub-documentos 
+dependen del documento padre y solo tienen ese.
+
+### Casos de uso
+- Cuando la informacion es consultada en conjunto
+- El arreglo de subdocumentos no peligre el limite de 16MB
+- Cuando los sub-documentos son una dependencia
+- Cuando los dub-docs son 1:few (1 a pocos)
+
+**Ejemplo:**
+```Bson
+use("platzi_store")
+
+db.orders.insertOne({
+    user_id: ObjectId('650b177248ce4449ebaec6fe'),
+    date: "2022-12-12",
+    items: [
+        {
+            name: "camiseta",
+            price: 120, 
+            qty: 1
+        },
+        {
+            name: "pantalón",
+            price: 200, 
+            qty: 2
+        }
+    ]
+})
+```
+
+**Para consultar:**
+
+```Bson
+use("platzi_store")
+
+// Buscar algo en concreto de las ordenes
+db.orders.find({
+  "items.qty": 2
+})
+```
