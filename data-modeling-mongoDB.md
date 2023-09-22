@@ -896,3 +896,26 @@ db.orders.updateOne( // actualizamos la orden
 - Subset
 - Tree and Graph
   
+# Simplicidad vs. Rendimiento 
+
+- Normalmente en mongo se prefiere la simplicidad sobre el rendimiento
+- Es mejor ir desde un modelo simple e ir agregando complejidad, que comenzar con algo complejo y remover esa complejidad
+- Hay que buscar un balance
+
+### Simplicidad
+
+- Equipos pequeños
+- Embebido > Referenciado
+- Consultas frecuentes se priorizan para indexar
+
+### Rendimiento/Complejidad
+
+- Equipos grandes, como pueden ser conformado por cientificos de datos
+- Embebido y Referenciado segun el caso o ambos
+- Consultas frecuentes se indexan y se usan patrones
+
+### Recordar la metodologia
+
+- Requerimientos (Workflow)
+- Identificar ER
+- Aplicar patrones
