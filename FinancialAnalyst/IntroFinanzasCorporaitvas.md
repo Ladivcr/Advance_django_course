@@ -18,7 +18,7 @@ El día a día en el departamento de finanzas corporativas: Para analizar los re
 que se han tomado estan bien, para compararse con la competencia y con la empresa misma en como se ha ido mejorando.
 Reportes y análisis: son el dia a dia, pues, se comparten con multiples tipos de personas.
 
-# [2] ¿Qué es el balance general?
+# [2] - ¿Qué es el balance general?
  Balance general (balance sheet), es una balansa que pone en Equilibrio a nuestros activos con relación a nuestros pasivos y el capital.
  Activos sumados con capital de un lado y pasivos del otro lado.
 - **Activos:** Todo aquello que ofrece un beneficio a la empresa. Puede ser: efectivo, inventarios y cuentas por cobrar.
@@ -38,3 +38,42 @@ el balance de la empresa y que se hizo un buen registro de datos.
 
 > La diferencia entre el activo circulante y el no circulante es la facilidad o rapides con la que puedes convertirlo en efectivo. Si es algo que puedes convertir
 > en dinero muy rápido, se le llama activo circulante.
+
+# [3] - Estructura de capital
+
+**¿Qué es la estructura de capital?**
+
+Se refiere a la distribucion de nuestro capital entre nuestro pasivo (liabilities) y nuestro capital (equity) para completar un 100%.
+
+**¿Por qué es tan importante?**
+Porque antes de poder darle utilidades a los inversionistas, se tiene que cumplir con las obligaciones, por ejemplo, pagar los prestamos que se tengan con los bancos.
+- La estructura de capital es prioridad de stakeholders.
+- Demuestra el riesgo y apalancamiento de la empresa.  
+
+En este ejemplo de dos empresas:
+
+| Low Leverage | High Leverage |
+| --- | --- |
+| Assets $1,000 | Assets $1,000|
+| Debt $200 | Debt $800 | 
+| Equity $800 | Equity $200 |
+
+> **El apalancamiento (Leverage) se refiere al uso de prestamos bancarios dentro de la empresa.**
+
+De los mil dolares que vale mi empresa (El valor total de los Assets $1,000) Observamos que la empresa Low Leverage solo esta apalancada un 20% ($200). 
+Por eso es que se dice que tiene bajo apalancamiento. 
+Caso contrario en High Leverage, que esta apalancada en un 80% del valor total de la empresa.
+También se puede ver como bajo riesgo y alto riesgo respectivamente.
+
+> Esto quiere decir que es más riesgoso para un inversionista, recibir su dinero devuelta en forma de utilidades. Porque la empresa
+> primero debe de saldar las deudas.
+
+> Los rendimientos que esperan los inversionistas, están directamente relacionados con la estructura del capital.
+> Si hay una empresa con un alto apalancamiento, los inversionistas pedirán un mayor retorno de inversión.
+
+**Valuación con enfoque en activos**
+Hay varios enfoques de valuación de empresas. En este caso, es aceptable decir que la empresa tiene un valor de $1,000 dolares. 
+Porque los activos tienen un valor total de $1,000.
+Aunque hay otros tipos de valuación que no están basados en el valor de los activos sino del mercado. 
+
+ 
