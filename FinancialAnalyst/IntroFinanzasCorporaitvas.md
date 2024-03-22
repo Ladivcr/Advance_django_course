@@ -72,7 +72,7 @@ También se puede ver como bajo riesgo y alto riesgo respectivamente.
 > Si hay una empresa con un alto apalancamiento, los inversionistas pedirán un mayor retorno de inversión.
 
 **Valuación con enfoque en activos**
-Hay varios enfoques de valuación de empresas. En este caso, es aceptable decir que la empresa tiene un valor de $1,000 dolares. 
+Hay varios enfoques de valuación de empresas. En este caso, es aceptable decir que la empresa tiene un valor de $1,000 dolares, pero, considerando el valor de mercado. 
 Porque los activos tienen un valor total de $1,000.
 Aunque hay otros tipos de valuación que no están basados en el valor de los activos sino del mercado. 
 
