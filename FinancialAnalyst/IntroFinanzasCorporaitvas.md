@@ -124,3 +124,5 @@ Por ejemplo: si se divide el total de pasivos, entre el total de activos se tien
 
 - **Madurez:** no es mismo una empresa que esta iniciando que una empresa que ya lleva 50 años en el mercado.
 
+> En general, comparar manzanas con manzanas y platanos con platanos. 
+
