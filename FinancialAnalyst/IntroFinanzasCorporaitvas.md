@@ -126,3 +126,26 @@ Por ejemplo: si se divide el total de pasivos, entre el total de activos se tien
 
 > En general, comparar manzanas con manzanas y platanos con platanos. 
 
+# [5] - Razones Financieras
+
+**Definición**
+También conocidos como ratios. Son nuestros indicadores que nos ayudarán a medir el rendimiento o desempeño dentro de la empresa. Con algun tipo de base pero 
+especificamente usando porcentajes. 
+
+> Al momento de calcularlos los resultados seran en decimales, que al multiplicarse por 100 se tienen en porcentajes. Para no tener problemas.
+    
+**Ejemplos de ratios**
+
+- **Current assets to current liabilities (también conocido como la prueba del acido):** Permite saber cuantas veces se puede saldar la deuda a corto plazo utilizando los activos mas faciles de conversion a efectivo.
+- **Debt to equity:** Nos indica cuanto se tiene de deuda por cada dolar de capital invertido en la empresa.
+- **Debt to Asset:** Representa cuanta deuda/pasivos se tienen con relacion a los activos.
+--
+
+
+- **Liabilities to equity:** Sabremos cuantos dolares de deuda hay por cada dolar invertido en la empresa.
+   El resultado se podria colocar en decimales y veriamos que el ratio es de un 86%, pero, dejandolo en decimales lo podemos interpretar como que existen 0.86 centavos por cada dolar que tenemos en capital.
+   Lo cual es bueno porque los pasivos no llegan al mismo tamaño del capital. El capital es mayor que la deuda.
+- **CA to CL (Current assets to current liabilities):** El resultado que obtenemos podriamos verlo en porcentajes, que serian 351%, pero si lo dejamos en decimales podriamos verlo como que existen $ 3.51 de
+  current assets por cada dolar en curren liabilities, lo que se traduce en que la empresa tiene la capacidad de saldar las deudas completamenta y sobraria dinero, incluso para pagar los non current assets.
+- **Liabilities to asset:** Nos indica el porcentaje de las deudas con relacion a todos los activos, lo que nos deja que por cada dolar de asset tenemos 0.46 centavos de deuda, que representa que los activos
+  estan financiados en una parte por nuestro capital.
