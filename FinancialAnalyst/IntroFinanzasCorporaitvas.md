@@ -79,40 +79,48 @@ Aunque hay otros tipos de valuación que no están basados en el valor de los ac
  
 # [4] - Análisis del balance general en el tiempo
 
-# NOTE: Me quede en esta clase, apenas empezando
-**Importancia**
+## Importancia
 
-    Ventajas:
-        Analizar rendimientos obtenidos.
-        Ver los cambios en los activos, pasivos o el capital para saber si estamos mejorando o empeorando.
-        Mostrar como va mejorando la estructura del capital, como la deuda va disminuyendo.
-    Indicadores:
-        Cuantos pasivos circulantes/no circulantes tiene la empresa ahora.
-        En cuanto esta el capital.
-        Si se expidieron nuevas acciones.
-        Etc.
-    Buenas prácticas:
-        Poner el balance a una fecha determina, en un periodo de tiempo determinado.
-        Hacerlo hasta el cierre de ejercicio, el 31 de diciembre.
+**Ventajas:**
 
- 
-— Análisis Horizontal
+- Analizar rendimientos obtenidos
+- Ver los cambios en los activos, pasivos o el capital para saber si estamos mejorando o empeorando
+- Mostrar como va mejorando **la estructura del capital**, como la deuda va disminuyendo
 
-La estructura del balance se utiliza para los analisis horizontales, que son en el tiempo.
+**Indicadores:**
+
+- Cuantos pasivos circulantes/no circulantes tiene la empresa ahora
+- En cuanto esta el capital
+- Si se expidieron nuevas acciones
+
+**Buenas prácticas:**
+
+- Poner el balance a una fecha determina, en un periodo de tiempo determinado
+- Hacerlo hasta el cierre de ejercicio, el 31 de diciembre.
 
  
-— Análisis Vertical
-
-El analisis vertical se utiliza para hacer una comparacion, una interpretacion de razones financieras, en el mismo año, un ejemplo es comparar los current assets contra los not current assets. Tambien, es utilizado para hacer comparaciones con otras empresas y asi tener idea de si se esta yendo con las tendencias y se esta haciendo bien o no el trabajo en la empresa.
+**Análisis Horizontal**
+> Se refiere a que lo podamos ver de izquierda a derecha. Esto se refiere a que lo podamos ver en el tiempo.
+> Se suele utilizar más para información de una sola empresa. Cuando son más de una, se llama análisis vertical.
 
  
-— Uso de ratios (razones)
+**Análisis Vertical**
+> El analisis vertical se utiliza para hacer una comparacion, una interpretacion de razones financieras, en el mismo año, un ejemplo es comparar los current assets contra los not current assets.
+> Tambien, es utilizado para hacer comparaciones con otras empresas y asi tener idea de si se esta yendo con las tendencias y se esta haciendo bien o no el trabajo en la empresa.
 
-Un ratio es practicamente una division que podemos hacer entre una cosa con otra. Por ejemplo: si se divide el total de pasivos, entre el total de activos se tiene el porcentaje total de la empresa a la cual pertenecen los pasivos.
+ 
+## Uso de ratios (razones)
 
-Consideraciones:
+Un ratio es practicamente una division que podemos hacer entre una cosa con otra. 
+Por ejemplo: si se divide el total de pasivos, entre el total de activos se tiene el porcentaje total de la empresa a la cual pertenecen los pasivos.
 
-    Estructuras similares: para hacer un ratio efectivo, o una comparacion vertical efectiva, es ideal hacerlo contra empresas que tengan una estructura de capital muy similar, que sea una comparacion de una empresa muy apalancada contra otra muy apalancada, o una poco apalancada contra otra poco apalancada.
-    Giro de la empresa: la comparacion se debe hacer entre empresas que manejen el inventario de manera similar, si es una empresa que vende productos con otra empresa que venda productos, si es una empresa que maneja solicitudes como just in time, con otro empresa que maneje estas solicitudes tambien.
-    Madurez: no es mismo una empresa que esta iniciando que una empresa que ya lleva 50 años en el mercado.
+**Consideraciones:**
+
+- **Estructuras similares:** Para hacer un ratio efectivo, o una comparacion vertical efectiva, es ideal hacerlo contra empresas que tengan una estructura de capital muy similar,
+   que sea una comparacion de una empresa muy apalancada contra otra muy apalancada, o una poco apalancada contra otra poco apalancada.
+
+- **Giro de la empresa:** La comparacion se debe hacer entre empresas que manejen el inventario de manera similar, si es una empresa que vende productos con otra empresa que venda productos,
+   si es una empresa que maneja solicitudes como just in time, con otro empresa que maneje estas solicitudes tambien.
+
+- **Madurez:** no es mismo una empresa que esta iniciando que una empresa que ya lleva 50 años en el mercado.
 
