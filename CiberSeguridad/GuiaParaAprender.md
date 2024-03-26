@@ -148,3 +148,6 @@ para quienes les gusta programar. Rama que se enfoca en creación de exploits.
 - **Análisis de malware:** investigación del código del malware, su interacción y comportamiento. Se lleva a cabo a nivel de código y a nivel de red. Relacionado con Forense de malware.
 - **Protección de Malware:** antivirus, sistemas de detección de malware.
 - **IA + Malware:** machine learning para detección de malware.
+
+---
+TODO: Revisar juegos de capture the flag y bugs hunting: https://drive.google.com/file/d/1RfMyIo6kzjcWh-tX3ThoM1x28mCjeR1A/view
