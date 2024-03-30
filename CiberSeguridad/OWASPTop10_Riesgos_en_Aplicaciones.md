@@ -13,8 +13,16 @@ Cada elemento de la lista incluye una descripción de la vulnerabilidad, ejemplo
 
 > OWASP Top 10 es el primer paso hacia desarrollo seguro de código. Top 10 acompaña en todo el ciclo de desarrollo de Software y se puede contribuir y participar en la comunidad OWASP.
 
-**Las 3 variables importantes (o insumos) en OWASP T10 son:**
+## Las 3 variables importantes (o insumos) en OWASP T10 son:
 1. [Common Weakness Enumeration](https://cwe.mitre.org/): un listado de fallas en software y hardware mantenidos por la comunidad
 2. [Common Vulnerabilities and Exposures](https://www.cve.org/): Repositorio de vulnerabilidades asociados a productos, aplicaciones o activos de información
 3. [National Vulnerability Database](https://nvd.nist.gov/): Repositorio de vulnerabilidades gestionado por el Gobierno de Estados Unidos
 
+## Orden de riesgos
+Para definir el orden de los riesgos en el proyecto TOP 10 de OWASP se toman en consideración las 
+siguientes variables: 
+- Porcentaje de aplicaciones probadas a determinado registro CWE
+- Porcentaje de aplicaciones vulnerables para el mismo registro CWE
+- Número de aplicaciones vulnerables asociadas al porcentaje anterior
+- Número de registros CWE mapeados hacia la categoría
+- Número de vulnerabilidades (O CVE's) debidamente sincronizado con la BD de vulnerabilidades del gobierno de los Estados Unidos
