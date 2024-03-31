@@ -71,4 +71,9 @@ A continuación, se describe un enfoque estructurado sobre cómo las organizacio
 
 ## Herramientas de práctica 
 - [Proyecto Juice SHOP de OWASP](https://owasp.org/www-project-juice-shop/): Página con varios herrores de desarrollo para concientizar a los desarrolladores.
-  
+## Herramientas de laboratorio 
+- [Página de pruebas para el curso](https://github.com/platzi/curso-owasp-top-10)
+> Ahí encontraremos todo lo necesario en cuanto a herramientas necesarias para llevar a cabo el curso.
+
+En lo personal me he montado Kali Linux para ahorrarme la instalación de algunas herramientas como: bupsuite o dirbuster. 
+El tutorial que he seguido lo puedes ver aquí: [Como Instalar y Descargar Kali Linux 2024.1 en VirtualBox [Windows 10] - Desde Cero!](https://www.youtube.com/watch?v=iGmACGL3nos&ab_channel=ContandoBits)
