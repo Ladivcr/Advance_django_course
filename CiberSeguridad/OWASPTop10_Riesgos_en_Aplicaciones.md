@@ -77,3 +77,34 @@ A continuación, se describe un enfoque estructurado sobre cómo las organizacio
 
 En lo personal me he montado Kali Linux para ahorrarme la instalación de algunas herramientas como: bupsuite o dirbuster. 
 El tutorial que he seguido lo puedes ver aquí: [Como Instalar y Descargar Kali Linux 2024.1 en VirtualBox [Windows 10] - Desde Cero!](https://www.youtube.com/watch?v=iGmACGL3nos&ab_channel=ContandoBits)
+
+--- 
+# Broken Access Control
+> A partir de aquí, comienzan las pruebas usando el laboratorio.
+
+Se refiere a una categoría de vulnerabilidades de seguridad en aplicaciones web donde las restricciones sobre
+lo que los usuarios autenticados están autorizados a hacer no se implementan o se implementan incorrectamente. 
+Esta vulnerabilidad ocurre cuando un usuario puede realizar acciones fuera de sus permisos previstos, como acceder a datos o realizar operaciones que deberían estar restringidas.
+
+## Ejemplos Comunes de Broken Access Control
+- **Bypass de restricciones de acceso:** Un usuario sin privilegios accede a funciones o datos
+  reservados para usuarios con mayores privilegios, como acceder a perfiles de usuario, datos financieros, o realizar acciones administrativas sin las debidas autorizaciones.
+- **Modificación de URL o ID de sesión:** Manipular URL o identificadores de sesión para acceder a información o realizar acciones que no deberían estar disponibles
+   para el usuario autenticado.
+- **Elevación de privilegios:** Un usuario con privilegios bajos manipula la aplicación para otorgarse privilegios más altos.
+
+### Impacto
+
+El impacto de Broken Access Control puede ser significativo y variado, dependiendo de la naturaleza de la aplicación y
+los datos o funciones expuestas indebidamente. Puede conducir a la divulgación no autorizada de información sensible,
+modificación de datos, realización de transacciones no autorizadas, e incluso comprometer completamente la seguridad de la aplicación web.
+
+### Mitigación
+
+Para mitigar las vulnerabilidades de Broken Access Control, se recomienda adoptar un enfoque de seguridad en capas que incluya:
+- **Principio de menor privilegio:** Asegurarse de que los usuarios tengan solo los permisos necesarios para realizar sus tareas.
+- **Autenticación y autorización robustas:** Implementar controles de acceso fuertes y asegurarse de que se verifiquen de manera consistente a lo largo de la aplicación.
+- **Controles de acceso a nivel de aplicación:** Utilizar controles de acceso en el servidor, no solo en el cliente, para asegurar que los controles no puedan ser fácilmente evadidos.
+- **Auditorías y registros:** Mantener registros detallados de las actividades de acceso para permitir la auditoría y la detección de accesos no autorizados o anomalías.
+- **Pruebas de seguridad regulares:** Realizar pruebas de penetración y revisiones de código para identificar y remediar las vulnerabilidades de control de acceso roto antes de que puedan ser explotadas.
+
