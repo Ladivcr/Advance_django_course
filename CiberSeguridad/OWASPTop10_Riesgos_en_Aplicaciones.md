@@ -107,4 +107,5 @@ Para mitigar las vulnerabilidades de Broken Access Control, se recomienda adopta
 - **Controles de acceso a nivel de aplicación:** Utilizar controles de acceso en el servidor, no solo en el cliente, para asegurar que los controles no puedan ser fácilmente evadidos.
 - **Auditorías y registros:** Mantener registros detallados de las actividades de acceso para permitir la auditoría y la detección de accesos no autorizados o anomalías.
 - **Pruebas de seguridad regulares:** Realizar pruebas de penetración y revisiones de código para identificar y remediar las vulnerabilidades de control de acceso roto antes de que puedan ser explotadas.
+  Aplica correctamente rate limits para que no sea posible hacer más de cierta cantidad de peticiones por minuto. 
 
