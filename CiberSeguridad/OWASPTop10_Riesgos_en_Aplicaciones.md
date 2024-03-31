@@ -79,8 +79,9 @@ En lo personal me he montado Kali Linux para ahorrarme la instalación de alguna
 El tutorial que he seguido lo puedes ver aquí: [Como Instalar y Descargar Kali Linux 2024.1 en VirtualBox [Windows 10] - Desde Cero!](https://www.youtube.com/watch?v=iGmACGL3nos&ab_channel=ContandoBits)
 
 --- 
-# Broken Access Control
+# Broken Access Control [A01] 
 > A partir de aquí, comienzan las pruebas usando el laboratorio.
+> La lista de las 10 vulnerabiliades la puedes ver en: [OWASP TOP TEN](https://owasp.org/www-project-top-ten/)
 
 Se refiere a una categoría de vulnerabilidades de seguridad en aplicaciones web donde las restricciones sobre
 lo que los usuarios autenticados están autorizados a hacer no se implementan o se implementan incorrectamente. 
