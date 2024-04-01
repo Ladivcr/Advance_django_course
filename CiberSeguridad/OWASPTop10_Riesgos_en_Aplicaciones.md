@@ -112,4 +112,77 @@ Para mitigar las vulnerabilidades de Broken Access Control, se recomienda adopta
 
 ## PRÁCTICA BROKEN ACCESS CONTROL
 
-![](imgs_ciber/A01_OWASP/A01_1)
+NOTA: Antes de comenzar. Configura la herramienta de Burpsuite, para escuchar las peticiones 
+
+Como primer paso, entramos a la plataforma: `localbox/` y veremos algo cómo: 
+![Home de la plataforma](imgs_ciber/A01_OWASP/A01_1.png)
+Procedemos a iniciar sesión con el usuario de administrador. 
+> user: admin - password: admin
+> NOTA: Los usuarios utilizados aquí se encuentran en la página del proyecto.
+
+![Login de la plataforma](imgs_ciber/A01_OWASP/A01_2.png)
+
+Una vez que iniciamos sesión como administrador podemos observar que hay una opción (Admin) a la que
+solo se tiene acceso como administrador. 
+![Perfil de admin](imgs_ciber/A01_OWASP/A01_3.png)
+
+Si vamos a la opción de Admin, podemos observar que nos lista los usarios de la plataforma. 
+![Listado de usuarios](imgs_ciber/A01_OWASP/A01_4.png)
+
+Cerramos la sesión de administrador y ahora iniciamos sesión como un usuario normal.
+> user: user1 - password: 1234 
+
+![Login de la plataforma](imgs_ciber/A01_OWASP/A01_5.png)
+
+Al iniciar sesión como un usuario normal podemos observar que la opción de "Admin"
+no esta disponible para este usuario. 
+![Perfil usuario](imgs_ciber/A01_OWASP/A01_6.png)
+
+Si hacemos una petición al endpoint: `localbox/api/users` que es el endpoint que
+se utiliza en la opción de "Admin" para listar los usuarios.
+> Lo anterior lo podemos comprobar yendo a la opción "Admin" e inspeccionando la página
+> a la hora de entrar a esa opción. Se hace una petición GET a ese endpoint.
+
+Podemos observar que nos arroja el mensaje de que no estamos autorizados.  
+
+![Endpoint localbox/api/users](imgs_ciber/A01_OWASP/A01_7.png)
+
+Si vamos al historial de Burpsuite y revisamos la petición que se realizo cuando iniciamos
+sesión como un usuario normal podemos ver el body utilizado pero, si observamos la respuesta,
+vemos una cookie cuyo valor se ve interesante. Seleccionamos el valor para una operación posterior.
+
+![Examinación de petición con Burpsuite](imgs_ciber/A01_OWASP/A01_8.png)
+
+El valor que hemos notado anteriormente en la cookie, parece ser un cifrado en base 64, así que utilizando
+una herramienta online, procedemos a decodificarlo. Observamos algo muuuuy llamativo.
+Un diccionario con el id del usuario pero también con su rol. 
+
+![Decodificación de cookie](imgs_ciber/A01_OWASP/A01_9.png)
+
+Si tomamos, ese diccionario, pero en lugar de conservar el rol "user" lo cambiamos por "admin"
+y codificamos nuevamente, en base 64. Observamos que tenemos un valor similar al de la
+cookie anterior. Guardamos dicho valor para su posterior uso. 
+
+![Codificación de cookie](imgs_ciber/A01_OWASP/A01_10.png)
+
+Regresamos a Burpsuite y buscamos la petición al endpoint `localbox/api/users` que anteriormente
+nos había retornado que no estabamos autorizados. Observamos que dicha petición manda una cookie similar a la que hemos codificado.
+Marcamos dicha petición para repetirla. 
+
+![Burpsuite análisis de petición](imgs_ciber/A01_OWASP/A01_11.png)
+
+Con el nuevo valor de cookie codificado anteriormente, realizamos un cambio de cookie en dicha petición.
+Y la volvemos a enviar. Observamos que ahora la respuesta no es que no estamos autorizados sino que ahora
+¡nos retorna toda la lista de usuarios! Es decir, tenemos privilegios de administrador.
+
+![Burpsuite obtención de usuarios](imgs_ciber/A01_OWASP/A01_12.png)
+
+## Hardening
+> En informática, el hardening o endurecimiento es el proceso de asegurar un sistema reduciendo sus vulnerabilidades o agujeros de seguridad,
+> para los que se está más propenso cuanto más funciones desempeña; en principio un sistema con una única función es más
+> seguro que uno con muchos propósitos. (Wikipedia)
+
+Para poder arreglar esa falla, hace falta realizar un cambio en la manera en que están validando al usuario. Si 
+entramos al código fuente de este problema en el repositorio del curso. Podemos observar que se está realizando una
+validación de usuario a nivel de Cookie. Por lo que cambiandola a una validación de usuario a nivel de base de datos,
+podemos arreglar el problema. 
