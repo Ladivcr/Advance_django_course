@@ -110,3 +110,6 @@ Para mitigar las vulnerabilidades de Broken Access Control, se recomienda adopta
 - **Pruebas de seguridad regulares:** Realizar pruebas de penetración y revisiones de código para identificar y remediar las vulnerabilidades de control de acceso roto antes de que puedan ser explotadas.
   Aplica correctamente rate limits para que no sea posible hacer más de cierta cantidad de peticiones por minuto. 
 
+## PRÁCTICA BROKEN ACCESS CONTROL
+
+![](imgs_ciber/A01_OWASP/A01_1)
