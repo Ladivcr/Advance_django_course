@@ -186,3 +186,5 @@ Para poder arreglar esa falla, hace falta realizar un cambio en la manera en que
 entramos al código fuente de este problema en el repositorio del curso. Podemos observar que se está realizando una
 validación de usuario a nivel de Cookie. Por lo que cambiandola a una validación de usuario a nivel de base de datos,
 podemos arreglar el problema. 
+
+# Cryptographic Failures [A02] 
