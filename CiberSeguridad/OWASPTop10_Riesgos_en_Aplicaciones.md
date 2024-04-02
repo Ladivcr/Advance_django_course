@@ -261,4 +261,36 @@ al puerto 301 con el protocolo HTTPS.
 De esta forma, de lado del front-end, cuando se búsque usar solo HTTP. Se forzará el uso de HTTPS.
 ![Login de la plataforma](imgs_ciber/A02_OWASP/A02_4.png)
 
+# Injection [A03]
 
+> Es el riesgo asociado a datos enviados por el usuario, no sanitizados, validados o filtrados por la aplicación.
+
+La inyección, especialmente la Inyección SQL, es uno de los riesgos de seguridad más críticos y prevalentes en aplicaciones web,
+según el OWASP Top 10. Este tipo de vulnerabilidad ocurre cuando un atacante puede enviar o "inyectar" instrucciones no confiables a 
+un intérprete como parte de una consulta o comando. Este proceso puede resultar en el acceso no autorizado a datos, la alteración de
+estos o incluso la ejecución de operaciones arbitrarias en el servidor afectado.
+
+> **Aunque la Inyección SQL es la forma más conocida, existen otros tipos de inyección, como la inyección de comandos del sistema operativo, la inyección LDAP, y la inyección de código en aplicaciones.**
+
+## Ejemplo: Acceso inseguro a bases de datos
+
+Aquí conviene recordar el concepto de **payload**, que es una cadea mal formada. Cuando se materializa esta cadena, es posible efectuar una inyección SQL. 
+
+- Posible inyección SQL - Dato no sanitizado
+
+En el ejemplo siguiente no se valida la variable en si. Sino que haya un valor ahí. 
+```
+const result = await db.query(`SELECT * FROM users WHEN user.id = ${UserId}`);
+```
+- Fix - Dato sanitizado
+En este ejemplo, se valida únicamente la variable y el valor asociado a la variable. 
+```
+const result = await db.query(`SELECT * FROM users WHEN user.id = $1`, [userId]);
+```
+
+## Impacto 
+
+Inspección no autorizada del file system. Tal fue el caso de una empresa que no validaba de manera correcta los
+inputs, permitiendo así introducir algo como: `; ls -la` donde dichos comandos son propios del SO Linux y lo que hicieron
+fue ejecutar la acción del formulario pero a la par, listar los archivos del directorio. 
+![Plataforma vulnerada](imgs_ciber/A03_OWASP/A03_ej.png)
