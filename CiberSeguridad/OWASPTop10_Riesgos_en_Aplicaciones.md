@@ -1,4 +1,8 @@
-# [1] ¿Qué es OWASP Top 10?
+# Listado de capitulos (because, the document is biiiiiiggger)
+- [¿Qué es OWASP Top 10?](#WhatIsOwasp10)
+
+<h1><a href="#WhatIsOwasp10">¿Qué es OWASP Top 10?</a></h1>
+
 
 OWASP, que significa Open Web Application Security Project, es una organización sin fines de lucro que trabaja para mejorar la seguridad
 del software a través de la identificación y la divulgación de las fallas de seguridad más críticas.
@@ -294,3 +298,5 @@ Inspección no autorizada del file system. Tal fue el caso de una empresa que no
 inputs, permitiendo así introducir algo como: `; ls -la` donde dichos comandos son propios del SO Linux y lo que hicieron
 fue ejecutar la acción del formulario pero a la par, listar los archivos del directorio. 
 ![Plataforma vulnerada](imgs_ciber/A03_OWASP/A03_ej.png)
+
+## Controles
