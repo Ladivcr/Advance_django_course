@@ -1,7 +1,7 @@
-# Listado de capitulos (because, the document is biiiiiiggger)
+# Listado de capitulos (because, the document is laaarge)
 - [¿Qué es OWASP Top 10?](#WhatIsOwasp10)
 - [¿Cómo utilizar OWASP Top 10?](#HowToUseOwasp10)
-- [Broken Access Control [A01]](#A01)
+- [Broken Access Control - A01](#A01)
 
 <h1 id="#WhatIsOwasp10">¿Qué es OWASP Top 10?</h1>
 
