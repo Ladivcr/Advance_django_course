@@ -2,6 +2,12 @@
 - [¿Qué es OWASP Top 10?](#WhatIsOwasp10)
 - [¿Cómo utilizar OWASP Top 10?](#HowToUseOwasp10)
 - [Broken Access Control - A01](#A01)
+- - [PRÁCTICA BROKEN ACCESS CONTROL](#praA01)
+- [Cryptographic Failures - A02](#A02)
+- - [PRÁCTICA Cryptographic Failures](#praA02)
+
+
+
 
 <h1 id="#WhatIsOwasp10">¿Qué es OWASP Top 10?</h1>
 
@@ -117,7 +123,8 @@ Para mitigar las vulnerabilidades de Broken Access Control, se recomienda adopta
 - **Pruebas de seguridad regulares:** Realizar pruebas de penetración y revisiones de código para identificar y remediar las vulnerabilidades de control de acceso roto antes de que puedan ser explotadas.
   Aplica correctamente rate limits para que no sea posible hacer más de cierta cantidad de peticiones por minuto. 
 
-## PRÁCTICA BROKEN ACCESS CONTROL
+<h1 id="praA01">PRÁCTICA BROKEN ACCESS CONTROL</h1>
+
 
 NOTA: Antes de comenzar. Configura la herramienta de Burpsuite, para escuchar las peticiones 
 
@@ -193,8 +200,8 @@ Para poder arreglar esa falla, hace falta realizar un cambio en la manera en que
 entramos al código fuente de este problema en el repositorio del curso. Podemos observar que se está realizando una
 validación de usuario a nivel de Cookie. Por lo que cambiandola a una validación de usuario a nivel de base de datos,
 podemos arreglar el problema. 
-
-# Cryptographic Failures [A02] 
+ 
+<h1 id="A02">Cryptographic Failures [A02]</h1>
 
 Las "Cryptographic Failures" (anteriormente conocidas como "Sensitive Data Exposure") se refieren a una categoría de vulnerabilidades de seguridad
 que se centra en la protección inadecuada de datos sensibles debido a la implementación incorrecta o la falta de cifrado adecuado.
@@ -234,7 +241,7 @@ Para mitigar los fallos criptográficos, las organizaciones deben adoptar una se
 
 Al abordar proactivamente los fallos criptográficos, las organizaciones pueden proteger eficazmente los datos sensibles contra accesos no autorizados y cumplir con las obligaciones legales y éticas de proteger la información de sus usuarios.
 
-## PRÁCTICA CRYPTOGRAPHIC FAILURES 
+<h1 id="praA02">PRÁCTICA CRYPTOGRAPHIC FAILURES</h1>
 
 Como primer paso, entramos a la plataforma: `localbox/` y veremos algo cómo: 
 ![Home de la plataforma](imgs_ciber/A01_OWASP/A01_1.png)
