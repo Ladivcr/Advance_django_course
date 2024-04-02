@@ -1,6 +1,6 @@
 # Listado de capitulos (because, the document is biiiiiiggger)
 - [¿Qué es OWASP Top 10?](#WhatIsOwasp10)
-- [¿Cómo utilizar OWASP Top 10?](https://github.com/Ladivcr/Extra-courses-note/edit/main/CiberSeguridad/OWASPTop10_Riesgos_en_Aplicaciones.md#HowToUseOwasp10)
+- [¿Cómo utilizar OWASP Top 10?](https://github.com/Ladivcr/Extra-courses-note/blob/main/CiberSeguridad/OWASPTop10_Riesgos_en_Aplicaciones.md#HowToUseOwasp10)
 
 <h1><a href="#WhatIsOwasp10">¿Qué es OWASP Top 10?</a></h1>
 
