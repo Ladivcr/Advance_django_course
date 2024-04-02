@@ -188,3 +188,77 @@ validación de usuario a nivel de Cookie. Por lo que cambiandola a una validaci�
 podemos arreglar el problema. 
 
 # Cryptographic Failures [A02] 
+
+Las "Cryptographic Failures" (anteriormente conocidas como "Sensitive Data Exposure") se refieren a una categoría de vulnerabilidades de seguridad
+que se centra en la protección inadecuada de datos sensibles debido a la implementación incorrecta o la falta de cifrado adecuado.
+> Este tipo de fallos puede llevar a que los datos sensibles de los usuarios,
+> sean expuestos a actores maliciosos, comprometiendo la confidencialidad y la integridad de estos datos.
+
+## Cómo Ocurren los Fallos Criptográficos
+
+Los fallos criptográficos pueden ocurrir por varias razones, incluyendo pero no limitándose a:
+
+- **Uso de cifrado débil o obsoleto:** Implementar algoritmos de cifrado que han sido vulnerados o que son inherentemente débiles aumenta el riesgo de que los datos cifrados sean descifrados por atacantes.
+- **Configuración inadecuada de los parámetros de cifrado:** Incluso si se utilizan algoritmos fuertes, una configuración inadecuada (como tamaños de clave insuficientes o modos de operación inseguros) puede comprometer la seguridad.
+- **Falta de cifrado:** No utilizar cifrado para datos sensibles en tránsito o en reposo deja la información expuesta a interceptaciones o accesos no autorizados.
+- **Gestión inadecuada de claves criptográficas:** La exposición, pérdida o robo de claves criptográficas puede anular los beneficios del cifrado, ya que permite a los atacantes descifrar los datos protegidos.
+- **Almacenamiento inseguro de credenciales:** Guardar contraseñas o tokens de autenticación sin las debidas medidas de protección, como el hashing de contraseñas con sal, puede llevar a su compromiso.
+
+## Impacto de los Fallos Criptográficos
+
+El impacto de los fallos criptográficos puede ser significativo, incluyendo:
+
+- **Exposición de datos personales:** Puede llevar a violaciones de la privacidad, robo de identidad, y otros daños personales para los usuarios afectados.
+- **Pérdida financiera:** Tanto para los usuarios cuyos datos financieros son comprometidos como para las organizaciones que enfrentan multas, costos de remediación y daños a su reputación.
+- **Incumplimiento de regulaciones:** Muchas jurisdicciones tienen leyes que requieren la protección adecuada de datos sensibles, y los fallos criptográficos pueden resultar en sanciones legales y multas.
+  > GDPR: Tratamiento de datos personales; PCI DSS: Tratamiento de datos de tarjetahabientes. El incumplimiento de normas nos pueden provocar multas muy grandes. 
+
+## Mitigación de los Fallos Criptográficos
+
+Para mitigar los fallos criptográficos, las organizaciones deben adoptar una serie de prácticas recomendadas, que incluyen:
+
+- **Cifrar todos los datos transmitidos por la aplicación**: Cifrar los datos de punto a punto.
+- **Clasificar los datos en función a su nivel de sensibilidad**: Esto se refiere a las normativas de tratamiento de datos personales que aplican en la mayoría de planetas.
+- **Implementar políticas de cifrado fuerte:** Utilizar algoritmos y protocolos de cifrado actualizados y recomendados por expertos en seguridad.
+- **Gestión adecuada de claves:** Asegurar que las claves criptográficas se almacenen y manejen de forma segura, incluyendo su rotación y revocación cuando sea necesario.
+- **Uso de HTTPS y/o protocolos cifrados para el transporte de datos:** Asegurar que todo el tráfico de datos en tránsito esté cifrado utilizando HTTPS con configuraciones actualizadas y seguras.
+- **Protección de datos en reposo:** Cifrar datos sensibles almacenados, utilizando soluciones de cifrado de disco completo o cifrado de campos específicos en bases de datos.
+- **Auditorías y pruebas de seguridad regulares:** Realizar auditorías de seguridad y pruebas de penetración para identificar y remediar posibles fallos criptográficos.
+
+Al abordar proactivamente los fallos criptográficos, las organizaciones pueden proteger eficazmente los datos sensibles contra accesos no autorizados y cumplir con las obligaciones legales y éticas de proteger la información de sus usuarios.
+
+## PRÁCTICA CRYPTOGRAPHIC FAILURES 
+
+Como primer paso, entramos a la plataforma: `localbox/` y veremos algo cómo: 
+![Home de la plataforma](imgs_ciber/A01_OWASP/A01_1.png)
+
+Procedemos a iniciar sesión con el usuario de administrador. 
+> user: admin - password: admin
+> NOTA: Los usuarios utilizados aquí se encuentran en la página del proyecto.
+![Login de la plataforma](imgs_ciber/A01_OWASP/A01_2.png)
+
+Haciendo uso de la herramienta **Wireshark** podemos análisar el tráfico de datos que se a realizado.
+Utilizando el filtro http, buscamos la petición POST del inicio de sesión y podemos observar que los datos 
+de inicio de sesión se mandan en texto plano. 
+![Wireshark tool](imgs_ciber/A02_OWASP/A02_1.png)
+
+## Hardening
+
+Para poder arreglar dicha falla debemos hacer que nuestra aplicación force toda petición en ese login 
+a protocolo seguro, es decir, HTTPS. 
+
+Anteriormente, como podemos observar en las lineas comentadas (7 a 21), no había ningún certificado de por medio. 
+El servidor solo escuchaba en el puerto 8080 las peticiones y no tenían ningún certificado. 
+![Nginx old config](imgs_ciber/A02_OWASP/A02_2.png)
+
+Ahora hacemos que escuche por el puerto 443 que hace uso de SSL. Y redirecciona
+al puerto 301 con el protocolo HTTPS. 
+> SSL: SSL o Secure Sockets Layer es un protocolo de seguridad de Internet basado en el cifrado.
+> Inicialmente fue desarrollado por Netscape en 1995 para garantizar la privacidad, la autenticación y
+> la integridad de los datos en las comunicaciones de Internet. Fuente: Cloudflare
+![Login de la plataforma](imgs_ciber/A02_OWASP/A02_3.png)
+
+De esta forma, de lado del front-end, cuando se búsque usar solo HTTP. Se forzará el uso de HTTPS.
+![Login de la plataforma](imgs_ciber/A02_OWASP/A02_4.png)
+
+
