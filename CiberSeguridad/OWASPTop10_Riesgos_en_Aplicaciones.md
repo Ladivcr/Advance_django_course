@@ -2,7 +2,7 @@
 - [¿Qué es OWASP Top 10?](#WhatIsOwasp10)
 - [¿Cómo utilizar OWASP Top 10?](#HowToUseOwasp10)
 
-<h1><a href="#WhatIsOwasp10">¿Qué es OWASP Top 10?</a></h1>
+<h1 id="#WhatIsOwasp10">¿Qué es OWASP Top 10?</h1>
 
 
 OWASP, que significa Open Web Application Security Project, es una organización sin fines de lucro que trabaja para mejorar la seguridad
@@ -32,7 +32,7 @@ siguientes variables:
 - Número de registros CWE mapeados hacia la categoría
 - Número de vulnerabilidades (O CVE's) debidamente sincronizado con la BD de vulnerabilidades del gobierno de los Estados Unidos
 
-<h1 id="HowToUseOwasp10"><a href="#HowToUseOwasp10">¿Cómo utilizar OWASP Top 10?</a></h1>
+<h1 id="HowToUseOwasp10">¿Cómo utilizar OWASP Top 10?</h1>
 # [2] ¿Cómo utilizar OWASP Top 10?
 
 La utilización del OWASP Top 10 como una herramienta para mejorar la seguridad de las aplicaciones web implica varias estrategias y prácticas.
