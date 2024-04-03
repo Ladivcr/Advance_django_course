@@ -370,4 +370,14 @@ Una vez inyectado el código, realizamos el update y observamos que tenemos un m
 
 ![Mensaje de confirmación](imgs_ciber/A03_OWASP/A03_5.png)
 
-Procedemos a cerrar sesión y volvemos a ingresar a la plataforma pero ahora haciendo uso 
+Procedemos a cerrar sesión y volvemos a ingresar a la plataforma haciendo uso del mismo usuario. 
+> user: user1 - password: 1234
+
+![Login de la plataforma](imgs_ciber/A01_OWASP/A01_5.png)
+
+Observamos que ahora, para un usuario normal, ya contamos con una opción que en un principio solo
+era para un administrador. 
+
+![Opción de Admin en perfil normal](imgs_ciber/A03_OWASP/A03_6.png)
+
+## Hardening
