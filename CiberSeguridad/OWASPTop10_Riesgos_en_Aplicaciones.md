@@ -311,3 +311,19 @@ fue ejecutar la acción del formulario pero a la par, listar los archivos del di
 ![Plataforma vulnerada](imgs_ciber/A03_OWASP/A03_ej.png)
 
 ## Controles
+
+Para controlar el riesgo de inyección de código hay varias formas de hacerlo. Por ejemplo: 
+
+- **Sanitizar los inputs de datos de la aplicación:** Si nosotros esperamos del usuario un correo o un id. Debemos validar que efectivamente
+  se trata de dicho dato. Ya sea utilizando funciones propias o reservadas del lenguaje de programación.
+- **Queries parametrizadas:** Sanitizando las entradas que vienen del usuario.
+  En el ejemplo siguiente no se valida la variable en si. Sino que haya un valor ahí.
+  Pasar de esto:
+```
+const result = await db.query(`SELECT getAccountBalance(${customerName}) as account_balance`);
+```
+A esto: 
+```
+const result = await db.query(`SELECT getAccountBalance($1) as account_balance`, [customerName]);
+```
+- **Usar LIMIT y otros controles a nivel SQL para limitar el acceso a registros:** 
