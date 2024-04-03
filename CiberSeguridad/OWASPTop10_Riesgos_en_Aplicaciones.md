@@ -326,4 +326,48 @@ A esto:
 ```
 const result = await db.query(`SELECT getAccountBalance($1) as account_balance`, [customerName]);
 ```
-- **Usar LIMIT y otros controles a nivel SQL para limitar el acceso a registros:** 
+- **Usar LIMIT y otros controles a nivel SQL para limitar el acceso a registros:** Esto puede evitar que al efectuar una query, esta no retorne más
+  información de la necesaria. 
+
+<h1 id="pra03">PRACTICA INJECTION</h1>
+
+Como primer paso, entramos a la plataforma: `localbox/` y veremos algo cómo: 
+![Home de la plataforma](imgs_ciber/A01_OWASP/A01_1.png)
+
+Procedemos a iniciar sesión con un usuario normal, sin funciones administrativas. 
+> user: user1 - password: 1234
+> NOTA: Los usuarios utilizados aquí se encuentran en la página del proyecto.
+
+![Login de la plataforma](imgs_ciber/A01_OWASP/A01_5.png)
+
+Una cosa que podemos notar, poniendonos en los zapatos de un pentester, es que tenemos
+un formulario que valida varios campos. Por lo que podemos revisar si hay algo que podamos hacer mediante ese
+formulario. 
+
+![Formulario del usuario](imgs_ciber/A03_OWASP/A03_1.png)
+
+Teniendo en cuenta de que vamos a probar una inyección sql para ver si logramos tener privilegios de
+administrador a nivel base de datos, vamos a probar dos cosas. 
+1. La instrucción SQL
+
+Cuando usamos una cadena de inyección, si el campo es vulnerable y no esta sanitizado. Podemos
+utilizar una sentencía similar a la siguiente. Donde al usuario con `id=2` le
+asignamos un `role_id=1` que usualmente es el rol de administrador. 
+
+![Sentencia SQL](imgs_ciber/A03_OWASP/A03_2.png)
+
+2. Revisar el código (en caso de tener acceso)
+
+![Código de la validación de la sentencia](imgs_ciber/A03_OWASP/A03_3.png)
+
+Procedemos a utilizar la cadena SQL previamente mostrada: 
+`WHERE u.id = 2; UPDATE user_roles ur SET role_id = 1 WHERE ur.user_id = 2; SELECT * FROM users u --`
+En el campo del usuario para efectuar una actualización. Manteniendo el user1.
+
+![Inyección de código](imgs_ciber/A03_OWASP/A03_4.png)
+
+Una vez inyectado el código, realizamos el update y observamos que tenemos un mensaje de confirmación. 
+
+![Mensaje de confirmación](imgs_ciber/A03_OWASP/A03_5.png)
+
+Procedemos a cerrar sesión y volvemos a ingresar a la plataforma pero ahora haciendo uso 
