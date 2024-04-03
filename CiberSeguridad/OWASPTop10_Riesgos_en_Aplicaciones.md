@@ -381,3 +381,19 @@ era para un administrador.
 ![Opción de Admin en perfil normal](imgs_ciber/A03_OWASP/A03_6.png)
 
 ## Hardening
+
+Para poder arreglar el problema es necesario sanitizar las variables utilizadas y pasar de esto que no esta sanitizado: 
+
+![Código de la validación de la sentencia sin sanitización](imgs_ciber/A03_OWASP/A03_3.png)
+
+A esto que ya se encuentra sanitizado: 
+
+![Código de la validación de la sentencia sanitizado](imgs_ciber/A03_OWASP/A03_7.png)
+
+
+Ahora si volvemos a utilizar la sentencia SQL para efectuar una nueva actualización, tal como lo hicimos anteriormente, 
+podemos observar que ya nos arroja un error a la hora de actualizar. Por lo tanto, el problema ya fue arreglado. 
+
+![Error en la actualización](imgs_ciber/A03_OWASP/A03_8.png)
+
+> NOTA: Recuerda que no solo se puede inyectar texto SQL, también se puede inyectar código javascript a los modelos de aprendizaje por ejemplo. 
