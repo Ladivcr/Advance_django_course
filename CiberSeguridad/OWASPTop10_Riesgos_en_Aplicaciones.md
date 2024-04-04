@@ -400,3 +400,18 @@ podemos observar que ya nos arroja un error a la hora de actualizar. Por lo tant
 > NOTA: Recuerda que no solo se puede inyectar texto SQL, también se puede inyectar código javascript a los modelos de aprendizaje por ejemplo. 
 
 <h1 id="A04">Insecure Design [A04]</h1>
+
+Este riesgo ocurre cuando creamos una aplicación sin tener en cuenta requerimientos de seguridad en la arquitectura. 
+
+## Ejemplos
+
+- **Ausencia de requerimientos de seguridad:** Es aquí dónde podemos tener en cuenta las buenas prácticas de seguridad.
+> P. ej. Un formulario de Login con usuario y contraseña. En el que al fallar el correo, el desarrollador deja ver un mensaje en el que dice
+> que el correo electronico es incorrecto. Lo cuál es una mala práctica. Porque si soy ciberdelincuente, tal vez tenga una lista con
+> miles de correos de los cuáles hay algunos que si funcionan y automatizando está tarea y apoyandome de ese mensaje, podré validar.
+> **Por lo que una buena práctica es poner un mensaje más generico.**
+- **Ausencia en control de errores:** Al diseñar una aplicación, debemos controlar todos los errores, porque si el usuario llegasé a ingresar
+  una cadena mal formada o algo que no esta controlado, se puede llegar a presentar un error como el siguiente:
+  ![Error de malformación](imgs_ciber/A04_OWASP/A04_1.png)
+
+  
