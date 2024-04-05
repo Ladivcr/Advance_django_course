@@ -331,7 +331,7 @@ const result = await db.query(`SELECT getAccountBalance($1) as account_balance`,
 - **Usar LIMIT y otros controles a nivel SQL para limitar el acceso a registros:** Esto puede evitar que al efectuar una query, esta no retorne más
   información de la necesaria. 
 
-<h1 id="praA03">PRACTICA INJECTION</h1>
+<h1 id="praA03">PRÁCTICA INJECTION</h1>
 
 Como primer paso, entramos a la plataforma: `localbox/` y veremos algo cómo: 
 ![Home de la plataforma](imgs_ciber/A01_OWASP/A01_1.png)
@@ -440,6 +440,6 @@ cada una de estás funciones de negocio y aplicar las prácticas de seguridad.
 
 ![OWAST SAMM](imgs_ciber/A04_OWASP/A04_2.png)
 
-<h1 id="praA04">PRACTICA INSECURE DESIGN</h1>
+<h1 id="praA04">PRÁCTICA INSECURE DESIGN</h1>
 
   
