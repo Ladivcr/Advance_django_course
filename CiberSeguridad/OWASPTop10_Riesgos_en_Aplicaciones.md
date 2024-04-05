@@ -9,6 +9,7 @@
 - - [PRÁCTICA INJECTION](#praA03)
 - [Insecure Design - A04](#A04)
 - - [PRÁCTICA INSECURE DESIGN](#praA04)
+- [Security Misconfiguration - A05](#A05)
 
 
 
@@ -478,6 +479,8 @@ if (!usernameRegex.test(website)) {
     res.status(400).json({error: 'Invalid LinkedIn username'});
 }
 ```
+
+<h1 id="A05">Security Misconfiguration [A05]</h1>
 
 
 
