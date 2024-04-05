@@ -6,8 +6,9 @@
 - [Cryptographic Failures - A02](#A02)
 - - [PRÁCTICA Cryptographic Failures](#praA02)
 - [Injection - A03](#A03)
-- - [PRACTICA INJECTION](#praA03)
+- - [PRÁCTICA INJECTION](#praA03)
 - [Insecure Design - A04](#A04)
+- - [PRÁCTICA INSECURE DESIGN](#praA04)
 
 
 
@@ -437,7 +438,8 @@ en todos los procesos de la organización, enfocados en la fabricación de un pr
 Ya que este contiene un framework dividido en funciones de negocio: Gobierno, Diseño, Implementación, Verificación, Operación. Y lo que hace la empresa es tomar
 cada una de estás funciones de negocio y aplicar las prácticas de seguridad.
 
-![OWAST SAMM](https://github.com/Ladivcr/Extra-courses-note/assets/44490565/ecd2fa56-efc7-4a5d-8ffc-e257b4e2776a)
+![OWAST SAMM](imgs_ciber/A04_OWASP/A04_2.png)
 
+<h1 id="praA04">PRACTICA INSECURE DESIGN</h1>
 
   
