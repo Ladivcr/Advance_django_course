@@ -413,5 +413,31 @@ Este riesgo ocurre cuando creamos una aplicación sin tener en cuenta requerimie
 - **Ausencia en control de errores:** Al diseñar una aplicación, debemos controlar todos los errores, porque si el usuario llegasé a ingresar
   una cadena mal formada o algo que no esta controlado, se puede llegar a presentar un error como el siguiente:
   ![Error de malformación](imgs_ciber/A04_OWASP/A04_1.png)
+  El cual expone información muy valiosa sobre el servidor, como la IP, el SO, etc.
+
+## Imapcto
+Toda falla de seguridad puede generar un gran impacto economico y/o reputacional en cualquier empresa. Como es el caso 
+de: 
+
+- **Altos costos operativos por fallos no controlados:** Por ejemplo un error en una pasarela de pagos. La pasarela no validaba que se hicieran pagos
+  con tarjetas de crédito que estaban disponibles en la Dark o en la Deep Web. Al no validar, si alguien hacía uso de una tarjeta robada, se le brindaba
+  el servicio, pero meses después se detectaba que había sido con una tarjeta robada. Esto generaba gastos operativos por tener que resarcir todo lo que
+  se hizo con esa tarjeta.
+
+## Controles
+
+Una gran pregunta para cualquier organización puede ser cómo controlar un diseño inseguro. Uno de ellos puede ser: 
+- **Implementar un Ciclo de Vida de Desarrollo de Software Seguro:** El objetivo del ciclo de vida de desarrollo es brindar la buena
+  práctica del desarrollo seguro y en cada etapa de las etapas, tener en cuenta prácticas de seguridad.
+  > P. ej. En requerimientos: Podemos hacer evaluación de riesgos; En diseño: Un modelado de amenazas; En desarrollo: Una análisis estatico de código fuente;
+  > En pruebas: Los famosos penetration testing; En deploy: Evaluaciones de seguridad que se pueden hacer de forma local o por terceros.
+  
+- **Implementar un Modelo de Madurez de Aseguramiento del Software:** Otro control que se puede hacer es implementar el modelo de madurez de aseguramiento de software
+en todos los procesos de la organización, enfocados en la fabricación de un producto. Aquí se suele apoyarse del proyecto [OWASP SAMM](https://owasp.org/www-project-samm/).
+Ya que este contiene un framework dividido en funciones de negocio: Gobierno, Diseño, Implementación, Verificación, Operación. Y lo que hace la empresa es tomar
+cada una de estás funciones de negocio y aplicar las prácticas de seguridad.
+
+![OWAST SAMM](https://github.com/Ladivcr/Extra-courses-note/assets/44490565/ecd2fa56-efc7-4a5d-8ffc-e257b4e2776a)
+
 
   
