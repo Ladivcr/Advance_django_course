@@ -441,5 +441,43 @@ cada una de estás funciones de negocio y aplicar las prácticas de seguridad.
 ![OWAST SAMM](imgs_ciber/A04_OWASP/A04_2.png)
 
 <h1 id="praA04">PRÁCTICA INSECURE DESIGN</h1>
+Aquí es dónde toma importancia la buena arquitectura que tiene la aplicación. 
 
-  
+Nuevamente como primer paso, entramos a la plataforma: `localbox/` y entrar a la plataforma
+e iniciar sesión con un usuario normal, sin funciones administrativas. 
+> user: user1 - password: 1234
+
+![Login de la plataforma](imgs_ciber/A01_OWASP/A01_5.png)
+
+Una vez hemos ingresado, bajamos para ver las opciones que tiene en su perfil. 
+Observamos que entre ellas se encuentra la de un perfil de LinkedIn. 
+
+![Enlace a LinkedIn](imgs_ciber/A01_OWASP/A04_3.png)
+
+Al ser un enlace, debemos preguntarnos ¿qué pasa si NO paso un enlace a LinkedIn sino un enlace a un archivo malicioso?
+Es decir ¿está validando que efectivamente sea un enlace valido o solo que sea un enlace? 
+Procedemos a pasar el enlace
+> Para evitar problemas, decidi no incluir el enlace aquí.
+
+![Enlace a malicioso](imgs_ciber/A01_OWASP/A04_4.png)
+
+Y podemos ver que fue actualizado sin ningún problema: 
+
+![Actualización OK](imgs_ciber/A01_OWASP/A04_5.png)
+
+Por lo que podemos darnos cuenta que no esta validando los enlaces. 
+
+## Hardening
+
+Para solucionar este problema y con ello mejorar la arquitectura de nuestra aplicación es necesario 
+realizar una validación del enlace como se muestra acontinuación: 
+```js
+// regex no links only usernames
+const usernameRegex = /^[a-zA-Z0-9_]{1,15}$/;
+if (!usernameRegex.test(website)) {
+    res.status(400).json({error: 'Invalid LinkedIn username'});
+}
+```
+
+
+
