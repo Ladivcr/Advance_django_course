@@ -452,18 +452,18 @@ e iniciar sesión con un usuario normal, sin funciones administrativas.
 Una vez hemos ingresado, bajamos para ver las opciones que tiene en su perfil. 
 Observamos que entre ellas se encuentra la de un perfil de LinkedIn. 
 
-![Enlace a LinkedIn](imgs_ciber/A01_OWASP/A04_3.png)
+![Enlace a LinkedIn](imgs_ciber/A04_OWASP/A04_3.png)
 
 Al ser un enlace, debemos preguntarnos ¿qué pasa si NO paso un enlace a LinkedIn sino un enlace a un archivo malicioso?
 Es decir ¿está validando que efectivamente sea un enlace valido o solo que sea un enlace? 
 Procedemos a pasar el enlace
 > Para evitar problemas, decidi no incluir el enlace aquí.
 
-![Enlace a malicioso](imgs_ciber/A01_OWASP/A04_4.png)
+![Enlace a malicioso](imgs_ciber/A04_OWASP/A04_4.png)
 
 Y podemos ver que fue actualizado sin ningún problema: 
 
-![Actualización OK](imgs_ciber/A01_OWASP/A04_5.png)
+![Actualización OK](imgs_ciber/A04_OWASP/A04_5.png)
 
 Por lo que podemos darnos cuenta que no esta validando los enlaces. 
 
