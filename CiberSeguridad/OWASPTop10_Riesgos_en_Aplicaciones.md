@@ -12,6 +12,7 @@
 - [Security Misconfiguration - A05](#A05)
 - - [PRÁCTICA SECURITY MISCONFIGURATION](#praA05)
 - [Vulnerable and Outdated Components - A06](#A06)
+- - [PRÁCTICA VULNERABLE AND OUTDATED COMPONENTES - A06](#praA06)
 
 
 
@@ -574,4 +575,26 @@ Ocurre se utilizan componentes vulnerables o desactualizados.
   | Connections per seconds | 200 |
   | Timeout for probe connection | 3 |
   | Target test duration | 240 seconds |
-  | Using proxy | no proxy |  
+  | Using proxy | no proxy |
+
+## Impacto
+
+- **Es crítico cuando se tata de servicios públicos o de alta demanda:** Esto se debe precisamente a que puede que sean servicios de gran importancia
+  para la población o bien, de gran interés. Por lo que al no estar disponibles, se pueden ocasionar grandes perdidas a las empresas que hay por detrás o
+  a los propios gobiernos.
+  > Este tipo de peticiones se pueden detectar en aplicaciones de monitoreo. Cuando vemos un repunte de las peticiones promedio.
+  
+## Controles
+
+- **Detección de componentes vulnerables:** Utilizar herramientas de monitoreo en componentes especificos de la aplicación y/o en general en toda la aplicación.
+  Que ademas tengan reportes, nos puede ayudar a detectar si tengo o no, componentes vulnerables.
+
+- **Utilizar dependencias de origen confiable:** Antes de utilizar una librería, es necesario verificar que sea una libería que este firmada digitalmente,
+  que este respaldada por una empresa, que tenga pruebas de seguridad o algún ranking que valide que es segura. Porque al usar librerías
+  de origen poco confiable, podemos abrir las puertas a un malware y comprometer información.
+
+- **Auditoría permanente del código fuente:** Lo llamamos comúmnete, análisis estático del código. Es el utilizar herramientas como dependabot o codacy que
+  análisan nuestro código en busca de vulnerabilidades. Una vez que se detectan, se deben aplicar las actualizaciones y correcciones necesarias para que así, la aplicación
+  tenga Hardening completo.
+
+<h1 id="praA06">PRÁCTICA VULNERABLE AND OUTDATED COMPONENTS</h1>
