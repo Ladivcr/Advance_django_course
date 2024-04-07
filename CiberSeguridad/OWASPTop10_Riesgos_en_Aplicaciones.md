@@ -482,5 +482,66 @@ if (!usernameRegex.test(website)) {
 
 <h1 id="A05">Security Misconfiguration [A05]</h1>
 
+Sucede cuando la configuración de cualquier servicio no es fortalecida o se utilizan dependencias desactualziadas. 
+Aquí es dónde entra el concepto de _Hardening_. Todo aquel que tenga aplicado hardenind, se considerá que es fuerte
+y reduce las probabilidades de que los atacantes logren vulnerarlo. 
+
+## Ejemplos
+
+- **Instalaciones y configuraciones por defecto:** Muchos sistemas vienen con configuraciones por defecto que no son seguras. Esto incluye contraseñas predeterminadas, permisos amplios, funcionalidades innecesarias habilitadas, entre otros.
+- **Dependencias vulnerables con CVE de alta importancia:** No aplicar parches de seguridad a tiempo o no actualizar los sistemas a las últimas versiones puede dejar expuestas vulnerabilidades conocidas.
+
+## Impacto
+
+- **Se compromete la seguridad, privacidad de la información y los datos:** Configurar incorrectamente los permisos puede permitir a los atacantes acceder a datos o funcionalidades críticas.
+- **Sanciones económicas o multas:** El dejar información sensible expuesta por mala configuración puede derivar en una violación de datos personales y con ello demandas por parte de los clientes
+  debido a las normas sobre el tratamiento de datos personales.
+
+## Controles - Estrategias para Mitigar la Configuración Incorrecta de Seguridad
+
+- **Procesos constantes de Hardening:** Realizar revisiones periódicas y auditorías de las configuraciones de seguridad de todos los componentes del sistema para asegurar que cumplan con las mejores prácticas de seguridad.
+- **Control de errores:** Cualquier error que genere mi aplicación, debe de ser controlado. No mostrar un error de sistema sino un mensaje determinado.
+- **Crear un proceso de gestión de actualizaciones:** Incorporar como parte del mantenimiento de la aplicación, un proceso de gestión de actualizaciones manual o automatizado que se apoye de
+  escaneres de seguridad que puedan ayudar a identificar y corregir configuraciones incorrectas o actualizaciones criticas. Puede mejorar en gran medida la seguridad de una aplicación. 
+
+<h1 id="praA05">PRÁCTICA SECURITY MISCONFIGURATION</h1>
+
+Nos encontramos dentro de la aplicación. Pongamonos en la mente de un pentester. ¿Qué podríamos hacer? 
+Bueno, sabemos que contamos con una aplicación web, así que, si es web. Muy probablemente tiene carpetas de trabajo. 
+
+![Vista de perfil de usuario](imgs_ciber/A05_OWASP/A05_1.png)
+
+Procedemos entonces a utilizar la herramienta **DirBuster** de Kali. Apuntando a la ruta de nuestra página, presionamos _Start_ 
+para comenzar mediante fuerza bruta, la búsqueda de directorios y archivos ocultos en el servidor web.
+
+![Vista de DirBuster](imgs_ciber/A05_OWASP/A05_2.png)
+
+Una vez que termina, podemos ver algunas rutas que llaman la atención. Como es el caso de **/files**.
+
+![Resultado de DirBuster](imgs_ciber/A05_OWASP/A05_3.png)
+
+Procedemos entonces a ir a la ruta **/files** para ver que hay en esa ruta. Y nos encontramos con que
+hay imagenes pero también hay un pdf. Esto es una mala práctica, ya que solo se deberían mostrar archivos
+a nivel de url que sean imagenes y no se debería de mostrar la ruta **/files** que contiene las imagenes de todos los usuarios. 
+
+![Resultado de la ruta /files](imgs_ciber/A05_OWASP/A05_4.png)
 
 
+## Hardening
+
+Lo ideal es que se vea de la siguiente manera. Es decir que dicha carpeta no pueda ser accedida por ninguno de los usuarios desde fuera: 
+![Resultado de la ruta /files con hardening](imgs_ciber/A05_OWASP/A05_5.png)
+
+ Que los archivos pdf no puedan ser accedidos: 
+![Resultado de hardening. Vista de pdf](imgs_ciber/A05_OWASP/A05_6.png)
+
+ Pero que las imagenes asociadas al usuario si sean visibles: 
+![Resultado de hardening. Vista de imagen](imgs_ciber/A05_OWASP/A05_7.png)
+
+Para lograr esto es necesario realizar una modificación en el archivo **default.conf** del servidor nginx. 
+Que como podemos observar de la linea 25 a la 33. Hemos añadido una regla para que únicamente muestro las rutas
+de la forma **/files/IMAGEN.png|jpg** y todo lo demás lo rechace. Es decir, la ruta **/files** no estará permitida 
+a menos que se concatene una imagen del tipo png y jpg, de esta forma archivos con extensión .pdf o diferente. No podrán 
+ser accedidos. 
+
+![Configuración del servidor. Archivo default.conf](imgs_ciber/A05_OWASP/A05_8.png)
