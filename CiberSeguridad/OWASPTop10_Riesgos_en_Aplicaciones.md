@@ -10,6 +10,9 @@
 - [Insecure Design - A04](#A04)
 - - [PRÁCTICA INSECURE DESIGN](#praA04)
 - [Security Misconfiguration - A05](#A05)
+- - [PRÁCTICA SECURITY MISCONFIGURATION](#praA05)
+- [Vulnerable and Outdated Components - A06](#A06)
+
 
 
 
@@ -545,3 +548,30 @@ a menos que se concatene una imagen del tipo png y jpg, de esta forma archivos c
 ser accedidos. 
 
 ![Configuración del servidor. Archivo default.conf](imgs_ciber/A05_OWASP/A05_8.png)
+
+<h1 id="A06">Vulnerable and Outdated Components [A06]</h1>
+
+Ocurre se utilizan componentes vulnerables o desactualizados. 
+
+> Se relaciona mucho con **Insecure Design**. En otras palabras. Una mala arquitectura y/o componentes vulnerables, pueden desencadenar un gran impacto y riesgo en
+> nuestras aplicaciones.
+
+## Ejemplo
+
+- **DOS - Denial of Service Done!**: Una denegación de servicios se materializa cuando surgen muchas peticiones mal formadas o muy diferentes a las que realiza un
+  usuario normal en la aplicación. Cuando esto pasa, puede comprometer la disponibilidad de la aplicación.
+
+  Se puede realizar una prueba controlada con los siguientes parámetros para probar si podemos comprometer la aplicación:
+  | Parámetro | Valor |
+  | --- | --- |
+  | Test type | SLOW HEADERS |
+  | Number of connections | 1000 |
+  | Verb | GET |
+  | Content-Length header value | 4096 |
+  | Cookie | |
+  | Extra data max length | 52 |
+  | Interval between follow up data | 10 seconds |
+  | Connections per seconds | 200 |
+  | Timeout for probe connection | 3 |
+  | Target test duration | 240 seconds |
+  | Using proxy | no proxy |  
