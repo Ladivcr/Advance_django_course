@@ -704,3 +704,58 @@ Y para comprobarlo, volvemos a lanzar el ataque y obtenemos que, después de 5 p
 ![BurpSuite Payload Attack Bad](imgs_ciber/A07_OWASP/A07_8.png)
 
 <h1 id="A08">Software and Data Integrity Failures [A08]</h1>
+
+Ocurre cuando existe un manejo inseguro del código o datos de la aplicación, que pone en riesgo su integridad. Es decir, debemos revisar a nivel 
+de código fuente, cómo es que estamos gestionando esas lineas de manera segura. 
+
+## Ejemplo
+
+- **Actualización maliciosa en ataque a cadena de suministro:** P. ej. lo que le paso al servicio cloud, solar winds. En dónde uno de sus provedores de código o modulo, recibio
+  una actualización maliciosa y se genera un ciberataque llamado "_a cadena de suministro_". Y ese código comprometio datos de clientes.
+
+## Impacto
+
+- **Afectación en la disponibilidad de aplicaciones:** Solar winds perdió disnponibilidad de servicios internos y por ende afectó negativamente a muchos clientes. 
+
+- **Exfiltación de datos:** Logró en cierta medida exfiltrar datos y comprometer hasta su privacidad. }
+
+## Controles
+
+- **Code Review y cambios firmados digitalmente:** Revisar el código fuente de manera constante para detectar un código malicioso y todo
+  cambio en dicho código, debe estar firmado digitalmente.
+
+- **Auditoría de dependencias y chequeo de sus vulnerabilidades:** Revisar constantemente que sucede en todos los componentes de nuestro código y validar que no hay
+  problemas de seguridad en alguna dependencias y de ser el caso, poder mitigarlas a tiempo. 
+
+<h1 id="praA08">PRÁCTICA SOFTWARE AND DATA INTEGRITY FAILURES</h1>
+¿Cómo manejamos internamente la garantía de integridad en dependencias utilizadas? 
+Porque sabemos que nosotros no generamos absolutamente todo el código, usamos dependencias de alguien más. 
+
+Para revisar de lado de Front, vamos a la página de nuestro proyecto: `localbox`
+y vemos el código de la aplicación con ayuda las DevTools, presionando `Click derecho -> Inspect`. 
+Una vez dentro del menú, revisamos la pestaña `Console`.
+
+Podemos observar que tenemos un mensaje que nos indica que posiblemente hay una librería con contenido malicioso. 
+
+![Libreria Maliciosa](imgs_ciber/A08_OWASP/A08_1.png)
+
+Ahora que ya la detectamos, tenemos que ver cómo resolver el problema y garantizar que esa librería 
+tiene una integridad y no manipularan su contenido para inyectar en nuestra aplicación y hacer una exfiltración de datos. 
+Observamos que en la línea 55 hay ina librería **.js** pero, puede ser de un origen malicioso y necesitamos garantías de integridad. 
+
+![Libreria Maliciosa Código](imgs_ciber/A08_OWASP/A08_2.png)
+
+
+## Hardening
+
+Aplicando el fix respectivo, podemos ver que librería ya contiene una cadena de integridad. Un hash que nos pérmite 
+confiar en esa dependencia. 
+
+> Si ingresamos a [Bootstrap](https://getbootstrap.com/) podemos ver que es una buena práctica. 
+
+![Libreria con integridad](imgs_ciber/A08_OWASP/A08_3.png)
+
+Ahora si vamos de nuevo a nuestro home, podemos observar que ya no tenemos el mensaje de una posible librería maliciosa. 
+
+![Libreria con integridad inspect](imgs_ciber/A08_OWASP/A08_4.png)
+
