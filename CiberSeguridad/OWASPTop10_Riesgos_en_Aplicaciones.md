@@ -1,4 +1,4 @@
-![imagen](https://github.com/Ladivcr/Extra-courses-note/assets/44490565/0ab10075-4e0a-4f79-866f-c3aa275a3239)# Listado de capitulos (because, the document is laaarge)
+# Listado de capitulos (because, the document is laaarge)
 - [¿Qué es OWASP Top 10?](#WhatIsOwasp10)
 - [¿Cómo utilizar OWASP Top 10?](#HowToUseOwasp10)
 - [Broken Access Control - A01](#A01)
