@@ -596,7 +596,7 @@ Ocurre se utilizan componentes vulnerables o desactualizados.
 
 <h1 id="praA06">PRÁCTICA VULNERABLE AND OUTDATED COMPONENTS</h1>
 Para esta práctica, vamos a analizar el archivo de depedencias `package.json` haciendo uso del comando `npm audit`.
-> Podemos encontrar un equivalente a entornos Python con [`pip audit`](https://www.redhat.com/sysadmin/find-python-vulnerabilities)
+> Podemos encontrar un equivalente a entornos Python con [pip audit](https://www.redhat.com/sysadmin/find-python-vulnerabilities)
 
 ![Comando npm audit](imgs_ciber/A06_OWASP/A06_1.png)
 
