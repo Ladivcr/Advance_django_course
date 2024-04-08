@@ -686,9 +686,19 @@ Una vez que hemos cargado la lista d econtraseñas, procedemos a lanzar el ataqu
 ![BurpSuite Payload Attack](imgs_ciber/A07_OWASP/A07_5.png)
 
 Una vez términado el ataque, podemos ver una lista de las pruebas que realizo y observamos que hay una que tuvo éxito y encontró la contraseña para el usuario admin.
-Lo que a su vez nos indica que, nuestra aplicación es vulnerable a peticiones recurrentes. 
+Lo que a su vez nos indica que, nuestra aplicación es vulnerable a peticiones recurrentes. O sea, ataques de diccionario o de fuerza bruta. 
 
 ![BurpSuite Payload Attack Ok](imgs_ciber/A07_OWASP/A07_6.png)
 
 ## Hardening
+
+Para controlar el ataque, tenemos que limiar el número de peticiones por IP. Cómo podemos observar, una manera de hacerlo para
+nuestra aplicación, es la siguiente. De la línea 7 a la línea 11. Controlamos el número de peticiones, limitandola a solo 5. 
+
+![Control de peticiones](imgs_ciber/A07_OWASP/A07_7.png)
+
+Y para comprobarlo, volvemos a lanzar el ataque y obtenemos que, después de 5 peticiones, ya no hay respuesta. A quedado solucionado el problema. 
+
+![BurpSuite Payload Attack Bad](imgs_ciber/A07_OWASP/A07_8.png)
+
 
