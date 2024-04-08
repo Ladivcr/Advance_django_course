@@ -17,6 +17,8 @@
 - - [PRÁCTICA IDENTIFICATION AND AUTHENTICATION FAILURES - A07](#praA07)
 - [Software and Data Integrity Failures - A08](#A08)
 - - [PRÁCTICA SOFTWARE AND DATA INTEGRITY FAILURES - A08](#praA08)
+- [Security Logging and Monitoring Failures - A09](#A09)
+- - [PRÁCTICA SECURITY LOGGING AND MONITORING FAILURES - A09](#praA09)
 
 
 
@@ -758,4 +760,41 @@ confiar en esa dependencia.
 Ahora si vamos de nuevo a nuestro home, podemos observar que ya no tenemos el mensaje de una posible librería maliciosa. 
 
 ![Libreria con integridad inspect](imgs_ciber/A08_OWASP/A08_4.png)
+
+<h1 id="A09">Security Logging and Monitoring Failures [A09]</h1>
+Llegamos a un riesgo en donde debemos analizar los eventos que se gestionan mediante nuestra aplicación. Ya
+que este riesgo es generado cuando no se detectan, escalan y responden eventos, ante brechas de seguridad. 
+
+## Ejemplo
+
+Todas las aplicaciones web tienen un formulario de login. ¿Qué pasa si un ciberdelincuente realiza un 
+ataque de diccionario a login de página web sin control? Debemos revisar las peticiones y la recurrencia de las mismas. 
+
+- **Falta de detección temprana de security events:** Si no detectamos de forma temprana los eventos, las peticiones recurrentes. Podemos llegar a
+  caer en un problema y muy probablemente vamos a desencadenar sobrecostos hacia Cloud Providers. Dado que pagamos por consumo, si permitimos que
+  se hagan demasiadas peticiones desde una sola IP, vamos a generar un mayor consumo y por ende, vamos a tener que pagar más.
+
+## Controles
+
+- **Servicios de correlación de eventos (SIEM) y analítica de datos preventiva:** Que no solo recolecte eventos de diferentes servicios sino que también
+  haga análitia de estos datos. Que me permita establecer reglas de alertas tempranas. Si se detectan múltiples intentos de login fallidos, que me envie una
+  alerta que me permita actuar.
+
+  > Una herramienta muy utliziada es DataDog.
+  
+<h1 id="praA09">PRÁCTICA SECURITY LOGGING AND MONITORING FAILURES</h1>
+
+Cuándo despliegas la aplicación, cuándo la diseñaste ¿tuviste en cuenta el monitoreo a futuro?
+¿Revisas muy bien los intentos fallidos de login en la aplicación? Esta es la verdadera explotación. 
+Muy probablemente no contamos con herramientas de monitoreo que nos permitan detectar de manera temprana 
+un ciber ataque. 
+
+## Hardening
+
+Una aplicación para monitorear y correlacionar eventos/logs, es bastante útil en este punto. 
+Configurar alertas tempranas cuando hay un pico en determinadas solicitudes puede resultar crucial para
+ahorrar costos y evitar problemas de seguridad que escalen en un futuro. 
+
+
+
 
