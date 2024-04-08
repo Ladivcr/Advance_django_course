@@ -15,6 +15,8 @@
 - - [PRÁCTICA VULNERABLE AND OUTDATED COMPONENTES - A06](#praA06)
 - [Identification and Authentication Failures - A07](#A07)
 - - [PRÁCTICA IDENTIFICATION AND AUTHENTICATION FAILURES - A07](#praA07)
+- [Software and Data Integrity Failures - A08](#A08)
+- - [PRÁCTICA SOFTWARE AND DATA INTEGRITY FAILURES - A08](#praA08)
 
 
 
@@ -701,4 +703,4 @@ Y para comprobarlo, volvemos a lanzar el ataque y obtenemos que, después de 5 p
 
 ![BurpSuite Payload Attack Bad](imgs_ciber/A07_OWASP/A07_8.png)
 
-
+<h1 id="A08">Software and Data Integrity Failures [A08]</h1>
