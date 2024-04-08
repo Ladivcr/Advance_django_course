@@ -598,3 +598,21 @@ Ocurre se utilizan componentes vulnerables o desactualizados.
   tenga Hardening completo.
 
 <h1 id="praA06">PRÁCTICA VULNERABLE AND OUTDATED COMPONENTS</h1>
+Para esta práctica, vamos a analizar el archivo de depedencias `package.json` haciendo uso del comando `npm audit`.
+> Podemos encontrar un equivalente a entornos Python con [`pip audit`](https://www.redhat.com/sysadmin/find-python-vulnerabilities)
+
+![Comando npm audit](imgs_ciber/A06_OWASP/A06_1.png)
+
+Encontramos que hay una falla con algo de severidad para la librería `semver` y nos recomienda actualizar la 
+versión. 
+
+![Falla de seguridad encontrada](imgs_ciber/A06_OWASP/A06_2.png)
+
+Si vamos al enlace que nos arroja el comando, nos encontramos con información del bot de dependencias de Github. 
+Que nos ofrece información muy valiosa acerca de esa vulnerabilidad. Como lo es el código CVE o el código CWV.
+
+![Información sobrela falla](imgs_ciber/A06_OWASP/A06_3.png)
+
+## Hardening
+
+
