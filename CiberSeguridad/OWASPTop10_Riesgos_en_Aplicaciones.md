@@ -1,4 +1,4 @@
-# Listado de capitulos (because, the document is laaarge)
+![imagen](https://github.com/Ladivcr/Extra-courses-note/assets/44490565/0ab10075-4e0a-4f79-866f-c3aa275a3239)# Listado de capitulos (because, the document is laaarge)
 - [¿Qué es OWASP Top 10?](#WhatIsOwasp10)
 - [¿Cómo utilizar OWASP Top 10?](#HowToUseOwasp10)
 - [Broken Access Control - A01](#A01)
@@ -655,4 +655,40 @@ Si ya notaste que tus credenciales de acceso fueron comprometidas. Es hora de ac
 - **Diccionarios propios por empresa**: En las cuentas de las empresas, se puede tomar la información del usuario, el id, su email, su nombrede usuario y con ellos, el encargado de
   ciberseguridad, tomar esos datos y probar las posibles contraseñas para validar si un usuario no esta usando su id como contraseña o algo similar.
 
-- **Rate limit a intentos de login**:
+- **Rate limit a intentos de login**: Poner limites a la automatización que normalmente realizan los ciberdelincuentes cuando quieren ingresar a una cuenta probando múltiples contraseñas.
+
+<h1 id="praA07">PRÁCTICA IDENTIFICATION AND AUTHENTICATION FAILURES</h1>
+
+Nos posicionaremos en el apartado de login para intentar acceder por fuerza bruta. 
+![Login de la plataforma](imgs_ciber/A01_OWASP/A01_5.png)
+
+Si intentamos poner algo aleatorio, observaremos que nos arroja un mensaje de que no es un password valido. 
+Nos vamos a BurpSuite, buscamos esa petición y la enviamos a **intruder**. Que es una utilidad de BurpSuite
+
+![BurpSuite](imgs_ciber/A07_OWASP/A07_1.png)
+
+Dentro de Intruder, vamos a definir el payload para nuestro ataque. 
+Primero, seleccionamos el texto que estará cambiando, en este caso es el password. Y lo hacemos 
+seleccionando dicho texto y posteriormente precionando en **Add $**
+
+![BurpSuite Intruder](imgs_ciber/A07_OWASP/A07_2.png)
+
+Observamos que después de presionar en **Add $** nuestro password cambio. Ahora es una variable. 
+
+![Password](imgs_ciber/A07_OWASP/A07_3.png)
+
+Después nos vamos a la pestaña de `payloads`. y ahí, presionamos en **load** para cargar el diccionario de contraseñas (Es un archivo .txt con una lista de contraseñas). 
+
+![BurpSuite Payload](imgs_ciber/A07_OWASP/A07_4.png)
+
+Una vez que hemos cargado la lista d econtraseñas, procedemos a lanzar el ataque. Para esto basta con presionar en **Startattack**.
+
+![BurpSuite Payload Attack](imgs_ciber/A07_OWASP/A07_5.png)
+
+Una vez términado el ataque, podemos ver una lista de las pruebas que realizo y observamos que hay una que tuvo éxito y encontró la contraseña para el usuario admin.
+Lo que a su vez nos indica que, nuestra aplicación es vulnerable a peticiones recurrentes. 
+
+![BurpSuite Payload Attack Ok](imgs_ciber/A07_OWASP/A07_6.png)
+
+## Hardening
+
