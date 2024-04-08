@@ -13,6 +13,10 @@
 - - [PRÁCTICA SECURITY MISCONFIGURATION](#praA05)
 - [Vulnerable and Outdated Components - A06](#A06)
 - - [PRÁCTICA VULNERABLE AND OUTDATED COMPONENTES - A06](#praA06)
+- [Identification and Authentication Failures - A07](#A07)
+- - [PRÁCTICA IDENTIFICATION AND AUTHENTICATION FAILURES - A07](#praA07)
+
+
 
 <h1 id="#WhatIsOwasp10">¿Qué es OWASP Top 10?</h1>
 
@@ -615,3 +619,40 @@ Que nos ofrece información muy valiosa acerca de esa vulnerabilidad. Como lo es
 Para arreglar esa vulnerabilidad, basta con hacer uso del comando recomendado: `npm audit fix` y esto lo que 
 va a hacer es actualizar aquellas librerías que tengan fallas de seguridad. Una vez realizado eso, la 
 librería debería de haber cambiado de versión y con ello, la vulnerabilidad a sido arreglada. 
+
+<h1 id="A07">Identification and Authentication Failures [A07]</h1>
+
+Riesgo asociado a compromiso de credenciales de acceso y el proceso de autenticación. Es muy común que tengamos que autenticar a nuestros
+usuarios para asociarlos a un determinado rol para que puedan efectuar determinadas acciones en la aplicación. 
+
+## Ejemplo
+
+**Uso de contraseñas débiles**: Cuando se diseñe una aplicación, es recomendable que no se permitan las contraseñas débiles por ningun mótivo. 
+P. Ej. 
+| Usuario | Contraseña |
+| --- | --- |
+| admin | admin |
+| diego | diego123 |
+| editor | 12345 | 
+| robert | robert.94 |
+
+## Impacto
+
+- **Credenciales de acceso comprometidas:** ¿Qué pasaría si las credenciales de la empresa son comprometidas y están a la venta en la dark o en la deep web? 
+Eso sería algo muy crítico. 
+> Aquí podemos revisar si nuestro correo forma parte de una base de datos que haya sido comprometida y esta a la venta en alguna parte de internet: [Have i been pwned?](https://haveibeenpwned.com/)
+
+## Controles
+
+Si ya notaste que tus credenciales de acceso fueron comprometidas. Es hora de actuar. 
+
+- **Uso de Múltiple Factor de Autenticación, Captcha, Passkeys...**: En el ámbito personal, debes de utilizar el factor de autenticación múltiple en todas tus cuentas. En
+  el plano del desarrollo de software, es necesario incluir en las aplicaciones un captcha, passkey, mult auth o similares. 
+
+- **Crear campañas de weak password checks**: En la organización, utilizar diccionarios de contraseñas para evaluar el fortalecimiento de las claves de los sistemas de información.
+  Si se llega a detectar que existe una contraseña sencilla, es necesario cambiarla por una más fuerte.
+
+- **Diccionarios propios por empresa**: En las cuentas de las empresas, se puede tomar la información del usuario, el id, su email, su nombrede usuario y con ellos, el encargado de
+  ciberseguridad, tomar esos datos y probar las posibles contraseñas para validar si un usuario no esta usando su id como contraseña o algo similar.
+
+- **Rate limit a intentos de login**:
