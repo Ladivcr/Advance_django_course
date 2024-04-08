@@ -19,6 +19,8 @@
 - - [PRÁCTICA SOFTWARE AND DATA INTEGRITY FAILURES - A08](#praA08)
 - [Security Logging and Monitoring Failures - A09](#A09)
 - - [PRÁCTICA SECURITY LOGGING AND MONITORING FAILURES - A09](#praA09)
+- [Server Side Request Forgery - A10](#A10)
+- - [PRÁCTICA SERVER SIDE REQUEST FORGERY - A10](#praA10)
 
 
 
@@ -762,6 +764,7 @@ Ahora si vamos de nuevo a nuestro home, podemos observar que ya no tenemos el me
 ![Libreria con integridad inspect](imgs_ciber/A08_OWASP/A08_4.png)
 
 <h1 id="A09">Security Logging and Monitoring Failures [A09]</h1>
+
 Llegamos a un riesgo en donde debemos analizar los eventos que se gestionan mediante nuestra aplicación. Ya
 que este riesgo es generado cuando no se detectan, escalan y responden eventos, ante brechas de seguridad. 
 
@@ -794,6 +797,34 @@ un ciber ataque.
 Una aplicación para monitorear y correlacionar eventos/logs, es bastante útil en este punto. 
 Configurar alertas tempranas cuando hay un pico en determinadas solicitudes puede resultar crucial para
 ahorrar costos y evitar problemas de seguridad que escalen en un futuro. 
+
+<h1 id="A10">Server Side Request Forgery [A10]</h1>
+
+Ocurre cuando se permite al atacante, forzar a un servidor a realizar solicitudes de red maliciosas. 
+
+## Ejemplos
+
+El atacante hace un reconocimiento de una web en Internet y nota que en cierta petición, es posible acceder a un recurso privado. 
+Es decir, ubicado dentro del mismo segmento de red, en dónde esta ubicado ese servidor web. 
+<img width="763" alt="image" src="https://github.com/Ladivcr/Extra-courses-note/assets/44490565/7328b604-7eb5-4343-81f3-5aa33f38dd70">
+
+Análisas la situación y revisa el tipo de petición que puede hacer. Porque su objetivo es dirigirse al panel de control. 
+Saltar el firewall, aprovechandose de los puertos y las peticiones que puede hacer. 
+
+## Impacto
+
+- **Compromiso de servicios internos:** Al utilizar un servidor web como pivoteo para ingresar a alguna BD o algún otro servicio interno, puede ocasionar
+  que algunos servicios sean comprometidos.
+
+- **Ejecución Remota de Código (RCE):** Si tengo acceso a los servicios, puedo ejecutar comandos de manera remota o acceder a ciertos recursos que son sensibles.
+
+## Controles
+
+- **Utilizar AllowList de URLs**: Es necesario realizar una lista de validación de las URLs hacía las cuales podemos realizar peticiones desde el servidor.
+- **Segmentación de redes:** Si es comprometido un equipo de la Intranet, o sea, del segmento de red privado. No es posible llegar a muchos otros activos de información o equipos de red. 
+
+
+<h1 id="praA10">PRÁCTICA SERVER SIDE REQUEST FORGERY</h1>
 
 
 
