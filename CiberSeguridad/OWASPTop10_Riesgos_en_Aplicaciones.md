@@ -14,9 +14,6 @@
 - [Vulnerable and Outdated Components - A06](#A06)
 - - [PRÁCTICA VULNERABLE AND OUTDATED COMPONENTES - A06](#praA06)
 
-
-
-
 <h1 id="#WhatIsOwasp10">¿Qué es OWASP Top 10?</h1>
 
 OWASP, que significa Open Web Application Security Project, es una organización sin fines de lucro que trabaja para mejorar la seguridad
@@ -615,4 +612,6 @@ Que nos ofrece información muy valiosa acerca de esa vulnerabilidad. Como lo es
 
 ## Hardening
 
-
+Para arreglar esa vulnerabilidad, basta con hacer uso del comando recomendado: `npm audit fix` y esto lo que 
+va a hacer es actualizar aquellas librerías que tengan fallas de seguridad. Una vez realizado eso, la 
+librería debería de haber cambiado de versión y con ello, la vulnerabilidad a sido arreglada. 
