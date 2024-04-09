@@ -856,7 +856,7 @@ Ahora manipulamos la petición para realizar una petición a otro servicio total
 Que será: `ifcondig.me` el cual nos debería retornar la dirección IP desde dónde estoy ejecutando 
 la petición. 
 
-![Inspección de código - OKOK](imgs_ciber/A10_OWASP/A10_4.png)
+![Inspección de código - OKOK](imgs_ciber/A10_OWASP/A10_5.png)
 
 El haber podido obtener la dirección IP nos hace ver que efectivamente pudimos hacer uso de otro servicio a partir de otro, por 
 lo que debemos arreglarlo immediatamente. 
@@ -870,5 +870,5 @@ y de la linea 19 a 23 implementamos la validación.
 
 La cuál lo que hará será validar la entrada de datos. O sea, cualquier petición diferente a `dummyjson` será denegada. 
 
-![Inspección de código - Hardening](imgs_ciber/A10_OWASP/A10_5.png)
+![Inspección de código - Hardening](imgs_ciber/A10_OWASP/A10_6.png)
 
