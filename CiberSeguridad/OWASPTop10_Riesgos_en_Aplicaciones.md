@@ -853,7 +853,7 @@ con la que podemos ver que es lo arroja su api.
 ![Inspección de código - OK](imgs_ciber/A10_OWASP/A10_4.png)
 
 Ahora manipulamos la petición para realizar una petición a otro servicio totalmente diferente. 
-Que será: `ifcondig.me` el cual nos debería retornar la dirección IP desde dónde estoy ejecutando 
+Que será: `ifconfig.me` el cual nos debería retornar la dirección IP desde dónde estoy ejecutando 
 la petición. 
 
 ![Inspección de código - OKOK](imgs_ciber/A10_OWASP/A10_5.png)
