@@ -865,7 +865,7 @@ lo que debemos arreglarlo immediatamente.
 
 Para solucionarlo, haremos uso de un `AllowList`.
 
-Con nuestra lista creada, la llamamos, el archivo se llama:  `dummyjson.com`
+Con nuestra lista creada, la llamamos, el archivo se llama:  [`dummyjson.com`](https://dummyjson.com/)
 y de la linea 19 a 23 implementamos la validación. 
 
 La cuál lo que hará será validar la entrada de datos. O sea, cualquier petición diferente a `dummyjson` será denegada. 
