@@ -826,6 +826,49 @@ Saltar el firewall, aprovechandose de los puertos y las peticiones que puede hac
 
 <h1 id="praA10">PRÁCTICA SERVER SIDE REQUEST FORGERY</h1>
 
+Nos posicionamos en el home de la página del curso: `https://localbox.com`
+Observamos que hay varios enlaces, procedemos a realizar click en view course
 
+![Home de la app](imgs_ciber/A10_OWASP/A10_1.png)
 
+Esto nos llevara a otra página que nos da la información del curso. 
+Curioseamos más, para saber de dónde es que viene esa información y para ello, 
+presionamos click derecho, inspect y nos apoyamos de las DevTools del navegador. 
+
+Y encontramos una petición a un servicio. 
+
+> Lo que buscamos son peticiones hacía otros recursos internos o externos.
+
+![Inspección de código](imgs_ciber/A10_OWASP/A10_2.png)
+
+Procedemos a copiar esa petición para probar en la consola del navegador, la que se encuentra en las DevTools.
+Y observamos que nos genera un error de `authorId`. Una variable.
+
+![Inspección de código - Error](imgs_ciber/A10_OWASP/A10_3.png)
+
+Editamos la variable y le asignamos un número cualquiera. Un 10 por ejemplo. Y volvemos a
+ejecutar la función y podemos observar que ahora si obtenemos un resultado con información 
+con la que podemos ver que es lo arroja su api. 
+
+![Inspección de código - OK](imgs_ciber/A10_OWASP/A10_4.png)
+
+Ahora manipulamos la petición para realizar una petición a otro servicio totalmente diferente. 
+Que será: `ifcondig.me` el cual nos debería retornar la dirección IP desde dónde estoy ejecutando 
+la petición. 
+
+![Inspección de código - OKOK](imgs_ciber/A10_OWASP/A10_4.png)
+
+El haber podido obtener la dirección IP nos hace ver que efectivamente pudimos hacer uso de otro servicio a partir de otro, por 
+lo que debemos arreglarlo immediatamente. 
+
+## Hardening
+
+Para solucionarlo, haremos uso de un `AllowList`.
+
+Con nuestra lista creada, la llamamos, el archivo se llama:  `dummyjson.com`
+y de la linea 19 a 23 implementamos la validación. 
+
+La cuál lo que hará será validar la entrada de datos. O sea, cualquier petición diferente a `dummyjson` será denegada. 
+
+![Inspección de código - Hardening](imgs_ciber/A10_OWASP/A10_5.png)
 
